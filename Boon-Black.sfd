@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1367466433
-ModificationTime: 1367675561
+ModificationTime: 1367676569
 PfmFamily: 33
 TTFWeight: 900
 TTFWidth: 5
@@ -40,9 +40,18 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
+Lookup: 2 0 0 "Thai preprocesses"  {"Sara Am Decomposition"  } []
+Lookup: 6 0 0 "'ccmp' Thai glyph position handlings"  {"'ccmp' Sara Am Decomposition"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Thai Position Handlings"  {"'mark' Thai Upper Trail"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ChainSub2: coverage "'ccmp' Sara Am Decomposition"  0 0 0 1
+ 1 1 0
+  Coverage: 7 uni0E33
+  BCoverage: 39 uni0E1B uni0E48 uni0E49 uni0E4A uni0E4B
+ 1
+  SeqLookup: 0 "Thai preprocesses" 
+EndFPST
 LangName: 1033 
 Encoding: iso8859-11
 UnicodeInterp: none
@@ -50,7 +59,7 @@ NameList: Adobe Glyph List
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 192 12 5
+WinInfo: 180 12 5
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -1062,12 +1071,13 @@ StartChar: uni0E33
 Encoding: 211 3635 33
 Width: 610
 VWidth: 0
-HStem: 0 21<370 550> 497 120<170.46 337.96> 680 85<-212.683 -117.317> 885 85<-212.683 -117.317>
-VStem: -310 85<777.317 872.683> -105 85<777.317 872.683> 370 180<0 463.826>
+HStem: 0 21<370 550> 497 120<170.46 337.96> 670 85<-212.683 -117.317 -212.683 -117.317> 875 85<-212.683 -117.317 -212.683 -117.317>
+VStem: -310 85<767.317 862.683 767.317 862.683> -105 85<767.317 862.683 767.317 862.683> 370 180<0 463.826>
 LayerCount: 2
 Fore
 Refer: 36 3634 N 1 0 0 1 0 0 2
 Refer: 38 3661 N 1 0 0 1 0 0 2
+MultipleSubs2: "Sara Am Decomposition" uni0E4D uni0E32
 EndChar
 
 StartChar: uni0E4A
@@ -1218,22 +1228,22 @@ Encoding: 237 3661 38
 Width: 0
 VWidth: 0
 Flags: W
-HStem: 680 85<-212.683 -117.317> 885 85<-212.683 -117.317>
-VStem: -310 85<777.317 872.683> -105 85<777.317 872.683>
+HStem: 670 85<-212.683 -117.317> 875 85<-212.683 -117.317>
+VStem: -310 85<767.317 862.683> -105 85<767.317 862.683>
 AnchorPoint: "UpperTrail" -500 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--165 970 m 4
- -85 970 -20 905 -20 825 c 4
- -20 745 -85 680 -165 680 c 4
- -245 680 -310 745 -310 825 c 4
- -310 905 -245 970 -165 970 c 4
--165 885 m 4
- -198 885 -225 858 -225 825 c 4
- -225 792 -198 765 -165 765 c 4
- -132 765 -105 792 -105 825 c 4
- -105 858 -132 885 -165 885 c 4
+-165 960 m 4
+ -85 960 -20 895 -20 815 c 4
+ -20 735 -85 670 -165 670 c 4
+ -245 670 -310 735 -310 815 c 4
+ -310 895 -245 960 -165 960 c 4
+-165 875 m 4
+ -198 875 -225 848 -225 815 c 4
+ -225 782 -198 755 -165 755 c 4
+ -132 755 -105 782 -105 815 c 4
+ -105 848 -132 875 -165 875 c 4
 EndSplineSet
 EndChar
 
