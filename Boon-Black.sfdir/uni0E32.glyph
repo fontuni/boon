@@ -1,0 +1,36 @@
+
+StartChar: uni0E32
+Encoding: 3634 3634 37
+Width: 540
+VWidth: 0
+Flags: W
+HStem: 0 21G<280 470> 492 120<81.74 248.542>
+VStem: 280 190<0 457.321>
+LayerCount: 2
+Back
+SplineSet
+330 0 m 5
+ 330 356 l 5
+ 328 456 301 498 220 498 c 4
+ 155 498 122 476 50 425 c 5
+ 0 526 l 5
+ 71 587 153 618 220 618 c 4
+ 381 618 520 567 520 356 c 6
+ 520 0 l 5
+ 330 0 l 5
+EndSplineSet
+Fore
+SplineSet
+280 0 m 1
+ 280 350 l 1
+ 278 450 248 492 195 492 c 0
+ 108 492 68 463 0 410 c 1
+ 0 540 l 1
+ 45 575 99 612 195 612 c 0
+ 387 612 470 522 470 350 c 2
+ 470 0 l 1
+ 280 0 l 1
+EndSplineSet
+Validated: 1
+Substitution2: "Thai Lakkhangyao" uni0E45
+EndChar

@@ -1,0 +1,31 @@
+
+StartChar: uni0E4B.nikhahit
+Encoding: 63254 63254 95
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 670 85<-232.683 -137.317> 875 85<-232.683 -137.317> 1000 250<-250 -100> 1085 80<-335 -250 -100 -15>
+VStem: -330 85<767.317 862.683> -250 150<1000 1085 1165 1250> -125 85<767.317 862.683>
+LayerCount: 2
+Fore
+SplineSet
+-250 1250 m 1xe4
+ -100 1250 l 1xe4
+ -100 1165 l 1
+ -15 1165 l 1
+ -15 1085 l 1
+ -100 1085 l 1xd4
+ -100 1000 l 1
+ -250 1000 l 1xe4
+ -250 1085 l 1
+ -335 1085 l 1
+ -335 1165 l 1
+ -250 1165 l 1xd4
+ -250 1250 l 1xe4
+EndSplineSet
+Refer: 39 3661 N 1 0 0 1 100 0 2
+Validated: 1
+Position2: "Tone-Nikhahit" dx=-250 dy=0 dh=0 dv=0
+LCarets2: 1 0 
+Ligature2: "'liga' Tone-Nikhahit Ligature" uni0E4B uni0E4D
+EndChar

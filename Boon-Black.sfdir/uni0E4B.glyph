@@ -1,0 +1,48 @@
+
+StartChar: uni0E4B
+Encoding: 3659 3659 16
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 1000 250<-320 -170> 1085 80<-405 -320 -170 -85>
+VStem: -320 150<1000 1085 1165 1250>
+LayerCount: 2
+Back
+SplineSet
+-250 940 m 1xa0
+ -100 940 l 1xa0
+ -100 855 l 1
+ -15 855 l 1
+ -15 775 l 1
+ -100 775 l 1x60
+ -100 690 l 5
+ -250 690 l 5xa0
+ -250 775 l 1
+ -335 775 l 1
+ -335 855 l 1
+ -250 855 l 1x60
+ -250 940 l 1xa0
+EndSplineSet
+Fore
+SplineSet
+-320 1250 m 5xa0
+ -170 1250 l 5xa0
+ -170 1165 l 5
+ -85 1165 l 5
+ -85 1085 l 5
+ -170 1085 l 5x60
+ -170 1000 l 5
+ -320 1000 l 5xa0
+ -320 1085 l 5
+ -405 1085 l 5
+ -405 1165 l 5
+ -320 1165 l 5x60
+ -320 1250 l 5xa0
+EndSplineSet
+Validated: 1
+Position2: "Thai Tone and Asc Vowel Fix" dx=-80 dy=-310 dh=0 dv=0
+Position2: "Left-Low Tone" dx=-250 dy=-310 dh=0 dv=0
+Position2: "Left-High Tone" dx=-150 dy=0 dh=0 dv=0
+Position2: "High Tone" dx=70 dy=0 dh=0 dv=0
+Position2: "Low Tone" dx=70 dy=-310 dh=0 dv=0
+EndChar

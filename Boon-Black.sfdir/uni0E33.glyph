@@ -1,0 +1,15 @@
+
+StartChar: uni0E33
+Encoding: 3635 3635 34
+Width: 540
+VWidth: 0
+Flags: W
+HStem: 0 21<280 470> 492 120<81.74 248.542> 670 85<-332.683 -237.317> 875 85<-332.683 -237.317>
+VStem: -430 85<767.317 862.683> -225 85<767.317 862.683> 280 190<0 457.321>
+LayerCount: 2
+Fore
+Refer: 37 3634 N 1 0 0 1 0 0 2
+Refer: 39 3661 N 1 0 0 1 0 0 2
+Validated: 1
+MultipleSubs2: "'ccmp' Sara Am Decompose" uni0E4D uni0E32
+EndChar
