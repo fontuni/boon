@@ -27,7 +27,7 @@ SplineSet
  -280 750 l 5
  -318 788 -354 812 -430 812 c 4x6c
 EndSplineSet
-Validated: 524289
+Validated: 1
 Position2: "Left Upper Vowel" dx=-150 dy=0 dh=0 dv=0
 Position2: "Normal Upper Vowel" dx=50 dy=0 dh=0 dv=0
 EndChar
