@@ -1,0 +1,20 @@
+
+StartChar: uni0E3A
+Encoding: 3642 3642 9
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -436 150<-241.569 -128.431>
+VStem: -260 150<-417.569 -304.431>
+LayerCount: 2
+Fore
+SplineSet
+-110 -361 m 0
+ -110 -402 -144 -436 -185 -436 c 0
+ -226 -436 -260 -402 -260 -361 c 0
+ -260 -320 -226 -286 -185 -286 c 0
+ -144 -286 -110 -320 -110 -361 c 0
+EndSplineSet
+Validated: 1
+Position2: "Lower Vowel" dx=0 dy=220 dh=0 dv=0
+EndChar

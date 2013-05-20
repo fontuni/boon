@@ -1,0 +1,17 @@
+
+StartChar: uni0E4B.nikhahit
+Encoding: 63254 63254 94
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 660 70<-254.242 -145.758> 870 70<-254.242 -145.758> 1095 60<-340 -245 -145 -50>
+VStem: -340 70<745.758 854.242> -245 100<1000 1095 1155 1250> -130 70<745.758 854.242>
+LayerCount: 2
+Fore
+Refer: 15 3659 S 1 0 0 1 50 0 2
+Refer: 38 3661 N 1 0 0 1 100 0 2
+Validated: 1
+Position2: "Tone-Nikhahit" dx=-250 dy=0 dh=0 dv=0
+LCarets2: 1 0 
+Ligature2: "'liga' Tone-Nikhahit Ligature" uni0E4B uni0E4D
+EndChar

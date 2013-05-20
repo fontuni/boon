@@ -1,0 +1,31 @@
+
+StartChar: uni0E37
+Encoding: 3639 3639 16
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 690 55<-565 -285> 815 75<-532.064 -368.859>
+VStem: -250 80<804 940>
+LayerCount: 2
+Fore
+SplineSet
+-400 940 m 1
+ -290 940 l 1
+ -290 837 l 1
+ -276 827 -262 816 -250 804 c 1
+ -250 940 l 1
+ -170 940 l 1
+ -170 690 l 1
+ -170 690 -503 690 -670 690 c 1
+ -670 778 -598 890 -450 890 c 1
+ -420 889 -393 884 -368 876 c 1
+ -400 940 l 1
+-450 815 m 0
+ -516 815 -550 782 -565 745 c 1
+ -285 745 l 1
+ -331 797 -386 815 -450 815 c 0
+EndSplineSet
+Validated: 1
+Position2: "Left Upper Vowel" dx=-100 dy=0 dh=0 dv=0
+Position2: "Normal Upper Vowel" dx=50 dy=0 dh=0 dv=0
+EndChar
