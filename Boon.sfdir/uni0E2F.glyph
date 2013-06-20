@@ -6,7 +6,7 @@ VWidth: 0
 Flags: W
 HStem: -12 80<235 355.422> 343 75<220.218 319.674> 530 65<89.4878 170.512>
 VStem: 20 65<445.577 525.512> 175 65<444.327 525.512> 380 110<93.2856 410.14> 410 80<504.415 570>
-LayerCount: 2
+LayerCount: 5
 Fore
 SplineSet
 130 595 m 4xfa
@@ -29,4 +29,5 @@ SplineSet
  155 440 175 460 175 485 c 4
  175 510 155 530 130 530 c 4
 EndSplineSet
+Validated: 1
 EndChar

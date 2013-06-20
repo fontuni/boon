@@ -1,12 +1,12 @@
 
 StartChar: uni0E44
 Encoding: 3652 3652 76
-Width: 350
+Width: 360
 VWidth: 0
 Flags: W
 HStem: -12 70<193.531 266.469> 138 70<230 265.376> 950 90<-40 10.6875>
 VStem: 120 110<208 701.89> 120 70<62.6236 135.563> 230 75<841.547 938.868> 270 70<61.5305 134.469>
-LayerCount: 2
+LayerCount: 5
 Fore
 SplineSet
 -40 1040 m 1xe4

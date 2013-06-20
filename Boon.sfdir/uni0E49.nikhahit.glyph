@@ -3,14 +3,13 @@ StartChar: uni0E49.nikhahit
 Encoding: 63252 63252 93
 Width: 0
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 660 70<-254.242 -145.758> 870 70<-254.242 -145.758> 988 70<-210 -113.704> 988 152<-277.455 -103.219> 1220 60<-287.068 -212.932>
 VStem: -350 60<1142.96 1217.07> -340 70<745.758 854.242> -210 60<1143.28 1217.07> -130 70<745.758 854.242> -10 90<1164.53 1258>
-LayerCount: 2
+LayerCount: 5
 Fore
 Refer: 23 3657 S 1 0 0 1 110 0 2
 Refer: 38 3661 N 1 0 0 1 100 0 2
-Validated: 1
 Position2: "Tone-Nikhahit" dx=-250 dy=0 dh=0 dv=0
 LCarets2: 1 0 
 Ligature2: "'liga' Tone-Nikhahit Ligature" uni0E49 uni0E4D

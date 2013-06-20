@@ -4,18 +4,17 @@ Encoding: 3656 3656 13
 Width: 0
 VWidth: 0
 Flags: W
-HStem: 1000 250<-290 -190>
-VStem: -290 100<1000 1250>
-LayerCount: 2
+HStem: 1000 250<-240 -150>
+VStem: -240 90<1000 1250>
+LayerCount: 5
 Fore
 SplineSet
--290 1250 m 1
- -190 1250 l 1
- -190 1000 l 1
- -290 1000 l 1
- -290 1250 l 1
+-240 1250 m 5
+ -150 1250 l 1
+ -150 1000 l 1
+ -240 1000 l 5
+ -240 1250 l 5
 EndSplineSet
-Validated: 1
 Position2: "Thai Tone and Asc Vowel Fix" dx=20 dy=-310 dh=0 dv=0
 Position2: "Left-Low Tone" dx=-120 dy=-310 dh=0 dv=0
 Position2: "Left-High Tone" dx=-180 dy=0 dh=0 dv=0
