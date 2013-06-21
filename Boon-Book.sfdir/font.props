@@ -1,6 +1,6 @@
 SplineFontDB: 3.0
-FontName: Boon
-FullName: Boon
+FontName: Boon-Book
+FullName: Boon Book
 FamilyName: Boon
 Weight: Book
 Copyright: Copyright (C) 2013 Sungsit Sawaiwan <http://sungsit.com/> \n\nThis font is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. \n\nThis font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. \n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>. \n\nAs a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version.
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1371787523
+ModificationTime: 1371789971
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -43,12 +43,12 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 OS2UnicodeRanges: 01000001.10000000.00000000.00000000
-Lookup: 1 0 0 "Ascend Subsitute"  {"Ascend Subsitute" ("alt" ) } []
+Lookup: 1 0 0 "Ascent Substitute"  {"Ascent Substitute" ("alt" ) } []
 Lookup: 1 0 0 "Descent Shorten"  {"Descent Shorten" ("shorten" ) } []
-Lookup: 1 0 0 "Descend Subsitute"  {"Descend Subsitute" ("descless" ) } []
+Lookup: 1 0 0 "Descent Substitute"  {"Descent Substitute" ("descless" ) } []
 Lookup: 1 0 0 "Tone Low-High"  {"Tone Low-High" ("low" ) } []
 Lookup: 2 0 0 "'ccmp' General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Contextual Subtitute"  {"'ccmp' Contextual Subtitute"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Contextual Substitute"  {"'ccmp' Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 257 0 0 "Tone Low-Left"  {"Tone Low-Left"  } []
 Lookup: 257 0 0 "Tone High-Left"  {"Tone High-Left"  } []
 Lookup: 257 0 0 "Vowel Above-Left"  {"Vowel Above-Left"  } []
@@ -158,7 +158,7 @@ ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
   BClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
   FClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
 EndFPST
-ChainSub2: class "'ccmp' Contextual Subtitute"  8 8 8 9
+ChainSub2: class "'ccmp' Contextual Substitute"  8 8 8 9
   Class: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
   Class: 15 uni0E0D uni0E10
   Class: 15 uni0E0E uni0E0F
@@ -191,19 +191,19 @@ ChainSub2: class "'ccmp' Contextual Subtitute"  8 8 8 9
   BClsList:
   FClsList: 6
  1
-  SeqLookup: 0 "Ascend Subsitute" 
+  SeqLookup: 0 "Ascent Substitute" 
  1 0 1
   ClsList: 1
   BClsList:
   FClsList: 4
  1
-  SeqLookup: 0 "Ascend Subsitute" 
+  SeqLookup: 0 "Ascent Substitute" 
  1 0 2
   ClsList: 1
   BClsList:
   FClsList: 5 6
  1
-  SeqLookup: 0 "Ascend Subsitute" 
+  SeqLookup: 0 "Ascent Substitute" 
  1 0 1
   ClsList: 6
   BClsList:
@@ -221,13 +221,13 @@ ChainSub2: class "'ccmp' Contextual Subtitute"  8 8 8 9
   BClsList:
   FClsList: 7
  1
-  SeqLookup: 0 "Ascend Subsitute" 
+  SeqLookup: 0 "Ascent Substitute" 
  1 0 1
   ClsList: 2
   BClsList:
   FClsList: 5
  1
-  SeqLookup: 0 "Descend Subsitute" 
+  SeqLookup: 0 "Descent Substitute" 
  1 0 1
   ClsList: 3
   BClsList:
@@ -246,7 +246,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 112 14 5
+WinInfo: 154 14 5
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144

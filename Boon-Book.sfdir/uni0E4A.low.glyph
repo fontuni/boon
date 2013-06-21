@@ -9,6 +9,7 @@ VStem: -460 58<736.353 835.961> -342 45<735.951 794.049> -237 65<750.172 879.595
 LayerCount: 2
 Fore
 Refer: 91 3658 S 1 0 0 1 -80 -270 2
+Validated: 1
 Position2: "Tone Low-Left" dx=-180 dy=0 dh=0 dv=0
 Substitution2: "Tone Low-High" uni0E4A
 EndChar

@@ -36,6 +36,7 @@ SplineSet
  -275 1005 -262 1018 -262 1035 c 0
  -262 1052 -275 1065 -292 1065 c 0
 EndSplineSet
+Validated: 1
 Position2: "Nikhahit & Tone High-Left" dx=-150 dy=0 dh=0 dv=0
 Position2: "Mai Han-Akat & Tone High-Left" dx=-180 dy=0 dh=0 dv=0
 Position2: "Tone High-Left" dx=-120 dy=0 dh=0 dv=0
