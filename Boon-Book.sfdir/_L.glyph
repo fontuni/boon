@@ -1,0 +1,20 @@
+
+StartChar: L
+Encoding: 76 76 117
+Width: 680
+VWidth: 0
+Flags: W
+HStem: 0 100<190 640> 840 20G<80 190>
+VStem: 80 110<100 860>
+LayerCount: 2
+Fore
+SplineSet
+80 860 m 1
+ 190 860 l 1
+ 190 100 l 1
+ 640 100 l 1
+ 640 0 l 1
+ 80 0 l 1
+ 80 860 l 1
+EndSplineSet
+EndChar
