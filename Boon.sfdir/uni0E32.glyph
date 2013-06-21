@@ -1,23 +1,23 @@
 
 StartChar: uni0E32
-Encoding: 3634 3634 36
-Width: 480
+Encoding: 210 3634 25
+Width: 500
 VWidth: 0
 Flags: W
-HStem: 0 21G<310 410> 532 80<76.1131 257.029>
-VStem: 310 100<0 474.082>
-LayerCount: 5
+HStem: 0 21G<330 430> 521 85<109.4 291.584>
+VStem: 330 100<0 481.908>
+LayerCount: 2
 Fore
 SplineSet
-310 0 m 5
- 310 380 l 5
- 308 497 233 532 180 532 c 4
- 110 532 53 501 0 450 c 5
- 0 540 l 5
- 45 580 86 612 180 612 c 4
- 331 612 410 530 410 380 c 6
- 410 0 l 5
- 310 0 l 5
+210 606 m 0
+ 309 606 430 570 430 376 c 2
+ 430 0 l 1
+ 330 0 l 1
+ 330 376 l 2
+ 330 497 275 521 210 521 c 0
+ 161 521 110 505 65 464 c 1
+ 30 534 l 1
+ 72 575 134 606 210 606 c 0
 EndSplineSet
-Substitution2: "Thai Lakkhangyao" uni0E45
+Validated: 1
 EndChar

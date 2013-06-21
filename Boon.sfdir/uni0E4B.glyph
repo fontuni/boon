@@ -1,31 +1,31 @@
 
 StartChar: uni0E4B
-Encoding: 3659 3659 15
+Encoding: 235 3659 77
 Width: 0
 VWidth: 0
 Flags: W
-HStem: 1095 60<-350 -250 -160 -60>
-VStem: -250 90<1000 1095 1155 1250>
-LayerCount: 5
+HStem: 1050 50<-290 -215 -125 -50>
+VStem: -215 90<990 1050 1100 1180>
+LayerCount: 2
 Fore
 SplineSet
--250 1250 m 1
- -160 1250 l 5
- -160 1155 l 5
- -60 1155 l 1
- -60 1095 l 1
- -160 1095 l 5
- -160 1000 l 5
- -250 1000 l 1
- -250 1095 l 1
- -350 1095 l 1
- -350 1155 l 1
- -250 1155 l 1
- -250 1250 l 1
+-215 1180 m 1
+ -125 1180 l 1
+ -125 1100 l 1
+ -50 1100 l 1
+ -50 1050 l 1
+ -125 1050 l 1
+ -125 950 l 1
+ -215 990 l 1
+ -215 1050 l 1
+ -290 1050 l 1
+ -290 1100 l 1
+ -215 1100 l 1
+ -215 1180 l 1
 EndSplineSet
-Position2: "Thai Tone and Asc Vowel Fix" dx=-80 dy=-310 dh=0 dv=0
-Position2: "Left-Low Tone" dx=-150 dy=-310 dh=0 dv=0
-Position2: "Left-High Tone" dx=-180 dy=0 dh=0 dv=0
-Position2: "High Tone" dx=70 dy=0 dh=0 dv=0
-Position2: "Low Tone" dx=70 dy=-310 dh=0 dv=0
+Validated: 1
+Position2: "Nikhahit & Tone High-Left" dx=-180 dy=0 dh=0 dv=0
+Position2: "Mai Han-Akat & Tone High-Left" dx=-220 dy=0 dh=0 dv=0
+Position2: "Tone High-Left" dx=-130 dy=0 dh=0 dv=0
+MultipleSubs2: "Tone High-Low" uni0E4B.low
 EndChar

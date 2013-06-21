@@ -1,12 +1,12 @@
 
 StartChar: uni0E4E
-Encoding: 3662 3662 40
+Encoding: 238 3662 81
 Width: 0
 VWidth: 0
 Flags: W
 HStem: 678 70<-462.995 -410> 898 70<-462.995 -410> 1043 70<-321.019 -209.671>
 VStem: -554 70<766.512 879.488> -410 70<968 1024.41> -190 70<968 1024.41>
-LayerCount: 5
+LayerCount: 2
 Fore
 SplineSet
 -264 1113 m 0

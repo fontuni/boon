@@ -1,0 +1,15 @@
+
+StartChar: uni0E49.low
+Encoding: 257 63238 14
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 690 45<-386.692 -362> 690 55<-278 -191.687> 880 50<-339.402 -280.598>
+VStem: -390 50<820.598 879.402> -280 50<821.03 879.402> -135 85<802.845 900>
+LayerCount: 2
+Fore
+Refer: 34 3657 S 1 0 0 1 -50 -270 2
+Validated: 1
+Position2: "Tone Low-Left" dx=-180 dy=0 dh=0 dv=0
+Substitution2: "Tone Low-High" uni0E49
+EndChar

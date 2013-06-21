@@ -1,8 +1,8 @@
 
 StartChar: space
-Encoding: 32 32 6
+Encoding: 32 32 1
 Width: 400
 VWidth: 0
 Flags: W
-LayerCount: 5
+LayerCount: 2
 EndChar
