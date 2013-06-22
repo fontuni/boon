@@ -1,6 +1,6 @@
 
 StartChar: Z
-Encoding: 90 90 129
+Encoding: 90 90 131
 Width: 780
 VWidth: 0
 Flags: W
@@ -20,4 +20,5 @@ SplineSet
  110 760 l 1
  110 860 l 1
 EndSplineSet
+Validated: 1
 EndChar

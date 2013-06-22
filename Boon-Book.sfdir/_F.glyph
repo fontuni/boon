@@ -1,7 +1,7 @@
 
 StartChar: F
-Encoding: 70 70 118
-Width: 690
+Encoding: 70 70 119
+Width: 670
 VWidth: 0
 Flags: W
 HStem: 0 21G<80 190> 400 90<190 550> 760 100<190 610>
@@ -21,4 +21,5 @@ SplineSet
  80 0 l 1
  80 860 l 1
 EndSplineSet
+Validated: 1
 EndChar
