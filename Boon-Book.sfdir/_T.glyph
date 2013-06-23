@@ -1,23 +1,22 @@
 
 StartChar: T
 Encoding: 84 84 121
-Width: 680
+Width: 580
 VWidth: 0
 Flags: W
-HStem: 0 21G<285 395> 760 100<60 285 395 620>
-VStem: 285 110<0 760>
+HStem: 0 21G<235 345> 760 100<10 235 345 570>
+VStem: 235 110<0 760>
 LayerCount: 2
 Fore
 SplineSet
-60 860 m 1
- 620 860 l 1
- 620 760 l 1
- 395 760 l 1
- 395 0 l 1
- 285 0 l 1
- 285 760 l 1
- 60 760 l 1
- 60 860 l 1
+10 860 m 1
+ 570 860 l 1
+ 570 760 l 1
+ 345 760 l 1
+ 345 0 l 1
+ 235 0 l 1
+ 235 760 l 1
+ 10 760 l 1
+ 10 860 l 1
 EndSplineSet
-Validated: 1
 EndChar

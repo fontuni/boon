@@ -1,11 +1,11 @@
 
 StartChar: t
 Encoding: 116 116 156
-Width: 420
+Width: 400
 VWidth: 0
 Flags: W
-HStem: 0 21G<140 240> 530 90<40 140 240 400> 940 20G<140 240>
-VStem: 140 100<0 530 620 960>
+HStem: 0 21G<150 250> 530 90<10 150 250 390> 840 20G<150 250>
+VStem: 150 100<0 530 620 860>
 LayerCount: 2
 Back
 SplineSet
@@ -24,18 +24,18 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-240 960 m 1
- 240 620 l 1
- 400 620 l 1
- 400 530 l 1
- 240 530 l 1
- 240 0 l 1
- 140 0 l 1
- 140 530 l 1
- 40 530 l 1
- 40 620 l 1
- 140 620 l 1
- 140 960 l 1
- 240 960 l 1
+250 860 m 5
+ 250 620 l 5
+ 390 620 l 5
+ 390 530 l 5
+ 250 530 l 5
+ 250 0 l 5
+ 150 0 l 5
+ 150 530 l 5
+ 10 530 l 5
+ 10 620 l 5
+ 150 620 l 5
+ 150 860 l 5
+ 250 860 l 5
 EndSplineSet
 EndChar
