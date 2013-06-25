@@ -1,23 +1,23 @@
 
 StartChar: z
 Encoding: 122 122 148
-Width: 570
+Width: 560
 VWidth: 0
 Flags: WO
-HStem: 0 90<160 520> 530 90<60 380>
+HStem: 0 90<150 510> 530 90<50 370>
 LayerCount: 2
 Fore
 SplineSet
-60 620 m 1
- 500 620 l 1
- 500 530 l 1
- 160 90 l 1
- 520 90 l 1
- 520 0 l 1
- 40 0 l 1
- 40 90 l 1
- 380 530 l 1
- 60 530 l 1
- 60 620 l 1
+50 620 m 1
+ 490 620 l 1
+ 490 530 l 1
+ 150 90 l 1
+ 510 90 l 1
+ 510 0 l 1
+ 30 0 l 1
+ 30 90 l 1
+ 370 530 l 1
+ 50 530 l 1
+ 50 620 l 1
 EndSplineSet
 EndChar
