@@ -1,6 +1,6 @@
 
 StartChar: u
-Encoding: 117 117 134
+Encoding: 117 117 133
 Width: 620
 VWidth: 0
 Flags: W
@@ -21,4 +21,5 @@ SplineSet
  147 -12 60 105 60 258 c 2
  60 620 l 1
 EndSplineSet
+Validated: 1
 EndChar

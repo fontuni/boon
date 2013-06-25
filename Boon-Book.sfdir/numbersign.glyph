@@ -1,6 +1,6 @@
 
 StartChar: numbersign
-Encoding: 35 35 152
+Encoding: 35 35 151
 Width: 960
 VWidth: 0
 Flags: W
@@ -44,4 +44,5 @@ SplineSet
  550 420 l 1
  410 420 l 1
 EndSplineSet
+Validated: 1
 EndChar

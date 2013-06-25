@@ -1,6 +1,6 @@
 
 StartChar: n
-Encoding: 110 110 140
+Encoding: 110 110 139
 Width: 620
 VWidth: 0
 Flags: W
@@ -19,15 +19,15 @@ SplineSet
  480 362 l 6
  480 485 462 542 380 542 c 4
  272 542 190 409 190 300 c 4
- 190 197 190 0 190 0 c 5
+ 190 0 l 5
  90 0 l 5xd4
  90 620 l 5xac
 EndSplineSet
 Fore
 SplineSet
 60 620 m 1xac
- 150 620 l 5
- 150 490 l 5xac
+ 150 620 l 1
+ 150 490 l 1xac
  166 526 230 632 360 632 c 0
  475 632 560 561 560 400 c 2
  560 0 l 1
@@ -39,4 +39,5 @@ SplineSet
  60 0 l 1xd4
  60 620 l 1xac
 EndSplineSet
+Validated: 1
 EndChar

@@ -1,6 +1,6 @@
 
 StartChar: F
-Encoding: 70 70 119
+Encoding: 70 70 118
 Width: 670
 VWidth: 0
 Flags: W
@@ -13,12 +13,13 @@ SplineSet
  610 860 l 1
  610 760 l 1
  190 760 l 1
- 190 500 l 5
- 550 500 l 5
+ 190 500 l 1
+ 550 500 l 1
  550 400 l 1
  190 400 l 1
  190 0 l 1
  80 0 l 1
  80 860 l 1
 EndSplineSet
+Validated: 1
 EndChar

@@ -1,6 +1,6 @@
 
 StartChar: c
-Encoding: 99 99 146
+Encoding: 99 99 145
 Width: 580
 VWidth: 0
 Flags: W
@@ -30,7 +30,7 @@ SplineSet
  450 430 l 1
  442 499 378 548 305 548 c 0
  198 548 140 471 140 358 c 2
- 140 262 l 6
+ 140 262 l 2
  140 149 198 72 305 72 c 0
  383 72 437 116 450 190 c 1
  560 190 l 1
@@ -39,4 +39,5 @@ SplineSet
  40 358 l 2
  40 521 142 638 305 638 c 0
 EndSplineSet
+Validated: 1
 EndChar

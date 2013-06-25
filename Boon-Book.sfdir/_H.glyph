@@ -1,6 +1,6 @@
 
 StartChar: H
-Encoding: 72 72 111
+Encoding: 72 72 110
 Width: 780
 VWidth: 0
 Flags: W
@@ -11,8 +11,8 @@ Fore
 SplineSet
 80 860 m 1
  190 860 l 1
- 190 500 l 5
- 590 500 l 5
+ 190 500 l 1
+ 590 500 l 1
  590 860 l 1
  700 860 l 1
  700 0 l 1
@@ -23,4 +23,5 @@ SplineSet
  80 0 l 1
  80 860 l 1
 EndSplineSet
+Validated: 1
 EndChar

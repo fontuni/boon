@@ -1,6 +1,6 @@
 
 StartChar: t
-Encoding: 116 116 156
+Encoding: 116 116 155
 Width: 400
 VWidth: 0
 Flags: W
@@ -24,18 +24,19 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-250 860 m 5
- 250 620 l 5
- 390 620 l 5
- 390 530 l 5
- 250 530 l 5
- 250 0 l 5
- 150 0 l 5
- 150 530 l 5
- 10 530 l 5
- 10 620 l 5
- 150 620 l 5
- 150 860 l 5
- 250 860 l 5
+250 860 m 1
+ 250 620 l 1
+ 390 620 l 1
+ 390 530 l 1
+ 250 530 l 1
+ 250 0 l 1
+ 150 0 l 1
+ 150 530 l 1
+ 10 530 l 1
+ 10 620 l 1
+ 150 620 l 1
+ 150 860 l 1
+ 250 860 l 1
 EndSplineSet
+Validated: 1
 EndChar

@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1371980040
+ModificationTime: 1372141307
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -43,19 +43,20 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
 OS2UnicodeRanges: 01000001.10000000.00000000.00000000
-Lookup: 1 0 0 "Ascent Substitute"  {"Ascent Substitute" ("alt" ) } []
-Lookup: 1 0 0 "Descent Shorten"  {"Descent Shorten" ("shorten" ) } []
-Lookup: 1 0 0 "Descent Substitute"  {"Descent Substitute" ("descless" ) } []
-Lookup: 1 0 0 "Tone Low-High"  {"Tone Low-High" ("low" ) } []
-Lookup: 2 0 0 "'ccmp' General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Contextual Substitute"  {"'ccmp' Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
-Lookup: 257 0 0 "Tone Low-Left"  {"Tone Low-Left"  } []
-Lookup: 257 0 0 "Tone High-Left"  {"Tone High-Left"  } []
-Lookup: 257 0 0 "Vowel Above-Left"  {"Vowel Above-Left"  } []
-Lookup: 257 0 0 "Vowel Below-Low"  {"Vowel Below-Low"  } []
-Lookup: 257 0 0 "Nikhahit & Tone High-Left"  {"Nikhahit & Tone High-Left"  } []
-Lookup: 257 0 0 "Mai Han-Akat & Tone High-Left"  {"Mai Han-Akat & Tone High-Left"  } []
-Lookup: 264 0 0 "Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 1 0 0 "Thai Ascent Substitute"  {"Ascent Substitute" ("alt" ) } []
+Lookup: 1 0 0 "Thai Descent Shorten"  {"Descent Shorten" ("shorten" ) } []
+Lookup: 1 0 0 "Thai Descent Substitute"  {"Descent Substitute" ("descless" ) } []
+Lookup: 1 0 0 "Thai Sara AA Substitute"  {"Sara AA Substitute"  } []
+Lookup: 1 0 0 "Thai Tone Low-High"  {"Tone Low-High" ("low" ) } []
+Lookup: 2 0 0 "'ccmp' Thai General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Contextual Substitute"  {"Thai Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 257 0 0 "Thai Tone Low-Left"  {"Tone Low-Left"  } []
+Lookup: 257 0 0 "Thai Tone High-Left"  {"Tone High-Left"  } []
+Lookup: 257 0 0 "Thai Vowel Above-Left"  {"Vowel Above-Left"  } []
+Lookup: 257 0 0 "Thai Vowel Below-Low"  {"Vowel Below-Low"  } []
+Lookup: 257 0 0 "Thai Nikhahit & Tone High-Left"  {"Nikhahit & Tone High-Left"  } []
+Lookup: 257 0 0 "Thai Mai Han-Akat & Tone High-Left"  {"Mai Han-Akat & Tone High-Left"  } []
+Lookup: 264 0 0 "'ccmp' Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
@@ -88,77 +89,77 @@ ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
   BClsList: 1
   FClsList:
  2
-  SeqLookup: 0 "Vowel Above-Left" 
-  SeqLookup: 1 "Mai Han-Akat & Tone High-Left" 
+  SeqLookup: 0 "Thai Vowel Above-Left" 
+  SeqLookup: 1 "Thai Mai Han-Akat & Tone High-Left" 
  3 0 0
   ClsList: 1 5 3
   BClsList:
   FClsList:
  2
-  SeqLookup: 1 "Vowel Above-Left" 
-  SeqLookup: 2 "Tone High-Left" 
+  SeqLookup: 1 "Thai Vowel Above-Left" 
+  SeqLookup: 2 "Thai Tone High-Left" 
  3 0 0
   ClsList: 1 3 5
   BClsList:
   FClsList:
  2
-  SeqLookup: 1 "Tone High-Left" 
-  SeqLookup: 2 "Vowel Above-Left" 
+  SeqLookup: 1 "Thai Tone High-Left" 
+  SeqLookup: 2 "Thai Vowel Above-Left" 
  3 0 0
   ClsList: 1 6 4
   BClsList:
   FClsList:
  1
-  SeqLookup: 2 "Tone Low-Left" 
+  SeqLookup: 2 "Thai Tone Low-Left" 
  1 1 0
   ClsList: 5
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 "Vowel Above-Left" 
+  SeqLookup: 0 "Thai Vowel Above-Left" 
  1 1 0
   ClsList: 4
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 "Tone Low-Left" 
+  SeqLookup: 0 "Thai Tone Low-Left" 
  1 1 0
   ClsList: 7
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 "Vowel Above-Left" 
+  SeqLookup: 0 "Thai Vowel Above-Left" 
  3 0 0
   ClsList: 1 8 3
   BClsList:
   FClsList:
  2
-  SeqLookup: 1 "Vowel Above-Left" 
-  SeqLookup: 2 "Nikhahit & Tone High-Left" 
+  SeqLookup: 1 "Thai Vowel Above-Left" 
+  SeqLookup: 2 "Thai Nikhahit & Tone High-Left" 
  3 0 0
   ClsList: 1 3 8
   BClsList:
   FClsList:
  2
-  SeqLookup: 1 "Nikhahit & Tone High-Left" 
-  SeqLookup: 2 "Vowel Above-Left" 
+  SeqLookup: 1 "Thai Nikhahit & Tone High-Left" 
+  SeqLookup: 2 "Thai Vowel Above-Left" 
  1 1 0
   ClsList: 8
   BClsList: 1
   FClsList:
  1
-  SeqLookup: 0 "Vowel Above-Left" 
+  SeqLookup: 0 "Thai Vowel Above-Left" 
  1 1 0
   ClsList: 6
   BClsList: 2
   FClsList:
  1
-  SeqLookup: 0 "Vowel Below-Low" 
+  SeqLookup: 0 "Thai Vowel Below-Low" 
   ClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
   BClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
   FClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
 EndFPST
-ChainSub2: class "'ccmp' Contextual Substitute"  8 8 8 9
+ChainSub2: class "Thai Contextual Substitute"  10 10 10 10
   Class: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
   Class: 15 uni0E0D uni0E10
   Class: 15 uni0E0E uni0E0F
@@ -166,6 +167,8 @@ ChainSub2: class "'ccmp' Contextual Substitute"  8 8 8 9
   Class: 23 uni0E38 uni0E39 uni0E3A
   Class: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
   Class: 7 uni0E4D
+  Class: 15 uni0E24 uni0E26
+  Class: 7 uni0E32
   BClass: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
   BClass: 15 uni0E0D uni0E10
   BClass: 15 uni0E0E uni0E0F
@@ -173,6 +176,8 @@ ChainSub2: class "'ccmp' Contextual Substitute"  8 8 8 9
   BClass: 23 uni0E38 uni0E39 uni0E3A
   BClass: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
   BClass: 7 uni0E4D
+  BClass: 15 uni0E24 uni0E26
+  BClass: 7 uni0E32
   FClass: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
   FClass: 15 uni0E0D uni0E10
   FClass: 15 uni0E0E uni0E0F
@@ -180,73 +185,81 @@ ChainSub2: class "'ccmp' Contextual Substitute"  8 8 8 9
   FClass: 23 uni0E38 uni0E39 uni0E3A
   FClass: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
   FClass: 7 uni0E4D
+  FClass: 15 uni0E24 uni0E26
+  FClass: 7 uni0E32
  1 1 0
   ClsList: 6
   BClsList: 4
   FClsList:
  1
-  SeqLookup: 0 "Tone Low-High" 
+  SeqLookup: 0 "Thai Tone Low-High" 
  1 0 1
   ClsList: 1
   BClsList:
   FClsList: 6
  1
-  SeqLookup: 0 "Ascent Substitute" 
+  SeqLookup: 0 "Thai Ascent Substitute" 
  1 0 1
   ClsList: 1
   BClsList:
   FClsList: 4
  1
-  SeqLookup: 0 "Ascent Substitute" 
+  SeqLookup: 0 "Thai Ascent Substitute" 
  1 0 2
   ClsList: 1
   BClsList:
   FClsList: 5 6
  1
-  SeqLookup: 0 "Ascent Substitute" 
+  SeqLookup: 0 "Thai Ascent Substitute" 
  1 0 1
   ClsList: 6
   BClsList:
   FClsList: 7
  1
-  SeqLookup: 0 "Tone Low-High" 
+  SeqLookup: 0 "Thai Tone Low-High" 
  1 1 0
   ClsList: 6
   BClsList: 7
   FClsList:
  1
-  SeqLookup: 0 "Tone Low-High" 
+  SeqLookup: 0 "Thai Tone Low-High" 
  1 0 1
   ClsList: 1
   BClsList:
   FClsList: 7
  1
-  SeqLookup: 0 "Ascent Substitute" 
+  SeqLookup: 0 "Thai Ascent Substitute" 
  1 0 1
   ClsList: 2
   BClsList:
   FClsList: 5
  1
-  SeqLookup: 0 "Descent Substitute" 
+  SeqLookup: 0 "Thai Descent Substitute" 
  1 0 1
   ClsList: 3
   BClsList:
   FClsList: 5
  1
-  SeqLookup: 0 "Descent Shorten" 
-  ClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  
-  BClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  
-  FClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  
+  SeqLookup: 0 "Thai Descent Shorten" 
+ 1 1 0
+  ClsList: 9
+  BClsList: 8
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Sara AA Substitute" 
+  ClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  "Desc_G3"  "Sara_Aa"  
+  BClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  "Desc_G3"  "Sara_Aa"  
+  FClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  "Desc_G3"  "Sara_Aa"  
 EndFPST
 LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DiQOMg4pDjUOQA4dDkkOMg4WDkkOMw4dDjgOSA4ZDiMOOQ5JDgEOFQ4xDg0ODQ45DkQOFA5JDkMOCg5JDhsOMQ4NDg0OMg4BDg4ODw40DkwOGw5KDjMOEA44DkwOOAAA" 
 LangName: 1033 "" "" "" "" "" "" "" "" "" "Sungsit Sawaiwan" "" "" "http://sungsit.com/" "GNU General Public License Version 3" "http://www.gnu.org/licenses/gpl.html" 
 Encoding: iso8859-11
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -96
+DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 90 10 5
+WinInfo: 156 12 5
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
