@@ -1,7 +1,7 @@
 
 StartChar: n
 Encoding: 110 110 139
-Width: 620
+Width: 640
 VWidth: 0
 Flags: W
 HStem: 0 21G<60 160 460 560> 542 90<257.393 412.752> 600 20G<60 150>
@@ -39,5 +39,4 @@ SplineSet
  60 0 l 1xd4
  60 620 l 1xac
 EndSplineSet
-Validated: 1
 EndChar

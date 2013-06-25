@@ -1,7 +1,7 @@
 
 StartChar: k
 Encoding: 107 107 156
-Width: 550
+Width: 540
 VWidth: 0
 Flags: W
 HStem: 0 21G<60 160 451.769 570> 600 20G<396.455 530> 940 20G<60 160>
@@ -23,5 +23,4 @@ SplineSet
  60 0 l 1
  60 960 l 1
 EndSplineSet
-Validated: 1
 EndChar

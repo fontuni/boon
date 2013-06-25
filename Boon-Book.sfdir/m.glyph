@@ -1,7 +1,7 @@
 
 StartChar: m
 Encoding: 109 109 140
-Width: 910
+Width: 930
 VWidth: 0
 Flags: W
 HStem: 0 21G<60 160 410 510 750 850> 542 90<230.695 358.672 567.469 704.396> 600 20G<60 150>
@@ -30,5 +30,4 @@ SplineSet
  150 490 l 1
  156 520 195 632 325 632 c 0xce
 EndSplineSet
-Validated: 1
 EndChar

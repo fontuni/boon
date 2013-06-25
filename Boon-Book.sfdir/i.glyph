@@ -1,7 +1,7 @@
 
 StartChar: i
 Encoding: 105 105 105
-Width: 280
+Width: 300
 VWidth: 0
 Flags: W
 HStem: 0 21G<90 190> 600 20G<90 190> 700 140<85.8748 194.125>
@@ -20,5 +20,4 @@ SplineSet
  90 0 l 1
  90 620 l 1xe8
 EndSplineSet
-Validated: 1
 EndChar
