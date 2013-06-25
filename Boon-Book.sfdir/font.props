@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1372141307
+ModificationTime: 1372165330
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -256,11 +256,19 @@ LangName: 1033 "" "" "" "" "" "" "" "" "" "Sungsit Sawaiwan" "" "" "http://sungs
 Encoding: iso8859-11
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -72
+DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 156 12 5
-BeginPrivate: 0
+WinInfo: 28 28 9
+BeginPrivate: 8
+BlueValues 31 [-18 0 620 638 860 872 960 960]
+OtherBlues 11 [-340 -340]
+StdHW 4 [90]
+StdVW 5 [100]
+StemSnapH 20 [55 65 70 85 90 100]
+StemSnapV 9 [100 110]
+BlueScale 8 0.039625
+ForceBold 5 false
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 EndSplineFont
