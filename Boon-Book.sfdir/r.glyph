@@ -1,7 +1,7 @@
 
 StartChar: r
 Encoding: 114 114 150
-Width: 400
+Width: 410
 VWidth: 0
 Flags: W
 HStem: 0 21G<60 160> 532 100<286.191 380> 600 20G<60 160>
@@ -10,7 +10,7 @@ LayerCount: 2
 Fore
 SplineSet
 380 532 m 1xd0
- 242 532 160 402 160 280 c 6
+ 242 532 160 402 160 280 c 2
  160 0 l 1
  60 0 l 1
  60 620 l 1

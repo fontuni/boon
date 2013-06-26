@@ -19,10 +19,10 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-80 960 m 1
- 180 960 l 1
- 180 0 l 1
- 80 0 l 1
- 80 960 l 1
+80 960 m 5
+ 180 960 l 5
+ 180 0 l 5
+ 80 0 l 5
+ 80 960 l 5
 EndSplineSet
 EndChar

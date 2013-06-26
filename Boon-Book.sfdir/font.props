@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1372190874
+ModificationTime: 1372283095
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -48,15 +48,15 @@ Lookup: 1 0 0 "Thai Descent Shorten"  {"Descent Shorten" ("shorten" ) } []
 Lookup: 1 0 0 "Thai Descent Substitute"  {"Descent Substitute" ("descless" ) } []
 Lookup: 1 0 0 "Thai Sara AA Substitute"  {"Sara AA Substitute"  } []
 Lookup: 1 0 0 "Thai Tone Low-High"  {"Tone Low-High" ("low" ) } []
-Lookup: 2 0 0 "'ccmp' Thai General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Thai Contextual Substitute"  {"Thai Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 2 0 0 "'ccmp' Thai General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Contextual Substitute"  {"Thai Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 257 0 0 "Thai Tone Low-Left"  {"Tone Low-Left"  } []
 Lookup: 257 0 0 "Thai Tone High-Left"  {"Tone High-Left"  } []
 Lookup: 257 0 0 "Thai Vowel Above-Left"  {"Vowel Above-Left"  } []
 Lookup: 257 0 0 "Thai Vowel Below-Low"  {"Vowel Below-Low"  } []
 Lookup: 257 0 0 "Thai Nikhahit & Tone High-Left"  {"Nikhahit & Tone High-Left"  } []
 Lookup: 257 0 0 "Thai Mai Han-Akat & Tone High-Left"  {"Mai Han-Akat & Tone High-Left"  } []
-Lookup: 264 0 0 "'ccmp' Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 264 0 0 "'ccmp' Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
@@ -253,13 +253,14 @@ ChainSub2: class "Thai Contextual Substitute"  10 10 10 10
 EndFPST
 LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DiQOMg4pDjUOQA4dDkkOMg4WDkkOMw4dDjgOSA4ZDiMOOQ5JDgEOFQ4xDg0ODQ45DkQOFA5JDkMOCg5JDhsOMQ4NDg0OMg4BDg4ODw40DkwOGw5KDjMOEA44DkwOOAAA" 
 LangName: 1033 "" "" "" "" "" "" "" "" "" "Sungsit Sawaiwan" "" "" "http://sungsit.com/" "GNU General Public License Version 3" "http://www.gnu.org/licenses/gpl.html" 
-Encoding: iso8859-11
+Encoding: UnicodeFull
+Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -72
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 80 10 6
+WinInfo: 0 19 8
 BeginPrivate: 8
 BlueValues 31 [-18 0 620 638 860 872 960 960]
 OtherBlues 11 [-340 -340]
