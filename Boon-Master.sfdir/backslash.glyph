@@ -1,0 +1,26 @@
+
+StartChar: backslash
+Encoding: 92 92 161
+Width: 425
+VWidth: 0
+Flags: W
+HStem: -340 21G<353.538 465> 940 20G<-60 51.4615>
+LayerCount: 3
+Fore
+SplineSet
+45 960 m 1
+ 465 -340 l 1
+ 360 -340 l 1
+ -60 960 l 1
+ 45 960 l 1
+EndSplineSet
+Validated: 1
+Layer: 2
+SplineSet
+45 960 m 1
+ 465 -340 l 1
+ 360 -340 l 1
+ -60 960 l 1
+ 45 960 l 1
+EndSplineSet
+EndChar

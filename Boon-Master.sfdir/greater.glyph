@@ -1,0 +1,31 @@
+
+StartChar: greater
+Encoding: 62 62 185
+Width: 560
+VWidth: 0
+Flags: W
+LayerCount: 3
+Fore
+SplineSet
+500 285 m 1
+ 40 60 l 1
+ 40 160 l 1
+ 390 325 l 1
+ 40 490 l 1
+ 40 590 l 1
+ 500 365 l 1
+ 500 285 l 1
+EndSplineSet
+Validated: 1
+Layer: 2
+SplineSet
+500 285 m 1
+ 40 60 l 1
+ 40 160 l 1
+ 390 325 l 1
+ 40 490 l 1
+ 40 590 l 1
+ 500 365 l 1
+ 500 285 l 1
+EndSplineSet
+EndChar

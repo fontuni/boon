@@ -1,0 +1,276 @@
+SplineFontDB: 3.0
+FontName: Boon-Master
+FullName: Boon Master
+FamilyName: Boon
+Weight: Book
+Copyright: Copyright (C) 2013 Sungsit Sawaiwan <http://sungsit.com/> \n\nThis font is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. \n\nThis font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. \n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>. \n\nAs a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version.
+UComments: "Created with FontForge 2.0 <http://fontforge.org/>" 
+Version: 0.1
+ItalicAngle: 0
+UnderlinePosition: -60
+UnderlineWidth: 20
+Ascent: 860
+Descent: 340
+woffMajor: 0
+woffMinor: 1
+LayerCount: 3
+Layer: 0 0 "Ref"  1
+Layer: 1 0 "Fore"  0
+Layer: 2 0 "Book"  1
+FSType: 8
+OS2Version: 0
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1369324892
+ModificationTime: 1372340043
+PfmFamily: 33
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 108
+VLineGap: 0
+Panose: 2 0 5 3 0 0 0 0 0 0
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 108
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+OS2Vendor: 'PfEd'
+OS2UnicodeRanges: 01000001.10000000.00000000.00000000
+Lookup: 1 0 0 "Thai Ascent Substitute"  {"Ascent Substitute" ("alt" ) } []
+Lookup: 1 0 0 "Thai Descent Shorten"  {"Descent Shorten" ("shorten" ) } []
+Lookup: 1 0 0 "Thai Descent Substitute"  {"Descent Substitute" ("descless" ) } []
+Lookup: 1 0 0 "Thai Sara AA Substitute"  {"Sara AA Substitute"  } []
+Lookup: 1 0 0 "Thai Tone Low-High"  {"Tone Low-High" ("low" ) } []
+Lookup: 2 0 0 "'ccmp' Thai General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Thai Contextual Substitute"  {"Thai Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 257 0 0 "Thai Tone Low-Left"  {"Tone Low-Left"  } []
+Lookup: 257 0 0 "Thai Tone High-Left"  {"Tone High-Left"  } []
+Lookup: 257 0 0 "Thai Vowel Above-Left"  {"Vowel Above-Left"  } []
+Lookup: 257 0 0 "Thai Vowel Below-Low"  {"Vowel Below-Low"  } []
+Lookup: 257 0 0 "Thai Nikhahit & Tone High-Left"  {"Nikhahit & Tone High-Left"  } []
+Lookup: 257 0 0 "Thai Mai Han-Akat & Tone High-Left"  {"Mai Han-Akat & Tone High-Left"  } []
+Lookup: 264 0 0 "'ccmp' Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
+MarkAttachClasses: 1
+DEI: 91125
+ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
+  Class: 23 uni0E1B uni0E1D uni0E1F
+  Class: 31 uni0E0F.shorten uni0E0E.shorten
+  Class: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
+  Class: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
+  Class: 39 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47
+  Class: 23 uni0E38 uni0E39 uni0E3A
+  Class: 7 uni0E31
+  Class: 7 uni0E4D
+  BClass: 23 uni0E1B uni0E1D uni0E1F
+  BClass: 31 uni0E0F.shorten uni0E0E.shorten
+  BClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
+  BClass: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
+  BClass: 39 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47
+  BClass: 23 uni0E38 uni0E39 uni0E3A
+  BClass: 7 uni0E31
+  BClass: 7 uni0E4D
+  FClass: 23 uni0E1B uni0E1D uni0E1F
+  FClass: 31 uni0E0F.shorten uni0E0E.shorten
+  FClass: 39 uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C
+  FClass: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
+  FClass: 39 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47
+  FClass: 23 uni0E38 uni0E39 uni0E3A
+  FClass: 7 uni0E31
+  FClass: 7 uni0E4D
+ 2 1 0
+  ClsList: 7 3
+  BClsList: 1
+  FClsList:
+ 2
+  SeqLookup: 0 "Thai Vowel Above-Left" 
+  SeqLookup: 1 "Thai Mai Han-Akat & Tone High-Left" 
+ 3 0 0
+  ClsList: 1 5 3
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 1 "Thai Vowel Above-Left" 
+  SeqLookup: 2 "Thai Tone High-Left" 
+ 3 0 0
+  ClsList: 1 3 5
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 1 "Thai Tone High-Left" 
+  SeqLookup: 2 "Thai Vowel Above-Left" 
+ 3 0 0
+  ClsList: 1 6 4
+  BClsList:
+  FClsList:
+ 1
+  SeqLookup: 2 "Thai Tone Low-Left" 
+ 1 1 0
+  ClsList: 5
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Vowel Above-Left" 
+ 1 1 0
+  ClsList: 4
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Tone Low-Left" 
+ 1 1 0
+  ClsList: 7
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Vowel Above-Left" 
+ 3 0 0
+  ClsList: 1 8 3
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 1 "Thai Vowel Above-Left" 
+  SeqLookup: 2 "Thai Nikhahit & Tone High-Left" 
+ 3 0 0
+  ClsList: 1 3 8
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 1 "Thai Nikhahit & Tone High-Left" 
+  SeqLookup: 2 "Thai Vowel Above-Left" 
+ 1 1 0
+  ClsList: 8
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Vowel Above-Left" 
+ 1 1 0
+  ClsList: 6
+  BClsList: 2
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Vowel Below-Low" 
+  ClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
+  BClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
+  FClassNames: "All_Others"  "Asc"  "Desc"  "Tone_High"  "Tone_Low"  "Vowel_Above"  "Vowel_Below"  "Mai_Hanakat"  "Nikhahit"  
+EndFPST
+ChainSub2: class "Thai Contextual Substitute"  10 10 10 10
+  Class: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
+  Class: 15 uni0E0D uni0E10
+  Class: 15 uni0E0E uni0E0F
+  Class: 47 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47
+  Class: 23 uni0E38 uni0E39 uni0E3A
+  Class: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
+  Class: 7 uni0E4D
+  Class: 15 uni0E24 uni0E26
+  Class: 7 uni0E32
+  BClass: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
+  BClass: 15 uni0E0D uni0E10
+  BClass: 15 uni0E0E uni0E0F
+  BClass: 47 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47
+  BClass: 23 uni0E38 uni0E39 uni0E3A
+  BClass: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
+  BClass: 7 uni0E4D
+  BClass: 15 uni0E24 uni0E26
+  BClass: 7 uni0E32
+  FClass: 47 uni0E0A uni0E0B uni0E28 uni0E2A uni0E2C uni0E2E
+  FClass: 15 uni0E0D uni0E10
+  FClass: 15 uni0E0E uni0E0F
+  FClass: 47 uni0E31 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47
+  FClass: 23 uni0E38 uni0E39 uni0E3A
+  FClass: 59 uni0E48.low uni0E49.low uni0E4A.low uni0E4B.low uni0E4C.low
+  FClass: 7 uni0E4D
+  FClass: 15 uni0E24 uni0E26
+  FClass: 7 uni0E32
+ 1 1 0
+  ClsList: 6
+  BClsList: 4
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Tone Low-High" 
+ 1 0 1
+  ClsList: 1
+  BClsList:
+  FClsList: 6
+ 1
+  SeqLookup: 0 "Thai Ascent Substitute" 
+ 1 0 1
+  ClsList: 1
+  BClsList:
+  FClsList: 4
+ 1
+  SeqLookup: 0 "Thai Ascent Substitute" 
+ 1 0 2
+  ClsList: 1
+  BClsList:
+  FClsList: 5 6
+ 1
+  SeqLookup: 0 "Thai Ascent Substitute" 
+ 1 0 1
+  ClsList: 6
+  BClsList:
+  FClsList: 7
+ 1
+  SeqLookup: 0 "Thai Tone Low-High" 
+ 1 1 0
+  ClsList: 6
+  BClsList: 7
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Tone Low-High" 
+ 1 0 1
+  ClsList: 1
+  BClsList:
+  FClsList: 7
+ 1
+  SeqLookup: 0 "Thai Ascent Substitute" 
+ 1 0 1
+  ClsList: 2
+  BClsList:
+  FClsList: 5
+ 1
+  SeqLookup: 0 "Thai Descent Substitute" 
+ 1 0 1
+  ClsList: 3
+  BClsList:
+  FClsList: 5
+ 1
+  SeqLookup: 0 "Thai Descent Shorten" 
+ 1 1 0
+  ClsList: 9
+  BClsList: 8
+  FClsList:
+ 1
+  SeqLookup: 0 "Thai Sara AA Substitute" 
+  ClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  "Desc_G3"  "Sara_Aa"  
+  BClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  "Desc_G3"  "Sara_Aa"  
+  FClassNames: "All_Others"  "Asc"  "Desc_G1"  "Desc_G2"  "Vowel_Above"  "Vowel_Below"  "Tone_Low"  "Nikhahit"  "Desc_G3"  "Sara_Aa"  
+EndFPST
+LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DiQOMg4pDjUOQA4dDkkOMg4WDkkOMw4dDjgOSA4ZDiMOOQ5JDgEOFQ4xDg0ODQ45DkQOFA5JDkMOCg5JDhsOMQ4NDg0OMg4BDg4ODw40DkwOGw5KDjMOEA44DkwOOAAA" 
+LangName: 1033 "" "" "" "" "" "" "" "" "" "Sungsit Sawaiwan" "" "" "http://sungsit.com/" "GNU General Public License Version 3" "http://www.gnu.org/licenses/gpl.html" 
+Encoding: UnicodeBmp
+Compacted: 1
+UnicodeInterp: none
+NameList: Adobe Glyph List
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 76 19 8
+BeginPrivate: 8
+BlueValues 31 [-18 0 620 638 860 878 960 960]
+OtherBlues 11 [-340 -340]
+StdHW 4 [90]
+StdVW 5 [100]
+StemSnapH 23 [55 65 70 80 85 90 100]
+StemSnapV 9 [100 110]
+BlueScale 8 0.039625
+ForceBold 5 false
+EndPrivate
+TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
+EndSplineFont

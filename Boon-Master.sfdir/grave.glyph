@@ -1,0 +1,27 @@
+
+StartChar: grave
+Encoding: 96 96 192
+Width: 240
+VWidth: 0
+Flags: W
+HStem: 780 180
+VStem: 0 220
+LayerCount: 3
+Fore
+SplineSet
+0 960 m 1
+ 100 960 l 1
+ 220 780 l 1
+ 140 780 l 1
+ 0 960 l 1
+EndSplineSet
+Validated: 1
+Layer: 2
+SplineSet
+0 960 m 1
+ 100 960 l 1
+ 220 780 l 1
+ 140 780 l 1
+ 0 960 l 1
+EndSplineSet
+EndChar

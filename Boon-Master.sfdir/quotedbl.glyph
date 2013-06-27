@@ -1,0 +1,17 @@
+
+StartChar: quotedbl
+Encoding: 34 34 164
+Width: 400
+VWidth: 0
+Flags: W
+HStem: 680 280<70 150 230 310>
+VStem: 60 100<699.2 960> 220 100<699.2 960>
+LayerCount: 3
+Fore
+Refer: 168 39 N 1 0 0 1 160 0 2
+Refer: 168 39 N 1 0 0 1 0 0 2
+Validated: 1
+Layer: 2
+Refer: 168 39 N 1 0 0 1 160 0 2
+Refer: 168 39 N 1 0 0 1 0 0 2
+EndChar

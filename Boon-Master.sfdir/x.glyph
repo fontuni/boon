@@ -1,0 +1,42 @@
+
+StartChar: x
+Encoding: 120 120 104
+Width: 550
+VWidth: 0
+Flags: W
+HStem: 0 21G<0 126.852 423.148 550> 600 20G<30 152.273 397.727 520>
+LayerCount: 3
+Fore
+SplineSet
+210 335 m 1
+ 30 620 l 1
+ 140 620 l 1
+ 275 400 l 1
+ 410 620 l 1
+ 520 620 l 1
+ 340 335 l 1
+ 550 0 l 1
+ 435 0 l 1
+ 275 270 l 1
+ 115 0 l 1
+ 0 0 l 1
+ 210 335 l 1
+EndSplineSet
+Validated: 1
+Layer: 2
+SplineSet
+210 335 m 1
+ 30 620 l 1
+ 140 620 l 1
+ 275 400 l 1
+ 410 620 l 1
+ 520 620 l 1
+ 340 335 l 1
+ 550 0 l 1
+ 435 0 l 1
+ 275 270 l 1
+ 115 0 l 1
+ 0 0 l 1
+ 210 335 l 1
+EndSplineSet
+EndChar
