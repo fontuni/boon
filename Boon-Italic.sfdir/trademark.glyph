@@ -1,0 +1,34 @@
+
+StartChar: trademark
+Encoding: 8482 8482 218
+Width: 648
+Flags: W
+HStem: 820 40<237 308 354 433>
+LayerCount: 2
+Fore
+SplineSet
+237 860 m 1
+ 442 860 l 1
+ 433 820 l 1
+ 354 820 l 1
+ 295 540 l 1
+ 248 540 l 1
+ 308 820 l 1
+ 229 820 l 1
+ 237 860 l 1
+479 860 m 1
+ 540 860 l 1
+ 563 600 l 1
+ 698 860 l 1
+ 758 860 l 1
+ 690 540 l 1
+ 644 540 l 1
+ 695 780 l 1
+ 569 540 l 1
+ 532 540 l 1
+ 509 780 l 1
+ 458 540 l 1
+ 411 540 l 1
+ 479 860 l 1
+EndSplineSet
+EndChar

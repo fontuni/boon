@@ -1,0 +1,26 @@
+
+StartChar: M
+Encoding: 77 77 122
+Width: 862
+VWidth: 0
+Flags: W
+HStem: 0 21G<55 161.261 382.652 478.87 696 793.256> 840 20G<232.767 379.282 831.183 972>
+LayerCount: 2
+Fore
+SplineSet
+385 0 m 1
+ 304 690 l 1
+ 157 0 l 1
+ 55 0 l 1
+ 237 860 l 1
+ 377 860 l 1
+ 458 150 l 1
+ 842 860 l 1
+ 972 860 l 1
+ 789 0 l 1
+ 696 0 l 1
+ 843 690 l 1
+ 468 0 l 1
+ 385 0 l 1
+EndSplineSet
+EndChar

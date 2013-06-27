@@ -1,0 +1,14 @@
+
+StartChar: uni0E33
+Encoding: 3635 3635 24
+Width: 500
+VWidth: 0
+Flags: W
+HStem: 0 21<307 404.229> 527 85<248.248 380.033> 670 65<-49.3397 40.9887> 855 65<-34.6254 55.8129>
+VStem: -113 232 110 98<434 484.393>
+LayerCount: 2
+Fore
+Refer: 25 3634 N 1 0 0 1 0 0 2
+Refer: 23 3661 N 1 0 0 1 0 0 2
+MultipleSubs2: "Sara Am Decomposite" uni0E4D uni0E32
+EndChar

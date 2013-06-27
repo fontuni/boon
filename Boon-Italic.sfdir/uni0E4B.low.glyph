@@ -1,0 +1,28 @@
+
+StartChar: uni0E4B.low
+Encoding: 63240 63240 16
+Width: 5
+VWidth: 0
+Flags: W
+HStem: 780 60<-76 -10 86 153>
+VStem: -89 255
+LayerCount: 2
+Fore
+SplineSet
+22 930 m 1
+ 106 930 l 1
+ 86 840 l 1
+ 166 840 l 1
+ 153 780 l 1
+ 74 780 l 1
+ 55 690 l 1
+ -29 690 l 1
+ -10 780 l 1
+ -89 780 l 1
+ -76 840 l 1
+ 3 840 l 1
+ 22 930 l 1
+EndSplineSet
+Position2: "Tone Low-Left" dx=-210 dy=0 dh=0 dv=0
+Substitution2: "Tone Low-High" uni0E4B
+EndChar

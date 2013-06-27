@@ -1,0 +1,30 @@
+
+StartChar: uni0E4B
+Encoding: 3659 3659 77
+Width: 4
+VWidth: 0
+Flags: W
+HStem: 1050 50<-21 43 128 192>
+VStem: -32 234
+LayerCount: 2
+Fore
+SplineSet
+70 1180 m 1
+ 145 1180 l 1
+ 128 1100 l 1
+ 202 1100 l 1
+ 192 1050 l 1
+ 117 1050 l 1
+ 96 950 l 1
+ 30 990 l 1
+ 43 1050 l 1
+ -32 1050 l 1
+ -21 1100 l 1
+ 53 1100 l 1
+ 70 1180 l 1
+EndSplineSet
+Position2: "Nikhahit & Tone High-Left" dx=-180 dy=0 dh=0 dv=0
+Position2: "Mai Han-Akat & Tone High-Left" dx=-220 dy=0 dh=0 dv=0
+Position2: "Tone High-Left" dx=-130 dy=0 dh=0 dv=0
+MultipleSubs2: "Tone High-Low" uni0E4B.low
+EndChar

@@ -1,0 +1,27 @@
+
+StartChar: uni0E4C.low
+Encoding: 63241 63241 17
+Width: 4
+VWidth: 0
+Flags: W
+HStem: 690 45<-76.1446 -16.2509>
+VStem: 64 83<923.215 970>
+LayerCount: 2
+Fore
+SplineSet
+64 970 m 1
+ 147 970 l 1
+ 126 914 89 862 20 827 c 1
+ 31 812 35 792 30 770 c 0
+ 21 726 -20 690 -61 690 c 0
+ -102 690 -133 721 -123 770 c 0
+ -98 886 33 858 64 970 c 1
+-36 805 m 0
+ -54 805 -72 789 -76 770 c 0
+ -80 751 -69 735 -51 735 c 0
+ -33 735 -15 751 -11 770 c 0
+ -7 789 -18 805 -36 805 c 0
+EndSplineSet
+Position2: "Tone Low-Left" dx=-120 dy=0 dh=0 dv=0
+Substitution2: "Tone Low-High" uni0E4C
+EndChar

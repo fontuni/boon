@@ -1,12 +1,12 @@
 SplineFontDB: 3.0
-FontName: Boon-Book
-FullName: Boon Book
+FontName: Boon-Italic
+FullName: Boon Italic
 FamilyName: Boon
 Weight: Book
 Copyright: Copyright (C) 2013 Sungsit Sawaiwan <http://sungsit.com/> \n\nThis font is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. \n\nThis font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. \n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>. \n\nAs a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version.
 UComments: "Created with FontForge 2.0 <http://fontforge.org/>" 
 Version: 0.1
-ItalicAngle: 0
+ItalicAngle: -12
 UnderlinePosition: -60
 UnderlineWidth: 20
 Ascent: 860
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1372327456
+ModificationTime: 1372327487
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -260,14 +260,14 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 19 19 8
+WinInfo: 0 19 8
 BeginPrivate: 8
 BlueValues 31 [-18 0 620 638 860 878 960 960]
 OtherBlues 11 [-340 -340]
 StdHW 4 [90]
-StdVW 5 [100]
+StdVW 5 [106]
 StemSnapH 23 [55 65 70 80 85 90 100]
-StemSnapV 9 [100 110]
+StemSnapV 43 [71 80 84 89 93 98 102 106 121 148 214 291]
 BlueScale 8 0.039625
 ForceBold 5 false
 EndPrivate

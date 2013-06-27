@@ -1,0 +1,20 @@
+
+StartChar: quotesingle
+Encoding: 39 39 168
+Width: 220
+VWidth: 0
+Flags: W
+HStem: 680 280<259 283>
+VStem: 208 75<680 708.8>
+LayerCount: 2
+Fore
+SplineSet
+259 960 m 1
+ 352 960 l 1
+ 318 800 l 1
+ 283 680 l 1
+ 208 680 l 1
+ 225 800 l 1
+ 259 960 l 1
+EndSplineSet
+EndChar

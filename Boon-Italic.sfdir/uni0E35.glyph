@@ -1,0 +1,25 @@
+
+StartChar: uni0E35
+Encoding: 3637 3637 12
+Width: 8
+VWidth: 0
+Flags: W
+HStem: 740 30<-221 -146.057> 820 70<-199.484 -59.9924>
+LayerCount: 2
+Fore
+SplineSet
+30 920 m 1
+ 107 890 l 1
+ 54 640 l 1
+ -89 721 -147 740 -334 740 c 1
+ -292 824 -230 890 -130 890 c 0
+ -30 890 1 820 25 745 c 1
+ 15 792 10 827 21 880 c 2
+ 30 920 l 1
+-136 820 m 0
+ -167 820 -203 800 -221 770 c 1
+ -154 770 -65 742 -2 705 c 1
+ -35 798 -89 820 -136 820 c 0
+EndSplineSet
+Position2: "Vowel Above-Left" dx=-140 dy=0 dh=0 dv=0
+EndChar

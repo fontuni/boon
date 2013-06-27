@@ -1,0 +1,14 @@
+
+StartChar: uni0E0D
+Encoding: 3597 3597 75
+Width: 850
+VWidth: 0
+Flags: W
+HStem: -320 70<502.057 624.624> -125 55<446.939 509.647> -12 85<524.496 633.735> -6 70<179.183 247.951> 144 70<230 252.944> 527 85<300.768 453.778>
+VStem: 705 84<-152.923 -90>
+LayerCount: 2
+Fore
+Refer: 45 3633 N 1 0 0 1 587 -1000 2
+Refer: 19 63247 N 1 0 0 1 0 0 2
+Substitution2: "Descent Substitute" uni0E0D.descless
+EndChar
