@@ -9,12 +9,12 @@ VStem: 60 100<699.2 960>
 LayerCount: 2
 Fore
 SplineSet
-60 960 m 5
- 160 960 l 5
+60 960 m 1
+ 160 960 l 1
  160 800 l 1
  150 680 l 1
  70 680 l 1
  60 800 l 1
- 60 960 l 5
+ 60 960 l 1
 EndSplineSet
 EndChar

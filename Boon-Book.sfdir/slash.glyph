@@ -8,10 +8,10 @@ HStem: -340 21G<-60 51.4615> 940 20G<353.538 465>
 LayerCount: 2
 Fore
 SplineSet
-360 960 m 5
- 465 960 l 5
- 45 -340 l 5
- -60 -340 l 5
- 360 960 l 5
+360 960 m 1
+ 465 960 l 1
+ 45 -340 l 1
+ -60 -340 l 1
+ 360 960 l 1
 EndSplineSet
 EndChar

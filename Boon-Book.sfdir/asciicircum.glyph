@@ -8,13 +8,13 @@ HStem: 840 20G<211.304 308.696>
 LayerCount: 2
 Fore
 SplineSet
-220 860 m 5
- 300 860 l 5
+220 860 m 1
+ 300 860 l 1
  500 400 l 1
  400 400 l 1
  260 730 l 1
  120 400 l 1
  20 400 l 1
- 220 860 l 5
+ 220 860 l 1
 EndSplineSet
 EndChar

@@ -11,8 +11,8 @@ Fore
 SplineSet
 80 960 m 1
  180 960 l 1
- 180 -340 l 5
- 80 -340 l 5
+ 180 -340 l 1
+ 80 -340 l 1
  80 960 l 1
 EndSplineSet
 EndChar
