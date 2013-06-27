@@ -9,7 +9,7 @@ LayerCount: 2
 Fore
 SplineSet
 360 860 m 1xf0
- 403 860 490 860 490 860 c 1xf0
+ 490 860 l 1xf0
  490 0 l 1
  375 0 l 1
  375 683 l 1xe8
