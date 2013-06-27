@@ -4,23 +4,22 @@ Encoding: 122 122 148
 Width: 560
 VWidth: 0
 Flags: W
-HStem: 0 90<150 510> 530 90<50 370>
+HStem: 0 120<170 530> 500 120<30 350>
 LayerCount: 4
 Fore
 SplineSet
-50 620 m 1
- 490 620 l 1
- 490 530 l 1
- 150 90 l 1
- 510 90 l 1
- 510 0 l 1
- 30 0 l 1
- 30 90 l 1
- 370 530 l 1
- 50 530 l 1
- 50 620 l 1
+30 620 m 1
+ 510 620 l 1
+ 510 500 l 1
+ 170 120 l 1
+ 530 120 l 1
+ 530 0 l 1
+ 10 0 l 1
+ 10 120 l 1
+ 350 500 l 1
+ 30 500 l 1
+ 30 620 l 1
 EndSplineSet
-Validated: 1
 Layer: 2
 SplineSet
 50 620 m 1

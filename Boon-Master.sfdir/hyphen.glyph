@@ -4,15 +4,15 @@ Encoding: 45 45 157
 Width: 640
 VWidth: 0
 Flags: W
-HStem: 270 110<60 560>
+HStem: 270 110<40 580>
 LayerCount: 4
 Fore
 SplineSet
-60 380 m 1
- 560 380 l 1
- 560 270 l 1
- 60 270 l 1
- 60 380 l 1
+40 380 m 1
+ 580 380 l 1
+ 580 270 l 1
+ 40 270 l 1
+ 40 380 l 1
 EndSplineSet
 Layer: 2
 SplineSet
@@ -24,10 +24,10 @@ SplineSet
 EndSplineSet
 Layer: 3
 SplineSet
-60 380 m 1
- 560 380 l 1
- 560 270 l 1
- 60 270 l 1
- 60 380 l 1
+40 380 m 1
+ 580 380 l 5
+ 580 270 l 5
+ 40 270 l 1
+ 40 380 l 1
 EndSplineSet
 EndChar
