@@ -5,7 +5,7 @@ Width: 860
 VWidth: 0
 Flags: W
 HStem: -90 90<30 820>
-LayerCount: 3
+LayerCount: 4
 Fore
 SplineSet
 30 0 m 1
@@ -16,6 +16,14 @@ SplineSet
 EndSplineSet
 Validated: 1
 Layer: 2
+SplineSet
+30 0 m 1
+ 820 0 l 1
+ 820 -90 l 1
+ 30 -90 l 1
+ 30 0 l 1
+EndSplineSet
+Layer: 3
 SplineSet
 30 0 m 1
  820 0 l 1

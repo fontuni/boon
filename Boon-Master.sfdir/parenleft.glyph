@@ -6,7 +6,7 @@ VWidth: 0
 Flags: W
 HStem: -340 60<382.878 450> 990 60<382.878 450>
 VStem: 60 100<31.4679 678.532>
-LayerCount: 3
+LayerCount: 4
 Fore
 SplineSet
 450 -340 m 1
@@ -21,6 +21,18 @@ SplineSet
 EndSplineSet
 Validated: 1
 Layer: 2
+SplineSet
+450 -340 m 1
+ 147 -300 60 -33 60 270 c 2
+ 60 440 l 2
+ 60 743 147 1010 450 1050 c 1
+ 450 990 l 1
+ 226 950 160 684 160 440 c 2
+ 160 270 l 2
+ 160 26 226 -240 450 -280 c 1
+ 450 -340 l 1
+EndSplineSet
+Layer: 3
 SplineSet
 450 -340 m 1
  147 -300 60 -33 60 270 c 2

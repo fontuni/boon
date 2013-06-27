@@ -6,10 +6,12 @@ VWidth: 0
 Flags: W
 HStem: 650 310
 VStem: 130 90<753.909 807>
-LayerCount: 3
+LayerCount: 4
 Fore
 Refer: 172 44 N 1 0 0 1 0 800 2
 Validated: 1
 Layer: 2
+Refer: 172 44 N 1 0 0 1 0 800 2
+Layer: 3
 Refer: 172 44 N 1 0 0 1 0 800 2
 EndChar

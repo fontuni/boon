@@ -4,7 +4,7 @@ Encoding: 8250 8250 216
 Width: 360
 Flags: W
 VStem: 40 260
-LayerCount: 3
+LayerCount: 4
 Fore
 SplineSet
 200 320 m 1
@@ -18,6 +18,17 @@ SplineSet
 EndSplineSet
 Validated: 1
 Layer: 2
+SplineSet
+200 320 m 1
+ 40 550 l 1
+ 120 550 l 1
+ 300 325 l 1
+ 300 315 l 1
+ 120 90 l 1
+ 40 90 l 1
+ 200 320 l 1
+EndSplineSet
+Layer: 3
 SplineSet
 200 320 m 1
  40 550 l 1
