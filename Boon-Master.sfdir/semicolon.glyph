@@ -20,6 +20,6 @@ SplineSet
 EndSplineSet
 Refer: 172 44 S 1 0 0 1 20 0 2
 Layer: 3
-Refer: 103 46 S 1 0 0 1 30 410 2
+Refer: 103 46 N 1 0 0 1 30 410 2
 Refer: 172 44 N 1 0 0 1 10 0 2
 EndChar

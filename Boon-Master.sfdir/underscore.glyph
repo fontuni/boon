@@ -25,8 +25,8 @@ EndSplineSet
 Layer: 3
 SplineSet
 10 0 m 1
- 840 0 l 5
- 840 -110 l 5
+ 840 0 l 1
+ 840 -110 l 1
  10 -110 l 1
  10 0 l 1
 EndSplineSet

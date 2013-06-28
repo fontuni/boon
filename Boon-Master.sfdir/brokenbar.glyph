@@ -35,14 +35,14 @@ EndSplineSet
 Layer: 3
 SplineSet
 50 -340 m 1
- 50 240 l 1
- 210 240 l 1
+ 50 230 l 1
+ 210 230 l 1
  210 -340 l 1
  50 -340 l 1
-210 380 m 1
- 50 380 l 1
+210 390 m 1
+ 50 390 l 1
  50 960 l 1
  210 960 l 1
- 210 380 l 1
+ 210 390 l 1
 EndSplineSet
 EndChar

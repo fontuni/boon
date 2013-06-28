@@ -25,8 +25,8 @@ EndSplineSet
 Layer: 3
 SplineSet
 330 960 m 1
- 495 960 l 5
- 75 -340 l 5
+ 495 960 l 1
+ 75 -340 l 1
  -90 -340 l 1
  330 960 l 1
 EndSplineSet
