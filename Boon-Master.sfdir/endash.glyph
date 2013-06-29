@@ -8,11 +8,11 @@ HStem: 270 110<40 580>
 LayerCount: 4
 Fore
 SplineSet
-40 380 m 1
- 580 380 l 1
- 580 270 l 1
- 40 270 l 1
- 40 380 l 1
+40 380 m 5
+ 580 380 l 5
+ 580 270 l 5
+ 40 270 l 5
+ 40 380 l 5
 EndSplineSet
 Layer: 2
 SplineSet
@@ -24,10 +24,10 @@ SplineSet
 EndSplineSet
 Layer: 3
 SplineSet
-40 380 m 1
- 580 380 l 1
- 580 270 l 1
- 40 270 l 1
- 40 380 l 1
+40 380 m 5
+ 580 380 l 5
+ 580 270 l 5
+ 40 270 l 5
+ 40 380 l 5
 EndSplineSet
 EndChar
