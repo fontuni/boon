@@ -3,8 +3,8 @@ StartChar: guillemotleft
 Encoding: 171 171 207
 Width: 560
 Flags: W
-VStem: 40 290 240 290
-LayerCount: 4
+VStem: 60 260 260 260
+LayerCount: 5
 Fore
 Refer: 215 8249 N 1 0 0 1 200 0 2
 Refer: 215 8249 N 1 0 0 1 0 0 2

@@ -1,8 +1,8 @@
 SplineFontDB: 3.0
-FontName: Boon-Bold
-FullName: Boon Bold
+FontName: Boon-Book
+FullName: Boon Book
 FamilyName: Boon
-Weight: Bold
+Weight: Book
 Copyright: Copyright (C) 2013 Sungsit Sawaiwan <http://sungsit.com/> \n\nThis font is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. \n\nThis font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. \n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>. \n\nAs a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version.
 UComments: "Created with FontForge 2.0 <http://fontforge.org/>" 
 Version: 0.2
@@ -13,19 +13,20 @@ Ascent: 860
 Descent: 340
 woffMajor: 0
 woffMinor: 2
-LayerCount: 4
+LayerCount: 5
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
 Layer: 2 0 "Book"  1
 Layer: 3 0 "Bold"  1
+Layer: 4 0 "light"  1
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1372511757
+ModificationTime: 1372540985
 PfmFamily: 33
-TTFWeight: 700
+TTFWeight: 400
 TTFWidth: 5
 LineGap: 108
 VLineGap: 0
@@ -52,6 +53,7 @@ Lookup: 1 0 0 "Thai Sara AA Substitute"  {"Sara AA Substitute"  } []
 Lookup: 1 0 0 "Thai Tone Low-High"  {"Tone Low-High" ("low" ) } []
 Lookup: 2 0 0 "'ccmp' Thai General Composite"  {"Sara Am Decomposite"  "Tone High-Low"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Thai Contextual Substitute"  {"Thai Contextual Substitute"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning"  {"'kern' Latin Horizontal Kerning" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 257 0 0 "Thai Tone Low-Left"  {"Tone Low-Left"  } []
 Lookup: 257 0 0 "Thai Tone High-Left"  {"Tone High-Left"  } []
 Lookup: 257 0 0 "Thai Vowel Above-Left"  {"Vowel Above-Left"  } []
@@ -61,6 +63,25 @@ Lookup: 257 0 0 "Thai Mai Han-Akat & Tone High-Left"  {"Mai Han-Akat & Tone High
 Lookup: 264 0 0 "'ccmp' Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 11 8 "'kern' Latin Horizontal Kerning" 
+ 1 A
+ 1 T
+ 1 V
+ 1 W
+ 1 Y
+ 5 v w y
+ 29 a b c e g m n o p q r s u x z
+ 1 F
+ 1 P
+ 3 K k
+ 1 A
+ 1 T
+ 1 V
+ 1 W
+ 1 Y
+ 5 v w y
+ 29 a c d e g m n o p q r s u x z
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -120 {} -120 {} -80 {} -120 {} -80 {} 0 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} -100 {} -100 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} -40 {} -100 {} 0 {} -80 {} -100 {} 0 {} 0 {} -40 {} 0 {} -30 {} 0 {} 0 {} -100 {} -80 {} -40 {} -120 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {}
 ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
   Class: 23 uni0E1B uni0E1D uni0E1F
   Class: 31 uni0E0F.shorten uni0E0E.shorten
@@ -262,16 +283,8 @@ NameList: Adobe Glyph List
 DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 26 10
-BeginPrivate: 8
-BlueValues 31 [-18 0 620 638 860 878 960 960]
-OtherBlues 11 [-340 -340]
-StdHW 4 [90]
-StdVW 5 [100]
-StemSnapH 35 [55 65 70 80 85 90 100 110 120 125]
-StemSnapV 13 [100 110 170]
-BlueScale 8 0.039625
-ForceBold 5 false
+WinInfo: 0 23 11
+BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 EndSplineFont

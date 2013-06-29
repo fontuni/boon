@@ -4,17 +4,23 @@ Encoding: 8213 8213 220
 Width: 930
 VWidth: 0
 Flags: W
-HStem: 270 110<40 870>
-LayerCount: 4
+HStem: 280 90<60 850>
+LayerCount: 5
 Fore
-Refer: 219 8212 N 1 0 0 1 0 0 2
+SplineSet
+60 370 m 1
+ 850 370 l 1
+ 850 280 l 1
+ 60 280 l 1
+ 60 370 l 1
+EndSplineSet
 Layer: 2
 SplineSet
-60 370 m 5
- 850 370 l 5
- 850 280 l 5
- 60 280 l 5
- 60 370 l 5
+60 370 m 1
+ 850 370 l 1
+ 850 280 l 1
+ 60 280 l 1
+ 60 370 l 1
 EndSplineSet
 Layer: 3
 Refer: 219 8212 N 1 0 0 1 0 0 2

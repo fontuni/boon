@@ -4,16 +4,16 @@ Encoding: 108 108 138
 Width: 280
 VWidth: 0
 Flags: W
-HStem: 0 21G<50 210> 940 20G<50 210>
-VStem: 50 160<0 960>
-LayerCount: 4
+HStem: 0 21G<80 180> 940 20G<80 180>
+VStem: 80 100<0 960>
+LayerCount: 5
 Fore
 SplineSet
-50 960 m 1
- 210 960 l 1
- 210 0 l 1
- 50 0 l 1
- 50 960 l 1
+80 960 m 1
+ 180 960 l 1
+ 180 0 l 1
+ 80 0 l 1
+ 80 960 l 1
 EndSplineSet
 Layer: 2
 SplineSet
