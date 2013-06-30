@@ -2,6 +2,7 @@
 
 ##  v0.3
   - Improve Latin kerning
+  - Add HTML/CSS example
 
 ##  Other font features
   - Manually create Italic style
