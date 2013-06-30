@@ -2,6 +2,8 @@
 
 **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์
 
+อ่านข้อมูลเพิ่มเติมเกี่ยวกับกันใช้งานบุญฟอนต์ได้ที่ <http://sungsit.com/boon/>
+
 ### License: GNU GPLv3 (+Font Exception)
 
 Copyright (C) 2013 Sungsit Sawaiwan <http://sungsit.com/> 
