@@ -26,7 +26,7 @@
   font-weight: 700;
 }
 
-/* line 20, ../sass/boon.sass */
+/* line 24, ../sass/boon.sass */
 body.boon {
   max-width: 600px;
   margin: 0 auto;
@@ -38,12 +38,12 @@ body.boon {
   font-style: normal;
   text-rendering: optimizeLegibility;
 }
-/* line 31, ../sass/boon.sass */
+/* line 35, ../sass/boon.sass */
 body.boon .browsehappy {
   padding: 10px 20px;
   background: yellow;
 }
-/* line 35, ../sass/boon.sass */
+/* line 39, ../sass/boon.sass */
 body.boon #title {
   font-size: 60px;
   line-height: 1.25em;
@@ -51,11 +51,49 @@ body.boon #title {
   margin: 0 0 20px 0;
   text-align: center;
 }
-/* line 42, ../sass/boon.sass */
-body.boon #download {
-  font-size: 40px;
+/* line 46, ../sass/boon.sass */
+body.boon h2, body.boon h3 {
   line-height: 1.25em;
+}
+/* line 49, ../sass/boon.sass */
+body.boon #download,
+body.boon #end {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
   padding: 0;
   margin: 0 0 20px 0;
   text-align: center;
+}
+/* line 58, ../sass/boon.sass */
+body.boon .test-texts {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 10px 20px;
+  background: whitesmoke;
+}
+/* line 64, ../sass/boon.sass */
+body.boon .zoom-texts {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+/* line 68, ../sass/boon.sass */
+body.boon .boon-book {
+  font-weight: 400;
+  font-style: normal;
+}
+/* line 71, ../sass/boon.sass */
+body.boon .boon-book-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+/* line 74, ../sass/boon.sass */
+body.boon .boon-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+/* line 77, ../sass/boon.sass */
+body.boon .boon-bold-italic {
+  font-weight: 700;
+  font-style: italic;
 }
