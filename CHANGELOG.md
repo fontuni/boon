@@ -1,4 +1,7 @@
 
+##  Boon v0.3.1, 2013-07-01
+  - Corrected font version
+
 ##  Boon v0.3, 2013-07-01
   - Improved Latin kerning
   - Added HTML/CSS and project page
