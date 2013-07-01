@@ -1,4 +1,4 @@
-<h1>[<img src="https://github.com/sungsit/boon/raw/master/img/boon-heading.png" alt="บุญฟอนต์">](http://sungsit.com/boon/)</h1>
+<a href="http://sungsit.com/boon/"><img src="https://github.com/sungsit/boon/raw/master/img/boon-heading.png" alt="บุญฟอนต์"></a>
 
 **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์
 
