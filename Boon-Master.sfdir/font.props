@@ -24,7 +24,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1372671874
+ModificationTime: 1372721822
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -63,25 +63,28 @@ Lookup: 257 0 0 "Thai Mai Han-Akat & Tone High-Left"  {"Mai Han-Akat & Tone High
 Lookup: 264 0 0 "'ccmp' Thai Contextual Mark Position"  {"Thai Contextual Mark Position-1"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-KernClass2: 11 8 "'kern' Latin Horizontal Kerning" 
+KernClass2: 12 10 "'kern' Latin Horizontal Kerning" 
  1 A
  1 T
  1 V
  1 W
  1 Y
  5 v w y
- 29 a b c e g m n o p q r s u x z
+ 27 a b c e g m n o p q s u x z
  1 F
  1 P
  3 K k
+ 1 r
  1 A
  1 T
  1 V
  1 W
  1 Y
  5 v w y
- 29 a c d e g m n o p q r s u x z
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -120 {} -120 {} -80 {} -120 {} -80 {} 0 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} -100 {} -100 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} -40 {} -100 {} 0 {} -80 {} -100 {} 0 {} 0 {} -40 {} 0 {} -30 {} 0 {} 0 {} -100 {} -80 {} -40 {} -120 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {}
+ 21 a c d e g o q s u x z
+ 1 r
+ 5 m n p
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -120 {} -120 {} -80 {} -120 {} -80 {} 0 {} 0 {} 0 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} -100 {} -100 {} -100 {} -100 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} -80 {} -80 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} -40 {} -120 {} -80 {} -100 {} 0 {} -80 {} -100 {} 0 {} 0 {} -40 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} -100 {} -80 {} -40 {} -120 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -60 {} -80 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {}
 ChainPos2: class "Thai Contextual Mark Position-1"  9 9 9 11
   Class: 23 uni0E1B uni0E1D uni0E1F
   Class: 31 uni0E0F.shorten uni0E0E.shorten
@@ -283,7 +286,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 23 10
+WinInfo: 0 26 10
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
