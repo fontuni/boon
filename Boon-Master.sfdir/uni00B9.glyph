@@ -1,8 +1,31 @@
 
 StartChar: uni00B9
-Encoding: 185 185 235
-Width: 0
-VWidth: 0
-Flags: HW
+Encoding: 185 185 228
+Width: 284
+Flags: W
+HStem: 875 55<30 104.81>
+VStem: 147 87<590 922 972.688 1020>
 LayerCount: 5
+Fore
+SplineSet
+140 1020 m 1
+ 234 1020 l 1
+ 234 590 l 1
+ 147 590 l 1
+ 147 922 l 1
+ 118 881 84 875 30 875 c 1
+ 30 930 l 1
+ 88 930 140 973 140 1020 c 1
+EndSplineSet
+Layer: 3
+SplineSet
+140 1020 m 1
+ 234 1020 l 1
+ 234 590 l 1
+ 147 590 l 1
+ 147 922 l 1
+ 118 881 84 875 30 875 c 1
+ 30 930 l 1
+ 88 930 140 973 140 1020 c 1
+EndSplineSet
 EndChar

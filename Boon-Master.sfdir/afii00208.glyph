@@ -1,19 +1,9 @@
 
 StartChar: afii00208
 Encoding: 8213 8213 220
-Width: 930
+Width: 1200
 VWidth: 0
-Flags: W
-HStem: 280 90<60 850>
 LayerCount: 5
-Fore
-SplineSet
-60 370 m 1
- 850 370 l 1
- 850 280 l 1
- 60 280 l 1
- 60 370 l 1
-EndSplineSet
 Layer: 2
 SplineSet
 60 370 m 1

@@ -1,8 +1,14 @@
 
 StartChar: questiondown
-Encoding: 191 191 237
-Width: 0
+Encoding: 191 191 230
+Width: 630
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: -18 110<233.671 371.868> 660 200<222.456 357.544>
+VStem: 20 170<136.815 318.806> 190 200<692.456 827.544> 240 110<509.265 590> 420 170<146.735 280>
 LayerCount: 5
+Fore
+Refer: 186 63 N -1 0 0 -1 610 860 2
+Layer: 3
+Refer: 186 63 N -1 0 0 -1 610 860 2
 EndChar

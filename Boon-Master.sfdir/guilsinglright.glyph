@@ -3,18 +3,18 @@ StartChar: guilsinglright
 Encoding: 8250 8250 216
 Width: 360
 Flags: W
-VStem: 40 260
+VStem: 30 290
 LayerCount: 5
 Fore
 SplineSet
-200 320 m 1
- 40 550 l 1
- 120 550 l 1
- 300 325 l 1
- 300 315 l 1
- 120 90 l 1
- 40 90 l 1
- 200 320 l 1
+190 320 m 1
+ 30 550 l 1
+ 140 550 l 1
+ 320 325 l 1
+ 320 315 l 1
+ 140 90 l 1
+ 30 90 l 1
+ 190 320 l 1
 EndSplineSet
 Layer: 2
 SplineSet

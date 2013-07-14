@@ -1,8 +1,16 @@
 
 StartChar: plusminus
-Encoding: 177 177 228
-Width: 0
+Encoding: 177 177 224
+Width: 640
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: 90 110<40 580> 460 110<40 230 390 580>
+VStem: 230 160<265 460 570 765>
 LayerCount: 5
+Fore
+Refer: 157 45 N 1 0 0 1 0 -180 2
+Refer: 171 43 N 1 0 0 1 0 190 2
+Layer: 3
+Refer: 157 45 N 1 0 0 1 0 -180 2
+Refer: 171 43 N 1 0 0 1 0 190 2
 EndChar

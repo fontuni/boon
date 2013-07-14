@@ -1,8 +1,14 @@
 
 StartChar: ordfeminine
-Encoding: 170 170 223
-Width: 0
+Encoding: 170 170 221
+Width: 370
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: 540 55<125.744 186.956> 549 10.5<246.5 330> 689 50<123.309 220> 813 55<140.82 203.942>
+VStem: 30 80<610.252 675.772> 220 80<625.207 689 739 796.598>
 LayerCount: 5
+Fore
+Refer: 142 97 N 0.5 0 0 0.5 15 549 2
+Layer: 3
+Refer: 142 97 N 0.5 0 0 0.5 15 549 2
 EndChar

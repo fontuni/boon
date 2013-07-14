@@ -1,8 +1,13 @@
 
 StartChar: uni00AD
-Encoding: 173 173 225
-Width: 0
+Encoding: 173 173 222
+Width: 640
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: 270 110<40 580>
 LayerCount: 5
+Fore
+Refer: 157 45 N 1 0 0 1 0 0 2
+Layer: 3
+Refer: 157 45 N 1 0 0 1 0 0 2
 EndChar
