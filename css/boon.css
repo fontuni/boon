@@ -1,27 +1,27 @@
 @font-face {
   src: url("../fonts/woff/Boon-Book.woff") format("woff");
-  font-family: Boon;
+  font-family: "Boon-0.4";
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   src: url("../fonts/woff/Boon-Book-Italic.woff") format("woff");
-  font-family: Boon;
+  font-family: "Boon-0.4";
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   src: url("../fonts/woff/Boon-Bold.woff") format("woff");
-  font-family: Boon;
+  font-family: "Boon-0.4";
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   src: url("../fonts/woff/Boon-Bold-Italic.woff") format("woff");
-  font-family: Boon;
+  font-family: "Boon-0.4";
   font-style: italic;
   font-weight: 700;
 }
@@ -33,7 +33,7 @@ body.boon {
   padding: 20px;
   font-size: 16px;
   line-height: 24px;
-  font-family: Boon, sans-serif;
+  font-family: "Boon-0.4", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizeLegibility;
