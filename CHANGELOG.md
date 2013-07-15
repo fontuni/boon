@@ -1,3 +1,5 @@
+##  Boon v0.4, 2013-07-15
+  - Improve kerning
 
 ##  Boon v0.3.1, 2013-07-01
   - Corrected font version
