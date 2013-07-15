@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1373848020
+ModificationTime: 1373848783
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -45,7 +45,7 @@ OS2FamilyClass: 2048
 OS2Vendor: 'PfEd'
 OS2CodePages: 00010001.00000000
 OS2UnicodeRanges: 01000001.10000000.00000000.00000000
-MacStyle: 1
+MacStyle: 3
 Lookup: 1 0 0 "Thai Ascent Substitute"  {"Ascent Substitute" ("alt" ) } []
 Lookup: 1 0 0 "Thai Descent Shorten"  {"Descent Shorten" ("shorten" ) } []
 Lookup: 1 0 0 "Thai Descent Substitute"  {"Descent Substitute" ("descless" ) } []
@@ -287,7 +287,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 8 4
+WinInfo: 32 8 2
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -771,7 +771,7 @@ SplineSet
  137 780 38 700 -111 700 c 2
  -189 700 l 2
  -220 700 -222 744 -222 753 c 0
- -222 754 -222 755 -222 755 c 1
+ -222 755 l 1
  -176 761 l 2
  -159 763 -144 774 -138 782 c 1
  -165 788 -183 812 -183 843 c 0
@@ -1526,7 +1526,7 @@ SplineSet
  240 1050 141 970 -8 970 c 2
  -86 970 l 2
  -117 970 -119 1014 -119 1023 c 0
- -119 1024 -119 1025 -119 1025 c 1
+ -119 1025 l 1
  -73 1031 l 2
  -56 1033 -41 1044 -35 1052 c 1
  -62 1058 -80 1082 -80 1113 c 0

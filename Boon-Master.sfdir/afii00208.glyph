@@ -3,6 +3,7 @@ StartChar: afii00208
 Encoding: 8213 8213 220
 Width: 1200
 VWidth: 0
+Flags: H
 LayerCount: 5
 Layer: 2
 SplineSet

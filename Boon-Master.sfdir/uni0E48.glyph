@@ -4,16 +4,16 @@ Encoding: 3656 3656 9
 Width: 0
 VWidth: 0
 Flags: W
-HStem: 950 230<-120.2 -95>
-VStem: -215 120<990 1180>
+HStem: 950 230<-131.8 -115>
+VStem: -195 80<990 1180>
 LayerCount: 5
 Fore
 SplineSet
--215 1180 m 1
- -95 1180 l 1
- -95 950 l 1
- -215 990 l 1
- -215 1180 l 1
+-195 1180 m 1
+ -115 1180 l 1
+ -115 950 l 1
+ -195 990 l 1
+ -195 1180 l 1
 EndSplineSet
 Layer: 2
 SplineSet
