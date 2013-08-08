@@ -3,25 +3,9 @@ StartChar: X
 Encoding: 88 88 109
 Width: 760
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 21G<0 147.468 602.532 750> 840 20G<40 187.903 562.097 710>
 LayerCount: 5
-Fore
-SplineSet
-40 860 m 1
- 175 860 l 1
- 375 550 l 1
- 575 860 l 1
- 710 860 l 1
- 445 470 l 1
- 750 0 l 1
- 615 0 l 1
- 375 385 l 1
- 135 0 l 1
- 0 0 l 1
- 305 470 l 1
- 40 860 l 1
-EndSplineSet
 Layer: 2
 SplineSet
 40 860 m 1

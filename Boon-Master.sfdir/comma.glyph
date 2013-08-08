@@ -3,20 +3,10 @@ StartChar: comma
 Encoding: 44 44 172
 Width: 300
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -150 310
 VStem: 140 90<-46.0908 7>
 LayerCount: 5
-Fore
-SplineSet
-150 160 m 0
- 200 160 230 115 230 70 c 0
- 230 -44 162 -123 120 -150 c 1
- 50 -150 l 1
- 91 -114 140 -47 140 7 c 1
- 104 7 70 37 70 80 c 0
- 70 125 105 160 150 160 c 0
-EndSplineSet
 Layer: 2
 SplineSet
 150 160 m 0

@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1373851946
+ModificationTime: 1375119748
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -280,13 +280,12 @@ LangName: 1054 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "+DiQOMg
 LangName: 1033 "" "" "" "" "" "" "" "" "Sungsit Sawaiwan" "Sungsit Sawaiwan" "" "http://sungsit.com/boon/" "http://sungsit.com/" "GNU General Public License Version 3" "http://www.gnu.org/licenses/gpl.html" 
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 8 6
+WinInfo: 3656 8 6
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -302,29 +301,29 @@ VStem: 80 90<241.776 460.829> 117 108<0 237.513> 365 55<287.292 366.708> 465 95<
 LayerCount: 2
 Fore
 SplineSet
-320 612 m 0xfb
- 453 612 560 529 560 372 c 2
- 560 0 l 1
- 465 0 l 1
- 465 372 l 2
- 465 476 398 527 320 527 c 0
- 242 527 170 471 170 372 c 0xfb
- 170 330 176 274 183 240 c 1
- 193 284 206 343 230 377 c 0
- 250 407 282 427 320 427 c 0
- 375 427 420 382 420 327 c 0
- 420 272 375 227 320 227 c 0
- 294 227 271 237 253 253 c 1
- 229 171 225 79 225 0 c 1
- 110 0 l 1
- 115 38 117 69 117 96 c 0xf7
- 117 213 80 247 80 372 c 0
- 80 505 187 612 320 612 c 0xfb
-320 372 m 0
- 295 372 275 352 275 327 c 0
- 275 302 295 282 320 282 c 0
- 345 282 365 302 365 327 c 0
- 365 352 345 372 320 372 c 0
+320 612 m 4xfb
+ 453 612 560 529 560 372 c 6
+ 560 0 l 5
+ 465 0 l 5
+ 465 372 l 6
+ 465 476 398 527 320 527 c 4
+ 242 527 170 471 170 372 c 4xfb
+ 170 330 176 274 183 240 c 5
+ 193 284 206 343 230 377 c 4
+ 250 407 282 427 320 427 c 4
+ 375 427 420 382 420 327 c 4
+ 420 272 375 227 320 227 c 4
+ 294 227 271 237 253 253 c 5
+ 229 171 225 79 225 0 c 5
+ 110 0 l 5
+ 115 38 117 69 117 96 c 4xf7
+ 117 213 80 247 80 372 c 4
+ 80 505 187 612 320 612 c 4xfb
+320 372 m 4
+ 295 372 275 352 275 327 c 4
+ 275 302 295 282 320 282 c 4
+ 345 282 365 302 365 327 c 4
+ 365 352 345 372 320 372 c 4
 EndSplineSet
 EndChar
 

@@ -3,26 +3,10 @@ StartChar: uni0E4B
 Encoding: 3659 3659 77
 Width: 0
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 1050 50<-280 -200 -120 -40>
 VStem: -200 80<990 1050 1100 1180>
 LayerCount: 5
-Fore
-SplineSet
--200 1180 m 1
- -120 1180 l 1
- -120 1100 l 1
- -40 1100 l 1
- -40 1050 l 1
- -120 1050 l 1
- -120 950 l 1
- -200 990 l 1
- -200 1050 l 1
- -280 1050 l 1
- -280 1100 l 1
- -200 1100 l 1
- -200 1180 l 1
-EndSplineSet
 Layer: 2
 SplineSet
 -200 1180 m 1

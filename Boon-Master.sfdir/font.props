@@ -1,36 +1,35 @@
 SplineFontDB: 3.0
-FontName: Boon-Book
-FullName: Boon Book
+FontName: Boon-Black
+FullName: Boon Black
 FamilyName: Boon
-Weight: Book
+Weight: Black
 Copyright: Copyright (C) 2013 Sungsit Sawaiwan <http://sungsit.com/> \n\nThis font is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. \n\nThis font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. \n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>. \n\nAs a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version.
 UComments: "Created with FontForge 2.0 <http://fontforge.org/>" 
-Version: 0.4
+Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -60
 UnderlineWidth: 20
 Ascent: 860
 Descent: 340
-woffMajor: 0
-woffMinor: 4
+woffMajor: 1
+woffMinor: 0
 LayerCount: 5
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
 Layer: 2 0 "Book"  1
 Layer: 3 0 "Bold"  1
-Layer: 4 0 "light"  1
+Layer: 4 0 "Black"  1
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1373851789
+ModificationTime: 1374802271
 PfmFamily: 33
-TTFWeight: 400
+TTFWeight: 900
 TTFWidth: 5
 LineGap: 108
 VLineGap: 0
-Panose: 2 0 8 3 0 0 0 0 0 0
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -286,10 +285,10 @@ Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -72
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 8 4
+WinInfo: 0 26 10
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 349525 174762 116508 0 1048576 116508 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144

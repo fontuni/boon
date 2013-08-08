@@ -1,5 +1,4 @@
 *.*~
-boon-old.svg
-boon-ref.svg
+*.svg
 components/*
 .sass-cache/*
