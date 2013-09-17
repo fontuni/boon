@@ -1,49 +1,53 @@
 @font-face {
-  src: url("../fonts/woff/Boon-Book.woff") format("woff");
-  font-family: "Boon-0.4";
+  src: url("../fonts/woff/boon-400.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/woff/Boon-Book-Italic.woff") format("woff");
-  font-family: "Boon-0.4";
+  src: url("../fonts/woff/boon-400-oblique.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/woff/Boon-Bold.woff") format("woff");
-  font-family: "Boon-0.4";
+  src: url("../fonts/woff/boon-700.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
-  src: url("../fonts/woff/Boon-Bold-Italic.woff") format("woff");
-  font-family: "Boon-0.4";
+  src: url("../fonts/woff/boon-700-oblique.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: italic;
   font-weight: 700;
 }
 
-/* line 24, ../sass/boon.sass */
+/* line 24, ../_sass/boon.sass */
 body.boon {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Boon-0.4", sans-serif;
+  font-family: "Boon-0.5", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizeLegibility;
 }
-/* line 35, ../sass/boon.sass */
+/* line 35, ../_sass/boon.sass */
+body.boon code, body.boon pre {
+  font-family: "Boon-0.5", monospace;
+}
+/* line 38, ../_sass/boon.sass */
 body.boon .browsehappy {
   padding: 10px 20px;
   background: yellow;
 }
-/* line 39, ../sass/boon.sass */
+/* line 42, ../_sass/boon.sass */
 body.boon #title {
   font-size: 60px;
   line-height: 1.25em;
@@ -51,11 +55,11 @@ body.boon #title {
   margin: 0 0 20px 0;
   text-align: center;
 }
-/* line 46, ../sass/boon.sass */
+/* line 49, ../_sass/boon.sass */
 body.boon h2, body.boon h3 {
   line-height: 1.25em;
 }
-/* line 49, ../sass/boon.sass */
+/* line 52, ../_sass/boon.sass */
 body.boon #download,
 body.boon #end {
   font-weight: bold;
@@ -65,35 +69,35 @@ body.boon #end {
   margin: 0 0 20px 0;
   text-align: center;
 }
-/* line 58, ../sass/boon.sass */
+/* line 61, ../_sass/boon.sass */
 body.boon .test-texts {
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 10px 20px;
   background: whitesmoke;
 }
-/* line 64, ../sass/boon.sass */
+/* line 67, ../_sass/boon.sass */
 body.boon .zoom-texts {
   font-size: 2em;
   line-height: 1.5em;
 }
-/* line 68, ../sass/boon.sass */
-body.boon .boon-book {
+/* line 71, ../_sass/boon.sass */
+body.boon .boon-400 {
   font-weight: 400;
   font-style: normal;
 }
-/* line 71, ../sass/boon.sass */
-body.boon .boon-book-italic {
+/* line 74, ../_sass/boon.sass */
+body.boon .boon-400-oblique {
   font-weight: 400;
   font-style: italic;
 }
-/* line 74, ../sass/boon.sass */
-body.boon .boon-bold {
+/* line 77, ../_sass/boon.sass */
+body.boon .boon-700 {
   font-weight: 700;
   font-style: normal;
 }
-/* line 77, ../sass/boon.sass */
-body.boon .boon-bold-italic {
+/* line 80, ../_sass/boon.sass */
+body.boon .boon-700-oblique {
   font-weight: 700;
   font-style: italic;
 }

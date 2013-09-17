@@ -2,19 +2,12 @@
 
 ## v1.0
   - Create real italic styles for all weights
-  - Add more Latin supplement
-  - Support Laos language
-  - Support Vietnamese and other European languges
+  - Improve all combining diacritics
+  - Support more European & Vietnam languages
+  - Add Lao glyphs
 
-##  v0.5
-  - Improve glyph spacing
-  - Add HTML/CSS for better OpenType feature test
-  - Diacritics: Check Cedilla & Comma confusing
-  - Check Vietnamese vowels & input methods
+##  v0.6
+  - Add 300 (Light) & 500 (Medium) or 600 (Semi-Bold) weights
 
-##  Other font features
-  - Correct diacritic marks for both Small & Cap letters
-  - More Languages/Scripts support
-  - Add more weight (Light, Semi-Bold ?)
-  - Use XGridFit if possible & neccessary
-  - Ordinal numbers: problem -> 11th, 12th,13th
+##  Other features
+  - Greek & Cyrillic ?
