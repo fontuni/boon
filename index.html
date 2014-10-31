@@ -15,11 +15,11 @@
   <body>
 
     <!--[if lt IE 9]>
-    
+
     <div class="browsehappy">
       <p><strong>บุญฟอนต์</strong> ไม่รองรับบราวเซอร์ <strong>รุ่นเก่า</strong> ที่คุณใช้งานอยู่ โปรด <a href="http://browsehappy.com/">อัพเกรดบราวเซอร์ของคุณ</a> เพื่อประสบการณ์ที่ดีกว่าในการท่องเว็บ.</p>
     </div>
-    
+
     <![endif]-->
 
     <h1 id="title">บุญฟอนต์</h1>
@@ -44,6 +44,7 @@
 <li><a href="#usage">วิธีใช้งาน</a></li>
 <li><a href="#test-cases">กรณีทดสอบ</a></li>
 <li><a href="#milestones">เป้าหมายในอนาคต</a></li>
+<li><a href="#donation">วิธีสนับสนุนการพัฒนาบุญฟอนต์</a></li>
 </ul>
 
 <hr>
@@ -64,7 +65,7 @@
 
 <h2>&#x0E4F; สัญญาอนุญาต</h2>
 
-<p>&copy; ๒๕๕๖ <a href="http://sungsit.com/">สังศิต ไสววรรณ</a></p>
+<p>&copy; ๒๕๕๖-๒๕๕๗ <a href="http://sungsit.com/">สังศิต ไสววรรณ</a></p>
 
 <p><strong>บุญฟอนต์</strong> ใช้สัญญาอนุญาต (license) แบบ <a href="http://www.gnu.org/licenses/gpl.html">GNU GPLv3 (+Font Exception)</a> แปลว่าคุณมีอิสระเต็มที่ในการใช้งาน ดัดแปลง หรือปรับปรุง โดยไม่ต้องขออนุญาตเจ้าของลิขสิทธิ์ (ไม่จำเป็นต้องบอกผมว่าคุณทำหรือจะทำอะไรกับมัน) เงื่อนไขคือเมื่อดัดแปลงจากต้นแบบแล้วอยากจะเผยแพร่ผลงานใหม่ก็ต้องใช้สัญญาอนุญาตแบบเดียวกันและต้องเปิดเผยซอร์สโค้ดเช่นกัน ส่วนคำว่า <em>+Font Exception</em> ที่ต่อท้ายมานั้นเพื่อบอกผู้ใช้ที่ต้องการฝังฟอนต์ในเอกสารว่าไม่ต้องกังวล เพราะระบุไว้ชัดเจนว่าเอกสารที่เกิดจากการใช้งานฟอนต์นี้ (เช่น html page, pdf เป็นต้น) ไม่จำเป็นต้องใช้สัญญาอนุญาตแบบเดียวกับตัวฟอนต์</p>
 
@@ -144,7 +145,7 @@
 <p><strong>พยัญชนะมีฐานล่าง (ฐ ญ) + สระล่าง</strong> : ต้องตัดฐานล่างของพยัญชนะออก</p>
 
 <p class="test-texts zoom-texts">ฐัฐุญฺวิญญูฐูญุฐฺญู้ญี่</p>
-    
+
 
 <h3>๓. Kerning ตัวอักษรละติน</h3>
 
@@ -166,7 +167,7 @@
 <p><strong>พยัญชนะหางล่างยาว (ฎ ฏ) + สระล่าง</strong> : บุญฟอนต์จะลดความยาวหางพยัญชนะอัตโนมัติเพื่อให้สระล่างไม่อยู่ต่ำจนชนวรรณยุกต์บนของบรรทัดล่าง ในกรณีที่ต้องใช้ ฎ ฏ ตามด้วยสระล่างมากเป็นพิเศษ เช่น คำอาหรับที่ถอดรูปเขียนไทย ควรกำหนด <code>line-height</code> ไม่ต่ำกว่า <code>1.5em</code> (แต่ส่วนใหญ่คงใช้ตัว ด. และ ต. แทน)</p>
 
 <p class="test-texts zoom-texts">ฏูฎุฏฺฎฺฎฏฏูฎุฏฺกฎ<br>ฏี้ฎึ๋กี้กรี๊ดฏี่ฏฺ</p>
-    
+
 
 <p><strong>ตัว ฤ ฦ กับ สระอา</strong> : บุญฟอนต์จะเปลี่ยนสระอาให้อัตโนมัติเมื่อพิมพ์ตามหลังตัว ฤ หรือ ฦ (จริงๆ บนแป้นพิมพ์มีสระอาหางยาว - ๅ แต่บางคนอาจไม่คุ้น)</p>
 
@@ -193,6 +194,47 @@
 
 <hr>
 
+<p><a id="donation"></a></p>
+
+<h2>๏ วิธีสนับสนุนการพัฒนาบุญฟอนต์</h2>
+
+<p>หากคุณเห็นว่าบุญฟอนต์นั้นมีประโยชน์และอยากสนับสนุนการพัฒนาเพื่อปรับปรุงฟอนต์นี้ตามเป้าหมายที่โม้ไว้ด้านบน ก็สามารถให้กำลังใจผมได้โดยการเลี้ยงกาแฟ เพราะผมจำเป็นต้องเสพคาเฟอีนเยอะระหว่างทำฟอนต์ตอนกลางคืนในช่วงที่ไม่ได้ทำงานหลัก (เป็นฟรีแลนซ์) เนื่องจากผมไม่ค่อยออกจากบ้านจึงไม่สามารถไปดื่มกาแฟกับคุณทุกคนได้ แต่คุณสามารถส่งเงินมาให้ผมซื้อกาแฟเองได้ที่</p>
+
+<p>
+1. ธนาคารกรุงเทพ เลขบัญชี <strong>1455364099</strong><br>
+2. ธนาคารกสิกรไทย เลขบัญชี <strong>0942065177</strong><br>
+ชื่อบัญชี <strong>สังศิต ไสววรรณ</strong>
+</p>
+
+<div class="paypal">
+
+<p>ถ้าต้องการใบเสร็จ (เหมือนซื้อฟอนต์) ก็ใช้ Paypal หรือบัตรเครดิตก็ได้ครับ</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="CNPUZWBHXMTQJ">
+<table>
+<tr><td><input type="hidden" name="on0" value="โปรดเลือกจำนวนเงินที่คุณต้องการสนับสนุน">โปรดเลือกจำนวนเงินที่คุณต้องการสนับสนุน</td></tr><tr><td><select name="os0">
+    <option value="ตัวเลือก 1">ตัวเลือก 1 ฿200.00 THB</option>
+    <option value="ตัวเลือก 2">ตัวเลือก 2 ฿300.00 THB</option>
+    <option value="ตัวเลือก 3">ตัวเลือก 3 ฿400.00 THB</option>
+    <option value="ตัวเลือก 4">ตัวเลือก 4 ฿500.00 THB</option>
+    <option value="ตัวเลือก 5">ตัวเลือก 5 ฿750.00 THB</option>
+    <option value="ตัวเลือก 6">ตัวเลือก 6 ฿1,000.00 THB</option>
+    <option value="ตัวเลือก 7">ตัวเลือก 7 ฿1,500.00 THB</option>
+    <option value="ตัวเลือก 8">ตัวเลือก 8 ฿2,000.00 THB</option>
+    <option value="ตัวเลือก 9">ตัวเลือก 9 ฿2,500.00 THB</option>
+    <option value="ตัวเลือก 10">ตัวเลือก 10 ฿3,000.00 THB</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="THB">
+<input type="image" src="https://www.paypalobjects.com/th_TH/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal คือ วิธีชำระเงินออนไลน์ที่ปลอดภัยและง่ายยิ่งขึ้น!">
+<img alt="" border="0" src="https://www.paypalobjects.com/th_TH/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+
+<hr>
+
 <div id="end"><a href="#topic">ไปยังสารบัญ &#x0E5B;</a></div>
 
 
@@ -200,17 +242,19 @@
   <script type="text/javascript">
     fitText(document.getElementById('title'), 0.5);
   </script>
-  
+
+<!--
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-39671868-1', 'sungsit.com');
-  ga('send', 'pageview');
+    ga('create', 'UA-56269286-1', 'auto');
+    ga('send', 'pageview');
+
   </script>
-
+-->
 
   </body>
 </html>
