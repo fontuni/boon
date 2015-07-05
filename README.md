@@ -1,4 +1,4 @@
-<h1><a href="http://fontuni.com/boon/"><img src="https://github.com/fontuni/boon/raw/master/img/boon-heading.png" alt="บุญฟอนต์"></a></h1>
+<h1><a href="http://fontuni.com/boon/"><img src="https://github.com/fontuni/boon/raw/gh-pages/img/boon-heading.png" alt="บุญฟอนต์"></a></h1>
 
 **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลการจัดเรียงตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์
 
