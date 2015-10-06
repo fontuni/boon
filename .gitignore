@@ -2,3 +2,6 @@
 *.svg
 components/*
 .sass-cache/*
+
+*backup/*
+*.sfd-*

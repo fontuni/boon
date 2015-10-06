@@ -1,56 +1,35 @@
 @font-face {
-  src: url("../fonts/woff/boon-300.woff") format("woff");
-  font-family: "Boon-0.6";
+  src: url("../fonts/Boon-300.ttf");
+  font-family: "Boon-1.0";
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  src: url("../fonts/woff/boon-300-oblique.woff") format("woff");
-  font-family: "Boon-0.6";
-  font-style: italic;
-  font-weight: 300;
-}
-
-@font-face {
-  src: url("../fonts/woff/boon-400.woff") format("woff");
-  font-family: "Boon-0.6";
+  src: url("../fonts/Boon-400.ttf");
+  font-family: "Boon-1.0";
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/woff/boon-400-oblique.woff") format("woff");
-  font-family: "Boon-0.6";
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face {
-  src: url("../fonts/woff/boon-500.woff") format("woff");
-  font-family: "Boon-0.6";
+  src: url("../fonts/Boon-500.ttf");
+  font-family: "Boon-1.0";
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  src: url("../fonts/woff/boon-500-oblique.woff") format("woff");
-  font-family: "Boon-0.6";
-  font-style: italic;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("../fonts/woff/boon-700.woff") format("woff");
-  font-family: "Boon-0.6";
+  src: url("../fonts/Boon-600.ttf");
+  font-family: "Boon-1.0";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @font-face {
-  src: url("../fonts/woff/boon-700-oblique.woff") format("woff");
-  font-family: "Boon-0.6";
-  font-style: italic;
+  src: url("../fonts/Boon-700.ttf");
+  font-family: "Boon-1.0";
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -61,8 +40,8 @@ body {
   padding: 20px;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Boon-0.6", sans-serif;
-  font-weight: 300;
+  font-family: "Boon-1.0", sans-serif;
+  font-weight: 400;
   font-style: normal;
   text-rendering: optimizeLegibility;
   background: #f3f3f3;
@@ -70,7 +49,7 @@ body {
 }
 /* line 41, ../_sass/boon.sass */
 body code, body pre {
-  font-family: "Boon-0.6";
+  font-family: "Boon-1.0";
 }
 /* line 44, ../_sass/boon.sass */
 body .browsehappy {
