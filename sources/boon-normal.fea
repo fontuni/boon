@@ -1,0 +1,39 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn MOL ;
+languagesystem latn ROM ;
+languagesystem thai dflt;
+languagesystem thai PAL ;
+languagesystem thai SAN ;
+
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+# Do not reorder these included files unless you know what you're doing.
+
+# GSUB
+
+# Thai
+include(features/thai-core.fea)
+include(features/thai-extra.fea)
+
+# Latin
+#include(features/latin-core.fea)
+#include(features/latin-extra.fea)
+
+# GPOS
+
+# Thai
+#include(features/thai-normal.mark.fea)
+#include(features/thai-normal.mkmk.fea)
+#include(features/thai.kern.fea)
+
+# Latin
+#include(features/latin-normal.mark.fea)
+#include(features/latin-normal.mkmk.fea)
+#include(features/latin.kern.fea)

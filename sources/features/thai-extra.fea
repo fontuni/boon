@@ -1,0 +1,40 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(thai-classes.fea)
+
+# These are optional required features for Thai fonts.
+
+lookup Thai.liga {
+  sub \uni0E24 \uni0E45 by \uni0E240E45.liga;
+  sub \uni0E24 \uni200D \uni0E45 by \uni0E240E45.liga;
+  sub \uni0E26 \uni0E45 by \uni0E260E45.liga;
+  sub \uni0E26 \uni200D \uni0E45 by \uni0E260E45.liga;
+  sub \uni0E4F \period \period by \uni0E4F.extra; # this works on Mac
+  sub \uni0E4F \uni200D \period \uni200D \period by \uni0E4F.extra;
+} Thai.liga;
+
+# Thai historical character, a little bit tricky for OT to make this works across platforms.
+# So we need more than just one feature.
+# dlig & calt work on adobe
+lookup Thai.extra {
+  sub \uni0E4F \uni0E48 \uni0E48 by \uni0E4F.extra;
+  sub \uni0E4F \uni200D \uni0E48 \uni200D \uni0E48 by \uni0E4F.extra;
+} Thai.extra;
+
+feature liga {
+  lookup Thai.liga;
+} liga;
+
+feature calt {
+  lookup Thai.extra;
+} calt;
+
+feature dlig {
+  lookup Thai.extra;
+} dlig;

@@ -22,11 +22,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.15556349"
-     inkscape:cx="2965.5617"
-     inkscape:cy="2225.3848"
+     inkscape:zoom="0.08"
+     inkscape:cx="4718.2677"
+     inkscape:cy="1822.5"
      inkscape:document-units="px"
-     inkscape:current-layer="g10254"
+     inkscape:current-layer="g4535"
      showgrid="false"
      inkscape:showpageshadow="false"
      showborder="false"
@@ -24805,7 +24805,7 @@
        inkscape:connector-curvature="0" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="ล"
      id="g4535"
      inkscape:groupmode="layer">
@@ -27552,7 +27552,7 @@
      inkscape:groupmode="layer"
      id="g10254"
      inkscape:label="ป บ ษ็"
-     style="display:inline">
+     style="display:none">
     <g
        transform="translate(800,240)"
        id="g10272" />

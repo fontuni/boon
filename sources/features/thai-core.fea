@@ -1,0 +1,175 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+# Shared functionalities for Thai shaping
+
+include(thai-classes.fea)
+
+# Remove descender
+lookup ThaiRC.rd {
+  sub @RC by @RC.rd;
+} ThaiRC.rd;
+
+lookup ThaiContextRC.rd {
+  sub @RC' lookup ThaiRC.rd @BV;
+} ThaiContextRC.rd;
+
+# Thai Sara Am decomposition: The extra zero-width joiner (@ZWJ) is required
+# to distinguish decomposed Sara AA from user's input one.
+lookup ThaiDecomp {
+  sub \uni0E33 by \uni0E4D @ZWJ \uni0E32;
+} ThaiDecomp;
+
+lookup ThaiT.0E4D {
+  sub @T by \uni0E4D;
+} ThaiT.0E4D;
+
+lookup Thai0E4D.0E48 {
+  sub \uni0E4D by \uni0E48;
+} Thai0E4D.0E48;
+
+lookup Thai0E4D.0E49 {
+  sub \uni0E4D by \uni0E49;
+} Thai0E4D.0E49;
+
+lookup Thai0E4D.0E4A {
+  sub \uni0E4D by \uni0E4A;
+} Thai0E4D.0E4A;
+
+lookup Thai0E4D.0E4B {
+  sub \uni0E4D by \uni0E4B;
+} Thai0E4D.0E4B;
+
+# Reorder Nikhahit (uni0E4D) & Tones
+lookup ThaiContext.ro {
+  sub \uni0E48' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E48 @ZWJ' \uni0E32';
+  sub \uni0E49' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E49 @ZWJ' \uni0E32';
+  sub \uni0E4A' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4A @ZWJ' \uni0E32';
+  sub \uni0E4B' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4B @ZWJ' \uni0E32';
+} ThaiContext.ro; 
+
+# GSUB features
+
+feature locl {
+
+  script thai;
+    language PAL exclude_dflt;
+      lookup ThaiRC.rd;
+    language SAN exclude_dflt;
+      lookup ThaiRC.rd;
+
+} locl;
+
+feature ccmp {
+
+  script thai;
+    language dflt;
+      lookup ThaiContextRC.rd;
+      lookup ThaiDecomp;
+      lookup ThaiContext.ro;  
+    language PAL exclude_dflt;
+      lookup ThaiRC.rd;
+    language SAN exclude_dflt;
+      lookup ThaiRC.rd;
+
+} ccmp;
+
+# Because many applications don't quite well support language specific features
+# like `locl` (or even `ccmp`) for Thai script, `salt` & `ss01` features are alternatives 
+# to Pali/Sanskrit prefered form of uni0E0D (ญ) and uni0E10 (ฐ).
+
+feature salt {
+  script thai;
+    language dflt ;
+      lookup ThaiRC.rd;
+} salt;
+
+feature ss01 {
+  script thai;
+    language dflt ;
+      lookup ThaiRC.rd;
+} ss01;
+
+# Basic subsitutions
+
+lookup Thai.sd {
+  sub @T by @T.sd;
+} Thai.sd;
+
+lookup ThaiBV.sd {
+  sub @BV by @BV.sd;
+} ThaiBV.sd;
+
+lookup Thai.sdl {
+  sub @T by @T.sdl;
+} Thai.sdl;
+
+lookup Thai.sl {
+  sub @T by @T.sl;
+  sub @AV by @AV.sl;
+} Thai.sl;
+
+lookup Thai.su {
+  sub \uni0E4D by \uni0E4D.su;
+  sub \uni0E47 by \uni0E47.su;
+  sub @T.sd by @T;
+} Thai.su;
+
+lookup Thai.sul {
+  sub \uni0E4D by \uni0E4D.sul;
+  sub \uni0E47 by \uni0E47.sul;
+  sub @T.sdl by @T.sl;
+} Thai.sul;
+
+# This contextual `ccmp` feature aims to handle Thai complex layout without HarfBuzz.
+# Basically, it would work for various OpenType shaping engines (UniScribe, CoreText, Adobe World-Ready)
+# to support minority languages which require extra Tonemarks/Diacrtics.
+
+lookup ThaiContext.sl {
+  sub @AC' @BV' @BV' @BV' @AV' lookup Thai.sl;
+  sub @AC' @BV' @BV' @AV' lookup Thai.sl;
+  sub @AC' @BV' @AV' lookup Thai.sl;
+  sub @AC' @AV' lookup Thai.sl;
+} ThaiContext.sl;
+
+lookup ThaiContext.sdl {
+  sub @AC' @BV' @BV' @BV' @T' lookup Thai.sdl;
+  sub @AC' @BV' @BV' @T' lookup Thai.sdl;
+  sub @AC' @BV' @T' lookup Thai.sdl;
+  sub @AC' @T' lookup Thai.sdl;
+} ThaiContext.sdl;
+
+lookup ThaiContext.sd {
+  sub [ @NC @DC @RC @RC.rd @BV.all ]' @T' lookup Thai.sd;
+  sub @DC' @BV' lookup ThaiBV.sd;
+} ThaiContext.sd;
+
+lookup ThaiContext.fallback {
+
+  # For @AC
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @AV' lookup Thai.sul;
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @T' lookup Thai.sl;
+
+  # For @NC @DC @RC @RC.rd
+  sub [ @AV @AV.su @T.sd @T ]' [ @AV @T ]' lookup Thai.su;
+
+  # For @BV
+  sub @BV.all' @T' lookup Thai.sd;
+
+  # For @T
+  sub @T.all [ @AV @T ]' lookup Thai.su;
+
+} ThaiContext.fallback;
+
+# Set them all here.
+feature ccmp {
+  lookup ThaiContext.sl;
+  lookup ThaiContext.sdl;
+  lookup ThaiContext.sd;
+  lookup ThaiContext.fallback;
+} ccmp;

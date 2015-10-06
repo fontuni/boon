@@ -4,3 +4,6 @@ components/*
 
 *backup/*
 *.sfd-*
+*/unhinted/*
+*-temp*
+*-backup*
