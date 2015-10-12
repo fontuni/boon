@@ -102,3 +102,47 @@ feature frac {
   lookup LatinContext.frac;
   lookup LatinLiga.frac;
 } frac;
+
+lookup Latin.ss20 {
+  sub [ \a ] by [ \uni0251 ] ;
+} Latin.ss20;
+
+# a alt decomposed
+lookup Latin.a.decomp {
+
+  # @a.abv
+  sub \agrave by \uni0251 \uni0300;
+  sub \aacute by \uni0251 \uni0301;
+  sub \acircumflex by \uni0251 \uni0302;
+  sub \atilde by \uni0251 \uni0303;
+  sub \amacron by \uni0251 \uni0304;
+  sub \abreve by \uni0251 \uni0306;
+  sub \adieresis by \uni0251 \uni0308;
+  sub \uni1EA3 by \uni0251 \uni0309;
+  sub \aring by \uni0251 \uni030A;
+  sub \uni01CE by \uni0251 \uni030C;
+
+  # @a.abv2
+  sub \uni1EA5 by \uni0251 \uni0302 \uni0301;
+  sub \uni1EA7 by \uni0251 \uni0302 \uni0300;
+  sub \uni1EA9 by \uni0251 \uni0302 \uni0309;
+  sub \uni1EAB by \uni0251 \uni0302 \uni0303;
+  sub \uni1EAF by \uni0251 \uni0306 \uni0301;
+  sub \uni1EB1 by \uni0251 \uni0306 \uni0300;
+  sub \uni1EB3 by \uni0251 \uni0306 \uni0309;
+  sub \uni1EB5 by \uni0251 \uni0306 \uni0303;
+
+  # @a.blw
+  sub \uni1EA1 by \uni0251 \uni0323;
+  sub \aogonek by \uni0251 \uni0328;
+
+  #@a.blw.abv
+  sub \uni1EAD by \uni0251 \uni0323 \uni0302;
+  sub \uni1EB7 by \uni0251 \uni0323 \uni0306;
+  
+} Latin.a.decomp;
+
+feature ss20 {
+  lookup Latin.ss20;
+  lookup Latin.a.decomp;
+} ss20;
