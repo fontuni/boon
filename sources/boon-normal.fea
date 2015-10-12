@@ -35,5 +35,5 @@ include(features/thai-normal.mkmk.fea)
 
 # Latin
 include(features/latin-normal.mark.fea)
-#include(features/latin-normal.mkmk.fea)
+include(features/latin-normal.mkmk.fea)
 #include(features/latin.kern.fea)

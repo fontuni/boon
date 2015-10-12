@@ -123,7 +123,7 @@ lookup LatinBelow.mark {
   pos base [ @j \p \thorn ] <anchor 150 -180> mark @LatinBelow.mark;
   pos base [ \g @g.abv @g.alt ] <anchor 360 -180> mark @LatinBelow.mark;
   pos base [ \q ] <anchor 535 -240> mark @LatinBelow.mark;
-  pos base [ \y @y.abv ] <anchor 300 -170> mark @LatinBelow.mark;
+  pos base [ \y @y.abv ] <anchor 300 -180> mark @LatinBelow.mark;
 
   # cap normal
   pos base [ \A @A.abv @A.abv2 ] <anchor 380 0> mark @LatinBelow.mark;

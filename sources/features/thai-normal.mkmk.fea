@@ -12,14 +12,12 @@ lookup ThaiExtendedAbove.mkmk {
   lookupflag 0;
 
   markClass [ @T \uni0E4D.su \uni0E47.su ] <anchor 0 0> @ThaiExtendedAbove.mkmk;
-  markClass [ \uni0E4E ] <anchor -90 -280> @ThaiExtendedAbove.mkmk;
+  markClass [ \uni0E4E ] <anchor 0 -240> @ThaiExtendedAbove.mkmk;
 
-  pos mark [ \uni0E4A.sd ] <anchor -40 0> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E48.sd \uni0E49.sd \uni0E4B.sd \uni0E4C.sd \uni0E31 \uni0E34 \uni0E35 \uni0E36 \uni0E37 ] <anchor 0 0> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E47 ] <anchor -90 75> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E48 \uni0E49 \uni0E4A \uni0E4B \uni0E4C \uni0E4D.su ] <anchor 0 240> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E4D ] <anchor 0 30> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E47.su ] <anchor 0 280> mark @ThaiExtendedAbove.mkmk;
+  pos mark [ \uni0E48.sd \uni0E49.sd \uni0E4A.sd \uni0E4B.sd \uni0E4C.sd \uni0E4D \uni0E31 \uni0E34 \uni0E35 \uni0E36 \uni0E37 ] <anchor 0 0> mark @ThaiExtendedAbove.mkmk;
+  pos mark [ \uni0E47 ] <anchor -80 0> mark @ThaiExtendedAbove.mkmk;
+  pos mark [ \uni0E48 \uni0E49 \uni0E4A \uni0E4B \uni0E4C ] <anchor 0 240> mark @ThaiExtendedAbove.mkmk;
+  pos mark [ \uni0E47.su \uni0E4D.su ] <anchor 0 210> mark @ThaiExtendedAbove.mkmk;
 
 } ThaiExtendedAbove.mkmk;
 
@@ -27,18 +25,19 @@ lookup ThaiExtendedAbove.left.mkmk {
   lookupflag 0;
 
   markClass [ @T.sl  \uni0E4D.sul \uni0E47.sul ] <anchor 0 0> @ThaiExtendedAbove.left.mkmk;
-  markClass [ \uni0E4E.sl ] <anchor -60 -280> @ThaiExtendedAbove.left.mkmk;
+  markClass [ \uni0E4E.sl ] <anchor -60 -240> @ThaiExtendedAbove.left.mkmk;
 
   pos mark [ \uni0E31.sl ] <anchor -40 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E4C.sdl \uni0E4D.sl ] <anchor -60 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E34.sl \uni0E36.sl \uni0E37.sl ] <anchor -30 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E35.sl ] <anchor 0 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E47.sl ] <anchor -60 75> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E48.sl \uni0E49.sl \uni0E4A.sl \uni0E4B.sl \uni0E4D.sul ] <anchor 0 240> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E48.sdl ] <anchor -45 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E49.sdl \uni0E4A.sdl \uni0E4B.sdl ] <anchor -90 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E4C.sl ] <anchor 45 210> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E47.sul ] <anchor 0 280> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E4C.sdl ] <anchor -50 0> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E4D.sl ] <anchor -20 0> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E34.sl \uni0E35.sl ] <anchor 0 0> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [  \uni0E36.sl \uni0E37.sl ] <anchor -20 0> mark @ThaiExtendedAbove.left.mkmk;
+  
+  pos mark [ \uni0E47.sl ] <anchor -60 0> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E48.sl \uni0E49.sl \uni0E4A.sl \uni0E4B.sl \uni0E4C.sl ] <anchor 0 240> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E4D.sul ] <anchor 0 210> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E48.sdl \uni0E49.sdl \uni0E4A.sdl \uni0E4B.sdl ] <anchor -45 0> mark @ThaiExtendedAbove.left.mkmk;
+  pos mark [ \uni0E47.sul ] <anchor 0 240> mark @ThaiExtendedAbove.left.mkmk;
 
 } ThaiExtendedAbove.left.mkmk;
 

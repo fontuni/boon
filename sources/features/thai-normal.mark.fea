@@ -10,13 +10,18 @@ include(thai-classes.fea)
 
 lookup ThaiAbove.mark {
   lookupflag 0;
-
-  markClass [ @AV @T.sd ] <anchor 0 0> @ThaiAbove.mark;
-
-  pos base [ \uni0E10 \uni0E10.rd ] <anchor 545 0> mark @ThaiAbove.mark;
-  pos base [ \uni0E18 ] <anchor 570 0> mark @ThaiAbove.mark;
-  pos base [ \uni0E23 \uni0E27 ] <anchor 520 0> mark @ThaiAbove.mark;
+  markClass [ @AV ] <anchor 0 0> @ThaiAbove.mark;
+  pos base [ \uni0E07 ] <anchor 545 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E10 \uni0E10.rd ] <anchor 575 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E23 ] <anchor 550 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E27 ] <anchor 545 0> mark @ThaiAbove.mark;
   pos base [ \uni0E2C ] <anchor 720 0> mark @ThaiAbove.mark;
+
+  markClass [ @T.sd ] <anchor 0 0> @ThaiTone.mark;
+  pos base [ \uni0E10 \uni0E10.rd ] <anchor 535 0> mark @ThaiTone.mark;
+  pos base [ \uni0E18 ] <anchor 565 0> mark @ThaiTone.mark;
+  pos base [ \uni0E23 ] <anchor 510 0> mark @ThaiTone.mark;
+  pos base [ \uni0E2C ] <anchor 720 0> mark @ThaiTone.mark;
 
 } ThaiAbove.mark;
 

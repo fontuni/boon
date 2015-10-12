@@ -1,0 +1,32 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(latin-classes.fea)
+
+lookup LatinAbove.mkmk {
+  lookupflag 0;
+
+  markClass @COMB.abv <anchor 0 0> @LatinAbove.mkmk;
+
+  pos mark @COMB.abv <anchor 0 180> mark @LatinAbove.mkmk;
+
+} LatinAbove.mkmk;
+
+lookup LatinBelow.mkmk {
+  lookupflag 0;
+
+  markClass @COMB.blw <anchor 0 0> @LatinBelow.mkmk;
+
+  pos mark @COMB.blw <anchor 0 -180> mark @LatinBelow.mkmk;
+
+} LatinBelow.mkmk;
+
+feature mkmk {
+  lookup LatinAbove.mkmk;
+  lookup LatinBelow.mkmk;
+} mkmk;
