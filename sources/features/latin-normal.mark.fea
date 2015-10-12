@@ -158,11 +158,11 @@ lookup LatinBelow.mark {
 lookup LatinCedilla.mark {
   markClass [ \uni0327 ] <anchor 0 0> @LatinCedilla.mark;
   pos base [ \C ] <anchor 412 0> mark @LatinCedilla.mark;
-  pos base [ \S \uni25CC ] <anchor 355 0> mark @LatinCedilla.mark;
-  pos base [ \T ] <anchor 300 0> mark @LatinCedilla.mark;
+  pos base [ \S \uni25CC ] <anchor 380 0> mark @LatinCedilla.mark;
+  pos base [ \T ] <anchor 320 0> mark @LatinCedilla.mark;
   pos base [ \c ] <anchor 330 0> mark @LatinCedilla.mark;
-  pos base [ \s ] <anchor 285 0> mark @LatinCedilla.mark;
-  pos base [ \t ] <anchor 250 0> mark @LatinCedilla.mark;
+  pos base [ \s ] <anchor 310 0> mark @LatinCedilla.mark;
+  pos base [ \t ] <anchor 270 0> mark @LatinCedilla.mark;
 } LatinCedilla.mark;
 
 lookup LatinOgonek.mark {
@@ -170,14 +170,14 @@ lookup LatinOgonek.mark {
 
   pos base [ \A ] <anchor 675 0> mark @LatinOgonek.mark;
   pos base [ \E ] <anchor 555 0> mark @LatinOgonek.mark;
-  pos base [ \I ] <anchor 165 0> mark @LatinOgonek.mark;
-  pos base [ \O \U ] <anchor 460 0> mark @LatinOgonek.mark;
+  pos base [ \I ] <anchor 175 0> mark @LatinOgonek.mark;
+  pos base [ \O \U ] <anchor 480 0> mark @LatinOgonek.mark;
 
-  pos base [ \a ] <anchor 510 0> mark @LatinOgonek.mark;
-  pos base [ \e ] <anchor 370 0> mark @LatinOgonek.mark;
-  pos base [ \i \dotlessi ] <anchor 145 0> mark @LatinOgonek.mark;
-  pos base [ \o ] <anchor 370 0> mark @LatinOgonek.mark;
-  pos base [ \u ] <anchor 360 0> mark @LatinOgonek.mark;
+  pos base [ \a ] <anchor 515 0> mark @LatinOgonek.mark;
+  pos base [ \e ] <anchor 410 0> mark @LatinOgonek.mark;
+  pos base [ \i \dotlessi ] <anchor 155 0> mark @LatinOgonek.mark;
+  pos base [ \o ] <anchor 400 0> mark @LatinOgonek.mark;
+  pos base [ \u ] <anchor 380 0> mark @LatinOgonek.mark;
 
 } LatinOgonek.mark;
 

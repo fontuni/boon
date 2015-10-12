@@ -24,13 +24,13 @@ include(features/thai-extra.fea)
 
 # Latin
 include(features/latin-core.fea)
-#include(features/latin-extra.fea)
+include(features/latin-extra.fea)
 
 # GPOS
 
 # Thai
-#include(features/thai-normal.mark.fea)
-#include(features/thai-normal.mkmk.fea)
+include(features/thai-normal.mark.fea)
+include(features/thai-normal.mkmk.fea)
 #include(features/thai.kern.fea)
 
 # Latin
