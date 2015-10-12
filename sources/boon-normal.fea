@@ -23,7 +23,7 @@ include(features/thai-core.fea)
 include(features/thai-extra.fea)
 
 # Latin
-#include(features/latin-core.fea)
+include(features/latin-core.fea)
 #include(features/latin-extra.fea)
 
 # GPOS
@@ -34,6 +34,6 @@ include(features/thai-extra.fea)
 #include(features/thai.kern.fea)
 
 # Latin
-#include(features/latin-normal.mark.fea)
+include(features/latin-normal.mark.fea)
 #include(features/latin-normal.mkmk.fea)
 #include(features/latin.kern.fea)

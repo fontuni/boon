@@ -1,0 +1,90 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(latin-classes.fea)
+
+# GSUB
+# Romanian & Moldovan locl
+
+lookup Latin.st.cedilla {
+  sub [ \Scedilla \scedilla \uni0162 \uni0163 ] by [ \uni0218 \uni0219 \uni021A \uni021B ];
+} Latin.st.cedilla;
+
+feature locl {
+  script latn;
+    language ROM exclude_dflt;
+      lookup Latin.st.cedilla;
+    language MOL exclude_dflt;
+      lookup Latin.st.cedilla;
+} locl;
+
+# For older browsers & applications
+feature ccmp {
+  script latn;
+    language ROM exclude_dflt;
+      lookup Latin.st.cedilla;
+    language MOL exclude_dflt;
+      lookup Latin.st.cedilla;
+} ccmp;
+
+feature salt {
+  script latn;
+    lookup Latin.st.cedilla;
+} salt;
+
+feature ss01 {
+  script latn;
+    lookup Latin.st.cedilla;
+} ss01;
+
+# i & dotlessi ccmp
+lookup Latin.ij {
+  sub \dotlessi \uni0307 by \i;
+  sub \dotlessi \uni200D \uni0307 by \j;
+  sub \uni0237 \uni0307 by \j;
+  sub \uni0237 \uni200D \uni0307 by \j;
+} Latin.ij;
+
+lookup Latin.ij.dotless {
+  sub \i by \dotlessi;
+  sub \j by \uni0237;
+} Latin.ij.dotless;
+
+lookup LatinContext.ij {
+  sub [ \i \j ]' lookup Latin.ij.dotless @COMB.abv;
+} LatinContext.ij;
+
+lookup Latin.horn {
+  sub \O \uni031B by \Ohorn;
+  sub \O \uni200D \uni031B by \Ohorn;
+  sub \o \uni031B by \ohorn;
+  sub \o \uni200D \uni031B by \ohorn;
+  sub \U \uni031B by \Uhorn;
+  sub \U \uni200D \uni031B by \Uhorn;
+  sub \u \uni031B by \uhorn;
+  sub \u \uni200D \uni031B by \uhorn;
+} Latin.horn;
+
+feature ccmp {
+  lookup Latin.ij;
+  lookup LatinContext.ij;
+  lookup Latin.horn;
+} ccmp;
+
+lookup Latin.liga {
+  sub \f \i by \fi;
+  sub \f \uni200D \i by \fi;
+  sub \f \l by \fl;
+  sub \f \uni200D \l by \fl;
+  sub \period \period \period by \ellipsis;
+  sub \period \uni200D \period \uni200D \period by \ellipsis;
+} Latin.liga;
+
+feature liga {
+  lookup Latin.liga;
+} liga;

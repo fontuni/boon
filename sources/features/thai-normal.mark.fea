@@ -1,0 +1,41 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(thai-classes.fea)
+
+lookup ThaiAbove.mark {
+  lookupflag 0;
+
+  markClass [ @AV @T.sd ] <anchor 0 0> @ThaiAbove.mark;
+
+  pos base [ \uni0E10 \uni0E10.rd ] <anchor 670 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E1E ] <anchor 970 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E1F ] <anchor 750 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E23 ] <anchor 660 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E0A.swap \uni0E0B.swap \uni0E28.swap ] <anchor 740 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E2A.swap \uni0E2E.swap ] <anchor 720 0> mark @ThaiAbove.mark;
+  pos base [ \uni0E2C.swap ] <anchor 940 0> mark @ThaiAbove.mark;
+
+} ThaiAbove.mark;
+
+lookup ThaiBelow.mark {
+  lookupflag 0;
+
+  markClass [ \uni0E38 \uni0E3A ] <anchor 0 0> @ThaiBelow.mark;
+  markClass [ \uni0E39 ] <anchor -30 0> @ThaiBelow.mark;
+
+  pos base [ \uni0E07 ] <anchor 670 0> mark @ThaiBelow.mark;
+  pos base [ \uni0E08 \uni0E10.rd ] <anchor 660 0> mark @ThaiBelow.mark;
+  pos base [ \uni0E1E \uni0E1F \uni0E2C \uni0E2C.swap ] <anchor 910 0> mark @ThaiBelow.mark;
+
+} ThaiBelow.mark;
+
+feature mark {
+  lookup ThaiAbove.mark;
+  lookup ThaiBelow.mark;
+} mark;

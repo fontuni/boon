@@ -1,0 +1,163 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(latin-classes.fea)
+
+lookup Latin.ss18 {
+  sub \g by \uni0261 ;
+} Latin.ss18;
+
+lookup Latin.ss19 {
+  sub \a by \uni0251 ;
+} Latin.ss19;
+
+lookup Latin.ss20 {
+  sub [ \a \g ] by [ \uni0251 \uni0261 ] ;
+} Latin.ss20;
+
+# a,g alt decomposed
+lookup Latin.a.decomp {
+
+  # @a.abv
+  sub \agrave by \uni0251 \uni0300;
+  sub \aacute by \uni0251 \uni0301;
+  sub \acircumflex by \uni0251 \uni0302;
+  sub \atilde by \uni0251 \uni0303;
+  sub \amacron by \uni0251 \uni0304;
+  sub \abreve by \uni0251 \uni0306;
+  sub \adieresis by \uni0251 \uni0308;
+  sub \uni1EA3 by \uni0251 \uni0309;
+  sub \aring by \uni0251 \uni030A;
+  sub \uni01CE by \uni0251 \uni030C;
+
+  # @a.abv2
+  sub \uni1EA5 by \uni0251 \uni0302 \uni0301;
+  sub \uni1EA7 by \uni0251 \uni0302 \uni0300;
+  sub \uni1EA9 by \uni0251 \uni0302 \uni0309;
+  sub \uni1EAB by \uni0251 \uni0302 \uni0303;
+  sub \uni1EAF by \uni0251 \uni0306 \uni0301;
+  sub \uni1EB1 by \uni0251 \uni0306 \uni0300;
+  sub \uni1EB3 by \uni0251 \uni0306 \uni0309;
+  sub \uni1EB5 by \uni0251 \uni0306 \uni0303;
+
+  # @a.blw
+  sub \uni1EA1 by \uni0251 \uni0323;
+  sub \aogonek by \uni0251 \uni0328;
+
+  #@a.blw.abv
+  sub \uni1EAD by \uni0251 \uni0323 \uni0302;
+  sub \uni1EB7 by \uni0251 \uni0323 \uni0306;
+  
+} Latin.a.decomp;
+
+lookup Latin.g.decomp {
+
+  # @g.abv
+  sub \gcircumflex by \uni0261 \uni0302;
+  sub \gbreve by \uni0261 \uni0306;
+  sub \gdotaccent by \uni0261 \uni0307;
+  sub \uni0123 by \uni0261 \uni0312;
+  sub \gcaron by \uni0261 \uni030C;
+  sub \uni1E21 by \uni0261 \uni0304;
+  
+} Latin.g.decomp;
+
+feature ss18 {
+  lookup Latin.ss18;
+  lookup Latin.g.decomp;
+} ss18;
+
+feature ss19 {
+  lookup Latin.ss19;
+  lookup Latin.a.decomp;
+} ss19;
+
+feature ss20 {
+  lookup Latin.ss20;
+  lookup Latin.a.decomp;
+  lookup Latin.g.decomp;
+} ss20;
+
+# figure related features
+@pnum = [ \zero \one \two \three \four \five \six \seven \eight \nine ];
+#@tnum = [ \zero.tnum \one.tnum \two.tnum \three.tnum \four.tnum \five.tnum \six.tnum \seven.tnum \eight.tnum \nine.tnum ];
+@numr = [ \zero.numr \one.numr \two.numr \three.numr \four.numr \five.numr \six.numr \seven.numr \eight.numr \nine.numr ];
+@dnom = [ \zero.dnom \one.dnom \two.dnom \three.dnom \four.dnom \five.dnom \six.dnom \seven.dnom \eight.dnom \nine.dnom ];
+@sups = [ \zero.sups \one.sups \two.sups \three.sups \four.sups \five.sups \six.sups \seven.sups \eight.sups \nine.sups ];
+@subs = [ \zero.subs \one.subs \two.subs \three.subs \four.subs \five.subs \six.subs \seven.subs \eight.subs \nine.subs ];
+
+@add1 = [ \parenleft \parenright \n ];
+@add1.sups = [ \parenleft.sups \parenright.sups \n.sups ];
+@add2 = [ \parenleft \parenright ];
+@add2.subs = [ \parenleft.subs \parenright.subs ];
+@all.sups = [ @sups @add1.sups ];
+@all.subs = [ @subs @add2.subs ];
+
+# sups, subs, numr, dnom
+feature sups {
+  lookup Latin.sups {
+    sub [ @pnum @add1 ] by @all.sups;
+  } Latin.sups;
+} sups;
+
+feature subs {
+  lookup Latin.subs {
+    sub [ @pnum @add2 ] by @all.subs;
+  } Latin.subs;
+} subs;
+
+lookup Latin.numr {
+  sub [ @pnum ] by @numr;
+} Latin.numr;
+
+feature numr {
+  lookup Latin.numr;
+} numr;
+
+lookup Latin.dnom {
+  sub [ @pnum ] by @dnom;
+  sub [ @numr ] by @dnom;
+} Latin.dnom;
+
+feature dnom {
+  lookup Latin.dnom;
+} dnom;
+
+# fractions
+lookup LatinSlash.frac {
+  sub \slash by \fraction;
+} LatinSlash.frac;
+
+# fractions
+lookup LatinContext.frac {
+  sub [ \fraction @dnom ] @numr' lookup Latin.dnom;
+} LatinContext.frac;
+
+lookup LatinLiga.frac {
+
+  sub [ \one \one.numr ] \fraction [ \four \four.dnom ] by \onequarter;
+  sub [ \one \one.numr ] \fraction [ \two \two.dnom ] by \onehalf;
+  sub [ \three \three.numr ] \fraction [ \four \four.dnom ] by \threequarters;
+
+  sub [ \one \one.numr ] \fraction [ \three \three.dnom ] by \onethird;
+  sub [ \two \two.numr ] \fraction [ \three \three.dnom ] by \twothirds;
+  sub [ \one \one.numr ] \fraction [ \eight \eight.dnom ] by \oneeighth;
+  sub [ \three \three.numr ] \fraction [ \eight \eight.dnom ] by \threeeighths;
+  sub [ \five \five.numr ] \fraction [ \eight \eight.dnom ] by \fiveeighths;
+  sub [ \seven \seven.numr ] \fraction [ \eight \eight.dnom ] by \seveneighths;
+
+} LatinLiga.frac;
+
+feature frac {
+  lookup Latin.numr;
+  lookup LatinSlash.frac;
+  lookup LatinContext.frac;
+  lookup LatinLiga.frac;
+} frac;
+
+# To-do: kerning numr fraction dnom
