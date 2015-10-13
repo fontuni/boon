@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url(fonts.css);
+
+body {
+  font-family: "BoonTook",sans-serif;
+  font-size: 48px;
+  line-height: 1.4em;
+  color: #222;
+  background: #eee;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings:"kern" 1; 
+  -ms-font-feature-settings:"kern" 1; 
+  -o-font-feature-settings:"kern" 1; 
+  -webkit-font-feature-settings:"kern" 1; 
+  font-feature-settings:"kern" 1;
+  text-shadow: 0 1px 1px rgba(240,240,240,0.5);
+}
+hr {
+  height: 1px;
+  color: transparent;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #ccc;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  line-height: 1.4em;
+  padding: 0;
+  margin: 10px 0;
+}
+h1 {
+  font-size: 84px;
+  margin-bottom: 20px;
+  text-shadow: 0 0.03em 0 #bbb,
+               0px 0.15em 0.10em rgba(0,0,0,0.15),
+               0px 0.15em 0.02em rgba(0,0,0,0.1),
+               0px 0.3em 0.3em rgba(0,0,0,0.1);
+  color: #fff;
+}
+h2 {
+  font-size: 72px;
+}
+h3 {
+  font-size: 60px;
+}
+h4,h5,h6 {
+  font-size: 1em;
+}
+p {
+  padding: 0;
+  margin: 10px 0;
+}
+strong, span {
+  font-weight: normal;
+  color: #f60;
+}
+#page {
+  padding: 10px 40px;
+  margin: 0 auto;
+  max-width: 880px;
+}
+.boontook-ultra {
+  font-family: "BoonTook";
+  font-style: normal;
+}
+.boontook-ultra-oblique {
+  font-family: "BoonTook";
+  font-style: oblique;
+}
+.boontook-mon-ultra {
+  font-family: "BoonTook Mon";
+  font-style: normal;
+}
+.boontook-mon-ultra-oblique {
+  font-family: "BoonTook Mon";
+  font-style: oblique;
+}
+
+.ss01,
+[lang|="pi"] {
+  -moz-font-feature-settings:"ss01" 1; 
+  -ms-font-feature-settings:"ss01" 1; 
+  -o-font-feature-settings:"ss01" 1; 
+  -webkit-font-feature-settings:"ss01" 1; 
+  font-feature-settings:"ss01" 1;
+}
+.ss20 {
+  -moz-font-feature-settings:"ss20" 1; 
+  -ms-font-feature-settings:"ss20" 1; 
+  -o-font-feature-settings:"ss20" 1; 
+  -webkit-font-feature-settings:"ss20" 1; 
+  font-feature-settings:"ss20" 1;
+}
+.ss19 {
+  -moz-font-feature-settings:"ss19" 1;  
+  -ms-font-feature-settings:"ss19" 1; 
+  -o-font-feature-settings:"ss19" 1; 
+  -webkit-font-feature-settings:"ss19" 1; 
+  font-feature-settings:"ss19" 1;
+}
+.ss18 {
+  -moz-font-feature-settings:"ss18" 1; 
+  -ms-font-feature-settings:"ss18" 1; 
+  -o-font-feature-settings:"ss18" 1; 
+  -webkit-font-feature-settings:"ss18" 1; 
+  font-feature-settings:"ss18" 1;
+}

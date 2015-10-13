@@ -11,7 +11,7 @@ lookup LatinAbove.mark {
   pos base [ \uni25CC ] <anchor 360 0> mark @LatinAbove.mark;
 
   # small normal
-  pos base [ \a @a.blw ] <anchor 300 0> mark @LatinAbove.mark;
+  pos base [ \a @a.blw ] <anchor 310 0> mark @LatinAbove.mark;
   pos base [ \q @a.alt @g.alt \g ] <anchor 360 0> mark @LatinAbove.mark;
   pos base [ \c @c.blw \e @e.blw ] <anchor 330 0> mark @LatinAbove.mark;
   #pos base [ \g ] <anchor 330 0> mark @LatinAbove.mark;
@@ -44,7 +44,7 @@ lookup LatinAbove.mark {
   pos base [ \germandbls \eth ] <anchor 350 180> mark @LatinAbove.mark;
 
   # small abv
-  pos base [ @a.abv @a.blw.abv ] <anchor 300 180> mark @LatinAbove.mark;
+  pos base [ @a.abv @a.blw.abv ] <anchor 310 180> mark @LatinAbove.mark;
   pos base [ @e.abv @e.blw.abv ] <anchor 330 180> mark @LatinAbove.mark;
   pos base [ @i.abv @i.blw.abv @j.abv ] <anchor 150 180> mark @LatinAbove.mark;
   pos base [ @o.abv @o.blw.abv @ohorn.abv ] <anchor 330 180> mark @LatinAbove.mark;
@@ -73,7 +73,7 @@ lookup LatinAbove.mark {
   pos base [ \X ] <anchor 385 150> mark @LatinAbove.mark;
   pos base [ \Y @Y.blw ] <anchor 345 150> mark @LatinAbove.mark;
   pos base [ \Z @Z.blw ] <anchor 345 150> mark @LatinAbove.mark;
-  pos base [ \AE \OE ] <anchor 495 150> mark @LatinAbove.mark;
+  pos base [ \AE \OE ] <anchor 510 150> mark @LatinAbove.mark;
   pos base [ @SS ] <anchor 370 150> mark @LatinAbove.mark;
   pos base [ @Schwa ] <anchor 375 150> mark @LatinAbove.mark;
 
@@ -149,7 +149,7 @@ lookup LatinBelow.mark {
   pos base [ \Y @Y.abv ] <anchor 345 0> mark @LatinBelow.mark;
   pos base [ \Z @Z.abv ] <anchor 345 0> mark @LatinBelow.mark;
 
-  pos base [ \AE \OE ] <anchor 495 0> mark @LatinBelow.mark;
+  pos base [ \AE \OE ] <anchor 510 0> mark @LatinBelow.mark;
   pos base [ @SS ] <anchor 390 0> mark @LatinBelow.mark;
   pos base [ @Schwa ] <anchor 375 0> mark @LatinBelow.mark;
 
