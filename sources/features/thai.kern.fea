@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+# Thai digits
+lookup Thai.kern {
+  lookupflag 0;
+    pos [ \uni0E54 \uni0E55 ] [ \uni0E50 \uni0E51 \uni0E54 \uni0E55 \uni0E58 \uni0E59 ] -30;
+    pos [ \uni0E54 \uni0E55 ] [ \uni0E53 \uni0E57 ] -20;
+    pos [ \uni0E59 ] [ \uni0E50 \uni0E51 \uni0E54 \uni0E55 \uni0E58 \uni0E59 ] -20;
+    pos [ \uni0E59 ] [ \uni0E53 \uni0E57 ] -10;
+} Thai.kern;
+
+feature kern {
+  lookup Thai.kern;
+} kern;
