@@ -125,9 +125,7 @@
 @G = [ \G @G.abv @G.blw ];
 
 @g.abv = [ \gcircumflex \gbreve \gdotaccent \uni0123 \gcaron \uni1E21 ];
-@g = [ \g @g.abv ];
-
-@g.alt = [ \uni0261 ];
+@g = [ \g \uni0261 @g.abv ];
 
 @H.base = [ \H \Hbar ];
 @H.abv = [ \Hcircumflex ];

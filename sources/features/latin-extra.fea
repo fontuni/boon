@@ -9,8 +9,8 @@
 include(latin-classes.fea)
 
 # figure related features
-@pnum = [ \zero \one \two \three \four \five \six \seven \eight \nine ];
-@tnum = [ \zero.tnum \one.tnum \two.tnum \three.tnum \four.tnum \five.tnum \six.tnum \seven.tnum \eight.tnum \nine.tnum ];
+@tnum = [ \zero \one \two \three \four \five \six \seven \eight \nine ];
+@pnum = [ \zero.pnum \one.pnum \two.pnum \three.pnum \four.pnum \five.pnum \six.pnum \seven.pnum \eight.pnum \nine.pnum ];
 @numr = [ \zero.numr \one.numr \two.numr \three.numr \four.numr \five.numr \six.numr \seven.numr \eight.numr \nine.numr ];
 @dnom = [ \zero.dnom \one.dnom \two.dnom \three.dnom \four.dnom \five.dnom \six.dnom \seven.dnom \eight.dnom \nine.dnom ];
 @sups = [ \zero.sups \one.sups \two.sups \three.sups \four.sups \five.sups \six.sups \seven.sups \eight.sups \nine.sups ];
@@ -103,8 +103,16 @@ feature frac {
   lookup LatinLiga.frac;
 } frac;
 
+lookup Latin.ss18 {
+  sub \g by \g.alt ;
+} Latin.ss18;
+
+lookup Latin.ss19 {
+  sub \a by \uni0251 ;
+} Latin.ss19;
+
 lookup Latin.ss20 {
-  sub [ \a ] by [ \uni0251 ] ;
+  sub [ \a \g ] by [ \uni0251 \g.alt ] ;
 } Latin.ss20;
 
 # a alt decomposed
@@ -142,7 +150,31 @@ lookup Latin.a.decomp {
   
 } Latin.a.decomp;
 
+lookup Latin.g.decomp {
+
+  # @g.abv
+  sub \gcircumflex by \g.alt \uni0302;
+  sub \gbreve by \g.alt \uni0306;
+  sub \gdotaccent by \g.alt \uni0307;
+  sub \uni0123 by \g.alt \uni0312;
+  sub \gcaron by \g.alt \uni030C;
+  sub \uni1E21 by \g.alt \uni0304;
+  
+} Latin.g.decomp;
+
+feature ss18 {
+  lookup Latin.ss18;
+  lookup Latin.g.decomp;
+} ss18;
+
+feature ss19 {
+  lookup Latin.ss19;
+  lookup Latin.a.decomp;
+} ss19;
+
 feature ss20 {
   lookup Latin.ss20;
   lookup Latin.a.decomp;
+  lookup Latin.g.decomp;
 } ss20;
+

@@ -12,9 +12,9 @@ lookup LatinAbove.mark {
 
   # small normal
   pos base [ \a @a.blw ] <anchor 310 0> mark @LatinAbove.mark;
-  pos base [ \q @a.alt @g.alt \g ] <anchor 360 0> mark @LatinAbove.mark;
+  pos base [ \q @a.alt \g \uni0261 ] <anchor 360 0> mark @LatinAbove.mark;
   pos base [ \c @c.blw \e @e.blw ] <anchor 330 0> mark @LatinAbove.mark;
-  #pos base [ \g ] <anchor 330 0> mark @LatinAbove.mark;
+  pos base [ \g.alt ] <anchor 280 0> mark @LatinAbove.mark;
   pos base [ \m @m.blw ] <anchor 480 0> mark @LatinAbove.mark;
   pos base [ \n @n.blw ] <anchor 330 0> mark @LatinAbove.mark;
   pos base [ @o.base @o.blw \ohorn @ohorn.blw ] <anchor 330 0> mark @LatinAbove.mark;
@@ -121,7 +121,8 @@ lookup LatinBelow.mark {
 
   # small descender
   pos base [ @j \p \thorn ] <anchor 150 -180> mark @LatinBelow.mark;
-  pos base [ \g @g.abv @g.alt ] <anchor 360 -180> mark @LatinBelow.mark;
+  pos base [ \g \uni0261 @g.abv ] <anchor 360 -180> mark @LatinBelow.mark;
+  pos base [ \g.alt ] <anchor 295 -180> mark @LatinBelow.mark;
   pos base [ \q ] <anchor 535 -240> mark @LatinBelow.mark;
   pos base [ \y @y.abv ] <anchor 300 -180> mark @LatinBelow.mark;
 
