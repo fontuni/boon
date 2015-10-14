@@ -333,16 +333,16 @@ h3 {
   line-height: 48px;
 }
 h1 {
-  font-size: 44px;
+  font-size: 40px;
 }
 h2 {
-  font-size: 36px;
-}
-h3 {
   font-size: 28px;
 }
+h3 {
+  font-size: 22px;
+}
 h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 h5 {
   font-size: 16px;

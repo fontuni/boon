@@ -1,0 +1,125 @@
+$cl: #333
+$bg: #f3f3f3
+$textSize: 15px
+$lineHeight: $textSize * 1.5
+$fontFamily: "Boon-1.0"
+
+=font-face($name, $style, $weight)
+  @font-face
+    src: url(../fonts/woff2/#{$name}.woff2) format('woff'), url(../fonts/woff/#{$name}.woff) format('woff'), url(../fonts/ttf/#{$name}.ttf) format('truetype')
+    font:
+      family: $fontFamily
+      style: $style
+      weight: $weight
+
++font-face(Boon-300, normal, 300)
++font-face(Boon-300i, oblique, 300)
++font-face(Boon-400, normal, 400)
++font-face(Boon-400i, oblique, 400)
++font-face(Boon-500, normal, 500)
++font-face(Boon-500i, oblique, 500)
++font-face(Boon-600, normal, 600)
++font-face(Boon-600i, oblique, 600)
++font-face(Boon-700, normal, 700)
++font-face(Boon-700i, oblique, 700)
+
+=font-case($weight, $style)
+  font-weight: $weight
+  font-style: $style
+
+body
+  max-width: 600px
+  margin: 0 auto
+  padding: 20px
+  font-size: $textSize
+  line-height: $lineHeight
+  font-family: $fontFamily, sans-serif
+  font-weight: 400
+  font-style: normal
+  text-rendering: optimizeLegibility
+  background: $bg
+  color: $cl
+
+  code, pre
+    font-family: $fontFamily
+
+  .browsehappy
+    padding: 10px 20px
+    background: yellow
+
+  h1,h2
+    line-height: 1.25em
+
+  h1,h2,h3,h4,h5,h6
+    text-shadow: 1px 1px #fff
+
+  h1,h2,h3,h4,h5,h6,strong
+    font-weight: 600
+
+  #title
+    font-size: 120px
+    line-height: 1.25em
+    font-weight: 700
+    padding: 0
+    margin: 0 0 20px 0
+    text-align: center
+    text-shadow: 1px 1px #fff
+  
+  #download,
+  #end
+    font-weight: 700
+    font-size: 48px
+    line-height: 1
+    padding: 0
+    margin: 0 0 20px 0
+    text-align: center
+    text-shadow: 1px 1px #fff
+
+  .test-texts
+    font-size: 1.5em
+    line-height: 1.5em
+    padding: 10px 20px
+    background: #f9f9f9
+    margin: 0px 0px 12px
+
+  .zoom-texts
+    font-size: 2em
+    line-height: 1.5em
+
+  .boon-300
+    +font-case(300, normal)
+
+  .boon-300i
+    +font-case(300, oblique)
+
+  .boon-400
+    +font-case(400, normal)
+
+  .boon-400i
+    +font-case(400, oblique)
+
+  .boon-500
+    +font-case(500, normal)
+
+  .boon-500i
+    +font-case(500, oblique)
+
+  .boon-600
+    +font-case(600, normal)
+
+  .boon-60i
+    +font-case(600, oblique)
+
+  .boon-700
+    +font-case(700, normal)
+
+  .boon-700i
+    +font-case(700, oblique)
+
+body.boon-300-500
+  h1,h2,h3,h4,h5,h6,strong
+    font-weight: 500
+
+body.boon-400-700
+  font-weight: 400
+

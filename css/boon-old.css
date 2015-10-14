@@ -1,0 +1,137 @@
+@font-face {
+  src: url(../fonts/woff2/Boon-300.woff2) format("woff"), url(../fonts/woff/Boon-300.woff) format("woff"), url(../fonts/ttf/Boon-300.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  src: url(../fonts/woff2/Boon-300i.woff2) format("woff"), url(../fonts/woff/Boon-300i.woff) format("woff"), url(../fonts/ttf/Boon-300i.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: oblique;
+  font-weight: 300; }
+@font-face {
+  src: url(../fonts/woff2/Boon-400.woff2) format("woff"), url(../fonts/woff/Boon-400.woff) format("woff"), url(../fonts/ttf/Boon-400.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  src: url(../fonts/woff2/Boon-400i.woff2) format("woff"), url(../fonts/woff/Boon-400i.woff) format("woff"), url(../fonts/ttf/Boon-400i.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: oblique;
+  font-weight: 400; }
+@font-face {
+  src: url(../fonts/woff2/Boon-500.woff2) format("woff"), url(../fonts/woff/Boon-500.woff) format("woff"), url(../fonts/ttf/Boon-500.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  src: url(../fonts/woff2/Boon-500i.woff2) format("woff"), url(../fonts/woff/Boon-500i.woff) format("woff"), url(../fonts/ttf/Boon-500i.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: oblique;
+  font-weight: 500; }
+@font-face {
+  src: url(../fonts/woff2/Boon-600.woff2) format("woff"), url(../fonts/woff/Boon-600.woff) format("woff"), url(../fonts/ttf/Boon-600.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  src: url(../fonts/woff2/Boon-600i.woff2) format("woff"), url(../fonts/woff/Boon-600i.woff) format("woff"), url(../fonts/ttf/Boon-600i.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: oblique;
+  font-weight: 600; }
+@font-face {
+  src: url(../fonts/woff2/Boon-700.woff2) format("woff"), url(../fonts/woff/Boon-700.woff) format("woff"), url(../fonts/ttf/Boon-700.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  src: url(../fonts/woff2/Boon-700i.woff2) format("woff"), url(../fonts/woff/Boon-700i.woff) format("woff"), url(../fonts/ttf/Boon-700i.ttf) format("truetype");
+  font-family: "Boon-1.0";
+  font-style: oblique;
+  font-weight: 700; }
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-family: "Boon-1.0", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  background: #f3f3f3;
+  color: #333; }
+  body code, body pre {
+    font-family: "Boon-1.0"; }
+  body .browsehappy {
+    padding: 10px 20px;
+    background: yellow; }
+  body h1, body h2 {
+    line-height: 1.25em; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    text-shadow: 1px 1px #fff; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body strong {
+    font-weight: 600; }
+  body #title {
+    font-size: 120px;
+    line-height: 1.25em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px #fff; }
+  body #download,
+  body #end {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px #fff; }
+  body .test-texts {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    margin: 0px 0px 12px; }
+  body .zoom-texts {
+    font-size: 2em;
+    line-height: 1.5em; }
+  body .boon-300 {
+    font-weight: 300;
+    font-style: normal; }
+  body .boon-300i {
+    font-weight: 300;
+    font-style: oblique; }
+  body .boon-400 {
+    font-weight: 400;
+    font-style: normal; }
+  body .boon-400i {
+    font-weight: 400;
+    font-style: oblique; }
+  body .boon-500 {
+    font-weight: 500;
+    font-style: normal; }
+  body .boon-500i {
+    font-weight: 500;
+    font-style: oblique; }
+  body .boon-600 {
+    font-weight: 600;
+    font-style: normal; }
+  body .boon-60i {
+    font-weight: 600;
+    font-style: oblique; }
+  body .boon-700 {
+    font-weight: 700;
+    font-style: normal; }
+  body .boon-700i {
+    font-weight: 700;
+    font-style: oblique; }
+
+body.boon-300-500 h1, body.boon-300-500 h2, body.boon-300-500 h3, body.boon-300-500 h4, body.boon-300-500 h5, body.boon-300-500 h6, body.boon-300-500 strong {
+  font-weight: 500; }
+
+body.boon-400-700 {
+  font-weight: 400; }
+
+/*# sourceMappingURL=boon-old.css.map */

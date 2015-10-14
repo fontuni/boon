@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 
 # Covert scss to css
-sass css/boontook.scss css/boontook.css
+sass css/boon.scss css/boon.css
+sass css/boon-old.sass css/boon-old.css

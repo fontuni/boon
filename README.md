@@ -1,4 +1,4 @@
-<h1><a href="http://fontuni.com/boon/"><img src="https://github.com/fontuni/boon/raw/gh-pages/img/boon-heading.png" alt="บุญฟอนต์"></a></h1>
+<h1><a href="http://fontuni.com/boon/">![ฟอนต์บุญ](/img/boon-heading.png?raw=true "Boon Fonts")</a></h1>
 
 **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลการจัดเรียงตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์
 
@@ -6,6 +6,6 @@
 
 ### License: SIL Open Font License v1.1
 
-Copyright 2014, สังศิต ไสววรรณ (sungsit.com | https://twitter.com/gzix). 
+Copyright 2013-2015, สังศิต ไสววรรณ (sungsit.com | https://twitter.com/gzix). 
 
 ฟอนต์นี้ใช้สัญญาอนุญาตแบบ SIL Open Font License, Version 1.1 คุณสามารถอ่านรายละเอียดของสัญญาอนุญาตได้จากไฟล์ OFL.txt ในแพคเกจ หรือที่ <http://scripts.sil.org/OFL>
