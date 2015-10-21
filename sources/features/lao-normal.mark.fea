@@ -13,7 +13,7 @@ lookup LaoAbove.mark {
   markClass [ @AV.lao @T.lao.sd ] <anchor 0 0> @LaoAbove.mark;
 
   pos base [ \uni0E84 ] <anchor 655 0> mark @LaoAbove.mark;
-  pos base [ \uni0E87 \uni0EB2 ] <anchor 570 0> mark @LaoAbove.mark;
+  pos base [ \uni0E87 \uni0EB2 ] <anchor 560 0> mark @LaoAbove.mark;
   pos base [ \uni0E88 ] <anchor 610 0> mark @LaoAbove.mark;
 
 

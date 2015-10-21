@@ -102,6 +102,25 @@ def buildFont(source,family):
     temp.generate(ttfunhinted, flags=genflags, layer = layername)
     print(font.fullname, 'TTF instance generated.')
 
+    temp.close()
+    subprocess.call(['rm',tempsfd])
+
+    ttf = build_dir + font.fontname + '.ttf'
+    woff = build_dir + font.fontname + '.woff'
+
+    # ttfautohint
+    ttfHint(ttfunhinted,ttf)
+    printFontInfo(ttf)
+    print(font.fullname, 'TTF autohinted.')
+
+    # hinted ttf to woff
+    ttf2Woff(ttf,woff,genflags)
+    print(font.fullname, 'WOFF instance generated.')
+
+    # hinted ttf to woff2
+    subprocess.call(['woff2_compress',ttf])
+    print(font.fullname, 'WOFF2 instance generated.')
+
   font.save('sources/boon-master-temp.sfd')
   font.close()
 
