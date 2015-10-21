@@ -1,0 +1,130 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+# Shared functionalities for Lao shaping
+
+include(lao-classes.fea)
+
+# Lao Sara Am decomposition: The extra zero-width joiner (@ZWJ) is required
+# to distinguish decomposed Sara AA from user's input one.
+lookup LaoDecomp {
+  sub \uni0EB3 by \uni0ECD @ZWJ \uni0EB2;
+} LaoDecomp;
+
+lookup LaoT.0ECD {
+  sub @T.lao by \uni0ECD;
+} LaoT.0ECD;
+
+lookup Lao0ECD.0EC8 {
+  sub \uni0ECD by \uni0EC8;
+} Lao0ECD.0EC8;
+
+lookup Lao0ECD.0EC9 {
+  sub \uni0ECD by \uni0EC9;
+} Lao0ECD.0EC9;
+
+lookup Lao0ECD.0ECA {
+  sub \uni0ECD by \uni0ECA;
+} Lao0ECD.0ECA;
+
+lookup Lao0ECD.0ECB {
+  sub \uni0ECD by \uni0ECB;
+} Lao0ECD.0ECB;
+
+# Reorder Nikhahit (uni0ECD) & Tones
+lookup LaoContext.ro {
+  sub \uni0EC8' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0EC8 @ZWJ' \uni0EB2';
+  sub \uni0EC9' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0EC9 @ZWJ' \uni0EB2';
+  sub \uni0ECA' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0ECA @ZWJ' \uni0EB2';
+  sub \uni0ECB' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0ECB @ZWJ' \uni0EB2';
+} LaoContext.ro; 
+
+# GSUB features
+
+feature ccmp {
+  lookup LaoDecomp;
+  lookup LaoContext.ro;  
+} ccmp;
+
+# Basic subsitutions
+
+lookup Lao.sd {
+  sub @T.lao by @T.lao.sd;
+} Lao.sd;
+
+lookup LaoBV.sd {
+  sub @BV.lao by @BV.lao.sd;
+} LaoBV.sd;
+
+lookup Lao.sdl {
+  sub @T.lao by @T.lao.sdl;
+} Lao.sdl;
+
+lookup Lao.sl {
+  sub @T.lao by @T.lao.sl;
+  sub @AV.lao by @AV.lao.sl;
+} Lao.sl;
+
+lookup Lao.su {
+  sub \uni0ECD by \uni0ECD.su;
+  sub @T.lao.sd by @T.lao;
+} Lao.su;
+
+lookup Lao.sul {
+  sub \uni0ECD by \uni0ECD.sul;
+  sub @T.lao.sdl by @T.lao.sl;
+} Lao.sul;
+
+# This contextual `ccmp` feature aims to handle Lao complex layout without HarfBuzz.
+# Basically, it would work for various OpenType shaping engines (UniScribe, CoreText, Adobe World-Ready)
+# to support minority languages which require extra Tonemarks/Diacrtics.
+
+lookup LaoContext.sl {
+  sub @AC.lao' @BV.lao' @BV.lao' @BV.lao' @AV.lao' lookup Lao.sl;
+  sub @AC.lao' @BV.lao' @BV.lao' @AV.lao' lookup Lao.sl;
+  sub @AC.lao' @BV.lao' @AV.lao' lookup Lao.sl;
+  sub @AC.lao' @AV.lao' lookup Lao.sl;
+} LaoContext.sl;
+
+lookup LaoContext.sdl {
+  sub @AC.lao' @BV.lao' @BV.lao' @BV.lao' @T.lao' lookup Lao.sdl;
+  sub @AC.lao' @BV.lao' @BV.lao' @T.lao' lookup Lao.sdl;
+  sub @AC.lao' @BV.lao' @T.lao' lookup Lao.sdl;
+  sub @AC.lao' @T.lao' lookup Lao.sdl;
+} LaoContext.sdl;
+
+lookup LaoContext.sd {
+  sub [ @NC.lao @DC.lao @DC2.lao @BV.lao.all ]' @T.lao' lookup Lao.sd;
+  sub @DC.lao' @BV.lao' lookup LaoBV.sd;
+  sub @BV.lao' @BV.lao' lookup LaoBV.sd;
+} LaoContext.sd;
+
+lookup LaoContext.fallback {
+
+  # For @AC.lao
+  sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] @AV.lao' lookup Lao.sul;
+  sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] @T.lao' lookup Lao.sl;
+
+  # For @NC @DC
+  sub [ @AV.lao @AV.lao.su @T.lao.sd @T.lao ]' [ @AV.lao @T.lao ]' lookup Lao.su;
+
+  # For @BV.lao
+  sub @BV.lao.all' @T.lao' lookup Lao.sd;
+
+  # For @T.lao
+  sub @T.lao.all [ @AV.lao @T.lao ]' lookup Lao.su;
+
+} LaoContext.fallback;
+
+# Set them all here.
+feature ccmp {
+  lookup LaoContext.sl;
+  lookup LaoContext.sdl;
+  lookup LaoContext.sd;
+  lookup LaoContext.fallback;
+} ccmp;

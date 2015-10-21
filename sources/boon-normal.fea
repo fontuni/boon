@@ -5,6 +5,7 @@ languagesystem latn ROM ;
 languagesystem thai dflt;
 languagesystem thai PAL ;
 languagesystem thai SAN ;
+languagesystem lao  dflt;
 
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
@@ -22,6 +23,10 @@ languagesystem thai SAN ;
 include(features/thai-core.fea)
 include(features/thai-extra.fea)
 
+# Lao
+include(features/lao-core.fea)
+include(features/lao-extra.fea)
+
 # Latin
 include(features/latin-core.fea)
 include(features/latin-extra.fea)
@@ -32,6 +37,10 @@ include(features/latin-extra.fea)
 include(features/thai-normal.mark.fea)
 include(features/thai-normal.mkmk.fea)
 include(features/thai.kern.fea)
+
+# Lao
+include(features/lao-normal.mark.fea)
+include(features/lao-normal.mkmk.fea)
 
 # Latin
 include(features/latin-normal.mark.fea)
