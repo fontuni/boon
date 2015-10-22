@@ -4,6 +4,8 @@
 
 อ่านรายละเอียดเพิ่มเติมเกี่ยวกับการใช้งานบุญฟอนต์ได้ที่ [Boon Project Page](http://fontuni.com/boon/)
 
+![Boon UDHR](/img/boon-udhr.png?raw=true "Boon UDHR")
+
 ### License: SIL Open Font License v1.1
 
 Copyright 2013-2015, สังศิต ไสววรรณ (sungsit.com | https://twitter.com/gzix). 
