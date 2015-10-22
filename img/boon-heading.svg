@@ -184,7 +184,8 @@
      id="layer5"
      inkscape:label="bg"
      transform="translate(0,320)"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:inline">
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 4.9999999e-6,-319.99999 600,-319.99999 600,180 4.9999999e-6,180 Z"
@@ -473,7 +474,8 @@
      id="g3381"
      inkscape:groupmode="layer">
     <g
-       id="g5973">
+       id="g5973"
+       transform="translate(0,-2.1547874)">
       <g
          transform="matrix(0.94435071,0,0,0.94435071,15.278246,-476.07081)"
          id="g4547">
@@ -525,7 +527,8 @@
       </g>
     </g>
     <g
-       id="g5985">
+       id="g5985"
+       transform="translate(3.4163147,-11.202338)">
       <g
          style="filter:url(#filter5961)"
          transform="matrix(0.94435071,0,0,0.94435071,15.278246,-474.94938)"
@@ -582,7 +585,8 @@
       </g>
     </g>
     <g
-       id="g5998">
+       id="g5998"
+       transform="translate(0,-5.6703468)">
       <g
          transform="matrix(0.94435071,0,0,0.94435071,15.278246,-473.81952)"
          id="g4561">

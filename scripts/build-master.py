@@ -23,6 +23,20 @@ feature_dir = 'sources/'
 build_dir = 'fonts/'
 unhinted_dir = 'fonts/unhinted/'
 
+def weights2Strings(layer):
+    switcher = {
+      100: "Thin",
+      200: "Extra-Light",
+      300: "Light",
+      400: "Regular",
+      500: "Medium",
+      600: "Semi-Bold",
+      700: "Bold",
+      800: "Extra-Bold",
+      900: "Black"
+    }
+    return switcher.get(layer, "Regular")
+
 def printFontInfo(fontfile):
   font = fontforge.open(fontfile)
   print('\nFont File: ' + fontfile)

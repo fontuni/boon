@@ -17,8 +17,22 @@ family = 'Boon'
 version = '1.0-beta2'
 sources = ['Boon-300', 'Boon-300i', 'Boon-400', 'Boon-400i', 'Boon-500', 'Boon-500i', 'Boon-600', 'Boon-600i', 'Boon-700', 'Boon-700i']
 copyright =  'Copyright 2013-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
-build_dir = 'fonts/'
-unhinted_dir = 'fonts/unhinted/'
+build_dir = './fonts/'
+unhinted_dir = './fonts/unhinted/'
+
+def weights2Strings(weight):
+    switcher = {
+      100: "Thin",
+      200: "Extra-Light",
+      300: "Light",
+      400: "Regular",
+      500: "Medium",
+      600: "Semi-Bold",
+      700: "Bold",
+      800: "Extra-Bold",
+      900: "Black"
+    }
+    return switcher.get(weight, "Regular")
 
 def printFontInfo(fontfile):
   font = fontforge.open(fontfile)
@@ -66,16 +80,19 @@ def buildFont(family):
     font.familyname = family
     font.fontname = source
 
+    # Customize subfamily name
     if source.endswith('i'):
       font.fullname = source.replace('-',' ').replace('i',' Oblique')
+      font.appendSFNTName('English (US)', 'SubFamily', weights2Strings(font.os2_weight) + ' Oblique')
     else:
       font.fullname = source.replace('-',' ')
+      font.appendSFNTName('English (US)', 'SubFamily', weights2Strings(font.os2_weight))
 
     font.save()
 
     genflags  = ('opentype', 'no-hints')
     ttfunhinted = unhinted_dir + source + '-unhinted.ttf'
-
+    
     # generate unhinted ttf
     font.generate(ttfunhinted, flags=genflags)
     print(font.fullname, 'TTF instance generated.')
