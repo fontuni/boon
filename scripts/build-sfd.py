@@ -14,7 +14,7 @@ import subprocess
 
 # Predifined vars
 family = 'Boon'
-version = '1.0-beta1'
+version = '1.0-beta2'
 sources = ['Boon-300', 'Boon-300i', 'Boon-400', 'Boon-400i', 'Boon-500', 'Boon-500i', 'Boon-600', 'Boon-600i', 'Boon-700', 'Boon-700i']
 copyright =  'Copyright 2013-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
 build_dir = 'fonts/'
@@ -73,7 +73,7 @@ def buildFont(family):
 
     font.save()
 
-    genflags  = ('opentype', 'PfEd-lookups', 'no-hints')
+    genflags  = ('opentype', 'no-hints')
     ttfunhinted = unhinted_dir + source + '-unhinted.ttf'
 
     # generate unhinted ttf

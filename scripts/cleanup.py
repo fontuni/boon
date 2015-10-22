@@ -15,18 +15,25 @@ source = 'sources/boon-master.sfd'
 
 # I just can't find better ways to list all anchors yet ...
 anchors = [
+  'LatinBelow.mark',
+  'LatinAbove.mark',
+  'LatinCedilla.mark',
+  'LatinOgonek.mark',
+  'LatinBelow.mkmk',
+  'LatinAbove.mkmk',
+  'LaoBelow.mark',
+  'LaoBelow.sd.mark',
+  'LaoAbove.mark',
+  'LaoTone.mark',
+  'LaoExtendedAbove.mkmk',
+  'LaoExtendedAbove.left.mkmk',
+  'LaoExtendedBelow.mkmk',
   'ThaiBelow.mark',
   'ThaiAbove.mark',
   'ThaiTone.mark',
   'ThaiExtendedAbove.mkmk',
   'ThaiExtendedAbove.left.mkmk',
   'ThaiExtendedBelow.mkmk',
-  'LatinBelow.mark',
-  'LatinAbove.mark',
-  'LatinCedilla.mark',
-  'LatinOgonek.mark',
-  'LatinBelow.mkmk',
-  'LatinAbove.mkmk'
 ]
 
 font = fontforge.open(source)

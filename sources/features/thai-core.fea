@@ -121,8 +121,8 @@ lookup Thai.su {
 } Thai.su;
 
 lookup Thai.sul {
-  sub \uni0E4D by \uni0E4D.sul;
   sub \uni0E47 by \uni0E47.sul;
+  sub \uni0E4D by \uni0E4D.sul;
   sub @T.sdl by @T.sl;
 } Thai.sul;
 
@@ -152,7 +152,7 @@ lookup ThaiContext.sd {
 lookup ThaiContext.fallback {
 
   # For @AC
-  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @AV' lookup Thai.sul;
+  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] [ \uni0E47 \uni0E4D ]' lookup Thai.sul;
   sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @T' lookup Thai.sl;
 
   # For @NC @DC @RC @RC.rd

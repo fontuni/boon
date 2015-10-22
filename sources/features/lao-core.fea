@@ -71,11 +71,13 @@ lookup Lao.sl {
 } Lao.sl;
 
 lookup Lao.su {
+  sub \uni0ECC by \uni0ECC.su;
   sub \uni0ECD by \uni0ECD.su;
   sub @T.lao.sd by @T.lao;
 } Lao.su;
 
 lookup Lao.sul {
+  sub \uni0ECC by \uni0ECC.sul;
   sub \uni0ECD by \uni0ECD.sul;
   sub @T.lao.sdl by @T.lao.sl;
 } Lao.sul;
@@ -107,7 +109,7 @@ lookup LaoContext.sd {
 lookup LaoContext.fallback {
 
   # For @AC.lao
-  sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] @AV.lao' lookup Lao.sul;
+  sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] [ \uni0ECC \uni0ECD ]' lookup Lao.sul;
   sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] @T.lao' lookup Lao.sl;
 
   # For @NC @DC

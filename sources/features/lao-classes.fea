@@ -11,7 +11,7 @@
 # Normal (baseline) consonants
 
 # Dotted Circle (uni25CC) was included here so it can be used as mark base placeholder.
-@NC.lao = [ \uni0E81 \uni0E82 \uni0E84 \uni0E88 \uni0E8D \uni0E94 \uni0E95 \uni0E97 \uni0E99 \uni0E9A \uni0E9C \uni0E9E \uni0EA1 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB \uni0EAD \uni0EAE \uni0EDE \uni0EDF \uni25CC ];
+@NC.lao = [ \uni0E81 \uni0E82 \uni0E84 \uni0E88 \uni0E8D \uni0E94 \uni0E95 \uni0E97 \uni0E99 \uni0E9A \uni0E9C \uni0E9E \uni0EA1 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB \uni0EAD \uni0EAE \uni0EDC \uni0EDD \uni0EDE \uni0EDF \uni25CC ];
 
 # Ascender consonants (ປ ຝ ຟ ຢ) 
 @AC.lao = [ \uni0E9B \uni0E9D \uni0E9F \uni0EA2 ];
