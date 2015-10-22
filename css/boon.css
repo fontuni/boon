@@ -534,8 +534,8 @@ body .reveal {
     margin: 0px;
     color: #2ad; }
   body .reveal header .date {
-    font-size: 145px;
-    line-height: 1.22em;
+    font-size: 136px;
+    line-height: 1.5em;
     margin: 0px;
     color: #e1e1e1; }
   body .reveal .poem {
@@ -545,7 +545,6 @@ body .reveal {
       margin: 0;
       padding: 0; }
       body .reveal .poem table th, body .reveal .poem table td {
-        font-weight: 400;
         border: 0 none;
         margin: 0;
         padding: 0.2em 1.5em 0.2em 0; }
@@ -571,25 +570,55 @@ body .reveal {
     body .reveal #cover .date {
       font-size: 60px;
       margin-top: 30px; } }
-body.boontook .reveal {
-  font-family: "Boon" !important; }
-  body.boontook .reveal h1, body.boontook .reveal h2, body.boontook .reveal h3, body.boontook .reveal h4, body.boontook .reveal h5, body.boontook .reveal h6 {
-    font-family: "Boon" !important; }
-body.boontook-oblique .reveal {
-  font-family: "Boon" !important;
+body.boon-300 .reveal {
+  font-weight: 300 !important; }
+  body.boon-300 .reveal h1, body.boon-300 .reveal h2, body.boon-300 .reveal h3, body.boon-300 .reveal h4, body.boon-300 .reveal h5, body.boon-300 .reveal h6 {
+    font-weight: 300 !important; }
+body.boon-300i .reveal {
+  font-weight: 300 !important;
   font-style: oblique !important; }
-  body.boontook-oblique .reveal h1, body.boontook-oblique .reveal h2, body.boontook-oblique .reveal h3, body.boontook-oblique .reveal h4, body.boontook-oblique .reveal h5, body.boontook-oblique .reveal h6 {
-    font-family: "Boon" !important;
+  body.boon-300i .reveal h1, body.boon-300i .reveal h2, body.boon-300i .reveal h3, body.boon-300i .reveal h4, body.boon-300i .reveal h5, body.boon-300i .reveal h6 {
+    font-weight: 300 !important;
     font-style: oblique !important; }
-body.boontook-mon .reveal {
-  font-family: "Boon Mon" !important; }
-  body.boontook-mon .reveal h1, body.boontook-mon .reveal h2, body.boontook-mon .reveal h3, body.boontook-mon .reveal h4, body.boontook-mon .reveal h5, body.boontook-mon .reveal h6 {
-    font-family: "Boon Mon" !important; }
-body.boontook-mon-oblique .reveal {
-  font-family: "Boon Mon" !important;
+body.boon-400 .reveal {
+  font-weight: 400 !important; }
+  body.boon-400 .reveal h1, body.boon-400 .reveal h2, body.boon-400 .reveal h3, body.boon-400 .reveal h4, body.boon-400 .reveal h5, body.boon-400 .reveal h6 {
+    font-weight: 400 !important; }
+body.boon-400i .reveal {
+  font-weight: 400 !important;
   font-style: oblique !important; }
-  body.boontook-mon-oblique .reveal h1, body.boontook-mon-oblique .reveal h2, body.boontook-mon-oblique .reveal h3, body.boontook-mon-oblique .reveal h4, body.boontook-mon-oblique .reveal h5, body.boontook-mon-oblique .reveal h6 {
-    font-family: "Boon Mon" !important;
+  body.boon-400i .reveal h1, body.boon-400i .reveal h2, body.boon-400i .reveal h3, body.boon-400i .reveal h4, body.boon-400i .reveal h5, body.boon-400i .reveal h6 {
+    font-weight: 400 !important;
+    font-style: oblique !important; }
+body.boon-500 .reveal {
+  font-weight: 500 !important; }
+  body.boon-500 .reveal h1, body.boon-500 .reveal h2, body.boon-500 .reveal h3, body.boon-500 .reveal h4, body.boon-500 .reveal h5, body.boon-500 .reveal h6 {
+    font-weight: 500 !important; }
+body.boon-500i .reveal {
+  font-weight: 500 !important;
+  font-style: oblique !important; }
+  body.boon-500i .reveal h1, body.boon-500i .reveal h2, body.boon-500i .reveal h3, body.boon-500i .reveal h4, body.boon-500i .reveal h5, body.boon-500i .reveal h6 {
+    font-weight: 500 !important;
+    font-style: oblique !important; }
+body.boon-600 .reveal {
+  font-weight: 600 !important; }
+  body.boon-600 .reveal h1, body.boon-600 .reveal h2, body.boon-600 .reveal h3, body.boon-600 .reveal h4, body.boon-600 .reveal h5, body.boon-600 .reveal h6 {
+    font-weight: 600 !important; }
+body.boon-600i .reveal {
+  font-weight: 600 !important;
+  font-style: oblique !important; }
+  body.boon-600i .reveal h1, body.boon-600i .reveal h2, body.boon-600i .reveal h3, body.boon-600i .reveal h4, body.boon-600i .reveal h5, body.boon-600i .reveal h6 {
+    font-weight: 600 !important;
+    font-style: oblique !important; }
+body.boon-700 .reveal {
+  font-weight: 700 !important; }
+  body.boon-700 .reveal h1, body.boon-700 .reveal h2, body.boon-700 .reveal h3, body.boon-700 .reveal h4, body.boon-700 .reveal h5, body.boon-700 .reveal h6 {
+    font-weight: 700 !important; }
+body.boon-700i .reveal {
+  font-weight: 700 !important;
+  font-style: oblique !important; }
+  body.boon-700i .reveal h1, body.boon-700i .reveal h2, body.boon-700i .reveal h3, body.boon-700i .reveal h4, body.boon-700i .reveal h5, body.boon-700i .reveal h6 {
+    font-weight: 700 !important;
     font-style: oblique !important; }
 
 .select-form {

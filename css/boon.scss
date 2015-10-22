@@ -225,8 +225,8 @@ body .reveal {
       color: $linkColor;
     }
     .date {
-      font-size: 145px;
-      line-height: 1.22em;
+      font-size: 136px;
+      line-height: 1.5em;
       margin: 0px;
       color: lighten( $mainColor, 75% );
     }
@@ -241,7 +241,6 @@ body .reveal {
       padding: 0;
       
       th,td {
-        font-weight: 400;
         border: 0 none;
         margin: 0;
         padding: 0.2em 1.5em 0.2em 0;
@@ -280,31 +279,73 @@ body .reveal {
 
 // Font options
 body {
-  &.boontook .reveal {
-    font-family: "Boon" !important;
+  &.boon-300 .reveal {
+    font-weight: 300 !important;
     h1, h2, h3, h4, h5, h6 {
-      font-family: "Boon" !important;
+      font-weight: 300 !important;
     }
   }
-  &.boontook-oblique .reveal {
-    font-family: "Boon" !important;
+  &.boon-300i .reveal {
+    font-weight: 300 !important;
     font-style: oblique !important;
     h1, h2, h3, h4, h5, h6 {
-      font-family: "Boon" !important;
+      font-weight: 300 !important;
       font-style: oblique !important;
     }
   }
-  &.boontook-mon .reveal {
-    font-family: "Boon Mon" !important;
+  &.boon-400 .reveal {
+    font-weight: 400 !important;
     h1, h2, h3, h4, h5, h6 {
-      font-family: "Boon Mon" !important;
+      font-weight: 400 !important;
     }
   }
-  &.boontook-mon-oblique .reveal {
-    font-family: "Boon Mon" !important;
+  &.boon-400i .reveal {
+    font-weight: 400 !important;
     font-style: oblique !important;
     h1, h2, h3, h4, h5, h6 {
-      font-family: "Boon Mon" !important;
+      font-weight: 400 !important;
+      font-style: oblique !important;
+    }
+  }
+  &.boon-500 .reveal {
+    font-weight: 500 !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500 !important;
+    }
+  }
+  &.boon-500i .reveal {
+    font-weight: 500 !important;
+    font-style: oblique !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500 !important;
+      font-style: oblique !important;
+    }
+  }
+  &.boon-600 .reveal {
+    font-weight: 600 !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600 !important;
+    }
+  }
+  &.boon-600i .reveal {
+    font-weight: 600 !important;
+    font-style: oblique !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600 !important;
+      font-style: oblique !important;
+    }
+  }
+  &.boon-700 .reveal {
+    font-weight: 700 !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700 !important;
+    }
+  }
+  &.boon-700i .reveal {
+    font-weight: 700 !important;
+    font-style: oblique !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700 !important;
       font-style: oblique !important;
     }
   }
