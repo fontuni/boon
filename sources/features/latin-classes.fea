@@ -241,7 +241,7 @@
 @schwa = [ \uni0259 ];
 
 @COMB.abv = [ \uni0300 - \uni0309 \uni030A - \uni030F \uni0311 - \uni0314 \uni0351 \uni0357 ];
-@COMB.blw = [ \uni0323 \uni0324 \uni0326 \uni0329 \uni032E \uni0331 ];
+@COMB.blw = [ \uni0323 \uni0324 \uni0326 \uni0329 \uni032E \uni0331 \uni0332 ];
 @COMB = [ @COMB.abv @COMB.blw \uni031B \uni0327 \uni0328 ];
 @FRAC = [ \onequarter \onehalf \threequarters \onethird \twothirds \oneeighth \threeeighths \fiveeighths \seveneighths ];
 

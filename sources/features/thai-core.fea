@@ -51,7 +51,26 @@ lookup ThaiContext.ro {
   sub \uni0E49' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E49 @ZWJ' \uni0E32';
   sub \uni0E4A' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4A @ZWJ' \uni0E32';
   sub \uni0E4B' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4B @ZWJ' \uni0E32';
-} ThaiContext.ro; 
+} ThaiContext.ro;
+
+# Phinthu reordering fix for Uniscribe & Harfbuzz
+lookup ThaiBV.0E3A {
+  sub [ \uni0E38 \uni0E39 ] by \uni0E3A;
+  sub [ \uni0E38.sd \uni0E39.sd ] by \uni0E3A.sd;
+} ThaiBV.0E3A;
+
+lookup Thai0E3A.0E38 {
+  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E38 \uni0E38.sd ];
+} Thai0E3A.0E38;
+
+lookup Thai0E3A.0E39 {
+  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E39 \uni0E39.sd ];
+} Thai0E3A.0E39;
+
+lookup ThaiPhinthu.ro {
+  sub @BASE' [ \uni0E38 \uni0E38.sd ]' lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]' lookup Thai0E3A.0E38;
+  sub @BASE' [ \uni0E39 \uni0E39.sd ]' lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]' lookup Thai0E3A.0E39;
+} ThaiPhinthu.ro;
 
 # GSUB features
 
@@ -71,7 +90,8 @@ feature ccmp {
     language dflt;
       lookup ThaiContextRC.rd;
       lookup ThaiDecomp;
-      lookup ThaiContext.ro;  
+      lookup ThaiContext.ro;
+      lookup ThaiPhinthu.ro; 
     language PAL exclude_dflt;
       lookup ThaiRC.rd;
     language SAN exclude_dflt;
@@ -83,11 +103,12 @@ feature ccmp {
 # like `locl` (or even `ccmp`) for Thai script, `salt` & `ss01` features are alternatives 
 # to Pali/Sanskrit prefered form of uni0E0D (ญ) and uni0E10 (ฐ).
 
-feature salt {
-  script thai;
-    language dflt ;
-      lookup ThaiRC.rd;
-} salt;
+#`salt` causes weird bug in older Photoshop so disable it for now.
+#feature salt {
+#  script thai;
+#    language dflt ;
+#      lookup ThaiRC.rd;
+#} salt;
 
 feature ss01 {
   script thai;
@@ -146,6 +167,7 @@ lookup ThaiContext.sdl {
 
 lookup ThaiContext.sd {
   sub [ @NC @DC @RC @RC.rd @BV.all ]' @T' lookup Thai.sd;
+  sub @DC' @ZWJ' @BV' lookup ThaiBV.sd;
   sub @DC' @BV' lookup ThaiBV.sd;
 } ThaiContext.sd;
 

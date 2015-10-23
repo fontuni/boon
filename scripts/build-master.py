@@ -11,31 +11,34 @@
 import fontforge
 import os
 import subprocess
+import shutil
 
 # Predifined vars
 family = 'Boon'
-version = '1.0-beta2'
-source = 'sources/boon-master.sfd'
+version = '1.0'
+sources = ['sources/boon-master.sfd', 'sources/boon-master-oblique.sfd']
 layers = ['300', '400', '500', '600', '700']
 copyright =  'Copyright 2013-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
-features = ['boon-normal']
+features = ['boon-normal', 'boon-oblique']
 feature_dir = 'sources/'
 build_dir = 'fonts/'
 unhinted_dir = 'fonts/unhinted/'
+if not os.path.exists(unhinted_dir):
+  os.makedirs(unhinted_dir)
 
 def weights2Strings(layer):
-    switcher = {
-      100: "Thin",
-      200: "Extra-Light",
-      300: "Light",
-      400: "Regular",
-      500: "Medium",
-      600: "Semi-Bold",
-      700: "Bold",
-      800: "Extra-Bold",
-      900: "Black"
-    }
-    return switcher.get(layer, "Regular")
+  switcher = {
+    100: "Thin",
+    200: "Extra-Light",
+    300: "Light",
+    400: "Regular",
+    500: "Medium",
+    600: "Semi-Bold",
+    700: "Bold",
+    800: "Extra-Bold",
+    900: "Black"
+  }
+  return switcher.get(layer, "Regular")
 
 def printFontInfo(fontfile):
   font = fontforge.open(fontfile)
@@ -71,6 +74,24 @@ def ttf2Woff(ttf,woff,genflags):
   font.generate(woff, flags=genflags)
   font.close()
 
+def fontPath(ext,name):
+  path = build_dir + ext
+  if not os.path.exists(path):
+    os.makedirs(path)
+  fontfile = path + '/' + name + '.' + ext
+  return fontfile
+
+def otf2Sfd(otf):
+  font = fontforge.open(otf)
+  path = 'sfd/'
+  sfd = path + font.fontname + '.sfd'
+  if not os.path.exists(path):
+    os.makedirs(path)
+  font.appendSFNTName('English (US)', 'UniqueID', '')
+  font.save(sfd)
+  print(font.fontname, '.sfd saved.')
+  font.close()
+
 def buildFont(source,family):
 
   # prepare master
@@ -80,47 +101,45 @@ def buildFont(source,family):
   font.copyright = copyright
   font.save()
 
+  if source.endswith('oblique.sfd'):
+    font.mergeFeature(feature_dir + features[1] + '.fea')
+  else:
+    font.mergeFeature(feature_dir + features[0] + '.fea')
+
   # loop through each layer & save it as sfd files
   # then generate ttf, autohint & make woff + woff2
   for layer in layers:
 
     layername = font.layers[layer].name
-    subfamily = layername
 
     font.weight = layername
     font.os2_weight = int(layername)
-  
-    font.italicangle = 0.0
-      
-    if layername.endswith('Oblique'):
-      subfamily += '-Oblique'
-      font.italicangle = -9.0
-
-    font.fontname = family + '-' + subfamily
+    subfamily = weights2Strings(font.os2_weight)
+    font.fontname = family + '-' + layername
     font.fullname = font.fontname.replace('-',' ')
+    font.italicangle = 0.0
 
-    tempsfd = 'sources/'+ font.fontname +'-temp.sfd'
-    font.save(tempsfd)
-
-    temp = fontforge.open(tempsfd)
-
-    if temp.fullname.endswith('Oblique'):
-      temp.mergeFeature(feature_dir + features[1] + '.fea')
+    # Customize subfamily name
+    if source.endswith('oblique.sfd'):
+      font.fontname += 'i'
+      font.fullname += ' Oblique'
+      font.appendSFNTName('English (US)', 'SubFamily', subfamily + ' Oblique')
+      font.italicangle = -9.0
     else:
-      temp.mergeFeature(feature_dir + features[0] + '.fea')
+      font.appendSFNTName('English (US)', 'SubFamily', subfamily)
 
-    genflags  = ('opentype', 'PfEd-lookups', 'no-hints')
-    ttfunhinted = unhinted_dir + font.fontname + '-unhinted.ttf'
+
+    otf = fontPath('otf',font.fontname)
+    ttf = fontPath('ttf',font.fontname)
+    woff = fontPath('woff',font.fontname)
+    woff2 = fontPath('woff2',font.fontname)
+    tempwoff2 = build_dir + 'ttf/' + font.fontname + '.woff2'
 
     # generate unhinted ttf
-    temp.generate(ttfunhinted, flags=genflags, layer = layername)
-    print(font.fullname, 'TTF instance generated.')
-
-    temp.close()
-    subprocess.call(['rm',tempsfd])
-
-    ttf = build_dir + font.fontname + '.ttf'
-    woff = build_dir + font.fontname + '.woff'
+    ttfgenflags  = ('opentype', 'no-hints')
+    ttfunhinted = unhinted_dir + font.fontname + '-unhinted.ttf'
+    font.generate(ttfunhinted, flags=ttfgenflags, layer = layername)
+    print(font.fullname, 'Unhinted TTF instance generated.')
 
     # ttfautohint
     ttfHint(ttfunhinted,ttf)
@@ -128,17 +147,36 @@ def buildFont(source,family):
     print(font.fullname, 'TTF autohinted.')
 
     # hinted ttf to woff
-    ttf2Woff(ttf,woff,genflags)
+    ttf2Woff(ttf,woff,ttfgenflags)
     print(font.fullname, 'WOFF instance generated.')
 
     # hinted ttf to woff2
     subprocess.call(['woff2_compress',ttf])
+    os.rename(tempwoff2, woff2)
     print(font.fullname, 'WOFF2 instance generated.')
 
-  font.save('sources/boon-master-temp.sfd')
+    # generate otf
+    otfgenflags  = ('opentype', 'PfEd-lookups')
+    font.generate(otf, flags=otfgenflags, layer = layername)
+    print(font.fullname, 'OTF instance generated.')
+
+    # save sfd
+    otf2Sfd(otf)
+
   font.close()
 
-if not os.path.exists(unhinted_dir):
-  os.makedirs(unhinted_dir)
+for source in sources:
+  buildFont(source,family)
 
-buildFont(source,family)
+# Create zip package
+package = family + '-v' + version + '.zip'
+shutil.copy2('LICENSE', build_dir)
+os.chdir(build_dir)
+
+try:
+  os.remove(package)
+except OSError:
+  pass
+
+subprocess.call(['zip', '-r', package, '.'])
+print(package, 'created.')

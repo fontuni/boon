@@ -11,7 +11,7 @@
 import fontforge
 
 # Predifined vars
-source = 'sources/boon-master.sfd'
+sources = ['sources/boon-master.sfd','sources/boon-master-oblique.sfd']
 
 # I just can't find better ways to list all anchors yet ...
 anchors = [
@@ -36,10 +36,10 @@ anchors = [
   'ThaiExtendedBelow.mkmk',
 ]
 
-font = fontforge.open(source)
-
-for anchor in anchors:
-  font.removeAnchorClass(anchor)
-
-font.save()
-font.close()
+for source in sources:
+  font = fontforge.open(source)
+  for anchor in anchors:
+    font.removeAnchorClass(anchor)
+  font.save()
+  font.close()
+  

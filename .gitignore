@@ -7,3 +7,7 @@ components/*
 */unhinted/*
 *-temp*
 *-backup*
+*.bak
+# Package
+fonts/LICENSE
+Boon-v*.zip
