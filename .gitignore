@@ -8,7 +8,7 @@ components/*
 *-temp*
 *-backup*
 *.bak
+
 # Package
-fonts/LICENSE
 Boon-v*.zip
 sfd/*

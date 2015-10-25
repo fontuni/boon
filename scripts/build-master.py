@@ -37,6 +37,7 @@ unhinted_dir = build_dir + 'unhinted/'
 if not os.path.exists(unhinted_dir):
   os.makedirs(unhinted_dir)
 
+exts = ['otf', 'ttf', 'woff', 'woff2']
 
 def weights2Strings(weight):
   switcher = {
@@ -110,6 +111,22 @@ def ttfHint(unhinted,hinted):
     hinted
   ])
 
+# Optimize
+def fontOptimize(fontfile):
+  subprocess.call([
+    'pyftsubset',
+    fontfile,
+    '--glyphs=*',
+    '--layout-features=*',
+    '--name-IDs=*',
+    '--hinting',
+    '--legacy-kern',
+    '--notdef-outline',
+    '--no-subset-tables+=DSIG',
+    '--drop-tables-=DSIG',
+    '--output-file=' + fontfile
+  ])
+
 def ttf2Woff(ttf,woff,genflags):
   font = fontforge.open(ttf)
   font.generate(woff, flags=genflags)
@@ -129,24 +146,8 @@ def otf2Sfd(otf,sfd_dir):
     os.makedirs(sfd_dir)
   font.appendSFNTName('English (US)', 'UniqueID', '')
   font.save(sfd)
-  print(font.fontname, '.sfd saved.')
+  print(font.fontname, 'SFD files saved.')
   font.close()
-
-### Optimize
-def fontOptimize(fontfile):
-  subprocess.call([
-    'pyftsubset',
-    fontfile,
-    '--glyphs=*',
-    '--layout-features=*',
-    '--name-IDs=*',
-    '--hinting',
-    '--legacy-kern',
-    '--notdef-outline',
-    '--no-subset-tables+=DSIG',
-    '--drop-tables-=DSIG',
-    '--output-file=' + fontfile
-  ])
 
 def buildFont(source,family):
 
@@ -242,9 +243,16 @@ def buildFont(source,family):
 for source in sources:
   buildFont(source,family)
 
-# Create zip package
-package = family + '-v' + version + '.zip'
-shutil.copy2('OFL.txt', build_dir)
-os.chdir(build_dir)
-subprocess.call(['zip', '-r', package, '.'])
-print(package, 'created.')
+# Create zip package for each font extension
+def fontZip(family,version,ext):
+  path = build_dir + ext + '/'
+  package = family + '-v' + version + '-' + ext + '.zip'
+  shutil.copy2('OFL.txt', path)
+  os.chdir(build_dir)
+  subprocess.call(['zip', '-r', package, ext])
+  os.remove(ext + '/OFL.txt')
+  os.chdir('..')
+  print(package, 'created.')
+
+for ext in exts:
+  fontZip(family,version,ext)
