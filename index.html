@@ -76,7 +76,7 @@
 
 <h2>&#x0E4F; ภาษาที่รองรับ</h2>
 
-<p>สำหรับเวอร์ชั่น 0.6 ขึ้นไป นอกจากตัวอักษรไทยและ Basic Latin แล้ว ฟอนต์บุญยังรองรับการใช้งานกับอีกหลายภาษา เช่น Français, Español, Português, Deutsch, Türkçe, etc. ตัวอักษรน่าจะครบแล้วแต่ยังวางตำแหน่งไม่ค่อยสมบูรณ์นัก ต้องแก้ Diacritics บนและล่างอีกพอสมควร โดยเฉพาะ <strong>ภาษาเวียดนาม</strong> ซึ่งใช้ตัวอักษรละตินแต่มีวรรณยุกต์และวิธีเขียนคล้ายภาษาไทย ตอนนี้ทำไว้แค่พออ่านได้เป็นแนวทางสำหรับพัฒนาต่อไป ส่วน <strong>ภาษาลาว</strong> ผมยังวาดไม่ค่อยลงตัว เลยพักไว้ก่อนแต่ไม่ทิ้งแน่นอน คุณสามารถดูตัวอย่างการใช้ฟอนต์บุญกับภาษาต่างๆ ได้ที่ <a href="test.html">หน้าทดสอบภาษา</a></p>
+<p>สำหรับเวอร์ชั่น 0.6 ขึ้นไป นอกจากตัวอักษรไทยและ Basic Latin แล้ว ฟอนต์บุญยังรองรับการใช้งานกับอีกหลายภาษา เช่น Français, Español, Português, Deutsch, Türkçe, etc. เวอร์ชั่น 1.0 ขึ้นไป ก็เพิ่ม <strong>ตัวอักษรลาว</strong> ครบถ้วนตามที่มีใน Unicode พร้อมทำ OpenType features ให้สามารถใช้งานไปปกติเหมือนตัวอักษรไทย คุณสามารถดูตัวอย่างการใช้ฟอนต์บุญกับภาษาต่างๆ ได้ที่ <a href="test.html">หน้าทดสอบภาษา</a></p>
 
 <hr>
 
@@ -84,7 +84,7 @@
 
 <h2>&#x0E4F; วิธีใช้งาน</h2>
 
-<p>คุณสามารถดาวน์โหลดไฟล์ฟอนต์เวอร์ชั่นล่าสุดได้ที่ <a href="https://github.com/fontuni/boon/releases">Boon Releases</a> หรือถ้าต้องการซอร์สไฟล์และวัตถุดิบสำหรับเอาไปพัฒนาต่อ ก็ไปที่ <a href="https://github.com/sungsit/boon-dev">Boon-Dev Repository</a> ซึ่งคุณสามารถโคลนทั้งโปรเจ็คต์ด้วย <a href="http://git-scm.com/">Git</a> เพื่อดัดแปลงด้วยโปรแกรม <a href="http://fontforge.org/">FontForge</a> หรือโปรแกรมวาดภาพเวคเตอร์อย่าง <a href="http://inkscape.org/">Inkscape</a> ซึ่งผมใช้วาด glyph ไว้เป็นไฟล์ <code>.svg</code> ก่อน generate ด้วย FontForge (ผมแยกไฟล์ฟอนต์กับซอร์สโค้ดออกจากกันตั้งแต่ Boon v0.5 เพราะไฟล์มันเริ่มเยอะและใหญ่มาก หลายคนที่ต้องการแค่ไฟล์ฟอนต์จะได้ไม่เสียเวลาดาวน์โหลดซอร์สทั้งหมด แต่ยังคงใช้สัญญาอนุญาตเดียวกันเหมือนเดิม ดูรายละเอียดใน <a href="FONTLOG.html">Fontlog</a>)</p>
+<p>คุณสามารถดาวน์โหลดไฟล์ฟอนต์เวอร์ชั่นล่าสุดได้ที่ <a href="https://github.com/fontuni/boon/releases">Boon Releases</a> หรือโคลนทั้งโปรเจ็คต์ด้วย <a href="http://git-scm.com/">Git</a> เพื่อดัดแปลงด้วยโปรแกรม <a href="http://fontforge.org/">FontForge</a> หรือโปรแกรมวาดภาพเวคเตอร์อย่าง <a href="http://inkscape.org/">Inkscape</a> ซึ่งผมใช้วาด glyph ไว้เป็นไฟล์ <code>.svg</code> ก่อน generate ด้วย FontForge (ดูสรุปย่อสิ่งที่เปลี่ยนแปลงในแต่ละเวอร์ชั่นได้ที่ <a href="FONTLOG.html">Fontlog</a>)</p>
 
 <h3>๑. การใช้งานกับโปรแกรมทั่วไป</h3>
 
@@ -119,8 +119,8 @@
 <p class="boon-500">บุญกลาง น้ำหนัก ๕๐๐  <br>Boon Medium, 500 Weight</p>
 <p class="boon-500i">บุญกลางเอน น้ำหนัก ๕๐๐  <br>Boon Medium Oblique, 500 Weight</p>
 
-<p class="boon-600">บุญกึ่งหนา น้ำหนัก ๖๐๐  <br>Boon Semi-Bold, 600 Weight</p>
-<p class="boon-600i">บุญกึ่งหนาเอน น้ำหนัก ๖๐๐  <br>Boon Semi-Bold Oblique, 600 Weight</p>
+<p class="boon-600">บุญกึ่งหนา น้ำหนัก ๖๐๐  <br>Boon SemiBold, 600 Weight</p>
+<p class="boon-600i">บุญกึ่งหนาเอน น้ำหนัก ๖๐๐  <br>Boon SemiBold Oblique, 600 Weight</p>
 
 <p class="boon-700">บุญหนา น้ำหนัก ๗๐๐  <br>Boon Bold, 700 Weight</p>
 <p class="boon-700i">บุญหนาเอน น้ำหนัก ๗๐๐  <br>Boon Bold Oblique, 700 Weight</p>
@@ -163,6 +163,24 @@
 
 <p>(โน้ต: ใน FireFox อาจดูไม่ต่างกัน เพราะมัน kern ให้เอง ถ้าตัวอักษรขนาดเกิน 20px)</p>
 
+<h3>๔. รองรับวิธีเขียนภาษาอื่นๆ ด้วยตัวอักษรไทยและลาว</h3>
+
+<p>สำหรับการพิมพ์ภาษาบาลี-สันสกฤตด้วยตัวอักษรไทยในเอกสาร HTML ถ้าใส่ attribute <code>lang="pi"</code> หรือ <code>lang="sa"</code> กำกับไว้ ฟอนต์บุญจะตัดเชิงตัว ฐ และ ญ ให้โดยอัตโนมัติ และสามารถพิมพ์นิคหิตซ้อนบนสระอิได้ ส่วนเว็บบราวเซอร์ที่ไม่รองรับฟีเจอร์นี้อย่าง Safari ต้องเขียน Javascript ช่วยเล็กน้อย (ดูตัวอย่างโค้ดได้ในไฟล์ <code>js/boon.js</code> ของหน้าเว็บนี้)</p>
+
+<p lang="pi-Thai" class="test-texts">
+ฐาตุํ ญาติํ อุปฺปฏฺฐานํ ปุํลิงฺคํ วาปิํ ปํสุํ วฏฺฏุํ
+</p>
+
+<p>ส่วนวิธีเขียนภาษาชาติพันธุ์ ผมศึกษาข้อมูลเพื่อทำ OpenType features จากบทความที่คุณเทพพิทักษ์ การุญบุญญานันท์ <a href="http://thep.blogspot.com/2014/03/fonts-tlwg-060.html">เขียนอธิบายไว้</a> และอ้างอิงจาก <a href="http://scripts.sil.org/ThaiLaoSeq">scripts.sil.org/ThaiLaoSeq</a></p>
+
+<p class="test-texts">
+ปะเฺติ็ลฺ โฺญฺ็จฺ ปั็วฮฺ ทฺ็อง เปฺิ็ว มูํย แต็่ง เจฺํอ เปรฺิ่ห์ โจ๊่ เปฺี่ย โฺทร ม็่อง เติ็ง อาื ยาึ จือรฺุ การฺู
+</p>
+
+<p class="test-texts">
+ຣຽໍງ ພໍ້ຽກ ພ້ຽໍກ ບຽູ ປ້ຽານ ກ້໋ານ ກັ່໋ງ
+</p>
+
 <hr>
 
 <p><a id="milestones"></a></p>
@@ -170,10 +188,7 @@
 <h2>&#x0E4F; เป้าหมายในอนาคต</h2>
 
 <ul>
-<li><strong>เพิ่ม Glyphs เครื่องหมายและสัญลักษณ์</strong> สำหรับ HTML entities ที่ใช้กันทั่วไป</li>
-<li><strong>จัดการ Latin Diacritics ให้ลงตัว</strong> เพื่อให้รองรับภาษาเวียดนามและภาษาในยุโรปอีกหลายภาษา</li>
 <li><strong>ทำตัว Italic จริง</strong> ปัจจุบันเป็น Oblique</li>
-<li><strong>เพิ่ม Glyphs อักษรลาว</strong> ณ เวลาที่เขียน เริ่มทดลองวาดบางส่วนแล้วแต่ยังไม่ลงตัว ตั้งใจว่าจะทำตัวอักษรลาวให้เสร็จแล้วใส่ใน Boon v2.0 (แต่ไม่อาจระบุเวลาได้)</li>
 <li><strong>Greek and Cyrillic</strong> เพราะรูปแบบตัวอักษรและวิธีเขียนไม่ได้ต่างจากตัวละตินมากมาย (แต่คงเป็นอนาคตที่ห่างไกลมากๆ)</li>
 </ul>
 
@@ -222,8 +237,8 @@
 
 <div id="end"><a href="#topic">ไปยังสารบัญ &#x0E5B;</a></div>
 
-
-      <script type="text/javascript" src="js/fittext.js"></script>
+  <script type="text/javascript" src="js/boon.js"></script>
+  <script type="text/javascript" src="js/fittext.js"></script>
   <script type="text/javascript">
     fitText(document.getElementById('title'), 0.4);
   </script>

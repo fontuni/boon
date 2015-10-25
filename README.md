@@ -8,6 +8,9 @@
 
 ### License: SIL Open Font License v1.1
 
-Copyright 2013-2015, สังศิต ไสววรรณ (sungsit.com | https://twitter.com/gzix). 
+Copyright 2013-2015, Sungsit Sawaiwan (fontuni.com | uni@fontuni.com). 
 
-ฟอนต์นี้ใช้สัญญาอนุญาตแบบ SIL Open Font License, Version 1.1 คุณสามารถอ่านรายละเอียดของสัญญาอนุญาตได้จากไฟล์ OFL.txt ในแพคเกจ หรือที่ <http://scripts.sil.org/OFL>
+ฟอนต์นี้ใช้สัญญาอนุญาตแบบ SIL Open Font License, Version 1.1 คุณสามารถอ่านรายละเอียดของสัญญาอนุญาตได้จากไฟล์ OFL.txt ในแพคเกจ หรือที่ <http://scripts.sil.org/OFL>.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at <http://scripts.sil.org/OFL>.

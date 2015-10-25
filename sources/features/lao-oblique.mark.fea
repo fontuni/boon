@@ -64,14 +64,20 @@ lookup LaoBelow.mark {
   pos base [ \uni0EC1 ] <anchor 590 0> mark @LaoBelow.mark;
   pos base [ \uni0EC2 - \uni0EC4 ] <anchor 450 0> mark @LaoBelow.mark;
   pos base [ \uni0EDC \uni0EDD ] <anchor 1060 0> mark @LaoBelow.mark;
+  
+} LaoBelow.mark;
+
+lookup LaoBelow.sd.mark {
+  lookupflag 0;
 
   markClass [ @BV.lao.sd ] <anchor -60 0> @LaoBelow.sd.mark;
   pos base [ \uni0E87 ] <anchor 460 0> mark @LaoBelow.sd.mark;
   pos base [ \uni0EBD ] <anchor 490 0> mark @LaoBelow.sd.mark;
-  
-} LaoBelow.mark;
+
+} LaoBelow.sd.mark;
 
 feature mark {
   lookup LaoAbove.mark;
   lookup LaoBelow.mark;
+  lookup LaoBelow.sd.mark;
 } mark;
