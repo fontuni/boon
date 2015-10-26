@@ -1,3 +1,8 @@
+languagesystem DFLT dflt;
+languagesystem thai dflt;
+languagesystem thai PAL ;
+languagesystem thai SAN ;
+
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -19,39 +24,43 @@ lookup ThaiContextRC.rd {
   sub @RC' lookup ThaiRC.rd @BV;
 } ThaiContextRC.rd;
 
-# Thai Sara Am decomposition: The extra zero-width joiner (@ZWJ) is required
-# to distinguish decomposed Sara AA from user's input one.
+# Thai Sara Am decomposition:
 lookup ThaiDecomp {
-  sub \uni0E33 by \uni0E4D @ZWJ \uni0E32;
+  sub \uni0E33 by \uni0E4D \uni0E32;
 } ThaiDecomp;
 
-lookup ThaiT.0E4D {
-  sub @T by \uni0E4D;
-} ThaiT.0E4D;
+lookup ThaiDecomp.sl {
+  sub \uni0E33 by \uni0E4D.sl \uni0E32;
+} ThaiDecomp.sl;
 
-lookup Thai0E4D.0E48 {
-  sub \uni0E4D by \uni0E48;
-} Thai0E4D.0E48;
+lookup ThaiContext.decomp {
+  sub [ @NC @DC @RC @RC.rd ]' \uni0E33' lookup ThaiDecomp;
+  sub @AC' \uni0E33' lookup ThaiDecomp.sl;
+} ThaiContext.decomp;
 
-lookup Thai0E4D.0E49 {
-  sub \uni0E4D by \uni0E49;
-} Thai0E4D.0E49;
+lookup Thai0E33.0E32 {
+  sub \uni0E33 by \uni0E32;
+} Thai0E33.0E32;
 
-lookup Thai0E4D.0E4A {
-  sub \uni0E4D by \uni0E4A;
-} Thai0E4D.0E4A;
+lookup ThaiTone.0E4D {
+  sub \uni0E48 by \uni0E4D \uni0E48;
+  sub \uni0E49 by \uni0E4D \uni0E49;
+  sub \uni0E4A by \uni0E4D \uni0E4A;
+  sub \uni0E4B by \uni0E4D \uni0E4B;
+} ThaiTone.0E4D;
 
-lookup Thai0E4D.0E4B {
-  sub \uni0E4D by \uni0E4B;
-} Thai0E4D.0E4B;
+lookup ThaiTone.0E4D.sl {
+  sub \uni0E48 by \uni0E4D.sl \uni0E48.sl;
+  sub \uni0E49 by \uni0E4D.sl \uni0E49.sl;
+  sub \uni0E4A by \uni0E4D.sl \uni0E4A.sl;
+  sub \uni0E4B by \uni0E4D.sl \uni0E4B.sl;
+} ThaiTone.0E4D.sl;
 
-# Reorder Nikhahit (uni0E4D) & Tones
-lookup ThaiContext.ro {
-  sub \uni0E48' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E48 @ZWJ' \uni0E32';
-  sub \uni0E49' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E49 @ZWJ' \uni0E32';
-  sub \uni0E4A' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4A @ZWJ' \uni0E32';
-  sub \uni0E4B' lookup ThaiT.0E4D \uni0E4D' lookup Thai0E4D.0E4B @ZWJ' \uni0E32';
-} ThaiContext.ro;
+lookup ThaiContext.0E4D {
+  sub [ @NC @DC @RC @RC.rd ]' @T' lookup ThaiTone.0E4D \uni0E33' lookup Thai0E33.0E32;
+  sub @AC' @T' lookup ThaiTone.0E4D.sl \uni0E33' lookup Thai0E33.0E32;
+} ThaiContext.0E4D;
+
 
 # Phinthu reordering fix for Uniscribe & Harfbuzz
 lookup ThaiBV.0E3A {
@@ -89,9 +98,9 @@ feature ccmp {
   script thai;
     language dflt;
       lookup ThaiContextRC.rd;
-      lookup ThaiDecomp;
-      lookup ThaiContext.ro;
-      lookup ThaiPhinthu.ro; 
+      lookup ThaiContext.decomp;
+      lookup ThaiContext.0E4D;
+      lookup ThaiPhinthu.ro;
     language PAL exclude_dflt;
       lookup ThaiRC.rd;
     language SAN exclude_dflt;
@@ -188,7 +197,6 @@ lookup ThaiContext.fallback {
 
 } ThaiContext.fallback;
 
-# Set them all here.
 feature ccmp {
   lookup ThaiContext.sl;
   lookup ThaiContext.sdl;

@@ -1,3 +1,6 @@
+languagesystem DFLT dflt;
+languagesystem lao  dflt;
+
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -10,45 +13,48 @@
 
 include(lao-classes.fea)
 
-# Lao Sara Am decomposition: The extra zero-width joiner (@ZWJ) is required
-# to distinguish decomposed Sara AA from user's input one.
+# Lao Sara Am decomposition:
 lookup LaoDecomp {
-  sub \uni0EB3 by \uni0ECD @ZWJ \uni0EB2;
+  sub \uni0EB3 by \uni0ECD \uni0EB2;
 } LaoDecomp;
 
-lookup LaoT.0ECD {
-  sub @T.lao by \uni0ECD;
-} LaoT.0ECD;
+lookup LaoDecomp.sl {
+  sub \uni0EB3 by \uni0ECD.sl \uni0EB2;
+} LaoDecomp.sl;
 
-lookup Lao0ECD.0EC8 {
-  sub \uni0ECD by \uni0EC8;
-} Lao0ECD.0EC8;
+lookup LaoContext.decomp {
+  sub [ @NC.lao @DC.lao @DC2.lao ]' \uni0EB3' lookup LaoDecomp;
+  sub @AC.lao' \uni0EB3' lookup LaoDecomp.sl;
+} LaoContext.decomp;
 
-lookup Lao0ECD.0EC9 {
-  sub \uni0ECD by \uni0EC9;
-} Lao0ECD.0EC9;
+lookup Lao0EB3.0EB2 {
+  sub \uni0EB3 by \uni0EB2;
+} Lao0EB3.0EB2;
 
-lookup Lao0ECD.0ECA {
-  sub \uni0ECD by \uni0ECA;
-} Lao0ECD.0ECA;
+lookup LaoTone.0ECD {
+  sub \uni0EC8 by \uni0ECD \uni0EC8;
+  sub \uni0EC9 by \uni0ECD \uni0EC9;
+  sub \uni0ECA by \uni0ECD \uni0ECA;
+  sub \uni0ECB by \uni0ECD \uni0ECB;
+} LaoTone.0ECD;
 
-lookup Lao0ECD.0ECB {
-  sub \uni0ECD by \uni0ECB;
-} Lao0ECD.0ECB;
+lookup LaoTone.0ECD.sl {
+  sub \uni0EC8 by \uni0ECD.sl \uni0EC8.sl;
+  sub \uni0EC9 by \uni0ECD.sl \uni0EC9.sl;
+  sub \uni0ECA by \uni0ECD.sl \uni0ECA.sl;
+  sub \uni0ECB by \uni0ECD.sl \uni0ECB.sl;
+} LaoTone.0ECD.sl;
 
-# Reorder Nikhahit (uni0ECD) & Tones
-lookup LaoContext.ro {
-  sub \uni0EC8' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0EC8 @ZWJ' \uni0EB2';
-  sub \uni0EC9' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0EC9 @ZWJ' \uni0EB2';
-  sub \uni0ECA' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0ECA @ZWJ' \uni0EB2';
-  sub \uni0ECB' lookup LaoT.0ECD \uni0ECD' lookup Lao0ECD.0ECB @ZWJ' \uni0EB2';
-} LaoContext.ro; 
+lookup LaoContext.0E4D {
+  sub [ @NC.lao @DC.lao @DC2.lao ]' @T.lao' lookup LaoTone.0ECD \uni0EB3' lookup Lao0EB3.0EB2;
+  sub @AC.lao' @T.lao' lookup LaoTone.0ECD.sl \uni0EB3' lookup Lao0EB3.0EB2;
+} LaoContext.0E4D;
 
 # GSUB features
 
 feature ccmp {
-  lookup LaoDecomp;
-  lookup LaoContext.ro;  
+  lookup LaoContext.decomp;
+  lookup LaoContext.0E4D;  
 } ccmp;
 
 # Basic subsitutions
