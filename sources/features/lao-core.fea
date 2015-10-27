@@ -13,49 +13,10 @@ languagesystem lao  dflt;
 
 include(lao-classes.fea)
 
-# Lao Sara Am decomposition:
+# Lao Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug) 
 lookup LaoDecomp {
   sub \uni0EB3 by \uni0ECD \uni0EB2;
 } LaoDecomp;
-
-lookup LaoDecomp.sl {
-  sub \uni0EB3 by \uni0ECD.sl \uni0EB2;
-} LaoDecomp.sl;
-
-lookup LaoContext.decomp {
-  sub [ @NC.lao @DC.lao @DC2.lao ]' \uni0EB3' lookup LaoDecomp;
-  sub @AC.lao' \uni0EB3' lookup LaoDecomp.sl;
-} LaoContext.decomp;
-
-lookup Lao0EB3.0EB2 {
-  sub \uni0EB3 by \uni0EB2;
-} Lao0EB3.0EB2;
-
-lookup LaoTone.0ECD {
-  sub \uni0EC8 by \uni0ECD \uni0EC8;
-  sub \uni0EC9 by \uni0ECD \uni0EC9;
-  sub \uni0ECA by \uni0ECD \uni0ECA;
-  sub \uni0ECB by \uni0ECD \uni0ECB;
-} LaoTone.0ECD;
-
-lookup LaoTone.0ECD.sl {
-  sub \uni0EC8 by \uni0ECD.sl \uni0EC8.sl;
-  sub \uni0EC9 by \uni0ECD.sl \uni0EC9.sl;
-  sub \uni0ECA by \uni0ECD.sl \uni0ECA.sl;
-  sub \uni0ECB by \uni0ECD.sl \uni0ECB.sl;
-} LaoTone.0ECD.sl;
-
-lookup LaoContext.0E4D {
-  sub [ @NC.lao @DC.lao @DC2.lao ]' @T.lao' lookup LaoTone.0ECD \uni0EB3' lookup Lao0EB3.0EB2;
-  sub @AC.lao' @T.lao' lookup LaoTone.0ECD.sl \uni0EB3' lookup Lao0EB3.0EB2;
-} LaoContext.0E4D;
-
-# GSUB features
-
-feature ccmp {
-  lookup LaoContext.decomp;
-  lookup LaoContext.0E4D;  
-} ccmp;
 
 # Basic subsitutions
 
@@ -88,51 +49,89 @@ lookup Lao.sul {
   sub @T.lao.sdl by @T.lao.sl;
 } Lao.sul;
 
-# This contextual `ccmp` feature aims to handle Lao complex layout without HarfBuzz.
-# Basically, it would work for various OpenType shaping engines (UniScribe, CoreText, Adobe World-Ready)
-# to support minority languages which require extra Tonemarks/Diacrtics.
 
-lookup LaoContext.sl {
-  sub @AC.lao' @BV.lao' @BV.lao' @BV.lao' @AV.lao' lookup Lao.sl;
-  sub @AC.lao' @BV.lao' @BV.lao' @AV.lao' lookup Lao.sl;
-  sub @AC.lao' @BV.lao' @AV.lao' lookup Lao.sl;
-  sub @AC.lao' @AV.lao' lookup Lao.sl;
-} LaoContext.sl;
+@BASE.lao.nc = [ @NC.lao @DC2.lao @LV.lao \uni0EB0 \uni0EB2 ];
+@BASE.lao.dc = [ @DC.lao ];
+@AM.lao = [ \uni0EB3 ];
+@AV.lao.opt  = [ \uni0ECC \uni0ECD ];
 
-lookup LaoContext.sdl {
-  sub @AC.lao' @BV.lao' @BV.lao' @BV.lao' @T.lao' lookup Lao.sdl;
-  sub @AC.lao' @BV.lao' @BV.lao' @T.lao' lookup Lao.sdl;
-  sub @AC.lao' @BV.lao' @T.lao' lookup Lao.sdl;
-  sub @AC.lao' @T.lao' lookup Lao.sdl;
-} LaoContext.sdl;
+lookup LaoContextAC {
+  lookupflag 0;
 
-lookup LaoContext.sd {
-  sub [ @NC.lao @DC.lao @DC2.lao @BV.lao.all ]' @T.lao' lookup Lao.sd;
-  sub @DC.lao' @BV.lao' lookup LaoBV.sd;
-  sub @BV.lao' @BV.lao' lookup LaoBV.sd;
-} LaoContext.sd;
+  sub @AC.lao @BV.lao @BV.lao @AV.lao'lookup Lao.sl @T.lao'lookup Lao.sl;
+  sub @AC.lao @BV.lao @BV.lao @AV.lao'lookup Lao.sl @AV.lao.opt'lookup Lao.sul;
+  sub @AC.lao @BV.lao @BV.lao @T.lao'lookup Lao.sdl;
+  sub @AC.lao @BV.lao @BV.lao @AV.lao'lookup Lao.sl;
+  sub @AC.lao @BV.lao @AV.lao'lookup Lao.sl @T.lao'lookup Lao.sl;
+  sub @AC.lao @BV.lao @AV.lao'lookup Lao.sl @AV.lao.opt'lookup Lao.sul;
+  sub @AC.lao @BV.lao @T.lao'lookup Lao.sdl;
+  sub @AC.lao @BV.lao @AV.lao'lookup Lao.sl;
 
-lookup LaoContext.fallback {
+  sub @AC.lao @AV.lao'lookup Lao.sl @T.lao'lookup Lao.sl;
+  sub @AC.lao @AV.lao'lookup Lao.sl @AV.lao.opt'lookup Lao.sul;
+  sub @AC.lao @T.lao'lookup Lao.sdl @T.lao'lookup Lao.sl;
+  sub @AC.lao @T.lao'lookup Lao.sdl;
+  sub @AC.lao @AV.lao'lookup Lao.sl;
 
-  # For @AC.lao
-  sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] [ \uni0ECC \uni0ECD ]' lookup Lao.sul;
-  sub [ @AV.lao.sl @AV.lao.sul @T.lao.sl @T.lao.sdl ] @T.lao' lookup Lao.sl;
+  sub [ @AV.lao.sul @AV.lao.sl @T.lao.sdl @T.lao.sl ] @AV.lao.opt'lookup Lao.sul;
+  sub [ @AV.lao.sul @AV.lao.sl @T.lao.sdl @T.lao.sl ] @T.lao'lookup Lao.sl;
 
-  # For @NC @DC
-  sub [ @AV.lao @AV.lao.su @T.lao.sd @T.lao ]' [ @AV.lao @T.lao ]' lookup Lao.su;
+} LaoContextAC;
 
-  # For @BV.lao
-  sub @BV.lao.all' @T.lao' lookup Lao.sd;
+lookup LaoContextDC {
+  lookupflag 0;
 
-  # For @T.lao
-  sub @T.lao.all [ @AV.lao @T.lao ]' lookup Lao.su;
+  sub @BASE.lao.dc @BV.lao'lookup LaoBV.sd @BV.lao @AV.lao @AV.lao'lookup Lao.su;
+  sub @BASE.lao.dc @BV.lao'lookup LaoBV.sd @BV.lao @T.lao'lookup Lao.sd;
+  sub @BASE.lao.dc @BV.lao'lookup LaoBV.sd @AV.lao @AV.lao'lookup Lao.su;
+  sub @BASE.lao.dc @BV.lao'lookup LaoBV.sd @T.lao'lookup Lao.sd;
+  sub @BASE.lao.dc @AV.lao @AV.lao'lookup Lao.su;
+  sub @BASE.lao.dc @T.lao'lookup Lao.sd;
 
-} LaoContext.fallback;
+  sub @BASE.lao.dc @BV.lao'lookup LaoBV.sd;
+
+} LaoContextDC;
+
+lookup LaoContextNC {
+  lookupflag 0;
+
+  sub @BASE.lao.nc @BV.lao @BV.lao @AV.lao @AV.lao'lookup Lao.su;
+  sub @BASE.lao.nc @BV.lao @BV.lao @T.lao'lookup Lao.sd;
+  sub @BASE.lao.nc @BV.lao @AV.lao @AV.lao'lookup Lao.su;
+  sub @BASE.lao.nc @BV.lao @T.lao'lookup Lao.sd;
+  sub @BASE.lao.nc @AV.lao @AV.lao'lookup Lao.su;
+  sub @BASE.lao.nc @T.lao'lookup Lao.sd;
+
+  sub [ @AV.lao.su @T.lao.sd @T.lao ] @AV.lao'lookup Lao.su;
+
+} LaoContextNC;
+
+# Mac OS & Safari fix
+lookup LaoTone.liga {
+  sub \uni0EC8.sd \uni0ECD by \uni0EC8.0ECD;
+  sub \uni0EC8.sd \uni0ECD.su by \uni0EC8.0ECD;
+  sub \uni0EC9.sd \uni0ECD by \uni0EC9.0ECD;
+  sub \uni0EC9.sd \uni0ECD.su by \uni0EC9.0ECD;
+  sub \uni0ECA.sd \uni0ECD by \uni0ECA.0ECD;
+  sub \uni0ECA.sd \uni0ECD.su by \uni0ECA.0ECD;
+  sub \uni0ECB.sd \uni0ECD by \uni0ECB.0ECD;
+  sub \uni0ECB.sd \uni0ECD.su by \uni0ECB.0ECD;
+
+  sub \uni0EC8.sdl \uni0ECD by \uni0EC8.0ECD.sl;
+  sub \uni0EC8.sdl \uni0ECD.sul by \uni0EC8.0ECD.sl;
+  sub \uni0EC9.sdl \uni0ECD by \uni0EC9.0ECD.sl;
+  sub \uni0EC9.sdl \uni0ECD.sul by \uni0EC9.0ECD.sl;
+  sub \uni0ECA.sdl \uni0ECD by \uni0ECA.0ECD.sl;
+  sub \uni0ECA.sdl \uni0ECD.sul by \uni0ECA.0ECD.sl;
+  sub \uni0ECB.sdl \uni0ECD by \uni0ECB.0ECD.sl;
+  sub \uni0ECB.sdl \uni0ECD.sul by \uni0ECB.0ECD.sl;
+} LaoTone.liga;
 
 # Set them all here.
 feature ccmp {
-  lookup LaoContext.sl;
-  lookup LaoContext.sdl;
-  lookup LaoContext.sd;
-  lookup LaoContext.fallback;
+  lookup LaoDecomp;
+  lookup LaoContextAC;
+  lookup LaoContextDC;
+  lookup LaoContextNC;
+  lookup LaoTone.liga;
 } ccmp;

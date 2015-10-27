@@ -69,7 +69,13 @@
 @T.lao.sl     = [ \uni0EC8.sl \uni0EC9.sl \uni0ECA.sl \uni0ECB.sl ];
 @T.lao.sd     = [ \uni0EC8.sd \uni0EC9.sd \uni0ECA.sd \uni0ECB.sd ];
 @T.lao.sdl     = [ \uni0EC8.sdl \uni0EC9.sdl \uni0ECA.sdl \uni0ECB.sdl ];
-@T.lao.all = [ @T.lao @T.lao.sl @T.lao.sd @T.lao.sdl ];
+@T.lao.nig  = [ \uni0EC8.0ECD  \uni0EC9.0ECD  \uni0ECA.0ECD  \uni0ECB.0ECD ];
+@T.lao.nig.sl  = [ \uni0EC8.0ECD.sl  \uni0EC9.0ECD.sl  \uni0ECA.0ECD.sl  \uni0ECB.0ECD.sl ];
+
+@T.lao.all = [ @T.lao @T.lao.sl @T.lao.sd @T.lao.sdl @T.lao.nig @T.lao.nig.sl ];
+
+
+@T.all = [ @T @T.sd @T.sdl @T.sl @T.nig @T.nig.sl ];
 
 @MARKS_EXTENDED.lao = [ @MARKS.lao @BV.lao.all @AV.lao.all @T.lao.all ];
 

@@ -15,7 +15,7 @@ include(thai-classes.fea)
 lookup ThaiAbove.mark {
   lookupflag 0;
 
-  markClass [ @AV ] <anchor 0 0> @ThaiAbove.mark;
+  markClass [ @AV @T.nig ] <anchor 0 0> @ThaiAbove.mark;
   pos base [ \uni0E07 ] <anchor 545 0> mark @ThaiAbove.mark;
   pos base [ \uni0E10 \uni0E10.rd ] <anchor 575 0> mark @ThaiAbove.mark;
   pos base [ \uni0E23 ] <anchor 560 0> mark @ThaiAbove.mark;

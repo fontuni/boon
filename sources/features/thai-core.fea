@@ -55,32 +55,10 @@ lookup Thai.sul {
   sub @T by @T.sl;
 } Thai.sul;
 
-# Thai Sara Am decomposition:
+# Thai Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug) 
 lookup ThaiDecomp {
   sub \uni0E33 by \uni0E4D \uni0E32;
 } ThaiDecomp;
-
-lookup ThaiDecomp.sl {
-  sub \uni0E33 by \uni0E4D.sl \uni0E32;
-} ThaiDecomp.sl;
-
-lookup Thai0E33.0E32 {
-  sub \uni0E33 by \uni0E32;
-} Thai0E33.0E32;
-
-lookup ThaiTone.0E4D {
-  sub \uni0E48 by \uni0E4D \uni0E48;
-  sub \uni0E49 by \uni0E4D \uni0E49;
-  sub \uni0E4A by \uni0E4D \uni0E4A;
-  sub \uni0E4B by \uni0E4D \uni0E4B;
-} ThaiTone.0E4D;
-
-lookup ThaiTone.0E4D.sl {
-  sub \uni0E48 by \uni0E4D.sl \uni0E48.sl;
-  sub \uni0E49 by \uni0E4D.sl \uni0E49.sl;
-  sub \uni0E4A by \uni0E4D.sl \uni0E4A.sl;
-  sub \uni0E4B by \uni0E4D.sl \uni0E4B.sl;
-} ThaiTone.0E4D.sl;
 
 # Phinthu reordering fix for Uniscribe & Harfbuzz
 lookup ThaiBV.0E3A {
@@ -109,13 +87,6 @@ lookup ThaiPhinthu.ro {
 lookup ThaiContextAC {
   lookupflag 0;
 
-  sub @AC @BV @BV @T'lookup ThaiTone.0E4D.sl @AM'lookup Thai0E33.0E32;
-  sub @AC @BV @T'lookup ThaiTone.0E4D.sl @AM'lookup Thai0E33.0E32;
-  sub @AC @T'lookup ThaiTone.0E4D.sl @AM'lookup Thai0E33.0E32;
-  sub @AC @BV @BV @AM'lookup ThaiDecomp.sl;
-  sub @AC @BV @AM'lookup ThaiDecomp.sl;
-  sub @AC @AM'lookup ThaiDecomp.sl;
-
   sub @AC @BV @BV @AV'lookup Thai.sl @T'lookup Thai.sl;
   sub @AC @BV @BV @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
   sub @AC @BV @BV @T'lookup Thai.sdl;
@@ -139,13 +110,6 @@ lookup ThaiContextAC {
 lookup ThaiContextDC {
   lookupflag 0;
 
-  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
-  sub @BASE.dc @BV'lookup ThaiBV.sd @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
-  sub @BASE.dc @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
-  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @AM'lookup ThaiDecomp;
-  sub @BASE.dc @BV'lookup ThaiBV.sd @AM'lookup ThaiDecomp;
-  sub @BASE.dc @AM'lookup ThaiDecomp;
-
   sub @BASE.dc @BV'lookup ThaiBV.sd @BV @AV @AV'lookup Thai.su;
   sub @BASE.dc @BV'lookup ThaiBV.sd @BV @T'lookup Thai.sd;
   sub @BASE.dc @BV'lookup ThaiBV.sd @AV @AV'lookup Thai.su;
@@ -160,13 +124,6 @@ lookup ThaiContextDC {
 lookup ThaiContextNC {
   lookupflag 0;
 
-  sub @BASE.nc @BV @BV @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
-  sub @BASE.nc @BV @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
-  sub @BASE.nc @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
-  sub @BASE.nc @BV @BV @AM'lookup ThaiDecomp;
-  sub @BASE.nc @BV @AM'lookup ThaiDecomp;
-  sub @BASE.nc @AM'lookup ThaiDecomp;
-
   sub @BASE.nc @BV @BV @AV @AV'lookup Thai.su;
   sub @BASE.nc @BV @BV @T'lookup Thai.sd;
   sub @BASE.nc @BV @AV @AV'lookup Thai.su;
@@ -177,6 +134,27 @@ lookup ThaiContextNC {
   sub [ @AV.su @T.sd @T ] @AV'lookup Thai.su;
 
 } ThaiContextNC;
+
+# Mac OS & Safari fix
+lookup ThaiTone.liga {
+  sub \uni0E48.sd \uni0E4D by \uni0E48.0E4D;
+  sub \uni0E48.sd \uni0E4D.su by \uni0E48.0E4D;
+  sub \uni0E49.sd \uni0E4D by \uni0E49.0E4D;
+  sub \uni0E49.sd \uni0E4D.su by \uni0E49.0E4D;
+  sub \uni0E4A.sd \uni0E4D by \uni0E4A.0E4D;
+  sub \uni0E4A.sd \uni0E4D.su by \uni0E4A.0E4D;
+  sub \uni0E4B.sd \uni0E4D by \uni0E4B.0E4D;
+  sub \uni0E4B.sd \uni0E4D.su by \uni0E4B.0E4D;
+
+  sub \uni0E48.sdl \uni0E4D by \uni0E48.0E4D.sl;
+  sub \uni0E48.sdl \uni0E4D.sul by \uni0E48.0E4D.sl;
+  sub \uni0E49.sdl \uni0E4D by \uni0E49.0E4D.sl;
+  sub \uni0E49.sdl \uni0E4D.sul by \uni0E49.0E4D.sl;
+  sub \uni0E4A.sdl \uni0E4D by \uni0E4A.0E4D.sl;
+  sub \uni0E4A.sdl \uni0E4D.sul by \uni0E4A.0E4D.sl;
+  sub \uni0E4B.sdl \uni0E4D by \uni0E4B.0E4D.sl;
+  sub \uni0E4B.sdl \uni0E4D.sul by \uni0E4B.0E4D.sl;
+} ThaiTone.liga;
 
 feature locl {
   script thai;
@@ -191,11 +169,13 @@ feature ss01 {
 } ss01;
 
 feature ccmp {
+  lookup ThaiDecomp;
   lookup ThaiContextRC.rd;
   lookup ThaiPhinthu.ro;
   lookup ThaiContextAC;
   lookup ThaiContextDC;
   lookup ThaiContextNC;
+  lookup ThaiTone.liga;
 } ccmp;
 
 

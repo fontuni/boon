@@ -1,3 +1,6 @@
+languagesystem DFLT dflt;
+languagesystem lao  dflt;
+
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -16,6 +19,8 @@ lookup LaoExtendedAbove.mkmk {
   pos mark [ @T.lao.sd @AV.lao ] <anchor 0 0> mark @LaoExtendedAbove.mkmk;
   pos mark [ @T.lao \uni0ECC.su \uni0ECD.su ] <anchor 0 240> mark @LaoExtendedAbove.mkmk;
 
+  pos mark [ @T.lao.nig ] <anchor 0 210> mark @LaoExtendedAbove.mkmk;
+
 } LaoExtendedAbove.mkmk;
 
 lookup LaoExtendedAbove.left.mkmk {
@@ -26,19 +31,22 @@ lookup LaoExtendedAbove.left.mkmk {
   pos mark [ @T.lao.sdl  @AV.lao.sl ] <anchor 0 0> mark @LaoExtendedAbove.left.mkmk;
   pos mark [ @T.lao.sl \uni0ECC.sul \uni0ECD.sul ] <anchor 0 240> mark @LaoExtendedAbove.left.mkmk;
 
+  pos mark [ @T.lao.nig.sl ] <anchor 0 210> mark @LaoExtendedAbove.mkmk;
+
 } LaoExtendedAbove.left.mkmk;
 
 lookup LaoExtendedBelow.mkmk {
   lookupflag 0;
 
-  markClass [ \uni0EB8.sd \uni0EB9.sd \uni0EBC.sd ] <anchor 0 0> @LaoExtendedBelow.mkmk;
+  markClass [ @BV.lao ] <anchor 0 0> @LaoExtendedBelow.mkmk;
 
-  pos mark [ \uni0EB8 \uni0EB9 \uni0EBC ] <anchor -60 0> mark @LaoExtendedBelow.mkmk;
-  pos mark [ \uni0EB8.sd \uni0EB9.sd ] <anchor 0 -270> mark @LaoExtendedBelow.mkmk;
-  pos mark [ \uni0EBC.sd ] <anchor 0 -210> mark @LaoExtendedBelow.mkmk;
+  pos mark [ \uni0EB8 \uni0EB9 ] <anchor 0 -280> mark @LaoExtendedBelow.mkmk;
+  pos mark [ \uni0EBC ] <anchor 0 -210> mark @LaoExtendedBelow.mkmk;
+  pos mark [ \uni0EB8.sd \uni0EB9.sd ] <anchor 0 -490> mark @LaoExtendedBelow.mkmk;
+  pos mark [ \uni0EBC.sd ] <anchor 0 -420> mark @LaoExtendedBelow.mkmk;
 
 } LaoExtendedBelow.mkmk;
-
+  
 feature mkmk {
   lookup LaoExtendedAbove.mkmk;
   lookup LaoExtendedAbove.left.mkmk;

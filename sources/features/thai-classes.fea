@@ -31,7 +31,7 @@
 @FV = [ \uni0E30 \uni0E32 \uni0E33 \uni0E45 ];
 
 # Independent vowels (ฤ, ฦ)
-@IV = [\uni0E24 \uni0E26 ];
+@IV = [ \uni0E24 \uni0E26 ];
 
 # Symbols/Punctuations
 @SB = [ \uni0E2F \uni0E3F \uni0E4F \uni0E5A \uni0E5B ];
@@ -79,7 +79,9 @@
 @T.sd  = [ \uni0E48.sd  \uni0E49.sd  \uni0E4A.sd  \uni0E4B.sd  \uni0E4C.sd  ];
 @T.sdl = [ \uni0E48.sdl \uni0E49.sdl \uni0E4A.sdl \uni0E4B.sdl \uni0E4C.sdl ];
 @T.sl  = [ \uni0E48.sl  \uni0E49.sl  \uni0E4A.sl  \uni0E4B.sl  \uni0E4C.sl  ];
-@T.all = [ @T @T.sd @T.sdl @T.sl ];
+@T.nig  = [ \uni0E48.0E4D  \uni0E49.0E4D  \uni0E4A.0E4D  \uni0E4B.0E4D ];
+@T.nig.sl  = [ \uni0E48.0E4D.sl  \uni0E49.0E4D.sl  \uni0E4A.0E4D.sl  \uni0E4B.0E4D.sl ];
+@T.all = [ @T @T.sd @T.sdl @T.sl @T.nig @T.nig.sl ];
 
 @MARKS_LEGACY = [ @MARKS @BV.all @AV.all @T.all ];
 
