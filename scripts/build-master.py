@@ -18,7 +18,7 @@ import datetime
 # Predifined vars
 foundry = 'FontUni'
 family = 'Boon'
-version = '1.0-beta3'
+version = '1.0'
 sources = ['sources/boon-master.sfd', 'sources/boon-master-oblique.sfd']
 layers = ['300', '400', '500', '600', '700']
 copyright =  'Copyright 2013-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'

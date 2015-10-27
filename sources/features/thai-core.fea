@@ -15,6 +15,8 @@ languagesystem thai SAN ;
 
 include(thai-classes.fea)
 
+# Basic subsitutions
+
 # Remove descender
 lookup ThaiRC.rd {
   sub @RC by @RC.rd;
@@ -23,109 +25,6 @@ lookup ThaiRC.rd {
 lookup ThaiContextRC.rd {
   sub @RC' lookup ThaiRC.rd @BV;
 } ThaiContextRC.rd;
-
-# Thai Sara Am decomposition:
-lookup ThaiDecomp {
-  sub \uni0E33 by \uni0E4D \uni0E32;
-} ThaiDecomp;
-
-lookup ThaiDecomp.sl {
-  sub \uni0E33 by \uni0E4D.sl \uni0E32;
-} ThaiDecomp.sl;
-
-lookup ThaiContext.decomp {
-  sub [ @NC @DC @RC @RC.rd ]' \uni0E33' lookup ThaiDecomp;
-  sub @AC' \uni0E33' lookup ThaiDecomp.sl;
-} ThaiContext.decomp;
-
-lookup Thai0E33.0E32 {
-  sub \uni0E33 by \uni0E32;
-} Thai0E33.0E32;
-
-lookup ThaiTone.0E4D {
-  sub \uni0E48 by \uni0E4D \uni0E48;
-  sub \uni0E49 by \uni0E4D \uni0E49;
-  sub \uni0E4A by \uni0E4D \uni0E4A;
-  sub \uni0E4B by \uni0E4D \uni0E4B;
-} ThaiTone.0E4D;
-
-lookup ThaiTone.0E4D.sl {
-  sub \uni0E48 by \uni0E4D.sl \uni0E48.sl;
-  sub \uni0E49 by \uni0E4D.sl \uni0E49.sl;
-  sub \uni0E4A by \uni0E4D.sl \uni0E4A.sl;
-  sub \uni0E4B by \uni0E4D.sl \uni0E4B.sl;
-} ThaiTone.0E4D.sl;
-
-lookup ThaiContext.0E4D {
-  sub [ @NC @DC @RC @RC.rd ]' @T' lookup ThaiTone.0E4D \uni0E33' lookup Thai0E33.0E32;
-  sub @AC' @T' lookup ThaiTone.0E4D.sl \uni0E33' lookup Thai0E33.0E32;
-} ThaiContext.0E4D;
-
-
-# Phinthu reordering fix for Uniscribe & Harfbuzz
-lookup ThaiBV.0E3A {
-  sub [ \uni0E38 \uni0E39 ] by \uni0E3A;
-  sub [ \uni0E38.sd \uni0E39.sd ] by \uni0E3A.sd;
-} ThaiBV.0E3A;
-
-lookup Thai0E3A.0E38 {
-  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E38 \uni0E38.sd ];
-} Thai0E3A.0E38;
-
-lookup Thai0E3A.0E39 {
-  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E39 \uni0E39.sd ];
-} Thai0E3A.0E39;
-
-lookup ThaiPhinthu.ro {
-  sub @BASE' [ \uni0E38 \uni0E38.sd ]' lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]' lookup Thai0E3A.0E38;
-  sub @BASE' [ \uni0E39 \uni0E39.sd ]' lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]' lookup Thai0E3A.0E39;
-} ThaiPhinthu.ro;
-
-# GSUB features
-
-feature locl {
-
-  script thai;
-    language PAL exclude_dflt;
-      lookup ThaiRC.rd;
-    language SAN exclude_dflt;
-      lookup ThaiRC.rd;
-
-} locl;
-
-feature ccmp {
-
-  script thai;
-    language dflt;
-      lookup ThaiContextRC.rd;
-      lookup ThaiContext.decomp;
-      lookup ThaiContext.0E4D;
-      lookup ThaiPhinthu.ro;
-    language PAL exclude_dflt;
-      lookup ThaiRC.rd;
-    language SAN exclude_dflt;
-      lookup ThaiRC.rd;
-
-} ccmp;
-
-# Because many applications don't quite well support language specific features
-# like `locl` (or even `ccmp`) for Thai script, `salt` & `ss01` features are alternatives 
-# to Pali/Sanskrit prefered form of uni0E0D (ญ) and uni0E10 (ฐ).
-
-#`salt` causes weird bug in older Photoshop so disable it for now.
-#feature salt {
-#  script thai;
-#    language dflt ;
-#      lookup ThaiRC.rd;
-#} salt;
-
-feature ss01 {
-  script thai;
-    language dflt ;
-      lookup ThaiRC.rd;
-} ss01;
-
-# Basic subsitutions
 
 lookup Thai.sd {
   sub @T by @T.sd;
@@ -145,61 +44,158 @@ lookup Thai.sl {
 } Thai.sl;
 
 lookup Thai.su {
-  sub \uni0E4D by \uni0E4D.su;
   sub \uni0E47 by \uni0E47.su;
+  sub \uni0E4D by \uni0E4D.su;
   sub @T.sd by @T;
 } Thai.su;
 
 lookup Thai.sul {
   sub \uni0E47 by \uni0E47.sul;
   sub \uni0E4D by \uni0E4D.sul;
-  sub @T.sdl by @T.sl;
+  sub @T by @T.sl;
 } Thai.sul;
 
-# This contextual `ccmp` feature aims to handle Thai complex layout without HarfBuzz.
-# Basically, it would work for various OpenType shaping engines (UniScribe, CoreText, Adobe World-Ready)
-# to support minority languages which require extra Tonemarks/Diacrtics.
+# Thai Sara Am decomposition:
+lookup ThaiDecomp {
+  sub \uni0E33 by \uni0E4D \uni0E32;
+} ThaiDecomp;
 
-lookup ThaiContext.sl {
-  sub @AC' @BV' @BV' @BV' @AV' lookup Thai.sl;
-  sub @AC' @BV' @BV' @AV' lookup Thai.sl;
-  sub @AC' @BV' @AV' lookup Thai.sl;
-  sub @AC' @AV' lookup Thai.sl;
-} ThaiContext.sl;
+lookup ThaiDecomp.sl {
+  sub \uni0E33 by \uni0E4D.sl \uni0E32;
+} ThaiDecomp.sl;
 
-lookup ThaiContext.sdl {
-  sub @AC' @BV' @BV' @BV' @T' lookup Thai.sdl;
-  sub @AC' @BV' @BV' @T' lookup Thai.sdl;
-  sub @AC' @BV' @T' lookup Thai.sdl;
-  sub @AC' @T' lookup Thai.sdl;
-} ThaiContext.sdl;
+lookup Thai0E33.0E32 {
+  sub \uni0E33 by \uni0E32;
+} Thai0E33.0E32;
 
-lookup ThaiContext.sd {
-  sub [ @NC @DC @RC @RC.rd @BV.all ]' @T' lookup Thai.sd;
-  sub @DC' @ZWJ' @BV' lookup ThaiBV.sd;
-  sub @DC' @BV' lookup ThaiBV.sd;
-} ThaiContext.sd;
+lookup ThaiTone.0E4D {
+  sub \uni0E48 by \uni0E4D \uni0E48;
+  sub \uni0E49 by \uni0E4D \uni0E49;
+  sub \uni0E4A by \uni0E4D \uni0E4A;
+  sub \uni0E4B by \uni0E4D \uni0E4B;
+} ThaiTone.0E4D;
 
-lookup ThaiContext.fallback {
+lookup ThaiTone.0E4D.sl {
+  sub \uni0E48 by \uni0E4D.sl \uni0E48.sl;
+  sub \uni0E49 by \uni0E4D.sl \uni0E49.sl;
+  sub \uni0E4A by \uni0E4D.sl \uni0E4A.sl;
+  sub \uni0E4B by \uni0E4D.sl \uni0E4B.sl;
+} ThaiTone.0E4D.sl;
 
-  # For @AC
-  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] [ \uni0E47 \uni0E4D ]' lookup Thai.sul;
-  sub [ @AV.sl @AV.sul @T.sl @T.sdl ] @T' lookup Thai.sl;
+# Phinthu reordering fix for Uniscribe & Harfbuzz
+lookup ThaiBV.0E3A {
+  sub [ \uni0E38 \uni0E39 ] by \uni0E3A;
+  sub [ \uni0E38.sd \uni0E39.sd ] by \uni0E3A.sd;
+} ThaiBV.0E3A;
 
-  # For @NC @DC @RC @RC.rd
-  sub [ @AV @AV.su @T.sd @T ]' [ @AV @T ]' lookup Thai.su;
+lookup Thai0E3A.0E38 {
+  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E38 \uni0E38.sd ];
+} Thai0E3A.0E38;
 
-  # For @BV
-  sub @BV.all' @T' lookup Thai.sd;
+lookup Thai0E3A.0E39 {
+  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E39 \uni0E39.sd ];
+} Thai0E3A.0E39;
 
-  # For @T
-  sub @T.all [ @AV @T ]' lookup Thai.su;
+lookup ThaiPhinthu.ro {
+  sub [ \uni0E38 \uni0E38.sd ]'lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]'lookup Thai0E3A.0E38;
+  sub [ \uni0E39 \uni0E39.sd ]'lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]'lookup Thai0E3A.0E39;
+} ThaiPhinthu.ro;
 
-} ThaiContext.fallback;
+@BASE.nc = [ @NC @RC.rd @LV \uni0E30 \uni0E32 ];
+@BASE.dc = [ @DC @RC @IV \uni0E45 ];
+@AM = [ \uni0E33 ];
+@AV.opt  = [ \uni0E47 \uni0E4D ];
+
+lookup ThaiContextAC {
+  lookupflag 0;
+
+  sub @AC @BV @BV @T'lookup ThaiTone.0E4D.sl @AM'lookup Thai0E33.0E32;
+  sub @AC @BV @T'lookup ThaiTone.0E4D.sl @AM'lookup Thai0E33.0E32;
+  sub @AC @T'lookup ThaiTone.0E4D.sl @AM'lookup Thai0E33.0E32;
+  sub @AC @BV @BV @AM'lookup ThaiDecomp.sl;
+  sub @AC @BV @AM'lookup ThaiDecomp.sl;
+  sub @AC @AM'lookup ThaiDecomp.sl;
+
+  sub @AC @BV @BV @AV'lookup Thai.sl @T'lookup Thai.sl;
+  sub @AC @BV @BV @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
+  sub @AC @BV @BV @T'lookup Thai.sdl;
+  sub @AC @BV @BV @AV'lookup Thai.sl;
+  sub @AC @BV @AV'lookup Thai.sl @T'lookup Thai.sl;
+  sub @AC @BV @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
+  sub @AC @BV @T'lookup Thai.sdl;
+  sub @AC @BV @AV'lookup Thai.sl;
+
+  sub @AC @AV'lookup Thai.sl @T'lookup Thai.sl;
+  sub @AC @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
+  sub @AC @T'lookup Thai.sdl @T'lookup Thai.sl;
+  sub @AC @T'lookup Thai.sdl;
+  sub @AC @AV'lookup Thai.sl;
+
+  sub [ @AV.sul @AV.sl @T.sdl @T.sl ] @AV.opt'lookup Thai.sul;
+  sub [ @AV.sul @AV.sl @T.sdl @T.sl ] @T'lookup Thai.sl;
+
+} ThaiContextAC;
+
+lookup ThaiContextDC {
+  lookupflag 0;
+
+  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
+  sub @BASE.dc @BV'lookup ThaiBV.sd @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
+  sub @BASE.dc @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
+  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @AM'lookup ThaiDecomp;
+  sub @BASE.dc @BV'lookup ThaiBV.sd @AM'lookup ThaiDecomp;
+  sub @BASE.dc @AM'lookup ThaiDecomp;
+
+  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @AV @AV'lookup Thai.su;
+  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @T'lookup Thai.sd;
+  sub @BASE.dc @BV'lookup ThaiBV.sd @AV @AV'lookup Thai.su;
+  sub @BASE.dc @BV'lookup ThaiBV.sd @T'lookup Thai.sd;
+  sub @BASE.dc @AV @AV'lookup Thai.su;
+  sub @BASE.dc @T'lookup Thai.sd;
+
+  sub @BASE.dc @BV'lookup ThaiBV.sd;
+
+} ThaiContextDC;
+
+lookup ThaiContextNC {
+  lookupflag 0;
+
+  sub @BASE.nc @BV @BV @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
+  sub @BASE.nc @BV @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
+  sub @BASE.nc @T'lookup ThaiTone.0E4D @AM'lookup Thai0E33.0E32;
+  sub @BASE.nc @BV @BV @AM'lookup ThaiDecomp;
+  sub @BASE.nc @BV @AM'lookup ThaiDecomp;
+  sub @BASE.nc @AM'lookup ThaiDecomp;
+
+  sub @BASE.nc @BV @BV @AV @AV'lookup Thai.su;
+  sub @BASE.nc @BV @BV @T'lookup Thai.sd;
+  sub @BASE.nc @BV @AV @AV'lookup Thai.su;
+  sub @BASE.nc @BV @T'lookup Thai.sd;
+  sub @BASE.nc @AV @AV'lookup Thai.su;
+  sub @BASE.nc @T'lookup Thai.sd;
+
+  sub [ @AV.su @T.sd @T ] @AV'lookup Thai.su;
+
+} ThaiContextNC;
+
+feature locl {
+  script thai;
+    language PAL exclude_dflt;
+      lookup ThaiRC.rd;
+    language SAN exclude_dflt;
+      lookup ThaiRC.rd;
+} locl;
+
+feature ss01 {
+  lookup ThaiRC.rd;
+} ss01;
 
 feature ccmp {
-  lookup ThaiContext.sl;
-  lookup ThaiContext.sdl;
-  lookup ThaiContext.sd;
-  lookup ThaiContext.fallback;
+  lookup ThaiContextRC.rd;
+  lookup ThaiPhinthu.ro;
+  lookup ThaiContextAC;
+  lookup ThaiContextDC;
+  lookup ThaiContextNC;
 } ccmp;
+
+

@@ -34,15 +34,15 @@ include(features/latin-extra.fea)
 # GPOS
 
 # Thai
-include(features/thai-roman.mark.fea)
-include(features/thai-roman.mkmk.fea)
-include(features/thai.kern.fea)
+#include(features/thai-roman.mark.fea)
+#include(features/thai-roman.mkmk.fea)
+#include(features/thai.kern.fea)
 
 # Lao
-include(features/lao-roman.mark.fea)
-include(features/lao-roman.mkmk.fea)
+#include(features/lao-roman.mark.fea)
+#include(features/lao-roman.mkmk.fea)
 
 # Latin
-include(features/latin-roman.mark.fea)
-include(features/latin-roman.mkmk.fea)
-include(features/boon-latin.kern.fea)
+#include(features/latin-roman.mark.fea)
+#include(features/latin-roman.mkmk.fea)
+#include(features/boon-latin.kern.fea)
