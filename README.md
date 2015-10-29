@@ -1,10 +1,10 @@
-![ฟอนต์บุญ](/img/boon-banner-900.png?raw=true "Boon Fonts")
+![ฟอนต์บุญ](/images/boon-banner-900.png?raw=true "Boon Fonts")
 
 **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลการจัดเรียงตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์
 
 อ่านรายละเอียดเพิ่มเติมเกี่ยวกับการใช้งานบุญฟอนต์ได้ที่ [Boon Project Page](http://fontuni.com/boon/)
 
-![Boon UDHR](/img/boon-udhr.png?raw=true "Boon UDHR")
+![Boon UDHR](/images/boon-udhr.png?raw=true "Boon UDHR")
 
 ### License: SIL Open Font License v1.1
 
