@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-300.woff2) format("woff2"), url(../fonts/woff/Boon-300.woff) format("woff"), url(../fonts/ttf/Boon-300.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-300i.woff2) format("woff2"), url(../fonts/woff/Boon-300i.woff) format("woff"), url(../fonts/ttf/Boon-300i.ttf) format("truetype");
+  font-weight: 300;
+  font-style: oblique; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-400.woff2) format("woff2"), url(../fonts/woff/Boon-400.woff) format("woff"), url(../fonts/ttf/Boon-400.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-400i.woff2) format("woff2"), url(../fonts/woff/Boon-400i.woff) format("woff"), url(../fonts/ttf/Boon-400i.ttf) format("truetype");
+  font-weight: 400;
+  font-style: oblique; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-500.woff2) format("woff2"), url(../fonts/woff/Boon-500.woff) format("woff"), url(../fonts/ttf/Boon-500.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-500i.woff2) format("woff2"), url(../fonts/woff/Boon-500i.woff) format("woff"), url(../fonts/ttf/Boon-500i.ttf) format("truetype");
+  font-weight: 500;
+  font-style: oblique; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-600.woff2) format("woff2"), url(../fonts/woff/Boon-600.woff) format("woff"), url(../fonts/ttf/Boon-600.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-600i.woff2) format("woff2"), url(../fonts/woff/Boon-600i.woff) format("woff"), url(../fonts/ttf/Boon-600i.ttf) format("truetype");
+  font-weight: 600;
+  font-style: oblique; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-700.woff2) format("woff2"), url(../fonts/woff/Boon-700.woff) format("woff"), url(../fonts/ttf/Boon-700.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Boon";
+  src: url(../fonts/woff2/Boon-700i.woff2) format("woff2"), url(../fonts/woff/Boon-700i.woff) format("woff"), url(../fonts/ttf/Boon-700i.ttf) format("truetype");
+  font-weight: 700;
+  font-style: oblique; }
+.boon-300 {
+  font-family: "Boon";
+  font-weight: 300;
+  font-style: normal; }
+
+.boon-300i {
+  font-family: "Boon";
+  font-weight: 300;
+  font-style: oblique; }
+
+.boon-400 {
+  font-family: "Boon";
+  font-weight: 400;
+  font-style: normal; }
+
+.boon-400i {
+  font-family: "Boon";
+  font-weight: 400;
+  font-style: oblique; }
+
+.boon-500 {
+  font-family: "Boon";
+  font-weight: 500;
+  font-style: normal; }
+
+.boon-500i {
+  font-family: "Boon";
+  font-weight: 500;
+  font-style: oblique; }
+
+.boon-600 {
+  font-family: "Boon";
+  font-weight: 600;
+  font-style: normal; }
+
+.boon-600i {
+  font-family: "Boon";
+  font-weight: 600;
+  font-style: oblique; }
+
+.boon-700 {
+  font-family: "Boon";
+  font-weight: 700;
+  font-style: normal; }
+
+.boon-700i {
+  font-family: "Boon";
+  font-weight: 700;
+  font-style: oblique; }
+
+/*# sourceMappingURL=boon-all.css.map */

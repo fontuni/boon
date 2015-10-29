@@ -1,7 +1,9 @@
 ---
 layout: font
 title: Boon Hinting Preview
-fontfamily: "Boon-v1.0"
+fontfamily: "Boon"
+css: "/boon/css/boon-all.css"
+class: "boon-400"
 ---
 
 ### 18px

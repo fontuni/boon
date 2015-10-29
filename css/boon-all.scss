@@ -1,0 +1,65 @@
+// Theme-specific fonts
+$font-family: "Boon";
+
+@mixin font-include($name, $weight, $style) {
+  font-family: $font-family;
+  src: url(../fonts/woff2/#{$name}.woff2) format('woff2'),
+       url(../fonts/woff/#{$name}.woff) format('woff'),
+       url(../fonts/ttf/#{$name}.ttf) format('truetype');
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@font-face {
+  @include font-include(Boon-300, 300, normal);
+}
+@font-face {
+  @include font-include(Boon-300i, 300, oblique);
+}
+
+@font-face {
+  @include font-include(Boon-400, 400, normal);
+}
+@font-face {
+  @include font-include(Boon-400i, 400, oblique);
+}
+
+@font-face {
+  @include font-include(Boon-500, 500, normal);
+}
+@font-face {
+  @include font-include(Boon-500i, 500, oblique);
+}
+
+@font-face {
+  @include font-include(Boon-600, 600, normal);
+}
+@font-face {
+  @include font-include(Boon-600i, 600, oblique);
+}
+
+@font-face {
+  @include font-include(Boon-700, 700, normal);
+}
+@font-face {
+  @include font-include(Boon-700i, 700, oblique);
+}
+
+// Font options
+@mixin font-class($weight, $style) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+.boon-300 { @include font-class(300, normal); }
+.boon-300i { @include font-class(300, oblique); }
+.boon-400 { @include font-class(400, normal); }
+.boon-400i { @include font-class(400, oblique); }
+.boon-500 { @include font-class(500, normal); }
+.boon-500i { @include font-class(500, oblique); }
+.boon-600 { @include font-class(600, normal); }
+.boon-600i { @include font-class(600, oblique); }
+.boon-700 { @include font-class(700, normal); }
+.boon-700i { @include font-class(700, oblique); }
+
