@@ -1,4 +1,4 @@
-![ฟอนต์บุญ](/img/boon-heading.png?raw=true "Boon Fonts")
+![ฟอนต์บุญ](/img/boon-banner-900.png?raw=true "Boon Fonts")
 
 **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลการจัดเรียงตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์
 
