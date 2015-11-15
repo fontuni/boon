@@ -8,7 +8,11 @@ components/*
 *-temp*
 *-backup*
 *.bak
+sources/*.otf
+sources/*.ttf
 
 # Package
 Boon-v*.zip
 sfd/*
+fonts/eot/*
+fonts/svg/*

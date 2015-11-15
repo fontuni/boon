@@ -37,7 +37,7 @@ unhinted_dir = build_dir + 'unhinted/'
 if not os.path.exists(unhinted_dir):
   os.makedirs(unhinted_dir)
 
-exts = ['otf', 'ttf', 'woff', 'woff2']
+exts = ['otf', 'ttf', 'woff', 'woff2', 'eot', 'svg']
 
 def weights2Strings(weight):
   switcher = {
@@ -149,6 +149,11 @@ def otf2Sfd(otf,sfd_dir):
   print(font.fontname, 'SFD files saved.')
   font.close()
 
+def otf2Svg(otf,svg,genflags):
+  font = fontforge.open(otf)
+  font.generate(svg, flags=genflags)
+  font.close()
+
 def buildFont(source,family):
 
   # prepare master
@@ -207,6 +212,8 @@ def buildFont(source,family):
     ttf = fontPath('ttf',font.fontname)
     woff = fontPath('woff',font.fontname)
     woff2 = fontPath('woff2',font.fontname)
+    eot = fontPath('eot',font.fontname)
+    svg = fontPath('svg',font.fontname)
     tempwoff2 = build_dir + 'ttf/' + font.fontname + '.woff2'
 
     # generate otf
@@ -216,6 +223,10 @@ def buildFont(source,family):
 
     # save sfd
     otf2Sfd(otf,sfd_dir)
+
+    # gen svg
+    otf2Svg(otf,svg,otfgenflags)
+    print(font.fullname, 'SVG instance generated.')
 
     # generate unhinted ttf
     ttfgenflags  = ('opentype', 'no-hints')
@@ -238,6 +249,10 @@ def buildFont(source,family):
     os.rename(tempwoff2, woff2)
     print(font.fullname, 'WOFF2 instance generated.')
 
+    # hinted ttf to eot
+    subprocess.call(['ttf2eot',ttf,eot])
+    print(font.fullname, 'EOT instance generated.')
+  
   font.close()
 
 for source in sources:
