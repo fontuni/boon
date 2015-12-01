@@ -1,0 +1,101 @@
+# PS private for better hinting
+
+## Boon-300
+BeginPrivate: 6
+BlueValues 31 [-17 0 600 617 780 797 810 827]
+OtherBlues 11 [-222 -210]
+StdHW 4 [52]
+StdVW 4 [67]
+StemSnapH 7 [34 52]
+StemSnapV 16 [40 47 63 67 71]
+EndPrivate
+
+## Boon-300i
+BeginPrivate: 6
+BlueValues 31 [-17 0 600 617 780 797 810 827]
+OtherBlues 11 [-222 -210]
+StdHW 4 [52]
+StdVW 4 [67]
+StemSnapH 7 [34 52]
+StemSnapV 19 [40 46 58 63 67 73]
+EndPrivate
+
+## Boon-400
+BeginPrivate: 6
+BlueValues 31 [-18 0 600 618 780 798 810 828]
+OtherBlues 11 [-223 -210]
+StdHW 4 [64]
+StdVW 4 [85]
+StemSnapH 22 [44 54 58 64 68 70 74]
+StemSnapV 16 [51 59 85 90 96]
+EndPrivate
+
+## Boon-400i
+BeginPrivate: 6
+BlueValues 31 [-18 0 600 618 780 798 810 828]
+OtherBlues 11 [-223 -210]
+StdHW 4 [64]
+StdVW 4 [90]
+StemSnapH 22 [44 54 58 64 68 70 74]
+StemSnapV 23 [51 60 85 90 95 99 146]
+EndPrivate
+
+## Boon-500
+BeginPrivate: 6
+BlueValues 31 [-19 0 600 619 780 799 810 829]
+OtherBlues 11 [-224 -210]
+StdHW 4 [79]
+StdVW 5 [120]
+StemSnapH 26 [53 62 66 72 79 86 93 148]
+StemSnapV 23 [62 72 103 107 113 120]
+EndPrivate
+
+## Boon-500i
+BeginPrivate: 6
+BlueValues 31 [-19 0 600 619 780 799 810 829]
+OtherBlues 11 [-224 -210]
+StdHW 4 [79]
+StdVW 5 [113]
+StemSnapH 26 [53 62 66 72 79 86 93 148]
+StemSnapV 31 [63 72 104 106 113 118 124 162]
+EndPrivate
+
+## Boon-600
+BeginPrivate: 6
+BlueValues 31 [-20 0 600 620 780 800 810 830]
+OtherBlues 11 [-225 -210]
+StdHW 4 [98]
+StdVW 5 [147]
+StemSnapH 35 [62 74 78 86 94 98 103 107 111 162]
+StemSnapV 31 [73 84 124 128 133 137 142 147]
+EndPrivate
+
+## Boon-600i
+BeginPrivate: 6
+BlueValues 31 [-20 0 600 620 780 800 810 830]
+OtherBlues 11 [-225 -210]
+StdHW 4 [98]
+StdVW 5 [137]
+StemSnapH 35 [62 74 78 86 94 98 103 107 111 162]
+StemSnapV 45 [63 73 84 89 121 128 133 137 142 149 160 178]
+EndPrivate
+
+## Boon-700
+BeginPrivate: 6
+BlueValues 31 [-21 0 600 621 780 801 810 831]
+OtherBlues 11 [-226 -210]
+StdHW 5 [120]
+StdVW 5 [160]
+StemSnapH 44 [72 80 85 90 95 100 110 114 120 125 130 176]
+StemSnapV 36 [84 100 145 150 155 160 166 170 174]
+EndPrivate
+
+## Boon-700i
+BeginPrivate: 6
+BlueValues 31 [-21 0 600 621 780 801 810 831]
+OtherBlues 11 [-226 -210]
+StdHW 5 [110]
+StdVW 5 [174]
+StemSnapH 44 [72 80 85 90 95 100 110 114 120 125 130 176]
+StemSnapV 43 [84 97 102 141 146 150 155 164 168 174 192]
+EndPrivate

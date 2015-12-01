@@ -1,7 +1,3 @@
-languagesystem DFLT dflt;
-languagesystem thai dflt;
-languagesystem thai PAL ;
-languagesystem thai SAN ;
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -15,24 +11,29 @@ include(thai-classes.fea)
 # These are optional required features for Thai fonts.
 
 lookup Thai.liga {
-  sub \uni0E24 \uni0E45 by \uni0E240E45.liga;
-  sub \uni0E24 \uni200D \uni0E45 by \uni0E240E45.liga;
-  sub \uni0E26 \uni0E45 by \uni0E260E45.liga;
-  sub \uni0E26 \uni200D \uni0E45 by \uni0E260E45.liga;
-  sub \uni0E4F \period \period by \uni0E4F.extra; # this works on Mac
-  sub \uni0E4F \uni200D \period \uni200D \period by \uni0E4F.extra;
+  sub uni0E24 uni0E45 by uni0E240E45.liga;
+  sub uni0E24 uni200D uni0E45 by uni0E240E45.liga;
+  sub uni0E26 uni0E45 by uni0E260E45.liga;
+  sub uni0E26 uni200D uni0E45 by uni0E260E45.liga;
+  sub uni0E4F period period by uni0E4F.extra; # this works on Mac
+  sub uni0E4F uni200D period uni200D period by uni0E4F.extra;
 } Thai.liga;
 
 # Thai historical character, a little bit tricky for OT to make this works across platforms.
 # So we need more than just one feature.
 # dlig & calt work on adobe
 lookup Thai.extra {
-  sub \uni0E4F \uni0E48 \uni0E48 by \uni0E4F.extra;
-  sub \uni0E4F \uni200D \uni0E48 \uni200D \uni0E48 by \uni0E4F.extra;
+  sub uni0E4F uni0E48 uni0E48 by uni0E4F.extra;
+  sub uni0E4F uni200D uni0E48 uni200D uni0E48 by uni0E4F.extra;
 } Thai.extra;
+
+lookup FontUni.logo {
+  sub bracketleft F o n t U n i bracketright by FontUni;
+} FontUni.logo;
 
 feature liga {
   lookup Thai.liga;
+  lookup FontUni.logo;
 } liga;
 
 feature calt {
@@ -41,4 +42,5 @@ feature calt {
 
 feature dlig {
   lookup Thai.extra;
+  lookup FontUni.logo;
 } dlig;

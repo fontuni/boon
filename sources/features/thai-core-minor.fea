@@ -1,0 +1,193 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+# Shared functionalities for Thai shaping
+
+include(thai-classes.fea)
+
+# Add WJ for U+02D7 to prevent line-break
+lookup Thai02D7.wj {
+  sub uni02D7 by uni2060 uni02D7 uni2060;
+} Thai02D7.wj;
+
+# Phinthu reordering fix for Uniscribe & Harfbuzz
+lookup ThaiBV.0E3A {
+  sub [ uni0E38 uni0E39 ] by uni0E3A;
+  sub [ uni0E38.sd uni0E39.sd ] by uni0E3A.sd;
+} ThaiBV.0E3A;
+
+lookup Thai0E3A.0E38 {
+  sub [ uni0E3A uni0E3A.sd ] by [ uni0E38 uni0E38.sd ];
+} Thai0E3A.0E38;
+
+lookup Thai0E3A.0E39 {
+  sub [ uni0E3A uni0E3A.sd ] by [ uni0E39 uni0E39.sd ];
+} Thai0E3A.0E39;
+
+lookup ThaiPhinthu.ro {
+  sub @BASE [ uni0E38 uni0E38.sd ]'lookup ThaiBV.0E3A [ uni0E3A uni0E3A.sd ]'lookup Thai0E3A.0E38;
+  sub @BASE [ uni0E39 uni0E39.sd ]'lookup ThaiBV.0E3A [ uni0E3A uni0E3A.sd ]'lookup Thai0E3A.0E39;
+} ThaiPhinthu.ro;
+
+# Patani Malay
+lookup ThaiTone.0303 {
+  sub [ @Tone @Tone.sd ] by uni0303;
+} ThaiTone.0303;
+
+lookup Thai0303.0E48 {
+  sub uni0303 by uni0E48;
+} Thai0303.0E48;
+
+lookup Thai0303.0E49 {
+  sub uni0303 by uni0E49;
+} Thai0303.0E49;
+
+lookup Thai0303.0E4A {
+  sub uni0303 by uni0E4A;
+} Thai0303.0E4A;
+
+lookup Thai0303.0E4B {
+  sub uni0303 by uni0E4B;
+} Thai0303.0E4B;
+
+lookup Thai0303.ro {
+  sub @BASE [ uni0E48 uni0E48.sd uni0E48.sl uni0E48.sdl ]'lookup ThaiTone.0303 [ uni0303 ]'lookup Thai0303.0E48;
+  sub @BASE [ uni0E49 uni0E49.sd uni0E49.sl uni0E49.sdl ]'lookup ThaiTone.0303 [ uni0303 ]'lookup Thai0303.0E49;
+  sub @BASE [ uni0E4A uni0E4A.sd uni0E4A.sl uni0E4A.sdl ]'lookup ThaiTone.0303 [ uni0303 ]'lookup Thai0303.0E4A;
+  sub @BASE [ uni0E4B uni0E4B.sd uni0E4B.sl uni0E4B.sdl ]'lookup ThaiTone.0303 [ uni0303 ]'lookup Thai0303.0E4B;
+} Thai0303.ro;
+
+lookup Thai.0331 {
+  sub [ @BV @BV.sd @Tone @Tone.sd ] by uni0331;
+} Thai.0331;
+
+lookup Thai0331.0E38 {
+  sub uni0331 by uni0E38.sd;
+} Thai0331.0E38;
+
+lookup Thai0331.0E39 {
+  sub uni0331 by uni0E39.sd;
+} Thai0331.0E39;
+
+lookup Thai0331.0E3A {
+  sub uni0331 by uni0E3A.sd;
+} Thai0331.0E3A;
+
+lookup Thai0331.0E48 {
+  sub uni0331 by uni0E48.sd;
+} Thai0331.0E48;
+
+lookup Thai0331.0E49 {
+  sub uni0331 by uni0E49.sd;
+} Thai0331.0E49;
+
+lookup Thai0331.0E4A {
+  sub uni0331 by uni0E4A.sd;
+} Thai0331.0E4A;
+
+lookup Thai0331.0E4B {
+  sub uni0331 by uni0E4B.sd;
+} Thai0331.0E4B;
+
+# @Tone & @BV swap
+lookup Thai0E48.0E38 {
+  sub [ uni0E48 uni0E48.sd ] by uni0E38.sd;
+} Thai0E48.0E38;
+
+lookup Thai0E49.0E38 {
+  sub [ uni0E49 uni0E49.sd ] by uni0E38.sd;
+} Thai0E49.0E38;
+
+lookup Thai0E4A.0E38 {
+  sub [ uni0E4A uni0E4A.sd ] by uni0E38.sd;
+} Thai0E4A.0E38;
+
+lookup Thai0E4B.0E38 {
+  sub [ uni0E4B uni0E4B.sd ] by uni0E38.sd;
+} Thai0E4B.0E38;
+
+lookup Thai0E48.0E39 {
+  sub [ uni0E48 uni0E48.sd ] by uni0E39.sd;
+} Thai0E48.0E39;
+
+lookup Thai0E49.0E39 {
+  sub [ uni0E49 uni0E49.sd ] by uni0E39.sd;
+} Thai0E49.0E39;
+
+lookup Thai0E4A.0E39 {
+  sub [ uni0E4A uni0E4A.sd ] by uni0E39.sd;
+} Thai0E4A.0E39;
+
+lookup Thai0E4B.0E39 {
+  sub [ uni0E4B uni0E4B.sd ] by uni0E39.sd;
+} Thai0E4B.0E39;
+
+lookup Thai0E48.0E3A {
+  sub [ uni0E48 uni0E48.sd ] by uni0E3A.sd;
+} Thai0E48.0E3A;
+
+lookup Thai0E49.0E3A {
+  sub [ uni0E49 uni0E49.sd ] by uni0E3A.sd;
+} Thai0E49.0E3A;
+
+lookup Thai0E4A.0E3A {
+  sub [ uni0E4A uni0E4A.sd ] by uni0E3A.sd;
+} Thai0E4A.0E3A;
+
+lookup Thai0E4B.0E3A {
+  sub [ uni0E4B uni0E4B.sd ] by uni0E3A.sd;
+} Thai0E4B.0E3A;
+
+lookup Thai0331.ro {
+
+  # Input sequence: Base 0331 BV T
+  # Uniscribe/Harfbuzz: Base BV T 0331
+  sub [ uni0E38 uni0E38.sd ]'lookup Thai.0331 [ uni0E48 uni0E48.sd ]'lookup Thai0E48.0E38 [ uni0331 ]'lookup Thai0331.0E48;
+  sub [ uni0E38 uni0E38.sd ]'lookup Thai.0331 [ uni0E49 uni0E49.sd ]'lookup Thai0E49.0E38 [ uni0331 ]'lookup Thai0331.0E49;
+  sub [ uni0E38 uni0E38.sd ]'lookup Thai.0331 [ uni0E4A uni0E4A.sd ]'lookup Thai0E4A.0E38 [ uni0331 ]'lookup Thai0331.0E4A;
+  sub [ uni0E38 uni0E38.sd ]'lookup Thai.0331 [ uni0E4B uni0E4B.sd ]'lookup Thai0E4B.0E38 [ uni0331 ]'lookup Thai0331.0E4B;
+  
+  sub [ uni0E39 uni0E39.sd ]'lookup Thai.0331 [ uni0E48 uni0E48.sd ]'lookup Thai0E48.0E39 [ uni0331 ]'lookup Thai0331.0E48;
+  sub [ uni0E39 uni0E39.sd ]'lookup Thai.0331 [ uni0E49 uni0E49.sd ]'lookup Thai0E49.0E39 [ uni0331 ]'lookup Thai0331.0E49;
+  sub [ uni0E39 uni0E39.sd ]'lookup Thai.0331 [ uni0E4A uni0E4A.sd ]'lookup Thai0E4A.0E39 [ uni0331 ]'lookup Thai0331.0E4A;
+  sub [ uni0E39 uni0E39.sd ]'lookup Thai.0331 [ uni0E4B uni0E4B.sd ]'lookup Thai0E4B.0E39 [ uni0331 ]'lookup Thai0331.0E4B;
+
+  sub [ uni0E3A uni0E3A.sd ]'lookup Thai.0331 [ uni0E48 uni0E48.sd ]'lookup Thai0E48.0E3A [ uni0331 ]'lookup Thai0331.0E48;
+  sub [ uni0E3A uni0E3A.sd ]'lookup Thai.0331 [ uni0E49 uni0E49.sd ]'lookup Thai0E49.0E3A [ uni0331 ]'lookup Thai0331.0E49;
+  sub [ uni0E3A uni0E3A.sd ]'lookup Thai.0331 [ uni0E4A uni0E4A.sd ]'lookup Thai0E4A.0E3A [ uni0331 ]'lookup Thai0331.0E4A;
+  sub [ uni0E3A uni0E3A.sd ]'lookup Thai.0331 [ uni0E4B uni0E4B.sd ]'lookup Thai0E4B.0E3A [ uni0331 ]'lookup Thai0331.0E4B;
+
+  # Input sequence: Base 0331 T
+  # Uniscribe/Harfbuzz: Base T 0331
+  sub [ uni0E48 uni0E48.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E48;
+  sub [ uni0E49 uni0E49.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E49;
+  sub [ uni0E4A uni0E4A.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E4A;
+  sub [ uni0E4B uni0E4B.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E4B;
+
+  # Input sequence: Base 0331 BV
+  # Uniscribe/Harfbuzz: Base BV 0331
+  sub [ uni0E38 uni0E38.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E38;
+  sub [ uni0E39 uni0E39.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E39;
+  sub [ uni0E3A uni0E3A.sd ]'lookup Thai.0331 [ uni0331 ]'lookup Thai0331.0E3A;
+
+} Thai0331.ro;
+
+lookup Thai0331.liga {
+  sub uni0E07 uni0331 by uni0E070331.liga;
+  sub [ uni0E0D uni0E0D.rd ] uni0331 by uni0E0D0331.liga;
+  sub uni0E19 uni0331 by uni0E190331.liga;
+  sub uni0E21 uni0331 by uni0E210331.liga;
+} Thai0331.liga;
+
+feature ccmp {
+  lookup Thai02D7.wj;
+  lookup Thai0303.ro;
+  lookup Thai0331.ro;
+  lookup ThaiPhinthu.ro;
+  lookup Thai0331.liga;
+} ccmp;

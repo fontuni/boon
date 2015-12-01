@@ -1,8 +1,3 @@
-languagesystem DFLT dflt;
-languagesystem latn dflt;
-languagesystem latn MOL ;
-languagesystem latn ROM ;
-
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -15,20 +10,15 @@ include(latin-classes.fea)
 
 lookup LatinAbove.mkmk {
   lookupflag 0;
-
   markClass @COMB.abv <anchor 0 0> @LatinAbove.mkmk;
-
   pos mark @COMB.abv <anchor 0 180> mark @LatinAbove.mkmk;
 
 } LatinAbove.mkmk;
 
 lookup LatinBelow.mkmk {
   lookupflag 0;
-
   markClass @COMB.blw <anchor 0 0> @LatinBelow.mkmk;
-
   pos mark @COMB.blw <anchor 0 -180> mark @LatinBelow.mkmk;
-
 } LatinBelow.mkmk;
 
 feature mkmk {

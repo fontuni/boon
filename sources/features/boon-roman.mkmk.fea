@@ -1,0 +1,57 @@
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
+
+include(thai-classes.fea)
+include(lao-classes.fea)
+include(latin-classes.fea)
+
+lookup Above.mkmk {
+  lookupflag 0;
+
+  # Thai high
+  markClass [ @Tone uni0E4D.su uni0E47.su ] <anchor 0 0> @Above.mkmk;
+  pos mark [ @Tone ] <anchor 0 240> mark @Above.mkmk;
+  pos mark [ uni0E47.su uni0E4D.su ] <anchor 0 210> mark @Above.mkmk;
+
+  # Thai low
+  pos mark [ @Tone.sd ] <anchor 0 0> mark @Above.mkmk;
+  markClass [ uni0E31 ] <anchor -40 -240> @Above.mkmk;
+  pos mark [ uni0E31 ] <anchor -40 0> mark @Above.mkmk;
+  markClass [ uni0E34 uni0E35 ] <anchor 0 -240> @Above.mkmk;
+  markClass [ uni0E36 uni0E37 ] <anchor -20 -240> @Above.mkmk;
+  pos mark [ uni0E34 uni0E35 uni0E36 uni0E37 ] <anchor 0 0> mark @Above.mkmk;
+  markClass [ uni0E4E ] <anchor 0 -240> @Above.mkmk;
+
+  pos mark [ uni0E47 ] <anchor -80 0> mark @Above.mkmk;
+  pos mark [ uni0E4D uni0E4E ] <anchor 0 0> mark @Above.mkmk;
+
+  # CGJ
+  pos mark [ uni034F ] <anchor 0 0> mark @Above.mkmk;
+
+  # Left
+  markClass [ @Tone.sl uni0E4D.sul uni0E47.sul ] <anchor 0 0> @AboveLeft.mkmk;
+  markClass [ uni0E4E.sl ] <anchor -60 -240> @AboveLeft.mkmk;
+  markClass [ uni0E34.sl uni0E35.sl ] <anchor 0 -240> @AboveLeft.mkmk;
+  markClass [ uni0E36.sl uni0E37.sl ] <anchor -20 -240> @AboveLeft.mkmk;
+  markClass [ uni0E31.sl ] <anchor -40 -240> @AboveLeft.mkmk;
+
+  pos mark [ uni0E31.sl ] <anchor -40 0> mark @AboveLeft.mkmk;
+  pos mark [ uni0E4C.sdl ] <anchor -50 0> mark @AboveLeft.mkmk;
+  pos mark [ uni0E4D.sl ] <anchor -20 0> mark @AboveLeft.mkmk;
+  pos mark [ uni0E34.sl uni0E35.sl ] <anchor 0 0> mark @AboveLeft.mkmk;
+  pos mark [ uni0E36.sl uni0E37.sl ] <anchor -20 0> mark @AboveLeft.mkmk;
+  
+  pos mark [ uni0E47.sl ] <anchor -60 0> mark @AboveLeft.mkmk;
+  pos mark [ uni0E48.sl uni0E49.sl uni0E4A.sl uni0E4B.sl uni0E4C.sl ] <anchor 0 240> mark @AboveLeft.mkmk;
+  pos mark [ uni0E4D.sul ] <anchor 0 210> mark @AboveLeft.mkmk;
+  pos mark [ @Tone.sl ] <anchor -45 0> mark @AboveLeft.mkmk;
+  pos mark [ uni0E47.sul ] <anchor 0 240> mark @AboveLeft.mkmk;
+  pos mark [ uni0E4E.sl ] <anchor -60 0> mark @AboveLeft.mkmk;
+  pos mark [ uni034F ] <anchor 0 0> mark @AboveLeft.mkmk;
+
+} Above.mkmk;

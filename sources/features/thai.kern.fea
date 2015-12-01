@@ -1,7 +1,3 @@
-languagesystem DFLT dflt;
-languagesystem thai dflt;
-languagesystem thai PAL ;
-languagesystem thai SAN ;
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #

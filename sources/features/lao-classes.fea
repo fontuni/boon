@@ -40,7 +40,7 @@
 @AV.lao    = [ \uni0EB1 \uni0EB4 \uni0EB5 \uni0EB6 \uni0EB7 \uni0EBB \uni0ECD \uni0ECC ];
 
 # Above tone/diacritic
-@T.lao     = [ \uni0EC8 \uni0EC9 \uni0ECA \uni0ECB ];
+@Tone.lao     = [ \uni0EC8 \uni0EC9 \uni0ECA \uni0ECB ];
 
 # Zero-width space
 @ZWJ = [ \uni200D ];
@@ -48,7 +48,7 @@
 # These classes maybe useful for referencing and GDEF table.
 @BASE.lao = [ @NC.lao @AC.lao @DC.lao @LV.lao @FV.lao @SB.lao @DIGIT.lao ];
 @LIGATURES.lao = [ \uni0EDC \uni0EDD ];
-@MARKS.lao = [ @AV.lao @BV.lao @T.lao ];
+@MARKS.lao = [ @AV.lao @BV.lao @Tone.lao ];
 
 # Lao extended classes
 
@@ -66,18 +66,13 @@
 @AV.lao.all = [ @AV.lao @AV.lao.sl @AV.lao.su @AV.lao.sul ];
 
 # Above tone/diacritic
-@T.lao.sl     = [ \uni0EC8.sl \uni0EC9.sl \uni0ECA.sl \uni0ECB.sl ];
-@T.lao.sd     = [ \uni0EC8.sd \uni0EC9.sd \uni0ECA.sd \uni0ECB.sd ];
-@T.lao.sdl     = [ \uni0EC8.sdl \uni0EC9.sdl \uni0ECA.sdl \uni0ECB.sdl ];
-@T.lao.nig  = [ \uni0EC8.0ECD  \uni0EC9.0ECD  \uni0ECA.0ECD  \uni0ECB.0ECD ];
-@T.lao.nig.sl  = [ \uni0EC8.0ECD.sl  \uni0EC9.0ECD.sl  \uni0ECA.0ECD.sl  \uni0ECB.0ECD.sl ];
+@Tone.lao.sl     = [ \uni0EC8.sl \uni0EC9.sl \uni0ECA.sl \uni0ECB.sl ];
+@Tone.lao.sd     = [ \uni0EC8.sd \uni0EC9.sd \uni0ECA.sd \uni0ECB.sd ];
+@Tone.lao.sdl     = [ \uni0EC8.sdl \uni0EC9.sdl \uni0ECA.sdl \uni0ECB.sdl ];
 
-@T.lao.all = [ @T.lao @T.lao.sl @T.lao.sd @T.lao.sdl @T.lao.nig @T.lao.nig.sl ];
+@Tone.lao.all = [ @Tone.lao @Tone.lao.sl @Tone.lao.sd @Tone.lao.sdl ];
 
-
-@T.all = [ @T @T.sd @T.sdl @T.sl @T.nig @T.nig.sl ];
-
-@MARKS_EXTENDED.lao = [ @MARKS.lao @BV.lao.all @AV.lao.all @T.lao.all ];
+@MARKS_EXTENDED.lao = [ @MARKS.lao @BV.lao.all @AV.lao.all @Tone.lao.all ];
 
 # Add GDEF
 table GDEF {

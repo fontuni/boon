@@ -8,57 +8,68 @@
 
 include(thai-classes.fea)
 
-lookup ThaiExtendedAbove.mkmk {
+lookup ThaiAbove.mkmk {
   lookupflag 0;
+  markClass [\uni0E31 \uni0E34 \uni0E35 \uni0E4E ] <anchor -98 -240> @ThaiAbove.mkmk;
+  markClass [\uni0E36 \uni0E37 ] <anchor -118 -240> @ThaiAbove.mkmk;
+  markClass [\uni0E48 \uni0E49 \uni0E4A \uni0E4B \uni0E4C \uni0E4D.su \uni0E47.su ] <anchor -60 0> @ThaiAbove.mkmk;
+  markClass [\uni0E31.sl ] <anchor -138 -240> @ThaiAboveLeft.mkmk;
+  markClass [\uni0E34.sl \uni0E35.sl ] <anchor -98 -240> @ThaiAboveLeft.mkmk;
+  markClass [\uni0E36.sl \uni0E37.sl ] <anchor -118 -240> @ThaiAboveLeft.mkmk;
+  markClass [\uni0E48.sl \uni0E49.sl \uni0E4A.sl \uni0E4B.sl \uni0E4C.sl \uni0E4D.sul \uni0E47.sul ] <anchor -60 0> @ThaiAboveLeft.mkmk;
+  markClass [\uni0E4E.sl ] <anchor -158 -240> @ThaiAboveLeft.mkmk;
+  pos mark [\uni034F \uni0E31 \uni0E34 \uni0E35 \uni0E36 \uni0E37 \uni0E4D \uni0E4E \uni0E34.sl \uni0E35.sl \uni0E48.sd \uni0E49.sd \uni0E4A.sd \uni0E4B.sd \uni0E4C.sd ] <anchor -60 0> mark @ThaiAboveLeft.mkmk
+	<anchor -60 0> mark @ThaiAbove.mkmk;
+  pos mark [\uni0E47 ] <anchor -140 0> mark @ThaiAbove.mkmk;
+  pos mark [\uni0E48 \uni0E49 \uni0E4A \uni0E4B \uni0E4C ] <anchor -22 240> mark @ThaiAbove.mkmk;
+  pos mark [\uni0E31.sl ] <anchor -100 0> mark @ThaiAboveLeft.mkmk;
+  pos mark [\uni0E36.sl \uni0E37.sl \uni0E4D.sl ] <anchor -80 0> mark @ThaiAboveLeft.mkmk;
+  pos mark [\uni0E47.sl \uni0E4E.sl ] <anchor -120 0> mark @ThaiAboveLeft.mkmk;
+  pos mark [\uni0E48.sl \uni0E49.sl \uni0E4A.sl \uni0E4B.sl \uni0E4C.sl ] <anchor -105 0> mark @ThaiAboveLeft.mkmk;
+  pos mark [\uni0E4C.sdl ] <anchor -110 0> mark @ThaiAboveLeft.mkmk;
+  pos mark [\uni0E4D.su \uni0E47.su ] <anchor -27 210> mark @ThaiAbove.mkmk;
+  pos mark [\uni0E4D.sul ] <anchor -27 210> mark @ThaiAboveLeft.mkmk;
+  pos mark [\uni0E47.sul ] <anchor -22 240> mark @ThaiAboveLeft.mkmk;
+} ThaiAbove.mkmk;
 
-  markClass [ @T \uni0E4D.su \uni0E47.su ] <anchor -60 0> @ThaiExtendedAbove.mkmk;
-  markClass [ \uni0E4E ] <anchor -98 -240> @ThaiExtendedAbove.mkmk;
-
-  pos mark [ \uni0E48.sd \uni0E49.sd \uni0E4A.sd \uni0E4B.sd \uni0E4C.sd \uni0E4D \uni0E31 \uni0E34 \uni0E35 \uni0E36 \uni0E37 ] <anchor -60 0> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E47 ] <anchor -140 0> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E48 \uni0E49 \uni0E4A \uni0E4B \uni0E4C ] <anchor -22 240> mark @ThaiExtendedAbove.mkmk;
-  pos mark [ \uni0E47.su \uni0E4D.su ] <anchor -27 210> mark @ThaiExtendedAbove.mkmk;
-
-  pos mark [ @T.nig ] <anchor -27 210> mark @ThaiExtendedAbove.mkmk;
-
-} ThaiExtendedAbove.mkmk;
-
-lookup ThaiExtendedAbove.left.mkmk {
+lookup LatinBaseThaiAbove.mkmk {
   lookupflag 0;
+  markClass [\uni0E31 \uni0E34 \uni0E35 \uni0E36 \uni0E37 \uni0E47 \uni0E4D \uni0E4E ] <anchor -120 0> @LatinThaiAbove.mkmk;
+  markClass [\uni0E48 \uni0E49 \uni0E4A \uni0E4B \uni0E4C \uni0E4D.su \uni0E47.su ] <anchor -27 210> @LatinThaiAbove.mkmk;
+  pos mark [\uni0300 \uni0301 \uni0302 \uni0303 \uni0304 \uni0305 \uni0306 \uni0307 \uni0308 \uni0309 \uni030A \uni030B \uni030C \uni030D \uni030E \uni030F \uni0311 \uni0312 \uni0313 \uni0314 \uni0351 \uni0357 ] <anchor 213 210> mark @LatinThaiAbove.mkmk;
+} LatinBaseThaiAbove.mkmk;
 
-  markClass [ @T.sl  \uni0E4D.sul \uni0E47.sul ] <anchor -60 0> @ThaiExtendedAbove.left.mkmk;
-  markClass [ \uni0E4E.sl ] <anchor -158 -240> @ThaiExtendedAbove.left.mkmk;
 
-  pos mark [ \uni0E31.sl ] <anchor -100 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E4C.sdl ] <anchor -110 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E4D.sl ] <anchor -80 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E34.sl \uni0E35.sl ] <anchor -60 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [  \uni0E36.sl \uni0E37.sl ] <anchor -80 0> mark @ThaiExtendedAbove.left.mkmk;
-  
-  pos mark [ \uni0E47.sl ] <anchor -120 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E48.sl \uni0E49.sl \uni0E4A.sl \uni0E4B.sl \uni0E4C.sl ] <anchor -22 240> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E4D.sul ] <anchor -27 210> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E48.sdl \uni0E49.sdl \uni0E4A.sdl \uni0E4B.sdl ] <anchor -105 0> mark @ThaiExtendedAbove.left.mkmk;
-  pos mark [ \uni0E47.sul ] <anchor -22 240> mark @ThaiExtendedAbove.left.mkmk;
-
-  pos mark [ @T.nig.sl ] <anchor -27 210> mark @ThaiExtendedAbove.left.mkmk;
-
-} ThaiExtendedAbove.left.mkmk;
-
-lookup ThaiExtendedBelow.mkmk {
+lookup ThaiBelow.mkmk {
   lookupflag 0;
+  markClass [\uni0E38 \uni0E39 \uni0E3A ] <anchor -60 0> @ThaiBelow.mkmk;
+  markClass [\uni0E38.sd \uni0E39.sd \uni0E3A.sd ] <anchor -93 -210> @ThaiBelow.mkmk;
+  pos mark [\uni0E38 \uni0E39 ] <anchor -104 -280> mark @ThaiBelow.mkmk;
+  pos mark [\uni0E3A ] <anchor -93 -210> mark @ThaiBelow.mkmk;
+  pos mark [\uni0E38.sd \uni0E39.sd ] <anchor -138 -490> mark @ThaiBelow.mkmk;
+  pos mark [\uni0E3A.sd ] <anchor -127 -420> mark @ThaiBelow.mkmk;
+} ThaiBelow.mkmk;
 
-  markClass [ @BV ] <anchor -60 0> @ThaiExtendedBelow.mkmk;
+lookup ThaiBaseLatinBelow.mkmk {
+  lookupflag 0;
+  markClass [\uni0323 \uni0324 \uni0326 \uni0329 \uni032E \uni0331 \uni0332 ] <anchor 170 -60> @ThaiLatinBelow.mkmk;
+  pos mark [\uni0E38 \uni0E39 ] <anchor -104 -280> mark @ThaiLatinBelow.mkmk;
+  pos mark [\uni0E3A ] <anchor -93 -210> mark @ThaiLatinBelow.mkmk;
+  pos mark [\uni0E38.sd \uni0E39.sd ] <anchor -138 -490> mark @ThaiLatinBelow.mkmk;
+  pos mark [\uni0E3A.sd ] <anchor -127 -420> mark @ThaiLatinBelow.mkmk;
+} ThaiBaseLatinBelow.mkmk;
 
-  pos mark [ \uni0E38 \uni0E39 ] <anchor -104 -280> mark @ThaiExtendedBelow.mkmk;
-  pos mark [ \uni0E3A ] <anchor -93 -210> mark @ThaiExtendedBelow.mkmk;
-  pos mark [ \uni0E38.sd \uni0E39.sd ] <anchor -138 -490> mark @ThaiExtendedBelow.mkmk;
-  pos mark [ \uni0E3A.sd ] <anchor -127 -420> mark @ThaiExtendedBelow.mkmk;
-
-} ThaiExtendedBelow.mkmk;
+lookup LatinBaseThaiBelow.mkmk {
+  lookupflag 0;
+  markClass [\uni0E38 \uni0E39 \uni0E3A ] <anchor -60 0> @LatinThaiBelow.mkmk;
+  markClass [\uni0E38.sd \uni0E39.sd \uni0E3A.sd ] <anchor -93 -210> @LatinThaiBelow.mkmk;
+  pos mark [\uni0323 \uni0324 \uni0326 \uni0329 \uni032E \uni0331 \uni0332 ] <anchor 147 -210> mark @LatinThaiBelow.mkmk;
+} LatinBaseThaiBelow.mkmk;
 
 feature mkmk {
-  lookup ThaiExtendedAbove.mkmk;
-  lookup ThaiExtendedAbove.left.mkmk;
-  lookup ThaiExtendedBelow.mkmk;
+  lookup ThaiAbove.mkmk;
+  lookup LatinBaseThaiAbove.mkmk;
+  lookup ThaiBelow.mkmk;
+  lookup ThaiBaseLatinBelow.mkmk;
+  lookup LatinBaseThaiBelow.mkmk;
 } mkmk;

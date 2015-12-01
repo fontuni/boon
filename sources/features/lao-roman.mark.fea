@@ -1,6 +1,3 @@
-languagesystem DFLT dflt;
-languagesystem lao  dflt;
-
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -13,7 +10,7 @@ include(lao-classes.fea)
 
 lookup LaoAbove.mark {
   lookupflag 0;
-  markClass [ @AV.lao @T.lao.sd @T.lao.nig ] <anchor 0 0> @LaoAbove.mark;
+  markClass [ @AV.lao @Tone.lao.sd ] <anchor 0 0> @LaoAbove.mark;
   pos base [ \uni0E81 \uni0E96 \uni0EDE ] <anchor 690 0> mark @LaoAbove.mark;
   pos base [ \uni0E82 \uni0E8A \uni0EAE ] <anchor 625 0> mark @LaoAbove.mark;
   pos base [ \uni0E84 \uni0E8D \uni0EDF ] <anchor 655 0> mark @LaoAbove.mark;

@@ -16,3 +16,4 @@ Boon-v*.zip
 sfd/*
 fonts/eot/*
 fonts/svg/*
+*__pycache**

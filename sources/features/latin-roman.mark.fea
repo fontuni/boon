@@ -1,7 +1,10 @@
-languagesystem DFLT dflt;
-languagesystem latn dflt;
-languagesystem latn MOL ;
-languagesystem latn ROM ;
+#
+# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
+# You should have received a copy of the OFL License along with this file.
+# If not, see http://scripts.sil.org/OFL
+#
 
 include(latin-classes.fea)
 
@@ -87,6 +90,8 @@ lookup LatinAbove.mark {
   pos base [ @U.abv @Uhorn.abv ] <anchor 385 330> mark @LatinAbove.mark;
   pos base [ @Y.abv ] <anchor 345 330> mark @LatinAbove.mark;
 
+  pos base [ fi fj ] <anchor 520 0> mark @LatinAbove.mark;
+
 } LatinAbove.mark;
 
 lookup LatinBelow.mark {
@@ -156,6 +161,8 @@ lookup LatinBelow.mark {
   pos base [ @SS ] <anchor 390 0> mark @LatinBelow.mark;
   pos base [ @Schwa ] <anchor 375 0> mark @LatinBelow.mark;
 
+  pos base [ fi ] <anchor 520 0> mark @LatinBelow.mark;
+
 } LatinBelow.mark;
 
 lookup LatinCedilla.mark {
@@ -180,6 +187,7 @@ lookup LatinOgonek.mark {
   pos base [ \uni0251 ] <anchor 565 0> mark @LatinOgonek.mark;
   pos base [ \e ] <anchor 410 0> mark @LatinOgonek.mark;
   pos base [ \i \dotlessi ] <anchor 155 0> mark @LatinOgonek.mark;
+  pos base [ fi ] <anchor 525 0> mark @LatinOgonek.mark;
   pos base [ \o ] <anchor 400 0> mark @LatinOgonek.mark;
   pos base [ \u ] <anchor 380 0> mark @LatinOgonek.mark;
 

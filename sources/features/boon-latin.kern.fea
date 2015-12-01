@@ -47,7 +47,7 @@ lookup Latin.kern {
     @kc_first_22 = [\comma \ellipsis \period \underscore ];
     @kc_first_23 = [\d \dcaron \dcroat \dotlessi \i \iacute \icircumflex \idieresis \igrave \imacron 
 	\iogonek \itilde \j \jcircumflex \l \lacute \lslash \uni013C \uni01D0 
-	\uni0237 \uni1E0D \uni1E0F \uni1E37 \uni1E39 \uni1E3B \uni1EC9 \uni1ECB ];
+	\uni0237 \uni1E0D \uni1E0F \uni1E37 \uni1E39 \uni1E3B \uni1EC9 \uni1ECB fi fj ];
     @kc_first_24 = [\f \florin ];
     @kc_first_25 = [\g.alt ];
     @kc_first_26 = [\h \hbar \hcircumflex \m \n \nacute \ncaron \ntilde \uni0146 \uni1E25 \uni1E2B 
@@ -111,7 +111,7 @@ lookup Latin.kern {
     @kc_second_16 = [\backslash ];
     @kc_second_17 = [\braceright \bracketright \parenright ];
     @kc_second_18 = [\comma \ellipsis \period \underscore ];
-    @kc_second_19 = [\f \fi \fl \florin \t \tcaron \uni0163 \uni021B \uni1E6D \uni1E6F \uni1E97 ];
+    @kc_second_19 = [\f \fi \fl \florin \t \tcaron \uni0163 \uni021B \uni1E6D \uni1E6F \uni1E97 fj ];
     @kc_second_20 = [\four.pnum ];
     @kc_second_21 = [\g.alt ];
     @kc_second_22 = [\m \n \nacute \ncaron \ntilde \p \r \racute \rcaron \u \uacute \ubreve \ucircumflex 

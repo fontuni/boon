@@ -1,8 +1,3 @@
-languagesystem DFLT dflt;
-languagesystem thai dflt;
-languagesystem thai PAL ;
-languagesystem thai SAN ;
-
 #
 # Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
@@ -23,138 +18,186 @@ lookup ThaiRC.rd {
 } ThaiRC.rd;
 
 lookup ThaiContextRC.rd {
-  sub @RC' lookup ThaiRC.rd @BV;
+  sub @RC' lookup ThaiRC.rd [ @BV @COMB.blw ];
 } ThaiContextRC.rd;
-
-lookup Thai.sd {
-  sub @T by @T.sd;
-} Thai.sd;
 
 lookup ThaiBV.sd {
   sub @BV by @BV.sd;
 } ThaiBV.sd;
 
+lookup Thai.sd {
+  sub @Tone by @Tone.sd;
+} Thai.sd;
+
 lookup Thai.sdl {
-  sub @T by @T.sdl;
+  sub @Tone by @Tone.sdl;
 } Thai.sdl;
 
 lookup Thai.sl {
-  sub @T by @T.sl;
+  sub @Tone by @Tone.sl;
   sub @AV by @AV.sl;
 } Thai.sl;
 
 lookup Thai.su {
-  sub \uni0E47 by \uni0E47.su;
-  sub \uni0E4D by \uni0E4D.su;
-  sub @T.sd by @T;
+  sub uni0E47 by uni0E47.su;
+  sub uni0E4D by uni0E4D.su;
+  sub @Tone.sd by @Tone;
 } Thai.su;
 
 lookup Thai.sul {
-  sub \uni0E47 by \uni0E47.sul;
-  sub \uni0E4D by \uni0E4D.sul;
-  sub @T by @T.sl;
+  sub uni0E47 by uni0E47.sul;
+  sub uni0E4D by uni0E4D.sul;
+  sub @Tone by @Tone.sl;
 } Thai.sul;
+
+@BASE.nc = [ @NC @RC.rd @LV uni0E30 uni0E32 ];
+@BASE.dc = [ @DC @RC @IV uni0E45 @PM ];
+@AM = [ uni0E33 ];
+@AV.opt  = [ uni0E47 uni0E4D ];
 
 # Thai Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug) 
 lookup ThaiDecomp {
-  sub \uni0E33 by \uni0E4D \uni0E32;
+  lookupflag 0;
+    sub uni0E33 by uni0E4D uni0E32;
 } ThaiDecomp;
 
-# Phinthu reordering fix for Uniscribe & Harfbuzz
-lookup ThaiBV.0E3A {
-  sub [ \uni0E38 \uni0E39 ] by \uni0E3A;
-  sub [ \uni0E38.sd \uni0E39.sd ] by \uni0E3A.sd;
-} ThaiBV.0E3A;
+lookup ThaiDecomp.sl {
+  lookupflag 0;
+    sub uni0E33 by uni0E4D.sl uni0E32;
+} ThaiDecomp.sl;
 
-lookup Thai0E3A.0E38 {
-  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E38 \uni0E38.sd ];
-} Thai0E3A.0E38;
+lookup ThaiDecomp.su {
+  lookupflag 0;
+    sub uni0E33 by uni0E4D.su uni0E32;
+} ThaiDecomp.su;
 
-lookup Thai0E3A.0E39 {
-  sub [ \uni0E3A \uni0E3A.sd ] by [ \uni0E39 \uni0E39.sd ];
-} Thai0E3A.0E39;
+lookup ThaiDecomp.sul {
+  lookupflag 0;
+    sub uni0E33 by uni0E4D.sul uni0E32;
+} ThaiDecomp.sul;
 
-lookup ThaiPhinthu.ro {
-  sub [ \uni0E38 \uni0E38.sd ]'lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]'lookup Thai0E3A.0E38;
-  sub [ \uni0E39 \uni0E39.sd ]'lookup ThaiBV.0E3A [ \uni0E3A \uni0E3A.sd ]'lookup Thai0E3A.0E39;
-} ThaiPhinthu.ro;
+# Sara Am (CoreText fix)
+lookup Thai0E4D.cgj {
+  lookupflag 0;
+    sub uni0E4D by uni034F uni0E4D;
+} Thai0E4D.cgj;
 
-@BASE.nc = [ @NC @RC.rd @LV \uni0E30 \uni0E32 ];
-@BASE.dc = [ @DC @RC @IV \uni0E45 ];
-@AM = [ \uni0E33 ];
-@AV.opt  = [ \uni0E47 \uni0E4D ];
+lookup Thai0E4D.cgj.sl {
+  lookupflag 0;
+    sub uni0E4D by uni034F uni0E4D.sl;
+} Thai0E4D.cgj.sl;
+
+lookup Thai0E33.0E32 {
+  lookupflag 0;
+    sub uni0E33 by uni0E32 ;
+} Thai0E33.0E32;
+
+lookup ThaiTone.0E4D {
+  lookupflag 0;
+    sub uni0E48 by uni0E4D uni0E48;
+    sub uni0E49 by uni0E4D uni0E49;
+    sub uni0E4A by uni0E4D uni0E4A;
+    sub uni0E4B by uni0E4D uni0E4B;
+    sub uni0E4C by uni0E4D uni0E4C;
+} ThaiTone.0E4D;
+
+lookup ThaiTone.0E4D.sl {
+  lookupflag 0;
+    sub uni0E48 by uni0E4D.sl uni0E48.sl;
+    sub uni0E49 by uni0E4D.sl uni0E49.sl;
+    sub uni0E4A by uni0E4D.sl uni0E4A.sl;
+    sub uni0E4B by uni0E4D.sl uni0E4B.sl;
+    sub uni0E4C by uni0E4D.sl uni0E4C.sl;
+} ThaiTone.0E4D.sl;
+
+#
+# Include minority language support
+#
+include(thai-core-minor.fea)
 
 lookup ThaiContextAC {
   lookupflag 0;
 
-  sub @AC @BV @BV @AV'lookup Thai.sl @T'lookup Thai.sl;
-  sub @AC @BV @BV @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
-  sub @AC @BV @BV @T'lookup Thai.sdl;
-  sub @AC @BV @BV @AV'lookup Thai.sl;
-  sub @AC @BV @AV'lookup Thai.sl @T'lookup Thai.sl;
-  sub @AC @BV @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
-  sub @AC @BV @T'lookup Thai.sdl;
-  sub @AC @BV @AV'lookup Thai.sl;
+  # Sara AM handle
+  sub @AC @BV.all @BV.all @Tone'lookup ThaiTone.0E4D.sl [ uni0E33 ];
+  sub @AC @BV.all @Tone'lookup ThaiTone.0E4D.sl [ uni0E33 ];
+  sub @AC @Tone'lookup ThaiTone.0E4D.sl [ uni0E33 ];
+  sub @AC @BV.all @BV.all [ uni0E33 ]'lookup ThaiDecomp.sl;
+  sub @AC @BV.all [ uni0E33 ]'lookup ThaiDecomp.sl;
+  sub @AC [ uni0E33 ]'lookup ThaiDecomp.sl;
+  sub @AC @BV.all @BV.all uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup Thai0E33.0E32;
+  sub @AC @BV.all uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup Thai0E33.0E32;
+  sub @AC uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup Thai0E33.0E32;
+  sub @Tone.sdl @Tone.sl [ uni0E33 ]'lookup ThaiDecomp.sul;
+  sub uni034F uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup ThaiDecomp.sul;
 
-  sub @AC @AV'lookup Thai.sl @T'lookup Thai.sl;
-  sub @AC @AV'lookup Thai.sl @AV.opt'lookup Thai.sul;
-  sub @AC @T'lookup Thai.sdl @T'lookup Thai.sl;
-  sub @AC @T'lookup Thai.sdl;
+  sub @AC' @BV.all @BV.all uni0E4D'lookup Thai0E4D.cgj.sl;
+  sub @AC' @BV.all uni0E4D'lookup Thai0E4D.cgj.sl;
+  sub @AC' uni0E4D'lookup Thai0E4D.cgj.sl;
+  
+  sub @AC @BV.all @BV.all @Tone'lookup Thai.sdl;
+  sub @AC @BV.all @BV.all @AV'lookup Thai.sl;
+  
+  sub @AC @BV.all @Tone'lookup Thai.sdl;
+  sub @AC @BV.all @AV'lookup Thai.sl;
+
+  sub @AC @Tone'lookup Thai.sdl;
   sub @AC @AV'lookup Thai.sl;
-
-  sub [ @AV.sul @AV.sl @T.sdl @T.sl ] @AV.opt'lookup Thai.sul;
-  sub [ @AV.sul @AV.sl @T.sdl @T.sl ] @T'lookup Thai.sl;
 
 } ThaiContextAC;
 
 lookup ThaiContextDC {
   lookupflag 0;
 
-  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @AV @AV'lookup Thai.su;
-  sub @BASE.dc @BV'lookup ThaiBV.sd @BV @T'lookup Thai.sd;
-  sub @BASE.dc @BV'lookup ThaiBV.sd @AV @AV'lookup Thai.su;
-  sub @BASE.dc @BV'lookup ThaiBV.sd @T'lookup Thai.sd;
-  sub @BASE.dc @AV @AV'lookup Thai.su;
-  sub @BASE.dc @T'lookup Thai.sd;
+  # Sara AM handle  
+  sub @BASE.dc @Tone'lookup ThaiTone.0E4D [ uni0E33 ];
+  sub @BASE.dc uni0E4D @Tone [ uni0E33 ]'lookup Thai0E33.0E32;
+  sub @BASE.dc [ uni0E33 ]'lookup ThaiDecomp;
 
+  sub @BASE.dc @Tone'lookup Thai.sd;
   sub @BASE.dc @BV'lookup ThaiBV.sd;
+  sub @BASE.dc' uni0E4D'lookup Thai0E4D.cgj;
 
 } ThaiContextDC;
 
 lookup ThaiContextNC {
   lookupflag 0;
 
-  sub @BASE.nc @BV @BV @AV @AV'lookup Thai.su;
-  sub @BASE.nc @BV @BV @T'lookup Thai.sd;
-  sub @BASE.nc @BV @AV @AV'lookup Thai.su;
-  sub @BASE.nc @BV @T'lookup Thai.sd;
-  sub @BASE.nc @AV @AV'lookup Thai.su;
-  sub @BASE.nc @T'lookup Thai.sd;
+  # Sara AM handle  
+  sub @BASE.nc @Tone'lookup ThaiTone.0E4D [ uni0E33 ];
+  sub @BASE.nc uni0E4D @Tone [ uni0E33 ]'lookup Thai0E33.0E32;
+  sub @BASE.nc [ uni0E33 ]'lookup ThaiDecomp;
 
-  sub [ @AV.su @T.sd @T ] @AV'lookup Thai.su;
+  sub @BASE.nc @Tone'lookup Thai.sd;
+  sub @BASE.nc' uni0E4D'lookup Thai0E4D.cgj;
 
 } ThaiContextNC;
 
-# Mac OS & Safari fix
-lookup ThaiTone.liga {
-  sub \uni0E48.sd \uni0E4D by \uni0E48.0E4D;
-  sub \uni0E48.sd \uni0E4D.su by \uni0E48.0E4D;
-  sub \uni0E49.sd \uni0E4D by \uni0E49.0E4D;
-  sub \uni0E49.sd \uni0E4D.su by \uni0E49.0E4D;
-  sub \uni0E4A.sd \uni0E4D by \uni0E4A.0E4D;
-  sub \uni0E4A.sd \uni0E4D.su by \uni0E4A.0E4D;
-  sub \uni0E4B.sd \uni0E4D by \uni0E4B.0E4D;
-  sub \uni0E4B.sd \uni0E4D.su by \uni0E4B.0E4D;
+lookup ThaiContext.fallback {
 
-  sub \uni0E48.sdl \uni0E4D by \uni0E48.0E4D.sl;
-  sub \uni0E48.sdl \uni0E4D.sul by \uni0E48.0E4D.sl;
-  sub \uni0E49.sdl \uni0E4D by \uni0E49.0E4D.sl;
-  sub \uni0E49.sdl \uni0E4D.sul by \uni0E49.0E4D.sl;
-  sub \uni0E4A.sdl \uni0E4D by \uni0E4A.0E4D.sl;
-  sub \uni0E4A.sdl \uni0E4D.sul by \uni0E4A.0E4D.sl;
-  sub \uni0E4B.sdl \uni0E4D by \uni0E4B.0E4D.sl;
-  sub \uni0E4B.sdl \uni0E4D.sul by \uni0E4B.0E4D.sl;
-} ThaiTone.liga;
+  sub [ @AV.sul @AV.sl @Tone.sdl @Tone.sl ] @AV.opt'lookup Thai.sul;
+  sub [ @AV.sul @AV.sl @Tone.sdl @Tone.sl ] [ @Tone @AV ]'lookup Thai.sl;
+
+  sub [ @AV @AV.su @Tone.sd @Tone ] @Tone [ uni0E33 ]'lookup ThaiDecomp.su;
+  sub [ @AV @AV.su @Tone ] [ uni0E33 ]'lookup ThaiDecomp.su;
+
+  sub [ @AV.su @AV @Tone.sd @Tone ] @AV.opt'lookup Thai.su;
+  
+  sub @BV.all @Tone'lookup ThaiTone.0E4D [ uni0E33 ];
+  sub @BV.all uni0E4D @Tone [ uni0E33 ]'lookup Thai0E33.0E32;
+  sub @BV.all [ uni0E33 ]'lookup ThaiDecomp;
+
+  sub @BV.all @BV'lookup ThaiBV.sd;
+  sub @BV.all @Tone'lookup Thai.sd;
+
+  sub @BV.all uni0E4D'lookup Thai0E4D.cgj;
+
+} ThaiContext.fallback;
+
+# Hyphen to dotted circle
+lookup Hyphen.uni25CC {
+  sub hyphen by uni25CC;
+} Hyphen.uni25CC;
 
 feature locl {
   script thai;
@@ -164,18 +207,28 @@ feature locl {
       lookup ThaiRC.rd;
 } locl;
 
+feature ccmp {
+  script thai;
+    language PAL exclude_dflt;
+      lookup ThaiRC.rd;
+    language SAN exclude_dflt;
+      lookup ThaiRC.rd;
+} ccmp;
+
 feature ss01 {
   lookup ThaiRC.rd;
 } ss01;
 
+feature ss02 {
+  lookup Hyphen.uni25CC;
+} ss02;
+
 feature ccmp {
-  lookup ThaiDecomp;
   lookup ThaiContextRC.rd;
-  lookup ThaiPhinthu.ro;
   lookup ThaiContextAC;
   lookup ThaiContextDC;
   lookup ThaiContextNC;
-  lookup ThaiTone.liga;
+  lookup ThaiContext.fallback;
 } ccmp;
 
 

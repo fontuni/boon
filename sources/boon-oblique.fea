@@ -1,8 +1,10 @@
 languagesystem DFLT dflt;
 languagesystem lao  dflt;
 languagesystem latn dflt;
+languagesystem latn AZE ;
 languagesystem latn MOL ;
 languagesystem latn ROM ;
+languagesystem latn TRK ;
 languagesystem thai dflt;
 languagesystem thai PAL ;
 languagesystem thai SAN ;
@@ -33,16 +35,16 @@ include(features/latin-extra.fea)
 
 # GPOS
 
-# Thai
-include(features/thai-oblique.mark.fea)
-include(features/thai-oblique.mkmk.fea)
+# KERN
 include(features/thai.kern.fea)
-
-# Lao
-include(features/lao-oblique.mark.fea)
-include(features/lao-oblique.mkmk.fea)
-
-# Latin
-include(features/latin-oblique.mark.fea)
-include(features/latin-oblique.mkmk.fea)
 include(features/boon-latin.kern.fea)
+
+# MARK
+include(features/thai-oblique.mark.fea)
+include(features/lao-oblique.mark.fea)
+include(features/latin-oblique.mark.fea)
+
+# MKMK
+include(features/thai-oblique.mkmk.fea)
+include(features/lao-oblique.mkmk.fea)
+include(features/latin-oblique.mkmk.fea)
