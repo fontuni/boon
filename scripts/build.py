@@ -109,7 +109,7 @@ def ttf2Woff2(ttf,woff2):
   print(woff2, 'instance generated.')
 
 def ttf2Eot(ttf,eot):
-  subprocess.call(['ttf2eot',ttf,eot])
+  os.system('ttf2eot <' + ttf + '>' + eot)
   print(eot, 'instance generated.')
 
 def buildFont(sfd):
