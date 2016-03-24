@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   inkscape:export-filename="/home/sungsit/Storage/github.com/fontuni/fontuni.github.io/_boon/images/boon-udhr.png"
+   inkscape:export-filename="/home/i/repos/fontuni/fontuni.github.io/_boon/images/boon-udhr.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    sodipodi:docname="boon-udhr.svg">
@@ -156,17 +156,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.59157965"
-     inkscape:cx="559.64092"
-     inkscape:cy="741.43768"
+     inkscape:zoom="0.45268629"
+     inkscape:cx="218.92829"
+     inkscape:cy="603.67488"
      inkscape:document-units="px"
-     inkscape:current-layer="g3490"
+     inkscape:current-layer="g3429"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="750"
+     inkscape:window-height="732"
      inkscape:window-x="0"
      inkscape:window-y="18"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="false"
+     borderlayer="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -175,7 +177,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -370,175 +372,311 @@
      style="display:inline"
      transform="translate(0,810)">
     <g
-       transform="translate(25.416315,-718.20236)"
-       id="g3514">
+       id="g3516"
+       transform="translate(0,10)">
       <g
-         id="g3516"
-         transform="matrix(0.94435071,0,0,0.94435071,15.278246,-474.94938)"
-         style="filter:url(#filter5961)">
-        <path
-           d="m 57.969502,490.56666 q 17.585833,5.89768 17.585833,21.98229 0,12.00984 -9.865224,19.08706 -9.865223,7.07722 -26.057057,7.07722 -6.541072,0 -14.476143,-0.21445 -7.935071,-0.21447 -12.545991,-0.53616 L 8,537.74815 8,454.10822 q 15.655681,-0.96508 28.952286,-0.96508 13.082145,0 21.767831,5.79046 8.792917,5.68323 8.792917,15.54845 0,10.40138 -9.543532,16.08461 z m -18.336448,-2.57354 q 4.181997,-0.53616 7.184456,-3.53861 3.002459,-3.00246 3.002459,-8.364 0,-10.18691 -15.012296,-10.18691 -5.468765,0 -9.650762,0.32169 l 0,21.98229 q 8.792917,-0.21446 14.476143,-0.21446 z m -14.476143,37.42351 q 6.648302,0.42893 12.331529,0.42893 20.2666,0 20.2666,-13.29661 0,-7.29169 -5.468764,-9.97246 -5.361535,-2.788 -14.797836,-2.788 -5.683227,0 -12.331529,0.42893 l 0,25.19921 z"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3518"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 84.167301,506.97295 0,-2.788 q 0,-4.50369 0.750615,-8.79291 0.857845,-4.28924 3.002459,-8.79293 2.144614,-4.50368 5.468765,-7.82783 3.324154,-3.32415 8.90015,-5.46877 5.68323,-2.14461 12.97491,-2.14461 7.29169,0 12.86769,2.14461 5.68322,2.14462 9.00738,5.46877 3.32414,3.32415 5.46875,7.82783 2.14462,4.50369 2.89523,8.79293 0.85785,4.28922 0.85785,8.79291 l 0,2.788 q 0,4.50369 -0.85785,8.79292 -0.75061,4.28923 -2.89523,8.79292 -2.14461,4.50369 -5.46875,7.82784 -3.32416,3.32414 -9.00738,5.46876 Q 122.55589,540 115.2642,540 q -7.29168,0 -12.97491,-2.14461 -5.575996,-2.14462 -8.90015,-5.46876 -3.324151,-3.32415 -5.468765,-7.82784 -2.144614,-4.50369 -3.002459,-8.79292 -0.750615,-4.28923 -0.750615,-8.79292 z m 20.909989,15.65568 q 3.8603,5.14708 10.18691,5.14708 6.32662,0 10.07968,-5.14708 3.86031,-5.25431 3.86031,-15.65568 l 0,-2.788 q 0,-10.40137 -3.86031,-15.54845 -3.75306,-5.2543 -10.07968,-5.2543 -6.32661,0 -10.18691,5.2543 -3.75308,5.14708 -3.75308,15.54845 l 0,2.788 q 0,10.40137 3.75308,15.65568 z"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3520"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 155.04008,506.97295 0,-2.788 q 0,-4.50369 0.75062,-8.79291 0.85784,-4.28924 3.00246,-8.79293 2.14461,-4.50368 5.46876,-7.82783 3.32415,-3.32415 8.90015,-5.46877 5.68323,-2.14461 12.97491,-2.14461 7.29169,0 12.86769,2.14461 5.68323,2.14462 9.00738,5.46877 3.32414,3.32415 5.46876,7.82783 2.14461,4.50369 2.89523,8.79293 0.85784,4.28922 0.85784,8.79291 l 0,2.788 q 0,4.50369 -0.85784,8.79292 -0.75062,4.28923 -2.89523,8.79292 -2.14462,4.50369 -5.46876,7.82784 -3.32415,3.32414 -9.00738,5.46876 Q 193.42867,540 186.13698,540 q -7.29168,0 -12.97491,-2.14461 -5.576,-2.14462 -8.90015,-5.46876 -3.32415,-3.32415 -5.46876,-7.82784 -2.14462,-4.50369 -3.00246,-8.79292 -0.75062,-4.28923 -0.75062,-8.79292 z m 20.90999,15.65568 q 3.8603,5.14708 10.18691,5.14708 6.32662,0 10.07968,-5.14708 3.86031,-5.25431 3.86031,-15.65568 l 0,-2.788 q 0,-10.40137 -3.86031,-15.54845 -3.75306,-5.2543 -10.07968,-5.2543 -6.32661,0 -10.18691,5.2543 -3.75308,5.14708 -3.75308,15.54845 l 0,2.788 q 0,10.40137 3.75308,15.65568 z"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3522"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 229.12978,537.74815 0,-45.03688 -1.0723,-18.33645 15.54845,-1.28677 1.71569,12.76045 q 7.82784,-14.15445 21.87506,-14.15445 9.22184,0 13.93999,6.64831 4.82538,6.6483 4.82538,15.87014 l 0,43.53565 -17.15691,0 0,-42.89227 q 0,-9.65076 -6.43384,-9.65076 -5.2543,0 -9.86522,5.89768 -4.61093,5.79046 -6.21939,13.93999 l 0,32.70536 -17.15691,0 z"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3524"
-           inkscape:connector-curvature="0" />
+         id="g3514"
+         transform="matrix(1.0661463,0,0,1.0661463,38.642291,-720.54721)">
+        <g
+           style="filter:url(#filter5961)"
+           transform="matrix(0.94435071,0,0,0.94435071,15.278246,-474.94938)"
+           id="g3519">
+          <path
+             inkscape:connector-curvature="0"
+             id="path3518"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 57.969502,490.56666 q 17.585833,5.89768 17.585833,21.98229 0,12.00984 -9.865224,19.08706 -9.865223,7.07722 -26.057057,7.07722 -6.541072,0 -14.476143,-0.21445 -7.935071,-0.21447 -12.545991,-0.53616 L 8,537.74815 8,454.10822 q 15.655681,-0.96508 28.952286,-0.96508 13.082145,0 21.767831,5.79046 8.792917,5.68323 8.792917,15.54845 0,10.40138 -9.543532,16.08461 z m -18.336448,-2.57354 q 4.181997,-0.53616 7.184456,-3.53861 3.002459,-3.00246 3.002459,-8.364 0,-10.18691 -15.012296,-10.18691 -5.468765,0 -9.650762,0.32169 l 0,21.98229 q 8.792917,-0.21446 14.476143,-0.21446 z m -14.476143,37.42351 q 6.648302,0.42893 12.331529,0.42893 20.2666,0 20.2666,-13.29661 0,-7.29169 -5.468764,-9.97246 -5.361535,-2.788 -14.797836,-2.788 -5.683227,0 -12.331529,0.42893 l 0,25.19921 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3520"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 84.167301,506.97295 0,-2.788 q 0,-4.50369 0.750615,-8.79291 0.857845,-4.28924 3.002459,-8.79293 2.144614,-4.50368 5.468765,-7.82783 3.324154,-3.32415 8.90015,-5.46877 5.68323,-2.14461 12.97491,-2.14461 7.29169,0 12.86769,2.14461 5.68322,2.14462 9.00738,5.46877 3.32414,3.32415 5.46875,7.82783 2.14462,4.50369 2.89523,8.79293 0.85785,4.28922 0.85785,8.79291 l 0,2.788 q 0,4.50369 -0.85785,8.79292 -0.75061,4.28923 -2.89523,8.79292 -2.14461,4.50369 -5.46875,7.82784 -3.32416,3.32414 -9.00738,5.46876 Q 122.55589,540 115.2642,540 q -7.29168,0 -12.97491,-2.14461 -5.575996,-2.14462 -8.90015,-5.46876 -3.324151,-3.32415 -5.468765,-7.82784 -2.144614,-4.50369 -3.002459,-8.79292 -0.750615,-4.28923 -0.750615,-8.79292 z m 20.909989,15.65568 q 3.8603,5.14708 10.18691,5.14708 6.32662,0 10.07968,-5.14708 3.86031,-5.25431 3.86031,-15.65568 l 0,-2.788 q 0,-10.40137 -3.86031,-15.54845 -3.75306,-5.2543 -10.07968,-5.2543 -6.32661,0 -10.18691,5.2543 -3.75308,5.14708 -3.75308,15.54845 l 0,2.788 q 0,10.40137 3.75308,15.65568 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3522"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 155.04008,506.97295 0,-2.788 q 0,-4.50369 0.75062,-8.79291 0.85784,-4.28924 3.00246,-8.79293 2.14461,-4.50368 5.46876,-7.82783 3.32415,-3.32415 8.90015,-5.46877 5.68323,-2.14461 12.97491,-2.14461 7.29169,0 12.86769,2.14461 5.68323,2.14462 9.00738,5.46877 3.32414,3.32415 5.46876,7.82783 2.14461,4.50369 2.89523,8.79293 0.85784,4.28922 0.85784,8.79291 l 0,2.788 q 0,4.50369 -0.85784,8.79292 -0.75062,4.28923 -2.89523,8.79292 -2.14462,4.50369 -5.46876,7.82784 -3.32415,3.32414 -9.00738,5.46876 Q 193.42867,540 186.13698,540 q -7.29168,0 -12.97491,-2.14461 -5.576,-2.14462 -8.90015,-5.46876 -3.32415,-3.32415 -5.46876,-7.82784 -2.14462,-4.50369 -3.00246,-8.79292 -0.75062,-4.28923 -0.75062,-8.79292 z m 20.90999,15.65568 q 3.8603,5.14708 10.18691,5.14708 6.32662,0 10.07968,-5.14708 3.86031,-5.25431 3.86031,-15.65568 l 0,-2.788 q 0,-10.40137 -3.86031,-15.54845 -3.75306,-5.2543 -10.07968,-5.2543 -6.32661,0 -10.18691,5.2543 -3.75308,5.14708 -3.75308,15.54845 l 0,2.788 q 0,10.40137 3.75308,15.65568 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3524"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#22aadd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 229.12978,537.74815 0,-45.03688 -1.0723,-18.33645 15.54845,-1.28677 1.71569,12.76045 q 7.82784,-14.15445 21.87506,-14.15445 9.22184,0 13.93999,6.64831 4.82538,6.6483 4.82538,15.87014 l 0,43.53565 -17.15691,0 0,-42.89227 q 0,-9.65076 -6.43384,-9.65076 -5.2543,0 -9.86522,5.89768 -4.61093,5.79046 -6.21939,13.93999 l 0,32.70536 -17.15691,0 z" />
+        </g>
+        <g
+           transform="matrix(0.94435071,0,0,0.94435071,15.278246,-474.94938)"
+           id="g3526">
+          <path
+             inkscape:connector-curvature="0"
+             id="path3528"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 302.25106,537.74815 0,-83.63993 52.54303,0 0,7.93507 -42.24889,0 0,30.45352 38.60305,0 0,7.93507 -38.60305,0 0,37.31627 -10.29414,0 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3530"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 363.73446,507.08018 0,-3.00246 q 0,-4.82537 0.75063,-9.22184 0.85783,-4.50369 2.89521,-8.79291 2.14462,-4.39646 5.25432,-7.50615 3.21692,-3.21692 8.25675,-5.14707 5.14708,-1.93016 11.58092,-1.93016 6.43384,0 11.47368,1.93016 5.14707,1.93015 8.25677,5.14707 3.21692,3.10969 5.2543,7.50615 2.14462,4.28922 2.89523,8.79291 0.85785,4.39647 0.85785,9.22184 l 0,3.00246 q 0,4.82539 -0.85785,9.32908 -0.75061,4.39645 -2.89523,8.79291 -2.03738,4.28923 -5.2543,7.50615 -3.1097,3.10968 -8.25677,5.03983 -5.03984,1.93016 -11.47368,1.93016 -6.43384,0 -11.58092,-1.93016 -5.03983,-1.93015 -8.25675,-5.03983 -3.1097,-3.21692 -5.25432,-7.50615 -2.03738,-4.39646 -2.89521,-8.79291 -0.75063,-4.50369 -0.75063,-9.32908 z m 14.47615,18.76538 q 4.82538,6.75552 14.26168,6.75552 9.4363,0 14.26168,-6.75552 4.82538,-6.86278 4.82538,-18.76538 l 0,-3.00246 q 0,-11.9026 -4.82538,-18.65814 -4.82538,-6.86276 -14.26168,-6.86276 -9.4363,0 -14.26168,6.86276 -4.82538,6.75554 -4.82538,18.65814 l 0,3.00246 q 0,11.9026 4.82538,18.76538 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3532"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 437.82415,537.74815 0,-45.03688 -1.0723,-18.76538 8.79292,-0.85784 1.71568,17.69306 q 8.47123,-18.76537 24.34137,-18.76537 8.79291,0 13.51107,5.8977 4.71814,5.79046 4.71814,14.6906 l 0,45.14411 -9.65075,0 0,-44.82242 q 0,-6.75553 -3.00247,-9.97246 -3.00245,-3.21692 -7.93506,-3.21692 -8.04231,0 -14.15446,7.93508 -6.11215,7.93506 -7.61337,17.69306 l 0,32.38366 -9.65077,0 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3534"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 501.83081,479.62912 0,-6.21937 10.50861,0 0,-13.72554 9.22184,-0.75061 0,14.47615 16.72799,0 0,6.21937 -16.62076,0 0,43.85735 q 0,4.93262 1.50123,6.86278 1.60846,1.82291 5.14708,1.82291 6.21937,0 10.83029,-2.89523 l 2.35907,6.43384 q -5.79045,3.43139 -14.36891,3.43139 -15.11953,0 -15.11953,-14.36892 l 0,-45.14412 -10.18691,0 z" />
+        </g>
       </g>
-      <g
-         id="g3526"
-         transform="matrix(0.94435071,0,0,0.94435071,15.278246,-474.94938)">
-        <path
-           d="m 302.25106,537.74815 0,-83.63993 52.54303,0 0,7.93507 -42.24889,0 0,30.45352 38.60305,0 0,7.93507 -38.60305,0 0,37.31627 -10.29414,0 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3528"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 363.73446,507.08018 0,-3.00246 q 0,-4.82537 0.75063,-9.22184 0.85783,-4.50369 2.89521,-8.79291 2.14462,-4.39646 5.25432,-7.50615 3.21692,-3.21692 8.25675,-5.14707 5.14708,-1.93016 11.58092,-1.93016 6.43384,0 11.47368,1.93016 5.14707,1.93015 8.25677,5.14707 3.21692,3.10969 5.2543,7.50615 2.14462,4.28922 2.89523,8.79291 0.85785,4.39647 0.85785,9.22184 l 0,3.00246 q 0,4.82539 -0.85785,9.32908 -0.75061,4.39645 -2.89523,8.79291 -2.03738,4.28923 -5.2543,7.50615 -3.1097,3.10968 -8.25677,5.03983 -5.03984,1.93016 -11.47368,1.93016 -6.43384,0 -11.58092,-1.93016 -5.03983,-1.93015 -8.25675,-5.03983 -3.1097,-3.21692 -5.25432,-7.50615 -2.03738,-4.39646 -2.89521,-8.79291 -0.75063,-4.50369 -0.75063,-9.32908 z m 14.47615,18.76538 q 4.82538,6.75552 14.26168,6.75552 9.4363,0 14.26168,-6.75552 4.82538,-6.86278 4.82538,-18.76538 l 0,-3.00246 q 0,-11.9026 -4.82538,-18.65814 -4.82538,-6.86276 -14.26168,-6.86276 -9.4363,0 -14.26168,6.86276 -4.82538,6.75554 -4.82538,18.65814 l 0,3.00246 q 0,11.9026 4.82538,18.76538 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3530"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 437.82415,537.74815 0,-45.03688 -1.0723,-18.76538 8.79292,-0.85784 1.71568,17.69306 q 8.47123,-18.76537 24.34137,-18.76537 8.79291,0 13.51107,5.8977 4.71814,5.79046 4.71814,14.6906 l 0,45.14411 -9.65075,0 0,-44.82242 q 0,-6.75553 -3.00247,-9.97246 -3.00245,-3.21692 -7.93506,-3.21692 -8.04231,0 -14.15446,7.93508 -6.11215,7.93506 -7.61337,17.69306 l 0,32.38366 -9.65077,0 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3532"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 501.83081,479.62912 0,-6.21937 10.50861,0 0,-13.72554 9.22184,-0.75061 0,14.47615 16.72799,0 0,6.21937 -16.62076,0 0,43.85735 q 0,4.93262 1.50123,6.86278 1.60846,1.82291 5.14708,1.82291 6.21937,0 10.83029,-2.89523 l 2.35907,6.43384 q -5.79045,3.43139 -14.36891,3.43139 -15.11953,0 -15.11953,-14.36892 l 0,-45.14412 -10.18691,0 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3534"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 548.13776,523.05755 9.4363,-1.0723 q 0.75061,4.28923 4.82538,7.50615 4.07477,3.21692 11.04476,3.21692 7.29169,0 11.25922,-3.00246 4.07476,-3.10969 4.07476,-8.36399 0,-7.72062 -8.68567,-10.29415 -16.29908,-5.03985 -16.51353,-5.14708 -13.72554,-4.93261 -13.72554,-16.19183 0,-8.0423 6.32662,-13.08214 6.32661,-5.14708 16.83522,-5.14708 10.18691,0 16.19183,5.14708 6.00492,5.03984 7.07723,11.04476 l -9.32907,1.28677 q -0.75061,-4.182 -4.39646,-7.29169 -3.53862,-3.21693 -9.54353,-3.21693 -6.43384,0 -10.18692,3.00247 -3.75307,2.89523 -3.75307,7.93507 0,6.54107 8.57845,9.4363 5.89769,1.93015 16.08461,4.93261 14.26168,4.28923 14.26168,17.37137 0,8.14953 -6.86276,13.40383 -6.75554,5.14708 -18.12199,5.14708 -11.04476,0 -17.37138,-5.14708 -6.3266,-5.2543 -7.50614,-11.47368 z"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#222222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="path3536"
-           inkscape:connector-curvature="0" />
-      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path3708"
+         d="m 59.358974,-655.97438 0,0.97436 545.641026,0 0,-0.97436 -545.641026,0 z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#aaaaaa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
-    <path
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#aaaaaa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 47,-656.00002 0,1 560,0 0,-1 -560,0 z"
-       id="path3708"
-       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="g3453"
      inkscape:label="texts"
-     style="display:inline"
+     style="display:none"
      transform="translate(0,810)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="47.537498"
-       y="-590.69641"
+       x="46.625"
+       y="-581.75891"
        id="text3455"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-590.69641"
+         x="46.625"
+         y="-581.75891"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.25px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3658">Universal Declaration of Human Rights : Article 1</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-557.88391"
+         x="46.625"
+         y="-548.94641"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3704" /><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-515.25"
+         x="46.625"
+         y="-506.31247"
          style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3706">All human beings are born free </tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-468.37497"
+         x="46.625"
+         y="-459.43747"
          style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3461">and equal in dignity and rights. </tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-421.49997"
+         x="46.625"
+         y="-412.56247"
          style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3702">They are endowed with reason </tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-374.62497"
+         x="46.625"
+         y="-365.68747"
          style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3660">and conscience and should act </tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-327.74997"
+         x="46.625"
+         y="-318.81247"
          style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3594">towards one another in a spirit </tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-280.87497"
+         x="46.625"
+         y="-271.93747"
          style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3662">of brotherhood.</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-233.99998"
+         x="46.625"
+         y="-225.06248"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3664" /><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-187.12498"
+         x="46.625"
+         y="-178.18748"
          style="font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3672">มนุษย์ทั้งปวงเกิดมามีอิสระและเสมอภาค</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-140.24998"
+         x="46.625"
+         y="-131.31248"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3668"><tspan
-   style="-inkscape-font-specification:'Boon Oblique';font-family:Boon;font-weight:normal;font-style:oblique;font-stretch:normal;font-variant:normal"
+   style="font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Boon;-inkscape-font-specification:'Boon Oblique'"
    id="tspan4520">กันในศักดิ์ศรีและสิทธิ</tspan> ต่างในตนมีเหตุผล</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-93.374985"
+         x="46.625"
+         y="-84.437485"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3666">และมโนธรรม และควรปฏิบัติต่อกัน</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="-46.499981"
+         x="46.625"
+         y="-37.562481"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3670">ด้วยจิตวิญญาณแห่งภราดรภาพ</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="0.3750174"
+         x="46.625"
+         y="9.3125172"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3674" /><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="47.250019"
+         x="46.625"
+         y="56.187519"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3680">ມະນຸດເກີດມາມີສິດເສລີພາບ ແລະ ສະເໝີໜ້າກັນ</tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="94.125015"
+         x="46.625"
+         y="103.06252"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3678">ໃນທາງກຽດຕິສັກ ແລະ ທາງສິດ <tspan
-   style="-inkscape-font-specification:'Boon Semi-Bold Oblique';font-family:Boon;font-weight:600;font-style:oblique;font-stretch:normal;font-variant:normal"
+   style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique'"
    id="tspan4522">ດ້ວຍມະນຸດມີ</tspan></tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="141.00002"
+         x="46.625"
+         y="149.93752"
          style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3688">ສະຕິສໍາປັດຊັນຍະ (ຮູ້ດີຮູ້ຊົ່ວ) ແລະມີມະໂນທໍາ </tspan><tspan
          sodipodi:role="line"
-         x="47.537498"
-         y="187.87502"
+         x="46.625"
+         y="196.81252"
          style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:37.5px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
          id="tspan3690">ຈື່ງຕ້ອງປະພຶດຕົນຕໍ່ກັນໃນທາງພີ່ນ້ອງ.</tspan></text>
   </g>
+  <g
+     transform="translate(0,810)"
+     style="display:inline"
+     inkscape:label="texts copy"
+     id="g3429"
+     inkscape:groupmode="layer">
+    <text
+       sodipodi:linespacing="125%"
+       id="text3431"
+       y="-590.34894"
+       x="61.541809"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.9521904px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan3433"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24.90612411px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-590.34894"
+         x="61.541809"
+         sodipodi:role="line">Universal Declaration of Human Rights : Article 1</tspan><tspan
+         id="tspan3435"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-559.21631"
+         x="61.541809"
+         sodipodi:role="line" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-528.08362"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3531" /><tspan
+         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-487.63235"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3498">มนุษย์ทั้งปวงเกิดมามีอิสระและเสมอภาค</tspan><tspan
+         id="tspan3453"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-443.15714"
+         x="61.541809"
+         sodipodi:role="line"><tspan
+           id="tspan3455"
+           style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique'">กันในศักดิ์ศรีและสิทธิ</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Boon;-inkscape-font-specification:'Boon Light'"
+           id="tspan3533"> ต่างในตนมีเหตุผล</tspan></tspan><tspan
+         id="tspan3457"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-398.68192"
+         x="61.541809"
+         sodipodi:role="line">และมโนธรรม และควรปฏิบัติต่อกัน</tspan><tspan
+         id="tspan3459"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-354.2067"
+         x="61.541809"
+         sodipodi:role="line">ด้วยจิตวิญญาณแห่งภราดรภาพ</tspan><tspan
+         id="tspan3462"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-309.73148"
+         x="61.541809"
+         sodipodi:role="line" /><tspan
+         id="tspan3464"
+         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-265.25626"
+         x="61.541809"
+         sodipodi:role="line">ມະນຸດເກີດມາມີສິດເສລີພາບແລະສະເໝີໜ້າກັນ</tspan><tspan
+         id="tspan3466"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-220.78102"
+         x="61.541809"
+         sodipodi:role="line"><tspan
+           style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique'"
+           id="tspan3535">ໃນທາງກຽດຕິສັກແລະທາງສິດ</tspan><tspan
+           id="tspan3468"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Boon;-inkscape-font-specification:'Boon Light'"> ດ້ວຍມະນຸດມີ</tspan></tspan><tspan
+         id="tspan3470"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-176.3058"
+         x="61.541809"
+         sodipodi:role="line">ສະຕິສໍາປັດຊັນຍະ (ຮູ້ດີຮູ້ຊົ່ວ) ແລະມີມະໂນທໍາ </tspan><tspan
+         id="tspan3472"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-131.83058"
+         x="61.541809"
+         sodipodi:role="line">ຈື່ງຕ້ອງປະພຶດຕົນຕໍ່ກັນໃນທາງພີ່ນ້ອງ.</tspan><tspan
+         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-87.355362"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3500" /><tspan
+         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="-42.880138"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3502">All human beings are born free </tspan><tspan
+         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Semi-Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="1.5950832"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3504">and equal in dignity and rights. </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="46.070305"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3506">They are endowed with reason </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="90.545525"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3508">and conscience and should act </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="135.02075"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3510">towards one another in a spirit </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:35.58017731px;line-height:125%;font-family:Boon;-inkscape-font-specification:'Boon Light';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#111111;fill-opacity:1"
+         y="179.49597"
+         x="61.541809"
+         sodipodi:role="line"
+         id="tspan3512">of brotherhood.</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3537"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:52.5px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3539"><rect
+           id="rect3541"
+           width="50"
+           height="57.692307"
+           x="453.84616"
+           y="615.38464" /></flowRegion><flowPara
+         id="flowPara3543"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3545"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:52.5px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3547"><rect
+           id="rect3549"
+           width="241.12976"
+           height="137.16963"
+           x="63.531197"
+           y="849.29919" /></flowRegion><flowPara
+         id="flowPara3551"></flowPara></flowRoot>  </g>
 </svg>
