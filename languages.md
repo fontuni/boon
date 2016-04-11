@@ -1,9 +1,11 @@
 ---
 layout: font
+name: boon
 title: Boon language support
 fontfamily: "Boon"
 css: "/boon/css/boon-all.css"
 class: "boon-400"
+titleclass: "boon-600"
 ---
 
 **Just a few languages test here with Universal Declaration of Human Rights : Article 1. But basically, Boon fonts cover Pan-European, Vietnamese, Thai & Lao.**

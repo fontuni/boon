@@ -18,12 +18,12 @@ import datetime
 
 # Predifined vars
 family = 'Boon'
-version = '1.1'
+version = '1.2'
 sources = ['sources/boon-master.sfd', 'sources/boon-master-oblique.sfd']
 layers = ['300', '400', '500', '600', '700']
 features = ['boon-roman', 'boon-oblique']
 feature_dir = 'sources/'
-copyright =  'Copyright 2013-2015, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
+copyright =  'Copyright 2013-2016, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
 foundry = 'FontUni'
 
 build_dir = 'fonts/'

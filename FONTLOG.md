@@ -1,9 +1,11 @@
 ---
 layout: font
+name: boon
 title: Boon FONTLOG
 fontfamily: "Boon"
 css: "/boon/css/boon-all.css"
 class: "boon-400"
+titleclass: "boon-600"
 ---
 
 ### Boon v1.0, 2015-10-30

@@ -33,8 +33,8 @@ unhinted_dir = build_dir + 'unhinted/'
 if not os.path.exists(unhinted_dir):
   os.makedirs(unhinted_dir)
   
-def fontPath(ext,name):
-  path = build_dir + ext
+def fontPath(path,ext,name):
+  path = build_dir + path
   if not os.path.exists(path):
     os.makedirs(path)
   fontfile = path + '/' + name + '.' + ext
@@ -66,13 +66,10 @@ def otfHint(unhinted,hinted):
 def ttfHint(unhinted,hinted):
   subprocess.call([
     'ttfautohint',
-    '--default-script=latn',
-    '--fallback-script=thai',
-    '--strong-stem-width=G',
-    '--hinting-range-min=7',
-    '--hinting-range-max=28',
-    '--hinting-limit=50',
-    '--increase-x-height=13',
+    '--default-script=thai',
+    '--fallback-script=lao',
+    '--hinting-range-min=9',
+    '--hinting-range-max=18',
     '--no-info',
     '--verbose',
     unhinted,
@@ -98,18 +95,18 @@ def fontOptimize(fontfile):
   print(fontfile, 'optimized.')
 
 # http://wizard.ae.krakow.pl/~jb/ttf2woff/
-def ttf2Woff(ttf,woff):
-  subprocess.call([ 'ttf2woff', '-v', ttf, woff ])
+def font2Woff(font,woff):
+  subprocess.call([ 'ttf2woff', '-v', font, woff ])
   print(woff, 'instance generated.')
 
-def ttf2Woff2(ttf,woff2):
-  subprocess.call(['woff2_compress',ttf])
-  (root, ext) = os.path.splitext(ttf)
+def font2Woff2(font,woff2):
+  subprocess.call(['woff2_compress',font])
+  (root, ext) = os.path.splitext(font)
   os.rename(root + '.woff2', woff2)
   print(woff2, 'instance generated.')
 
-def ttf2Eot(ttf,eot):
-  os.system('ttf2eot <' + ttf + '>' + eot)
+def font2Eot(font,eot):
+  os.system('ttf2eot <' + font+ '>' + eot)
   print(eot, 'instance generated.')
 
 def buildFont(sfd):
@@ -120,14 +117,18 @@ def buildFont(sfd):
   uniqueid = foundry + ' : ' + font.fullname + ' ' + font.version + ' : ' + ts
   font.appendSFNTName('English (US)', 'UniqueID', uniqueid)
 
-  otf = fontPath('otf',font.fontname)
-  ttf = fontPath('ttf',font.fontname)
-  woff = fontPath('woff',font.fontname)
-  woff2 = fontPath('woff2',font.fontname)
-  eot = fontPath('eot',font.fontname)
-  svg = fontPath('svg',font.fontname)
-  tempwoff2 = build_dir + 'ttf/' + font.fontname + '.woff2'
-
+  otf = fontPath('otf','otf',font.fontname)
+  ttf = fontPath('ttf','ttf',font.fontname)
+  woffTtf = fontPath('woff-ttf','woff',font.fontname)
+  woffOtf = fontPath('woff-otf','woff',font.fontname)
+  woff2Ttf = fontPath('woff2-ttf','woff2',font.fontname)
+  woff2Otf = fontPath('woff2-otf','woff2',font.fontname)
+  eotTtf = fontPath('eot-ttf','eot',font.fontname)
+  eotOtf = fontPath('eot-otf','eot',font.fontname)
+  svg = fontPath('svg','svg',font.fontname)
+  tempwoff2Ttf = build_dir + 'ttf/' + font.fontname + '.woff2'
+  tempwoff2Otf = build_dir + 'otf/' + font.fontname + '.woff2'
+  
   # generate otf
   otfgenflags  = ('opentype', 'PfEd-lookups')
   otfunhinted = unhinted_dir + font.fontname + '-unhinted.otf'
@@ -150,14 +151,17 @@ def buildFont(sfd):
   #fontOptimize(ttf)
   printFontInfo(ttf)
 
-  # ttf2woff
-  ttf2Woff(ttf,woff)
+  # font2woff
+  font2Woff(otf,woffOtf)
+  font2Woff(ttf,woffTtf)
 
-  # ttf2woff2
-  ttf2Woff2(ttf,woff2)
+  # font2woff2
+  font2Woff2(otf,woff2Otf)
+  font2Woff2(ttf,woff2Ttf)
 
-  # ttf2eot
-  ttf2Eot(ttf,eot)
+  # font2eot
+  font2Eot(otf,eotOtf)
+  font2Eot(ttf,eotTtf)
 
   # gen svg
   font.generate(svg, flags=otfgenflags)
@@ -168,18 +172,18 @@ def buildFont(sfd):
 for sfd in sorted(glob.glob('./sfd/*.sfd')):
   buildFont(sfd)
 
-# Create zip package for each font extension
-def fontZip(family,version,ext):
-  path = build_dir + ext + '/'
-  package = family + '-v' + version + '-' + ext + '.zip'
+# Create zip package for each font pathension
+def fontZip(family,version,pkg):
+  path = build_dir + pkg + '/'
+  package = family + '-v' + version + '-' + pkg + '.zip'
   shutil.copy2('OFL.txt', path)
   os.chdir(build_dir)
-  subprocess.call(['zip', '-r', package, ext])
-  os.remove(ext + '/OFL.txt')
+  subprocess.call(['zip', '-r', package, pkg])
+  #os.remove(pkg + '/OFL.txt')
   os.chdir('..')
   print(package, 'created.')
 
-exts = ['otf', 'ttf', 'woff', 'woff2', 'eot', 'svg']
+pkgs = ['otf', 'ttf', 'woff-otf', 'woff-ttf', 'woff2-otf', 'woff2-ttf', 'eot-otf', 'eot-ttf', 'svg']
 
-for ext in exts:
-  fontZip(family,version,ext)
+for pkg in pkgs:
+  fontZip(family,version,pkg)
