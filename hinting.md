@@ -6,6 +6,9 @@ fontfamily: "Boon"
 css: "/boon/css/boon-all.css"
 class: "boon-400"
 titleclass: "boon-600"
+cover:
+  path: /boon/images/boon-cover.png
+excerpt: "Boon Hinting Preview"
 ---
 
 ### 18px

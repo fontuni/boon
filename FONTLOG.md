@@ -6,6 +6,9 @@ fontfamily: "Boon"
 css: "/boon/css/boon-all.css"
 class: "boon-400"
 titleclass: "boon-600"
+cover:
+  path: /boon/images/boon-cover.png
+excerpt: "Boon FONTLOG"
 ---
 
 ### Boon v1.0, 2015-10-30
