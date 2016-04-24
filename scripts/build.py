@@ -21,7 +21,7 @@ import glob
 import boon
 
 family = 'Boon'
-version = '1.2'
+version = '2.0'
 foundry = 'FontUni'
 sfd_dir = 'sfd/'
 

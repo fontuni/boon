@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+# Copyright (c) 2014-2016, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
 # This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
 # You should have received a copy of the OFL License along with this file.
@@ -9,78 +9,47 @@
 include(thai-classes.fea)
 
 lookup ThaiAbove.mkmk {
-  markClass [ @Tone uni0E4D.su uni0E47.su ] <anchor 0 0> @ThaiAbove.mkmk;
-  markClass [ uni0E4E ] <anchor 0 -240> @ThaiAbove.mkmk;
-  markClass [ uni0E34 uni0E35 ] <anchor 0 -240> @ThaiAbove.mkmk;
-  markClass [ uni0E36 uni0E37 ] <anchor -20 -240> @ThaiAbove.mkmk;
-  markClass [ uni0E31 ] <anchor 0 -240> @ThaiAbove.mkmk;
 
-  pos mark [ uni0E31 ] <anchor 0 0> mark @ThaiAbove.mkmk;
-  pos mark [ @Tone.sd uni0E34 uni0E35 uni0E36 uni0E37 uni0E4D ] <anchor 0 0> mark @ThaiAbove.mkmk;
-  pos mark [ uni0E47 ] <anchor -80 0> mark @ThaiAbove.mkmk;
-  pos mark [ uni0E4E ] <anchor 0 0> mark @ThaiAbove.mkmk;
-  pos mark [ @Tone ] <anchor 0 240> mark @ThaiAbove.mkmk;
-  pos mark [ uni0E47.su uni0E4D.su ] <anchor 0 210> mark @ThaiAbove.mkmk;
-  pos mark [ uni034F ] <anchor 0 0> mark @ThaiAbove.mkmk;
+  markClass [ uni0303 ] <anchor 300 -210> @ThaiAbove.mkmk;
+  markClass [ uni0E31 ] <anchor 15 -240> @ThaiAbove.mkmk;
+  markClass [ uni0E34 uni0E36 uni0E37 ] <anchor 0 -240> @ThaiAbove.mkmk;
+  markClass [ uni0E35 ] <anchor 40 -240> @ThaiAbove.mkmk;
+  markClass [ uni0E48 uni0E4B uni0E4D.su ] <anchor 30 0> @ThaiAbove.mkmk;
+  markClass [ uni0E49 uni0E4A uni0E4C uni0E47.su ] <anchor 0 0> @ThaiAbove.mkmk;
+  markClass [ uni0E4E ] <anchor -30 -240> @ThaiAbove.mkmk;
+  markClass [ uni0E34.sl uni0E36.sl ] <anchor -150 -240> @ThaiAbove.mkmk;
+  markClass [ uni0E35.sl ] <anchor -120 -240> @ThaiAbove.mkmk;
+  markClass [ uni0E37.sl ] <anchor -170 -240> @ThaiAbove.mkmk;
 
-  # Left
-  markClass [ @Tone.sl uni0E4D.sul uni0E47.sul ] <anchor 0 0> @ThaiAboveLeft.mkmk;
-  markClass [ uni0E4E.sl ] <anchor -60 -240> @ThaiAboveLeft.mkmk;
-  markClass [ uni0E34.sl uni0E35.sl ] <anchor 0 -240> @ThaiAboveLeft.mkmk;
-  markClass [ uni0E36.sl uni0E37.sl ] <anchor -20 -240> @ThaiAboveLeft.mkmk;
-  markClass [ uni0E31.sl ] <anchor -40 -240> @ThaiAboveLeft.mkmk;
-
-  pos mark [ uni0E31.sl ] <anchor -40 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E4C.sdl ] <anchor -50 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E4D.sl ] <anchor -20 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E34.sl uni0E35.sl ] <anchor 0 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E36.sl uni0E37.sl ] <anchor -20 0> mark @ThaiAboveLeft.mkmk;
-  
-  pos mark [ uni0E47.sl ] <anchor -60 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ @Tone.sl ] <anchor 0 240> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E4D.sul ] <anchor 0 210> mark @ThaiAboveLeft.mkmk;
-  pos mark [ @Tone.sl ] <anchor -45 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E47.sul ] <anchor 0 240> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni0E4E.sl ] <anchor -60 0> mark @ThaiAboveLeft.mkmk;
-  pos mark [ uni034F ] <anchor 0 0> mark @ThaiAboveLeft.mkmk;
+  pos mark [ uni0303 ] <anchor 300 -30> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E31 ] <anchor 15 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E34 ] <anchor 0 -30> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E35 ] <anchor 40 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E36 uni0E37 uni0E4D uni0E49.sd uni0E4C.sd ] <anchor 0 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E47 ] <anchor -60 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E48 uni0E4B uni0E4D.su ] <anchor 30 210> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E49 uni0E4A uni0E4C uni0E47.su ] <anchor 0 210> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E4E uni0E4A.sd ] <anchor -30 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E34.sl uni0E36.sl ] <anchor -150 -30> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E35.sl ] <anchor -120 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E37.sl ] <anchor -170 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E48.sd ] <anchor 30 0> mark @ThaiAbove.mkmk;
+  pos mark [ uni0E4B.sd ] <anchor 25 0> mark @ThaiAbove.mkmk;
 
 } ThaiAbove.mkmk;
 
-lookup LatinBaseThaiAbove.mkmk {
-  markClass [ @Tone uni0E4D.su uni0E47.su ] <anchor 0 210> @LatinThaiAbove.mkmk;
-  markClass [ @AV ] <anchor -60 0> @LatinThaiAbove.mkmk;
-  pos mark [ @COMB.abv ] <anchor 240 210> mark @LatinThaiAbove.mkmk;
-} LatinBaseThaiAbove.mkmk;
-
 lookup ThaiBelow.mkmk {
-  markClass [ @BV ] <anchor 0 0> @ThaiBelow.mkmk;
-  markClass [ @BV.sd ] <anchor 0 -210> @ThaiBelow.mkmk;
+
+  markClass [ uni0331 ] <anchor 270 0> @ThaiBelow.mkmk;
+  markClass [ uni0E38 uni0E39 uni0E3A ] <anchor 0 0> @ThaiBelow.mkmk;
+
+  pos mark [ uni0331 ] <anchor 270 -210> mark @ThaiBelow.mkmk;
   pos mark [ uni0E38 uni0E39 ] <anchor 0 -280> mark @ThaiBelow.mkmk;
   pos mark [ uni0E3A ] <anchor 0 -210> mark @ThaiBelow.mkmk;
-  pos mark [ uni0E38.sd uni0E39.sd ] <anchor 0 -490> mark @ThaiBelow.mkmk;
-  pos mark [ uni0E3A.sd ] <anchor 0 -420> mark @ThaiBelow.mkmk;
+
 } ThaiBelow.mkmk;
-
-lookup ThaiBaseLatinBelow.mkmk {
-  markClass [ @COMB.blw ] <anchor 240 -60> @ThaiLatinBelow.mkmk;
-  pos mark [ uni0E38 uni0E39 ] <anchor 0 -280> mark @ThaiLatinBelow.mkmk;
-  pos mark [ uni0E3A ] <anchor 0 -210> mark @ThaiLatinBelow.mkmk;
-  pos mark [ uni0E38.sd uni0E39.sd ] <anchor 0 -490> mark @ThaiLatinBelow.mkmk;
-  pos mark [ uni0E3A.sd ] <anchor 0 -420> mark @ThaiLatinBelow.mkmk;
-} ThaiBaseLatinBelow.mkmk;
-
-lookup LatinBaseThaiBelow.mkmk {
-  markClass [ @BV ] <anchor 0 0> @LatinThaiBelow.mkmk;
-  markClass [ @BV.sd ] <anchor 0 -210> @LatinThaiBelow.mkmk;
-  pos mark [ @COMB.blw ] <anchor 240 -210> mark @LatinThaiBelow.mkmk;
-} LatinBaseThaiBelow.mkmk;
 
 feature mkmk {
   lookup ThaiAbove.mkmk;
-  #lookup ThaiBaseLatinAbove.mkmk;
-  lookup LatinBaseThaiAbove.mkmk;
-
   lookup ThaiBelow.mkmk;
-  lookup ThaiBaseLatinBelow.mkmk;
-  lookup LatinBaseThaiBelow.mkmk;
 } mkmk;

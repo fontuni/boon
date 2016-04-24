@@ -7,7 +7,7 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
-# This script will create SFD files from multi-layers source to prepare for later build process 
+# This script will create SFD files from multi-layers source to prepare for later build process
 # and it will only work with FontForge's Python extension.
 import fontforge
 import os
@@ -18,7 +18,7 @@ import datetime
 
 # Predifined vars
 family = 'Boon'
-version = '1.2'
+version = '2.0'
 sources = ['sources/boon-master.sfd', 'sources/boon-master-oblique.sfd']
 layers = ['300', '400', '500', '600', '700']
 features = ['boon-roman', 'boon-oblique']
@@ -129,14 +129,14 @@ def StdVW(weight):
   return switcher.get(weight)
 
 def otf2Sfd(otf,sfd_dir):
-  
+
   font = fontforge.open(otf)
   sfd = sfd_dir + font.fontname + '.sfd'
   if not os.path.exists(sfd_dir):
     os.makedirs(sfd_dir)
 
   font.appendSFNTName('English (US)', 'UniqueID', '')
-  
+
   weight = font.os2_weight
   font.private['BlueValues'] = BlueValues(weight)
   font.private['OtherBlues'] = OtherBlues(weight)
@@ -195,7 +195,7 @@ def buildSFD(source,family):
       else:
         font.appendSFNTName('English (US)', 'SubFamily', 'Oblique')
       font.appendSFNTName('English (US)', 'Preferred Styles', subfamily + ' Oblique')
-  
+
     else:
       font.appendSFNTName('English (US)', 'SubFamily', 'Regular')
       if subfamily == 'Bold':
