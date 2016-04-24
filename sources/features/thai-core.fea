@@ -21,183 +21,60 @@ lookup ThaiContextRC.rd {
   sub @RC' lookup ThaiRC.rd [ @BV @COMB.blw ];
 } ThaiContextRC.rd;
 
-lookup ThaiBV.sd {
-  sub @BV by @BV.sd;
-} ThaiBV.sd;
-
 lookup Thai.sd {
   sub @Tone by @Tone.sd;
 } Thai.sd;
 
-lookup Thai.sdl {
-  sub @Tone by @Tone.sdl;
-} Thai.sdl;
-
 lookup Thai.sl {
-  sub @Tone by @Tone.sl;
-  sub @AV by @AV.sl;
+  sub @AV.sub by @AV.sub.sl;
 } Thai.sl;
 
 lookup Thai.su {
-  sub uni0E47 by uni0E47.su;
-  sub uni0E4D by uni0E4D.su;
-  sub @Tone.sd by @Tone;
+  sub @AV.opt by @AV.su;
 } Thai.su;
 
-lookup Thai.sul {
-  sub uni0E47 by uni0E47.sul;
-  sub uni0E4D by uni0E4D.sul;
-  sub @Tone by @Tone.sl;
-} Thai.sul;
-
-@BASE.nc = [ @NC @RC.rd @LV uni0E30 uni0E32 ];
-@BASE.dc = [ @DC @RC @IV uni0E45 @PM ];
-@AM = [ uni0E33 ];
-@AV.opt  = [ uni0E47 uni0E4D ];
-
-# Thai Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug) 
+# Thai Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug)
 lookup ThaiDecomp {
-  lookupflag 0;
-    sub uni0E33 by uni0E4D uni0E32;
+  sub uni0E33 by uni0E4D uni0E32;
 } ThaiDecomp;
 
-lookup ThaiDecomp.sl {
-  lookupflag 0;
-    sub uni0E33 by uni0E4D.sl uni0E32;
-} ThaiDecomp.sl;
-
-lookup ThaiDecomp.su {
-  lookupflag 0;
-    sub uni0E33 by uni0E4D.su uni0E32;
-} ThaiDecomp.su;
-
-lookup ThaiDecomp.sul {
-  lookupflag 0;
-    sub uni0E33 by uni0E4D.sul uni0E32;
-} ThaiDecomp.sul;
-
-# Sara Am (CoreText fix)
-lookup Thai0E4D.cgj {
-  lookupflag 0;
-    sub uni0E4D by uni034F uni0E4D;
-} Thai0E4D.cgj;
-
-lookup Thai0E4D.cgj.sl {
-  lookupflag 0;
-    sub uni0E4D by uni034F uni0E4D.sl;
-} Thai0E4D.cgj.sl;
-
 lookup Thai0E33.0E32 {
-  lookupflag 0;
-    sub uni0E33 by uni0E32 ;
+  sub uni0E33 by uni0E32 ;
 } Thai0E33.0E32;
 
 lookup ThaiTone.0E4D {
-  lookupflag 0;
-    sub uni0E48 by uni0E4D uni0E48;
-    sub uni0E49 by uni0E4D uni0E49;
-    sub uni0E4A by uni0E4D uni0E4A;
-    sub uni0E4B by uni0E4D uni0E4B;
-    sub uni0E4C by uni0E4D uni0E4C;
+  sub uni0E47 by uni0E4D uni0E47.su;
+  sub uni0E48 by uni0E4D uni0E48;
+  sub uni0E49 by uni0E4D uni0E49;
+  sub uni0E4A by uni0E4D uni0E4A;
+  sub uni0E4B by uni0E4D uni0E4B;
+  sub uni0E4C by uni0E4D uni0E4C;
+  sub uni0E4D by uni0E4D uni0E4D.su;
 } ThaiTone.0E4D;
 
-lookup ThaiTone.0E4D.sl {
-  lookupflag 0;
-    sub uni0E48 by uni0E4D.sl uni0E48.sl;
-    sub uni0E49 by uni0E4D.sl uni0E49.sl;
-    sub uni0E4A by uni0E4D.sl uni0E4A.sl;
-    sub uni0E4B by uni0E4D.sl uni0E4B.sl;
-    sub uni0E4C by uni0E4D.sl uni0E4C.sl;
-} ThaiTone.0E4D.sl;
 
 #
 # Include minority language support
 #
 include(thai-core-minor.fea)
 
-lookup ThaiContextAC {
-  lookupflag 0;
+lookup ThaiCoreContext {
 
   # Sara AM handle
-  sub @AC @BV.all @BV.all @Tone'lookup ThaiTone.0E4D.sl [ uni0E33 ];
-  sub @AC @BV.all @Tone'lookup ThaiTone.0E4D.sl [ uni0E33 ];
-  sub @AC @Tone'lookup ThaiTone.0E4D.sl [ uni0E33 ];
-  sub @AC @BV.all @BV.all [ uni0E33 ]'lookup ThaiDecomp.sl;
-  sub @AC @BV.all [ uni0E33 ]'lookup ThaiDecomp.sl;
-  sub @AC [ uni0E33 ]'lookup ThaiDecomp.sl;
-  sub @AC @BV.all @BV.all uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup Thai0E33.0E32;
-  sub @AC @BV.all uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup Thai0E33.0E32;
-  sub @AC uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup Thai0E33.0E32;
-  sub @Tone.sdl @Tone.sl [ uni0E33 ]'lookup ThaiDecomp.sul;
-  sub uni034F uni0E4D.sl @Tone.sl [ uni0E33 ]'lookup ThaiDecomp.sul;
+  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV @COMB.blw ]' [ @Tone @AV.opt ]'lookup ThaiTone.0E4D uni0E33';
+  sub uni0E4D [ @Tone @AV.opt ] uni0E33'lookup Thai0E33.0E32;
+  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV @COMB.blw ]' uni0E33'lookup ThaiDecomp;
 
-  sub @AC' @BV.all @BV.all uni0E4D'lookup Thai0E4D.cgj.sl;
-  sub @AC' @BV.all uni0E4D'lookup Thai0E4D.cgj.sl;
-  sub @AC' uni0E4D'lookup Thai0E4D.cgj.sl;
-  
-  sub @AC @BV.all @BV.all @Tone'lookup Thai.sdl;
-  sub @AC @BV.all @BV.all @AV'lookup Thai.sl;
-  
-  sub @AC @BV.all @Tone'lookup Thai.sdl;
-  sub @AC @BV.all @AV'lookup Thai.sl;
+  # Shift Down
+  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV @COMB.blw ] @Tone'lookup Thai.sd;
 
-  sub @AC @Tone'lookup Thai.sdl;
-  sub @AC @AV'lookup Thai.sl;
+  # Shift Left
+  sub @AC' [ @BV @COMB.blw ]' [ @BV @COMB.blw ]' @AV.sub'lookup Thai.sl;
+  sub @AC' [ @BV @COMB.blw ]' @AV.sub'lookup Thai.sl;
+  sub @AC' @AV.sub'lookup Thai.sl;
+  sub @AV.sub.sl @AV.sub'lookup Thai.sl;
 
-} ThaiContextAC;
-
-lookup ThaiContextDC {
-  lookupflag 0;
-
-  # Sara AM handle  
-  sub @BASE.dc @Tone'lookup ThaiTone.0E4D [ uni0E33 ];
-  sub @BASE.dc uni0E4D @Tone [ uni0E33 ]'lookup Thai0E33.0E32;
-  sub @BASE.dc [ uni0E33 ]'lookup ThaiDecomp;
-
-  sub @BASE.dc @Tone'lookup Thai.sd;
-  sub @BASE.dc @BV'lookup ThaiBV.sd;
-  sub @BASE.dc' uni0E4D'lookup Thai0E4D.cgj;
-
-} ThaiContextDC;
-
-lookup ThaiContextNC {
-  lookupflag 0;
-
-  # Sara AM handle  
-  sub @BASE.nc @Tone'lookup ThaiTone.0E4D [ uni0E33 ];
-  sub @BASE.nc uni0E4D @Tone [ uni0E33 ]'lookup Thai0E33.0E32;
-  sub @BASE.nc [ uni0E33 ]'lookup ThaiDecomp;
-
-  sub @BASE.nc @Tone'lookup Thai.sd;
-  sub @BASE.nc' uni0E4D'lookup Thai0E4D.cgj;
-
-} ThaiContextNC;
-
-lookup ThaiContext.fallback {
-
-  sub [ @AV.sul @AV.sl @Tone.sdl @Tone.sl ] @AV.opt'lookup Thai.sul;
-  sub [ @AV.sul @AV.sl @Tone.sdl @Tone.sl ] [ @Tone @AV ]'lookup Thai.sl;
-
-  sub [ @AV @AV.su @Tone.sd @Tone ] @Tone [ uni0E33 ]'lookup ThaiDecomp.su;
-  sub [ @AV @AV.su @Tone ] [ uni0E33 ]'lookup ThaiDecomp.su;
-
-  sub [ @AV.su @AV @Tone.sd @Tone ] @AV.opt'lookup Thai.su;
-  
-  sub @BV.all @Tone'lookup ThaiTone.0E4D [ uni0E33 ];
-  sub @BV.all uni0E4D @Tone [ uni0E33 ]'lookup Thai0E33.0E32;
-  sub @BV.all [ uni0E33 ]'lookup ThaiDecomp;
-
-  sub @BV.all @BV'lookup ThaiBV.sd;
-  sub @BV.all @Tone'lookup Thai.sd;
-
-  sub @BV.all uni0E4D'lookup Thai0E4D.cgj;
-
-} ThaiContext.fallback;
-
-# Hyphen to dotted circle
-lookup Hyphen.uni25CC {
-  sub hyphen by uni25CC;
-} Hyphen.uni25CC;
+} ThaiCoreContext;
 
 feature locl {
   script thai;
@@ -219,16 +96,9 @@ feature ss01 {
   lookup ThaiRC.rd;
 } ss01;
 
-feature ss02 {
-  lookup Hyphen.uni25CC;
-} ss02;
-
 feature ccmp {
   lookup ThaiContextRC.rd;
-  lookup ThaiContextAC;
-  lookup ThaiContextDC;
-  lookup ThaiContextNC;
-  lookup ThaiContext.fallback;
+  lookup ThaiCoreContext;
 } ccmp;
 
 

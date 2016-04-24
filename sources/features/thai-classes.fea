@@ -13,7 +13,7 @@
 # Hyphen & Dotted Circle (uni25CC) were included here so it can be used as mark base placeholder.
 @NC = [ hyphen uni0E01 uni0E02 uni0E03 uni0E04 uni0E05 uni0E06 uni0E07 uni0E08 uni0E09 uni0E0A uni0E0B uni0E0C uni0E11 uni0E12 uni0E13 uni0E14 uni0E15 uni0E16 uni0E17 uni0E18 uni0E19 uni0E1A uni0E1C uni0E1E uni0E20 uni0E21 uni0E22 uni0E23 uni0E24 uni0E25 uni0E26 uni0E27 uni0E28 uni0E29 uni0E2A uni0E2B uni0E2C uni0E2D uni0E2E uni0E2F uni25CC ];
 
-# Ascender consonants (ป, ฝ, & ฟ) 
+# Ascender consonants (ป, ฝ, & ฟ)
 @AC = [ uni0E1B uni0E1D uni0E1F ];
 
 # Strict Descender consonants (ฎ, ฏ)
@@ -46,7 +46,8 @@
 @BV    = [ uni0E38 uni0E39 uni0E3A ];
 
 # Above vowel/diacritic
-@AV    = [ uni0E31 uni0E34 uni0E35 uni0E36 uni0E37 uni0E47 uni0E4D uni0E4E ];
+@AV.sub = [ uni0E34 uni0E35 uni0E36 uni0E37 ];
+@AV    = [ uni0E31 @AV.sub uni0E47 uni0E4D uni0E4E ];
 
 # Above tone/diacritic
 @Tone     = [ uni0E48 uni0E49 uni0E4A uni0E4B uni0E4C ];
@@ -73,7 +74,9 @@
 @BV.all = [ @BV @BV.sd uni0331 ];
 
 # Above vowel/diacritic
-@AV.sl  = [ uni0E31.sl uni0E34.sl uni0E35.sl uni0E36.sl uni0E37.sl uni0E47.sl uni0E4D.sl uni0E4E.sl ];
+@AV.sub.sl = [ uni0E34.sl uni0E35.sl uni0E36.sl uni0E37.sl ];
+@AV.sl  = [ uni0E31.sl @AV.sub.sl uni0E47.sl uni0E4D.sl uni0E4E.sl ];
+@AV.opt = [ uni0E47 uni0E4D ];
 @AV.su  = [ uni0E47.su uni0E4D.su ];
 @AV.sul = [ uni0E47.sul uni0E4D.sul ];
 @AV.all = [ @AV @AV.sl @AV.su @AV.sul ];

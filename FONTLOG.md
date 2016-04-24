@@ -11,6 +11,12 @@ cover:
 excerpt: "Boon FONTLOG"
 ---
 
+### Boon v1.1, 2015-12-01
+
+- Enhance Patani Malay, read this useful post.
+- Correct PS private values & new auto-hinting
+- Add EOT & SVG packages
+
 ### Boon v1.0, 2015-10-30
 
 - Newly drew and interpolated all Latin, Thai & Lao glyphs from scratch

@@ -7,7 +7,7 @@
 # If not, see http://scripts.sil.org/OFL
 #
 
-# This script will create font instances from SFD files 
+# This script will create font instances from SFD files
 # and it will only work with FontForge's Python extension.
 import fontforge
 import os
@@ -21,7 +21,7 @@ import glob
 import boon
 
 family = 'Boon'
-version = '1.1'
+version = '1.2'
 foundry = 'FontUni'
 sfd_dir = 'sfd/'
 
@@ -32,7 +32,7 @@ if os.path.exists(build_dir):
 unhinted_dir = build_dir + 'unhinted/'
 if not os.path.exists(unhinted_dir):
   os.makedirs(unhinted_dir)
-  
+
 def fontPath(path,ext,name):
   path = build_dir + path
   if not os.path.exists(path):
@@ -68,8 +68,8 @@ def ttfHint(unhinted,hinted):
     'ttfautohint',
     '--default-script=thai',
     '--fallback-script=lao',
-    '--hinting-range-min=9',
-    '--hinting-range-max=18',
+    #'--hinting-range-min=9',
+    #'--hinting-range-max=18',
     '--no-info',
     '--verbose',
     unhinted,
@@ -128,7 +128,7 @@ def buildFont(sfd):
   svg = fontPath('svg','svg',font.fontname)
   tempwoff2Ttf = build_dir + 'ttf/' + font.fontname + '.woff2'
   tempwoff2Otf = build_dir + 'otf/' + font.fontname + '.woff2'
-  
+
   # generate otf
   otfgenflags  = ('opentype', 'PfEd-lookups')
   otfunhinted = unhinted_dir + font.fontname + '-unhinted.otf'

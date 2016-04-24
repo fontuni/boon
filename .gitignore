@@ -7,7 +7,7 @@ components/*
 */unhinted/*
 *-temp*
 *-backup*
-*.bak
+*.bak*
 sources/*.otf
 sources/*.ttf
 

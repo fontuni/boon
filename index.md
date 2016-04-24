@@ -6,7 +6,7 @@ fontfamily: "Boon"
 class: "boon-400"
 titleclass: "boon-600"
 thumbnail: /boon/images/thumbnail.svg
-date: Dec 1, 2015
+date: April 24, 2016
 color: "#19c"
 cover:
   path: /boon/images/boon-cover.png
