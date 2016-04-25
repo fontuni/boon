@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+# Copyright (c) 2014-2016, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
 # This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
 # You should have received a copy of the OFL License along with this file.
@@ -12,176 +12,57 @@ include(lao-classes.fea)
 
 # Basic subsitutions
 
-lookup LaoBV.sd {
-  sub @BV.lao by @BV.lao.sd;
-} LaoBV.sd;
-
 lookup Lao.sd {
   sub @Tone.lao by @Tone.lao.sd;
 } Lao.sd;
 
-lookup Lao.sdl {
-  sub @Tone.lao by @Tone.lao.sdl;
-} Lao.sdl;
-
 lookup Lao.sl {
-  sub @Tone.lao by @Tone.lao.sl;
-  sub @AV.lao by @AV.lao.sl;
+  sub @AV.lao.sub by @AV.lao.sub.sl;
 } Lao.sl;
 
 lookup Lao.su {
-  sub uni0ECC by uni0ECC.su;
-  sub uni0ECD by uni0ECD.su;
+  sub @AV.lao.opt by @AV.lao.su;
   sub @Tone.lao.sd by @Tone.lao;
 } Lao.su;
 
-lookup Lao.sul {
-  sub uni0ECC by uni0ECC.sul;
-  sub uni0ECD by uni0ECD.sul;
-  sub @Tone.lao.sdl by @Tone.lao.sl;
-} Lao.sul;
-
-@BASE.lao.nc = [ @NC.lao @DC2.lao @LV.lao uni0EB0 uni0EB2 ];
-@BASE.lao.dc = [ @DC.lao ];
-@AM.lao = [ uni0EB3 ];
-@AV.lao.opt  = [ uni0ECC uni0ECD ];
-
-# Lao Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug) 
+# Lao Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug)
 lookup LaoDecomp {
-  lookupflag 0;
-    sub uni0EB3 by uni0ECD uni0EB2;
+  sub uni0EB3 by uni0ECD uni0EB2;
 } LaoDecomp;
 
-lookup LaoDecomp.sl {
-  lookupflag 0;
-    sub uni0EB3 by uni0ECD.sl uni0EB2;
-} LaoDecomp.sl;
-
-lookup LaoDecomp.su {
-  lookupflag 0;
-    sub uni0EB3 by uni0ECD.su uni0EB2;
-} LaoDecomp.su;
-
-lookup LaoDecomp.sul {
-  lookupflag 0;
-    sub uni0EB3 by uni0ECD.sul uni0EB2;
-} LaoDecomp.sul;
-
-lookup Lao0ECD.cgj {
-  lookupflag 0;
-    sub uni0ECD by uni034F uni0ECD;
-} Lao0ECD.cgj;
-
-lookup Lao0ECD.cgj.sl {
-  lookupflag 0;
-    sub uni0ECD by uni034F uni0ECD.sl;
-} Lao0ECD.cgj.sl;
-
 lookup Lao0EB3.0EB2 {
-  lookupflag 0;
-    sub uni0EB3 by uni0EB2 ;
+  sub uni0EB3 by uni0EB2 ;
 } Lao0EB3.0EB2;
 
 lookup LaoTone.0ECD {
-  lookupflag 0;
-    sub uni0EC8 by uni0ECD uni0EC8;
-    sub uni0EC9 by uni0ECD uni0EC9;
-    sub uni0ECA by uni0ECD uni0ECA;
-    sub uni0ECB by uni0ECD uni0ECB;
-    sub uni0E4C by uni0ECD uni0E4C;
+  sub uni0EC8 by uni0ECD uni0EC8;
+  sub uni0EC9 by uni0ECD uni0EC9;
+  sub uni0ECA by uni0ECD uni0ECA;
+  sub uni0ECB by uni0ECD uni0ECB;
+  sub uni0ECC by uni0ECD uni0ECC.su;
+  sub uni0ECD by uni0ECD uni0ECD.su;
 } LaoTone.0ECD;
 
-lookup LaoTone.0ECD.sl {
-  lookupflag 0;
-    sub uni0EC8 by uni0ECD.sl uni0EC8.sl;
-    sub uni0EC9 by uni0ECD.sl uni0EC9.sl;
-    sub uni0ECA by uni0ECD.sl uni0ECA.sl;
-    sub uni0ECB by uni0ECD.sl uni0ECB.sl;
-    sub uni0E4C by uni0ECD.sl uni0E4C.sl;
-} LaoTone.0ECD.sl;
-
-lookup LaoContextAC {
-  lookupflag 0;
+lookup LaoCoreContext {
 
   # Sara AM handle
-  sub @AC.lao @BV.lao.all @BV.lao.all @Tone.lao'lookup LaoTone.0ECD.sl [ uni0EB3 ];
-  sub @AC.lao @BV.lao.all @Tone.lao'lookup LaoTone.0ECD.sl [ uni0EB3 ];
-  sub @AC.lao @Tone.lao'lookup LaoTone.0ECD.sl [ uni0EB3 ];
-  sub @AC.lao @BV.lao.all @BV.lao.all [ uni0EB3 ]'lookup LaoDecomp.sl;
-  sub @AC.lao @BV.lao.all [ uni0EB3 ]'lookup LaoDecomp.sl;
-  sub @AC.lao [ uni0EB3 ]'lookup LaoDecomp.sl;
-  sub @AC.lao @BV.lao.all @BV.lao.all uni0ECD.sl @Tone.lao.sl [ uni0EB3 ]'lookup Lao0EB3.0EB2;
-  sub @AC.lao @BV.lao.all uni0ECD.sl @Tone.lao.sl [ uni0EB3 ]'lookup Lao0EB3.0EB2;
-  sub @AC.lao uni0ECD.sl @Tone.lao.sl [ uni0EB3 ]'lookup Lao0EB3.0EB2;
-  sub @Tone.lao.sdl @Tone.lao.sl [ uni0EB3 ]'lookup LaoDecomp.sul;
-  sub uni034F uni0ECD.sl @Tone.lao.sl [ uni0EB3 ]'lookup LaoDecomp.sul;
+  sub [ @NC.lao @AC.lao @DC.lao @DC2.lao @FV.lao @BV.lao.all ] [ @Tone.lao.sd @AV.lao.opt ]'lookup LaoTone.0ECD uni0EB3;
+  sub [ @Tone.lao @AV.lao.su ] uni0EB3'lookup Lao0EB3.0EB2;
+  sub [ @NC.lao @AC.lao @DC.lao @DC2.lao @FV.lao @BV.lao.all ]' uni0EB3'lookup LaoDecomp;
 
-  sub @AC.lao' @BV.lao.all @BV.lao.all uni0ECD'lookup Lao0ECD.cgj.sl;
-  sub @AC.lao' @BV.lao.all uni0ECD'lookup Lao0ECD.cgj.sl;
-  sub @AC.lao' uni0ECD'lookup Lao0ECD.cgj.sl;
-  
-  sub @AC.lao @BV.lao.all @BV.lao.all @Tone.lao'lookup Lao.sdl;
-  sub @AC.lao @BV.lao.all @BV.lao.all @AV.lao'lookup Lao.sl;
-  
-  sub @AC.lao @BV.lao.all @Tone.lao'lookup Lao.sdl;
-  sub @AC.lao @BV.lao.all @AV.lao'lookup Lao.sl;
+  # Shift Left
+  sub @AC.lao' [ @BV.lao.all ]' [ @BV.lao.all ]' @AV.lao.sub'lookup Lao.sl;
+  sub @AC.lao' [ @BV.lao.all ]' @AV.lao.sub'lookup Lao.sl;
+  sub @AC.lao' @AV.lao.sub'lookup Lao.sl;
+  sub @AV.lao.sub.sl @AV.lao.sub'lookup Lao.sl;
 
-  sub @AC.lao @Tone.lao'lookup Lao.sdl;
-  sub @AC.lao @AV.lao'lookup Lao.sl;
+  # Shift Up
+  sub [ @AV.lao.all @Tone.lao.all ] [ @AV.opt @Tone.lao.sd ]'lookup Lao.su;
 
-} LaoContextAC;
+} LaoCoreContext;
 
-lookup LaoContextDC {
-  lookupflag 0;
-
-  # Sara AM handle  
-  sub @BASE.lao.dc @Tone.lao'lookup LaoTone.0ECD [ uni0EB3 ];
-  sub @BASE.lao.dc uni0ECD @Tone.lao [ uni0EB3 ]'lookup Lao0EB3.0EB2;
-  sub @BASE.lao.dc [ uni0EB3 ]'lookup LaoDecomp;
-
-  sub @BASE.lao.dc @Tone.lao'lookup Lao.sd;
-  sub @BASE.lao.dc @BV.lao'lookup LaoBV.sd;
-  sub @BASE.lao.dc' uni0ECD'lookup Lao0ECD.cgj;
-
-} LaoContextDC;
-
-lookup LaoContextNC {
-  lookupflag 0;
-
-  # Sara AM handle  
-  sub @BASE.lao.nc @Tone.lao'lookup LaoTone.0ECD [ uni0EB3 ];
-  sub @BASE.lao.nc uni0ECD @Tone.lao [ uni0EB3 ]'lookup Lao0EB3.0EB2;
-  sub @BASE.lao.nc [ uni0EB3 ]'lookup LaoDecomp;
-
-  sub @BASE.lao.nc @Tone.lao'lookup Lao.sd;
-  sub @BASE.lao.nc' uni0ECD'lookup Lao0ECD.cgj;
-
-} LaoContextNC;
-
-lookup LaoContext.fallback {
-
-  sub [ @AV.lao.sul @AV.lao.sl @Tone.lao.sdl @Tone.lao.sl ] @AV.lao.opt'lookup Lao.sul;
-  sub [ @AV.lao.sul @AV.lao.sl @Tone.lao.sdl @Tone.lao.sl ] [ @Tone.lao @AV.lao ]'lookup Lao.sl;
-
-  sub [ @AV.lao @AV.lao.su @Tone.lao.sd @Tone.lao ] @Tone.lao [ uni0EB3 ]'lookup LaoDecomp.su;
-  sub [ @AV.lao @AV.lao.su @Tone.lao ] [ uni0EB3 ]'lookup LaoDecomp.su;
-
-  sub [ @AV.lao.su @AV.lao @Tone.lao.sd @Tone.lao ] @AV.lao.opt'lookup Lao.su;
-  
-  sub @BV.lao.all @Tone.lao'lookup LaoTone.0ECD [ uni0EB3 ];
-  sub @BV.lao.all uni0ECD @Tone.lao [ uni0EB3 ]'lookup Lao0EB3.0EB2;
-  sub @BV.lao.all [ uni0EB3 ]'lookup LaoDecomp;
-
-  sub @BV.lao.all @BV.lao'lookup LaoBV.sd;
-  sub @BV.lao.all @Tone.lao'lookup Lao.sd;
-
-  sub @BV.lao.all uni0ECD'lookup Lao0ECD.cgj;
-
-} LaoContext.fallback;
 
 feature ccmp {
-  lookup LaoContextAC;
-  lookup LaoContextDC;
-  lookup LaoContextNC;
-  lookup LaoContext.fallback;
+  lookup Lao.sd;
+  lookup LaoCoreContext;
 } ccmp;

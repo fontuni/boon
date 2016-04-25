@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+# Copyright (c) 2014-2016, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
 # This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
 # You should have received a copy of the OFL License along with this file.
@@ -8,31 +8,30 @@
 
 include(lao-classes.fea)
 
-lookup LaoExtendedAbove.mkmk {
-  lookupflag 0;
-  markClass [ @Tone.lao \uni0ECC.su \uni0ECD.su ] <anchor 0 0> @LaoExtendedAbove.mkmk;
-  pos mark [ @Tone.lao.sd @AV.lao ] <anchor 0 0> mark @LaoExtendedAbove.mkmk;
-  pos mark [ @Tone.lao \uni0ECC.su \uni0ECD.su ] <anchor 0 240> mark @LaoExtendedAbove.mkmk;
-} LaoExtendedAbove.mkmk;
+lookup LaoAbove.mkmk {
 
-lookup LaoExtendedAbove.left.mkmk {
-  lookupflag 0;
-  markClass [ @Tone.lao.sl \uni0ECC.sul \uni0ECD.sul ] <anchor 0 0> @LaoExtendedAbove.left.mkmk;
-  pos mark [ @Tone.lao.sdl  @AV.lao.sl ] <anchor 0 0> mark @LaoExtendedAbove.left.mkmk;
-  pos mark [ @Tone.lao.sl \uni0ECC.sul \uni0ECD.sul ] <anchor 0 240> mark @LaoExtendedAbove.left.mkmk;
-} LaoExtendedAbove.left.mkmk;
+  markClass [ uni0EC8 uni0ECB uni0ECC.su ] <anchor -30 0> @LaoAbove.mkmk;
+  markClass [ uni0EC9 uni0ECA uni0ECD.su ] <anchor 0 0> @LaoAbove.mkmk;
 
-lookup LaoExtendedBelow.mkmk {
-  lookupflag 0;
-  markClass [ @BV.lao ] <anchor 0 0> @LaoExtendedBelow.mkmk;
-  pos mark [ \uni0EB8 \uni0EB9 ] <anchor 0 -280> mark @LaoExtendedBelow.mkmk;
-  pos mark [ \uni0EBC ] <anchor 0 -210> mark @LaoExtendedBelow.mkmk;
-  pos mark [ \uni0EB8.sd \uni0EB9.sd ] <anchor 0 -490> mark @LaoExtendedBelow.mkmk;
-  pos mark [ \uni0EBC.sd ] <anchor 0 -420> mark @LaoExtendedBelow.mkmk;
-} LaoExtendedBelow.mkmk;
-  
+  pos mark [ uni0EB1 uni0EB4 uni0EB5 uni0EB6 uni0EB7 uni0EBB uni0EC9.sd uni0ECA.sd ] <anchor 0 0> mark @LaoAbove.mkmk;
+  pos mark [ uni0EC8 uni0ECB uni0ECC.su ] <anchor -30 240> mark @LaoAbove.mkmk;
+  pos mark [ uni0EC9 uni0ECA uni0ECD.su ] <anchor 0 240> mark @LaoAbove.mkmk;
+  pos mark [ uni0EC8.sd uni0ECB.sd ] <anchor -30 0> mark @LaoAbove.mkmk;
+  pos mark [ uni0EB4.sl uni0EB5.sl uni0EB6.sl uni0EB7.sl ] <anchor -60 0> mark @LaoAbove.mkmk;
+
+} LaoAbove.mkmk;
+
+
+lookup LaoBelow.mkmk {
+
+  markClass [ uni0EB8 uni0EB9 uni0EBC ] <anchor 0 0> @LaoBelow.mkmk;
+
+  pos mark [ uni0EB8 uni0EB9 ] <anchor 0 -280> mark @LaoBelow.mkmk;
+  pos mark [ uni0EBC ] <anchor 0 -210> mark @LaoBelow.mkmk;
+
+} LaoBelow.mkmk;
+
 feature mkmk {
-  lookup LaoExtendedAbove.mkmk;
-  lookup LaoExtendedAbove.left.mkmk;
-  lookup LaoExtendedBelow.mkmk;
+  lookup LaoAbove.mkmk;
+  lookup LaoBelow.mkmk;
 } mkmk;

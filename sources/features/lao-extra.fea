@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+# Copyright (c) 2014-2016, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
 # This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
 # You should have received a copy of the OFL License along with this file.
@@ -11,8 +11,8 @@ include(lao-classes.fea)
 # Optional features for Lao fonts.
 
 lookup Lao.liga {
-  sub \uni0EAB \uni0E99 by \uni0EDC;
-  sub \uni0EAB \uni0EA1 by \uni0EDD;
+  sub uni0EAB uni0E99 by uni0EDC;
+  sub uni0EAB uni0EA1 by uni0EDD;
 } Lao.liga;
 
 feature liga {

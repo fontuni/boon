@@ -11,14 +11,14 @@ cover:
 excerpt: "Boon FONTLOG"
 ---
 
-### Boon v2.0, 2016-04
+### Boon v2.0, 2016-04-25
 {: .section-title }
 
 - Minimized all Thai & Lao features to be more compact
 - Removed unused legacy glyphs
 - Fixed Sara Am problem on Windows
 - Hinted by [ttfautohint v1.5](http://www.freetype.org/ttfautohint/)
-- Added OTF webfont variants packages (woff-otf, woff2-otf & eot-otf)
+- Added OTF favour packages (woff-otf, woff2-otf & eot-otf)
 
 
 ### Boon v1.1, 2015-12-01

@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2014-2015, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
+# Copyright (c) 2014-2016, Sungsit Sawaiwan (https://sungsit.com | gibbozer [at] gmail [dot] com).
 #
 # This Font Software is licensed under the SIL Open Font License, Version 1.1 (OFL).
 # You should have received a copy of the OFL License along with this file.
@@ -9,75 +9,56 @@
 include(lao-classes.fea)
 
 lookup LaoAbove.mark {
-  lookupflag 0;
-  markClass [ @AV.lao @Tone.lao.sd ] <anchor 0 0> @LaoAbove.mark;
-  pos base [ \uni0E81 \uni0E96 \uni0EDE ] <anchor 690 0> mark @LaoAbove.mark;
-  pos base [ \uni0E82 \uni0E8A \uni0EAE ] <anchor 625 0> mark @LaoAbove.mark;
-  pos base [ \uni0E84 \uni0E8D \uni0EDF ] <anchor 655 0> mark @LaoAbove.mark;
-  pos base [ \uni0E87 \uni0EB2 ] <anchor 560 0> mark @LaoAbove.mark;
-  pos base [ \uni0E88 ] <anchor 615 0> mark @LaoAbove.mark;
-  pos base [ \uni0E94 ] <anchor 650 0> mark @LaoAbove.mark;
-  pos base [ \uni0E95 ] <anchor 660 0> mark @LaoAbove.mark;
-  pos base [ \uni0E97 ] <anchor 750 0> mark @LaoAbove.mark;
-  pos base [ \uni0E99 ] <anchor 680 0> mark @LaoAbove.mark;
-  pos base [ \uni0E9A ] <anchor 660 0> mark @LaoAbove.mark;
-  pos base [ \uni0E9C ] <anchor 700 0> mark @LaoAbove.mark;
-  pos base [ \uni0E9E ] <anchor 700 0> mark @LaoAbove.mark;
-  pos base [ \uni0EA1 ] <anchor 670 0> mark @LaoAbove.mark;
-  pos base [ \uni0EA3 ] <anchor 620 0> mark @LaoAbove.mark;
-  pos base [ \uni0EA5 \uni0EAA ] <anchor 660 0> mark @LaoAbove.mark;
-  pos base [ \uni0EA7 ] <anchor 620 0> mark @LaoAbove.mark;
-  pos base [ \uni0EAB ] <anchor 750 0> mark @LaoAbove.mark;
-  pos base [ \uni0EAD ] <anchor 640 0> mark @LaoAbove.mark;
-  pos base [ \uni0EBD ] <anchor 600 0> mark @LaoAbove.mark;
-  pos base [ \uni0EC0 ] <anchor 490 0> mark @LaoAbove.mark;
-  pos base [ \uni0EC1 ] <anchor 650 0> mark @LaoAbove.mark;
-  pos base [ \uni0EDC \uni0EDD ] <anchor 1120 0> mark @LaoAbove.mark;
+
+  markClass [ uni0EB1 uni0EB4 uni0EB5 uni0EB6 uni0EB7 uni0EBB uni0ECD uni0EC9.sd ] <anchor 0 0> @LaoAbove.mark;
+  markClass [ uni0ECC uni0EC8.sd uni0ECA.sd ] <anchor -30 0> @LaoAbove.mark;
+  markClass [ uni0ECB.sd ] <anchor -15 0> @LaoAbove.mark;
+  markClass [ uni0EB4.sl uni0EB5.sl uni0EB6.sl uni0EB7.sl ] <anchor -60 0> @LaoAbove.mark;
+
+  pos base [ uni0E81 uni0E96 uni0EDE ] <anchor 690 0> mark @LaoAbove.mark;
+  pos base [ uni0E82 uni0E8A uni0E9B uni0EA3 uni0EA7 uni0EAE ] <anchor 630 0> mark @LaoAbove.mark;
+  pos base [ uni0E84 uni0E8D uni0E94 uni0E95 uni0E9A uni0EA5 uni0EAA uni0EC1 uni0EDF ] <anchor 660 0> mark @LaoAbove.mark;
+  pos base [ uni0E87 ] <anchor 570 0> mark @LaoAbove.mark;
+  pos base [ uni0E88 ] <anchor 620 0> mark @LaoAbove.mark;
+  pos base [ uni0E97 uni0EAB ] <anchor 750 0> mark @LaoAbove.mark;
+  pos base [ uni0E99 ] <anchor 680 0> mark @LaoAbove.mark;
+  pos base [ uni0E9C uni0E9D uni0E9E uni0E9F ] <anchor 700 0> mark @LaoAbove.mark;
+  pos base [ uni0EA1 ] <anchor 670 0> mark @LaoAbove.mark;
+  pos base [ uni0EA2 ] <anchor 610 0> mark @LaoAbove.mark;
+  pos base [ uni0EAD ] <anchor 640 0> mark @LaoAbove.mark;
+  pos base [ uni0EB2 ] <anchor 560 0> mark @LaoAbove.mark;
+  pos base [ uni0EBD ] <anchor 600 0> mark @LaoAbove.mark;
+  pos base [ uni0EC0 ] <anchor 500 0> mark @LaoAbove.mark;
+  pos base [ uni0EDC uni0EDD ] <anchor 1120 0> mark @LaoAbove.mark;
 
 } LaoAbove.mark;
 
 lookup LaoBelow.mark {
-  lookupflag 0;
 
-  markClass [ \uni0EB8 ] <anchor -15 0> @LaoBelow.mark;
-  markClass [ \uni0EB9 \uni0EBC ] <anchor 0 0> @LaoBelow.mark;
-  pos base [ \uni0E81 \uni0EDE ] <anchor 690 0> mark @LaoBelow.mark;
-  pos base [ \uni0E82 \uni0EAE ] <anchor 630 0> mark @LaoBelow.mark;
-  pos base [ \uni0E84 \uni0E8D \uni0EA2 \uni0EDF ] <anchor 660 0> mark @LaoBelow.mark;
-  pos base [ \uni0E88 ] <anchor 630 0> mark @LaoBelow.mark;
-  pos base [ \uni0E8A ] <anchor 550 0> mark @LaoBelow.mark;
-  pos base [ \uni0E94 ] <anchor 670 0> mark @LaoBelow.mark;
-  pos base [ \uni0E95 ] <anchor 680 0> mark @LaoBelow.mark;
-  pos base [ \uni0E96 ] <anchor 580 0> mark @LaoBelow.mark;
-  pos base [ \uni0E97 ] <anchor 750 0> mark @LaoBelow.mark;
-  pos base [ \uni0E99 ] <anchor 660 0> mark @LaoBelow.mark;
-  pos base [ \uni0E9A \uni0E9B ] <anchor 690 0> mark @LaoBelow.mark;
-  pos base [ \uni0E9C \uni0E9D ] <anchor 690 0> mark @LaoBelow.mark;
-  pos base [ \uni0E9E \uni0E9F ] <anchor 700 0> mark @LaoBelow.mark;
-  pos base [ \uni0EA1 ] <anchor 660 0> mark @LaoBelow.mark;
-  pos base [ \uni0EA3 ] <anchor 620 0> mark @LaoBelow.mark;
-  pos base [ \uni0EA5 \uni0EAA ] <anchor 660 0> mark @LaoBelow.mark;
-  pos base [ \uni0EA7 ] <anchor 620 0> mark @LaoBelow.mark;
-  pos base [ \uni0EAB ] <anchor 790 0> mark @LaoBelow.mark;
-  pos base [ \uni0EAD ] <anchor 640 0> mark @LaoBelow.mark;
-  pos base [ \uni0EC0 ] <anchor 490 0> mark @LaoBelow.mark;
-  pos base [ \uni0EC1 ] <anchor 650 0> mark @LaoBelow.mark;
-  pos base [ \uni0EC2 - \uni0EC4 ] <anchor 510 0> mark @LaoBelow.mark;
-  pos base [ \uni0EDC \uni0EDD ] <anchor 1120 0> mark @LaoBelow.mark;
-  
+  markClass [ uni0EB8 ] <anchor -15 0> @LaoBelow.mark;
+  markClass [ uni0EB9 uni0EBC ] <anchor 0 0> @LaoBelow.mark;
+
+  pos base [ uni0E81 uni0E9A uni0E9B uni0EDE ] <anchor 690 0> mark @LaoBelow.mark;
+  pos base [ uni0E82 uni0E88 uni0EAE ] <anchor 630 0> mark @LaoBelow.mark;
+  pos base [ uni0E84 uni0E8D uni0E99 uni0EA1 uni0EA2 uni0EA5 uni0EAA uni0EDF ] <anchor 660 0> mark @LaoBelow.mark;
+  pos base [ uni0E87 ] <anchor 570 -210> mark @LaoBelow.mark;
+  pos base [ uni0E8A uni0E96 ] <anchor 600 0> mark @LaoBelow.mark;
+  pos base [ uni0E94 ] <anchor 670 0> mark @LaoBelow.mark;
+  pos base [ uni0E95 ] <anchor 680 0> mark @LaoBelow.mark;
+  pos base [ uni0E97 ] <anchor 750 0> mark @LaoBelow.mark;
+  pos base [ uni0E9C uni0E9D uni0E9E uni0E9F ] <anchor 720 0> mark @LaoBelow.mark;
+  pos base [ uni0EA3 uni0EA7 ] <anchor 620 0> mark @LaoBelow.mark;
+  pos base [ uni0EAB ] <anchor 790 0> mark @LaoBelow.mark;
+  pos base [ uni0EAD ] <anchor 640 0> mark @LaoBelow.mark;
+  pos base [ uni0EBD ] <anchor 600 -210> mark @LaoBelow.mark;
+  pos base [ uni0EC0 ] <anchor 490 0> mark @LaoBelow.mark;
+  pos base [ uni0EC1 ] <anchor 650 0> mark @LaoBelow.mark;
+  pos base [ uni0EC2 uni0EC3 uni0EC4 ] <anchor 510 0> mark @LaoBelow.mark;
+  pos base [ uni0EDC uni0EDD ] <anchor 1120 0> mark @LaoBelow.mark;
+
 } LaoBelow.mark;
-
-lookup LaoBelow.sd.mark {
-  lookupflag 0;
-
-  markClass [ @BV.lao.sd ] <anchor 0 0> @LaoBelow.sd.mark;
-  pos base [ \uni0E87 ] <anchor 520 0> mark @LaoBelow.sd.mark;
-  pos base [ \uni0EBD ] <anchor 550 0> mark @LaoBelow.sd.mark;
-
-} LaoBelow.sd.mark;
 
 feature mark {
   lookup LaoAbove.mark;
   lookup LaoBelow.mark;
-  lookup LaoBelow.sd.mark;
 } mark;

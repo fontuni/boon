@@ -18,7 +18,7 @@ lookup ThaiRC.rd {
 } ThaiRC.rd;
 
 lookup ThaiContextRC.rd {
-  sub @RC' lookup ThaiRC.rd [ @BV @COMB.blw ];
+  sub @RC' lookup ThaiRC.rd [ @BV.all ];
 } ThaiContextRC.rd;
 
 lookup Thai.sd {
@@ -31,6 +31,7 @@ lookup Thai.sl {
 
 lookup Thai.su {
   sub @AV.opt by @AV.su;
+  sub @Tone.sd by @Tone;
 } Thai.su;
 
 # Thai Sara Am decomposition (Don't include any zero-width space here, it causes Mac OS bug)
@@ -44,11 +45,11 @@ lookup Thai0E33.0E32 {
 
 lookup ThaiTone.0E4D {
   sub uni0E47 by uni0E4D uni0E47.su;
-  sub uni0E48 by uni0E4D uni0E48;
-  sub uni0E49 by uni0E4D uni0E49;
-  sub uni0E4A by uni0E4D uni0E4A;
-  sub uni0E4B by uni0E4D uni0E4B;
-  sub uni0E4C by uni0E4D uni0E4C;
+  sub uni0E48.sd by uni0E4D uni0E48;
+  sub uni0E49.sd by uni0E4D uni0E49;
+  sub uni0E4A.sd by uni0E4D uni0E4A;
+  sub uni0E4B.sd by uni0E4D uni0E4B;
+  sub uni0E4C.sd by uni0E4D uni0E4C;
   sub uni0E4D by uni0E4D uni0E4D.su;
 } ThaiTone.0E4D;
 
@@ -60,21 +61,18 @@ include(thai-core-minor.fea)
 lookup ThaiCoreContext {
 
   # Sara AM handle
-  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV @COMB.blw ]' [ @Tone @AV.opt ]'lookup ThaiTone.0E4D uni0E33';
-  sub uni0E4D [ @Tone @AV.opt ] uni0E33'lookup Thai0E33.0E32;
-  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV @COMB.blw ]' uni0E33'lookup ThaiDecomp;
-
-  # Shift Down
-  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV @COMB.blw ] @Tone'lookup Thai.sd;
+  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV.all ] [ @Tone.sd @AV.opt ]'lookup ThaiTone.0E4D uni0E33;
+  sub [ @Tone @AV.su ] uni0E33'lookup Thai0E33.0E32;
+  sub [ @NC @AC @DC @RC @RC.rd @IV @PM @FV @BV.all ]' uni0E33'lookup ThaiDecomp;
 
   # Shift Left
-  sub @AC' [ @BV @COMB.blw ]' [ @BV @COMB.blw ]' @AV.sub'lookup Thai.sl;
-  sub @AC' [ @BV @COMB.blw ]' @AV.sub'lookup Thai.sl;
+  sub @AC' [ @BV.all ]' [ @BV.all ]' @AV.sub'lookup Thai.sl;
+  sub @AC' [ @BV.all ]' @AV.sub'lookup Thai.sl;
   sub @AC' @AV.sub'lookup Thai.sl;
   sub @AV.sub.sl @AV.sub'lookup Thai.sl;
 
   # Shift Up
-  sub [ @AV.all @Tone.all ] @AV.opt'lookup Thai.su;
+  sub [ @AV.all @Tone.all ] [ @AV.opt @Tone.sd ]'lookup Thai.su;
 
 } ThaiCoreContext;
 
@@ -99,6 +97,7 @@ feature ss01 {
 } ss01;
 
 feature ccmp {
+  lookup Thai.sd;
   lookup ThaiContextRC.rd;
   lookup ThaiCoreContext;
 } ccmp;

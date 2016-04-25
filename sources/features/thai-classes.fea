@@ -70,28 +70,19 @@
 # Additional classes for minority languages: SU = shift up and SUL = shift up-left
 
 # Below vowel/diacritic
-@BV.sd  = [ uni0E38.sd uni0E39.sd uni0E3A.sd ];
-@BV.all = [ @BV @BV.sd uni0331 ];
+@BV.all = [ @BV uni0331 ]; # Note: + uni0331
 
 # Above vowel/diacritic
 @AV.sub.sl = [ uni0E34.sl uni0E35.sl uni0E36.sl uni0E37.sl ];
-@AV.sl  = [ uni0E31.sl @AV.sub.sl uni0E47.sl uni0E4D.sl uni0E4E.sl ];
 @AV.opt = [ uni0E47 uni0E4D ];
 @AV.su  = [ uni0E47.su uni0E4D.su ];
-@AV.sul = [ uni0E47.sul uni0E4D.sul ];
-@AV.all = [ @AV @AV.sl @AV.su @AV.sul ];
+@AV.all = [ @AV @AV.sub.sl @AV.opt @AV.su uni0303 ]; # Note: + uni0303
 
 # Above tone/diacritic
 @Tone.sd  = [ uni0E48.sd  uni0E49.sd  uni0E4A.sd  uni0E4B.sd  uni0E4C.sd  ];
-@Tone.sdl = [ uni0E48.sdl uni0E49.sdl uni0E4A.sdl uni0E4B.sdl uni0E4C.sdl ];
-@Tone.sl  = [ uni0E48.sl  uni0E49.sl  uni0E4A.sl  uni0E4B.sl  uni0E4C.sl  ];
-@Tone.all = [ @Tone @Tone.sd @Tone.sdl @Tone.sl ];
+@Tone.all = [ @Tone @Tone.sd ];
 
 @MARKS_LEGACY = [ @MARKS @BV.all @AV.all @Tone.all ];
-
-# Latin diacritics
-@COMB.abv = [ uni0300 - uni0309 uni030A - uni030F uni0311 - uni0314 uni0351 uni0357 ];
-@COMB.blw = [ uni0323 uni0324 uni0326 uni0329 uni032E uni0331 uni0332 ];
 
 # Add GDEF
 table GDEF {
