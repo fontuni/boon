@@ -1,6 +1,6 @@
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-300.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-300.woff) format("woff"), url(../fonts/ttf/Boon-300.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-Light.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Light.woff) format("woff"), url(../fonts/otf/Boon-Light.otf) format("truetype");
   font-weight: 300;
   font-style: normal; }
 .boon-300 {
@@ -10,17 +10,17 @@
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-300i.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-300i.woff) format("woff"), url(../fonts/ttf/Boon-300i.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-LightItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-LightItalic.woff) format("woff"), url(../fonts/otf/Boon-LightItalic.otf) format("truetype");
   font-weight: 300;
-  font-style: oblique; }
+  font-style: italic; }
 .boon-300i {
   font-family: Boon;
   font-weight: 300;
-  font-style: oblique; }
+  font-style: italic; }
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-400.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-400.woff) format("woff"), url(../fonts/ttf/Boon-400.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-Regular.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Regular.woff) format("woff"), url(../fonts/otf/Boon-Regular.otf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 .boon-400 {
@@ -30,17 +30,17 @@
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-400i.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-400i.woff) format("woff"), url(../fonts/ttf/Boon-400i.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-Italic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Italic.woff) format("woff"), url(../fonts/otf/Boon-Italic.otf) format("truetype");
   font-weight: 400;
-  font-style: oblique; }
+  font-style: italic; }
 .boon-400i {
   font-family: Boon;
   font-weight: 400;
-  font-style: oblique; }
+  font-style: italic; }
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-500.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-500.woff) format("woff"), url(../fonts/ttf/Boon-500.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-Medium.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Medium.woff) format("woff"), url(../fonts/otf/Boon-Medium.otf) format("truetype");
   font-weight: 500;
   font-style: normal; }
 .boon-500 {
@@ -50,17 +50,17 @@
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-500i.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-500i.woff) format("woff"), url(../fonts/ttf/Boon-500i.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-MediumItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-MediumItalic.woff) format("woff"), url(../fonts/otf/Boon-MediumItalic.otf) format("truetype");
   font-weight: 500;
-  font-style: oblique; }
+  font-style: italic; }
 .boon-500i {
   font-family: Boon;
   font-weight: 500;
-  font-style: oblique; }
+  font-style: italic; }
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-600.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-600.woff) format("woff"), url(../fonts/ttf/Boon-600.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-SemiBold.woff2) format("woff2"), url(../fonts/woff-otf/Boon-SemiBold.woff) format("woff"), url(../fonts/otf/Boon-SemiBold.otf) format("truetype");
   font-weight: 600;
   font-style: normal; }
 .boon-600 {
@@ -70,17 +70,17 @@
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-600i.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-600i.woff) format("woff"), url(../fonts/ttf/Boon-600i.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-SemiBoldItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-SemiBoldItalic.woff) format("woff"), url(../fonts/otf/Boon-SemiBoldItalic.otf) format("truetype");
   font-weight: 600;
-  font-style: oblique; }
+  font-style: italic; }
 .boon-600i {
   font-family: Boon;
   font-weight: 600;
-  font-style: oblique; }
+  font-style: italic; }
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-700.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-700.woff) format("woff"), url(../fonts/ttf/Boon-700.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-Bold.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Bold.woff) format("woff"), url(../fonts/otf/Boon-Bold.otf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 .boon-700 {
@@ -90,12 +90,12 @@
 
 @font-face {
   font-family: Boon;
-  src: url(../fonts/woff2-ttf/Boon-700i.woff2) format("woff2"), url(../fonts/woff-ttf/Boon-700i.woff) format("woff"), url(../fonts/ttf/Boon-700i.ttf) format("truetype");
+  src: url(../fonts/woff2-otf/Boon-BoldItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-BoldItalic.woff) format("woff"), url(../fonts/otf/Boon-BoldItalic.otf) format("truetype");
   font-weight: 700;
-  font-style: oblique; }
+  font-style: italic; }
 .boon-700i {
   font-family: Boon;
   font-weight: 700;
-  font-style: oblique; }
+  font-style: italic; }
 
 /*# sourceMappingURL=boon-all.css.map */

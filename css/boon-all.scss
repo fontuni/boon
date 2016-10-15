@@ -1,43 +1,54 @@
+// weight helper
+@function weight($key) {
+  @if map-has-key($weights, $key) {
+    @return map-get($weights, $key);
+  }
+  @warn "Unknown `#{$key}` in $weights.";
+  @return null;
+}
+
 // @font-face mixin
 @mixin font-include($font-family, $name, $weight, $style: normal) {
   font-family: #{$font-family};
-  src: url(../fonts/woff2-ttf/#{$name}.woff2) format('woff2'),
-       url(../fonts/woff-ttf/#{$name}.woff) format('woff'),
-       url(../fonts/ttf/#{$name}.ttf) format('truetype');
+  src: url(../fonts/woff2-otf/#{$name}.woff2) format('woff2'),
+       url(../fonts/woff-otf/#{$name}.woff) format('woff'),
+       url(../fonts/otf/#{$name}.otf) format('truetype');
   font-weight: $weight;
   font-style: $style;
 }
 
 // font classes & styles
 @mixin font-class($font-family, $class-name, $weight, $style: normal, $name: null) {
-
   .#{$class-name}-#{$weight}#{$name} {
     font-family: $font-family;
     font-weight: $weight;
     font-style: $style;
   }
-
 }
 
+// vars
 $font-family: Boon;
 $class-name: boon;
-$weights: 300 400 500 600 700;
-$styles: normal oblique;
+$styles: normal italic;
+$weights: (Light: 300, Regular: 400, Medium: 500, SemiBold: 600, Bold: 700);
 
 // sass magic!
-@each $weight in $weights {
+@each $name, $value in $weights {
   @each $style in $styles {
     @if $style == normal {
       @font-face {
-        @include font-include($font-family, #{$font-family}-#{$weight}, $weight);
+        @include font-include($font-family, #{$font-family}-#{$name}, $value);
       }
-      @include font-class($font-family, $class-name, $weight);
+      @include font-class($font-family, $class-name, $value);
     }
-    @if $style == oblique {
+    @if $style == italic {
       @font-face {
-        @include font-include($font-family, #{$font-family}-#{$weight}i, $weight, $style);
+        @if $value == 400 { @include font-include($font-family, #{$font-family}-Italic, $value, $style); }
+        @else { @include font-include($font-family, #{$font-family}-#{$name}Italic, $value, $style); }
       }
-      @include font-class($font-family, $class-name, $weight, $style, i);
+      @include font-class($font-family, $class-name, $value, $style, i);
     }
   } 
 }
+
+

@@ -21,7 +21,7 @@ import glob
 import boon
 
 family = 'Boon'
-version = '2.0'
+version = '3.0'
 foundry = 'FontUni'
 sfd_dir = 'sfd/'
 
@@ -99,15 +99,17 @@ def font2Woff(font,woff):
   subprocess.call([ 'ttf2woff', '-v', font, woff ])
   print(woff, 'instance generated.')
 
+# https://github.com/google/woff2
 def font2Woff2(font,woff2):
   subprocess.call(['woff2_compress',font])
   (root, ext) = os.path.splitext(font)
   os.rename(root + '.woff2', woff2)
   print(woff2, 'instance generated.')
 
-def font2Eot(font,eot):
-  os.system('ttf2eot <' + font+ '>' + eot)
-  print(eot, 'instance generated.')
+# https://code.google.com/archive/p/ttf2eot/
+#def font2Eot(font,eot):
+#  os.system('ttf2eot <' + font+ '>' + eot)
+#  print(eot, 'instance generated.')
 
 def buildFont(sfd):
   font = fontforge.open(sfd)
@@ -123,9 +125,9 @@ def buildFont(sfd):
   woffOtf = fontPath('woff-otf','woff',font.fontname)
   woff2Ttf = fontPath('woff2-ttf','woff2',font.fontname)
   woff2Otf = fontPath('woff2-otf','woff2',font.fontname)
-  eotTtf = fontPath('eot-ttf','eot',font.fontname)
-  eotOtf = fontPath('eot-otf','eot',font.fontname)
-  svg = fontPath('svg','svg',font.fontname)
+  #eotTtf = fontPath('eot-ttf','eot',font.fontname)
+  #eotOtf = fontPath('eot-otf','eot',font.fontname)
+  #svg = fontPath('svg','svg',font.fontname)
   tempwoff2Ttf = build_dir + 'ttf/' + font.fontname + '.woff2'
   tempwoff2Otf = build_dir + 'otf/' + font.fontname + '.woff2'
 
@@ -160,12 +162,12 @@ def buildFont(sfd):
   font2Woff2(ttf,woff2Ttf)
 
   # font2eot
-  font2Eot(otf,eotOtf)
-  font2Eot(ttf,eotTtf)
+  #font2Eot(otf,eotOtf)
+  #font2Eot(ttf,eotTtf)
 
   # gen svg
-  font.generate(svg, flags=otfgenflags)
-  print(svg, 'instance generated.')
+  #font.generate(svg, flags=otfgenflags)
+  #print(svg, 'instance generated.')
 
   font.close()
 
@@ -183,7 +185,9 @@ def fontZip(family,version,pkg):
   os.chdir('..')
   print(package, 'created.')
 
-pkgs = ['otf', 'ttf', 'woff-otf', 'woff-ttf', 'woff2-otf', 'woff2-ttf', 'eot-otf', 'eot-ttf', 'svg']
+#pkgs = ['otf', 'ttf', 'woff-otf', 'woff-ttf', 'woff2-otf', 'woff2-ttf', 'eot-otf', 'eot-ttf', 'svg']
+
+pkgs = ['otf', 'ttf', 'woff-otf', 'woff-ttf', 'woff2-otf', 'woff2-ttf']
 
 for pkg in pkgs:
   fontZip(family,version,pkg)
