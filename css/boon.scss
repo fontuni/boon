@@ -11,51 +11,59 @@
 // ---------------------------------------------
 
 // Theme-specific fonts
-$font-family: "Boon-v1.0";
+// weight helper
+@function weight($key) {
+  @if map-has-key($weights, $key) {
+    @return map-get($weights, $key);
+  }
+  @warn "Unknown `#{$key}` in $weights.";
+  @return null;
+}
 
-@mixin font-include($name, $weight, $style) {
-  font-family: $font-family;
-  src: url(../fonts/woff2/#{$name}.woff2) format('woff2'),
-       url(../fonts/woff/#{$name}.woff) format('woff'),
-       url(../fonts/ttf/#{$name}.ttf) format('truetype');
+// @font-face mixin
+@mixin font-include($font-family, $name, $weight, $style: normal) {
+  font-family: #{$font-family};
+  src: url(../fonts/woff2-otf/#{$name}.woff2) format('woff2'),
+       url(../fonts/woff-otf/#{$name}.woff) format('woff'),
+       url(../fonts/otf/#{$name}.otf) format('truetype');
   font-weight: $weight;
   font-style: $style;
 }
 
-@font-face {
-  @include font-include(Boon-300, 300, normal);
-}
-@font-face {
-  @include font-include(Boon-300i, 300, oblique);
-}
-
-@font-face {
-  @include font-include(Boon-400, 400, normal);
-}
-@font-face {
-  @include font-include(Boon-400i, 400, oblique);
+// font classes & styles
+@mixin font-class($font-family, $class-name, $weight, $style: normal, $name: null) {
+  .#{$class-name}-#{$weight}#{$name} {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+  }
 }
 
-@font-face {
-  @include font-include(Boon-500, 500, normal);
-}
-@font-face {
-  @include font-include(Boon-500i, 500, oblique);
+// vars
+$font-family: Boon;
+$class-name: boon;
+$styles: normal italic;
+$weights: (Light: 300, Regular: 400, Medium: 500, SemiBold: 600, Bold: 700);
+
+// sass magic!
+@each $name, $value in $weights {
+  @each $style in $styles {
+    @if $style == normal {
+      @font-face {
+        @include font-include($font-family, #{$font-family}-#{$name}, $value);
+      }
+      @include font-class($font-family, $class-name, $value);
+    }
+    @if $style == italic {
+      @font-face {
+        @if $value == 400 { @include font-include($font-family, #{$font-family}-Italic, $value, $style); }
+        @else { @include font-include($font-family, #{$font-family}-#{$name}Italic, $value, $style); }
+      }
+      @include font-class($font-family, $class-name, $value, $style, i);
+    }
+  } 
 }
 
-@font-face {
-  @include font-include(Boon-600, 600, normal);
-}
-@font-face {
-  @include font-include(Boon-600i, 600, oblique);
-}
-
-@font-face {
-  @include font-include(Boon-700, 700, normal);
-}
-@font-face {
-  @include font-include(Boon-700i, 700, oblique);
-}
 
 // monospaced font
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);

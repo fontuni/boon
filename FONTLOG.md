@@ -11,6 +11,13 @@ cover:
 excerpt: "Boon FONTLOG"
 ---
 
+### Boon v3.0, 2017-02-03
+{: .section-title }
+
+- Added New building process
+- Used generic names all fonts
+- Corrected OS/2 Style Map for Windows
+
 ### Boon v2.0, 2016-04-25
 {: .section-title }
 

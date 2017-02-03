@@ -6,55 +6,105 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 @font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-300.woff2) format("woff2"), url(../fonts/woff/Boon-300.woff) format("woff"), url(../fonts/ttf/Boon-300.ttf) format("truetype");
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-Light.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Light.woff) format("woff"), url(../fonts/otf/Boon-Light.otf) format("truetype");
   font-weight: 300;
   font-style: normal; }
-@font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-300i.woff2) format("woff2"), url(../fonts/woff/Boon-300i.woff) format("woff"), url(../fonts/ttf/Boon-300i.ttf) format("truetype");
+.boon-300 {
+  font-family: Boon;
   font-weight: 300;
-  font-style: oblique; }
+  font-style: normal; }
+
 @font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-400.woff2) format("woff2"), url(../fonts/woff/Boon-400.woff) format("woff"), url(../fonts/ttf/Boon-400.ttf) format("truetype");
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-LightItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-LightItalic.woff) format("woff"), url(../fonts/otf/Boon-LightItalic.otf) format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+.boon-300i {
+  font-family: Boon;
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-Regular.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Regular.woff) format("woff"), url(../fonts/otf/Boon-Regular.otf) format("truetype");
   font-weight: 400;
   font-style: normal; }
-@font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-400i.woff2) format("woff2"), url(../fonts/woff/Boon-400i.woff) format("woff"), url(../fonts/ttf/Boon-400i.ttf) format("truetype");
+.boon-400 {
+  font-family: Boon;
   font-weight: 400;
-  font-style: oblique; }
+  font-style: normal; }
+
 @font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-500.woff2) format("woff2"), url(../fonts/woff/Boon-500.woff) format("woff"), url(../fonts/ttf/Boon-500.ttf) format("truetype");
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-Italic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Italic.woff) format("woff"), url(../fonts/otf/Boon-Italic.otf) format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+.boon-400i {
+  font-family: Boon;
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-Medium.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Medium.woff) format("woff"), url(../fonts/otf/Boon-Medium.otf) format("truetype");
   font-weight: 500;
   font-style: normal; }
-@font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-500i.woff2) format("woff2"), url(../fonts/woff/Boon-500i.woff) format("woff"), url(../fonts/ttf/Boon-500i.ttf) format("truetype");
+.boon-500 {
+  font-family: Boon;
   font-weight: 500;
-  font-style: oblique; }
+  font-style: normal; }
+
 @font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-600.woff2) format("woff2"), url(../fonts/woff/Boon-600.woff) format("woff"), url(../fonts/ttf/Boon-600.ttf) format("truetype");
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-MediumItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-MediumItalic.woff) format("woff"), url(../fonts/otf/Boon-MediumItalic.otf) format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+.boon-500i {
+  font-family: Boon;
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-SemiBold.woff2) format("woff2"), url(../fonts/woff-otf/Boon-SemiBold.woff) format("woff"), url(../fonts/otf/Boon-SemiBold.otf) format("truetype");
   font-weight: 600;
   font-style: normal; }
-@font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-600i.woff2) format("woff2"), url(../fonts/woff/Boon-600i.woff) format("woff"), url(../fonts/ttf/Boon-600i.ttf) format("truetype");
+.boon-600 {
+  font-family: Boon;
   font-weight: 600;
-  font-style: oblique; }
+  font-style: normal; }
+
 @font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-700.woff2) format("woff2"), url(../fonts/woff/Boon-700.woff) format("woff"), url(../fonts/ttf/Boon-700.ttf) format("truetype");
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-SemiBoldItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-SemiBoldItalic.woff) format("woff"), url(../fonts/otf/Boon-SemiBoldItalic.otf) format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+.boon-600i {
+  font-family: Boon;
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-Bold.woff2) format("woff2"), url(../fonts/woff-otf/Boon-Bold.woff) format("woff"), url(../fonts/otf/Boon-Bold.otf) format("truetype");
   font-weight: 700;
   font-style: normal; }
-@font-face {
-  font-family: "Boon-v1.0";
-  src: url(../fonts/woff2/Boon-700i.woff2) format("woff2"), url(../fonts/woff/Boon-700i.woff) format("woff"), url(../fonts/ttf/Boon-700i.ttf) format("truetype");
+.boon-700 {
+  font-family: Boon;
   font-weight: 700;
-  font-style: oblique; }
+  font-style: normal; }
+
+@font-face {
+  font-family: Boon;
+  src: url(../fonts/woff2-otf/Boon-BoldItalic.woff2) format("woff2"), url(../fonts/woff-otf/Boon-BoldItalic.woff) format("woff"), url(../fonts/otf/Boon-BoldItalic.otf) format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+.boon-700i {
+  font-family: Boon;
+  font-weight: 700;
+  font-style: italic; }
+
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
@@ -66,7 +116,7 @@ body {
   background-color: #fcfcfc; }
 
 .reveal {
-  font-family: "Boon-v1.0";
+  font-family: Boon;
   font-size: 54px;
   font-weight: normal;
   color: #222; }
@@ -92,7 +142,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Boon-v1.0";
+  font-family: Boon;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: normal;
@@ -343,7 +393,7 @@ body {
   color: #2ad; }
 
 body .reveal {
-  font-family: "Boon-v1.0";
+  font-family: Boon;
   -webkit-font-feature-settings: "locl";
   -moz-font-feature-settings: "locl";
   -ms-font-feature-settings: "locl";
