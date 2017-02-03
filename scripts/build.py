@@ -119,32 +119,38 @@ def buildFont(sfd):
   uniqueid = foundry + ' : ' + font.fullname + ' ' + font.version + ' : ' + ts
   font.appendSFNTName('English (US)', 'UniqueID', uniqueid)
 
-  otf = fontPath('otf','otf',font.fontname)
-  ttf = fontPath('ttf','ttf',font.fontname)
-  woffTtf = fontPath('woff-ttf','woff',font.fontname)
-  woffOtf = fontPath('woff-otf','woff',font.fontname)
-  woff2Ttf = fontPath('woff2-ttf','woff2',font.fontname)
-  woff2Otf = fontPath('woff2-otf','woff2',font.fontname)
+  #genname = font.fullname.replace(' ','-').replace('-Italic','Italic')
+  if font.os2_weight == 400:
+    genname = font.fullname.replace(' ','-')
+  else:
+    genname = font.fullname.replace(' ','-').replace('-Italic','Italic')
+
+  otf = fontPath('otf','otf',genname)
+  ttf = fontPath('ttf','ttf',genname)
+  woffTtf = fontPath('woff-ttf','woff',genname)
+  woffOtf = fontPath('woff-otf','woff',genname)
+  woff2Ttf = fontPath('woff2-ttf','woff2',genname)
+  woff2Otf = fontPath('woff2-otf','woff2',genname)
   #eotTtf = fontPath('eot-ttf','eot',font.fontname)
   #eotOtf = fontPath('eot-otf','eot',font.fontname)
   #svg = fontPath('svg','svg',font.fontname)
-  tempwoff2Ttf = build_dir + 'ttf/' + font.fontname + '.woff2'
-  tempwoff2Otf = build_dir + 'otf/' + font.fontname + '.woff2'
+  tempwoff2Ttf = build_dir + 'ttf/' + genname + '.woff2'
+  tempwoff2Otf = build_dir + 'otf/' + genname + '.woff2'
 
   # generate otf
   otfgenflags  = ('opentype', 'PfEd-lookups')
-  otfunhinted = unhinted_dir + font.fontname + '-unhinted.otf'
+  otfunhinted = unhinted_dir + genname + '-unhinted.otf'
   font.generate(otfunhinted, flags=otfgenflags)
   print(otfunhinted, 'instance generated.')
 
   # AFDKO autohint
   otfHint(otfunhinted,otf)
-  fontOptimize(otf)
+  #fontOptimize(otf)
   printFontInfo(otf)
 
   # generate unhinted ttf
   ttfgenflags  = ('opentype', 'no-hints')
-  ttfunhinted = unhinted_dir + font.fontname + '-unhinted.ttf'
+  ttfunhinted = unhinted_dir + genname + '-unhinted.ttf'
   font.generate(ttfunhinted, flags=ttfgenflags)
   print(ttfunhinted, 'instance generated.')
 
