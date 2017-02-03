@@ -17,3 +17,4 @@ sfd/*
 fonts/eot/*
 fonts/svg/*
 *__pycache**
+*.pyc

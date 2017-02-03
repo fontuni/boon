@@ -23,18 +23,19 @@ Layer: 3 0 "400" 0
 Layer: 4 0 "500" 0
 Layer: 5 0 "600" 0
 Layer: 6 0 "700" 0
-StyleMap: 0x0000
+StyleMap: 0x0001
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1369324892
-ModificationTime: 1486113092
+ModificationTime: 1486124373
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
 LineGap: 90
 VLineGap: 0
+Panose: 0 0 0 0 0 0 0 0 0 0
 OS2TypoAscent: 960
 OS2TypoAOffset: 0
 OS2TypoDescent: -240
@@ -50,6 +51,7 @@ HheadDescent: -540
 HheadDOffset: 0
 OS2CapHeight: 780
 OS2XHeight: 600
+OS2FamilyClass: 2048
 OS2Vendor: 'FUni'
 OS2CodePages: 20010193.00000000
 OS2UnicodeRanges: a30000ff.5000207b.00000000.00000000
@@ -65,6 +67,7 @@ DisplaySize: -48
 DisplayLayer: 3
 AntiAlias: 1
 FitToEm: 0
+WinInfo: 32 8 2
 BeginPrivate: 3
 BlueValues 31 [-21 0 600 621 780 801 810 831]
 OtherBlues 11 [-226 -210]

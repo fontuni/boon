@@ -18,7 +18,7 @@ import datetime
 import glob
 
 # Boon customization
-import boon
+import buildsfd
 
 family = 'Boon'
 version = '3.0'

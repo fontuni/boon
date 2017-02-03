@@ -25,6 +25,7 @@ features = ['boon-roman', 'boon-oblique']
 feature_dir = 'sources/'
 
 copyright =  'Copyright 2013-2017, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
+os2_vendor = 'FUni'
 foundry = 'FontUni'
 foundry_url = 'https://fontuni.com/'
 designer = 'Sungsit Sawaiwan'
@@ -159,10 +160,6 @@ def otf2Sfd(otf,sfd_dir):
 
   weight = font.os2_weight
 
-  # FontForge's Bold vs Regular bug
-  #if weight == 700 and font.italicangle == 0.0:
-  #  font.appendSFNTName('English (US)', 'SubFamily', '')
-
   font.private['BlueValues'] = BlueValues(weight)
   font.private['OtherBlues'] = OtherBlues(weight)
   font.private['StdHW'] = StdHW(weight)
@@ -183,13 +180,14 @@ def otf2Sfd(otf,sfd_dir):
 
 def buildSFD(source,family):
 
-  # prepare master
+
   font = fontforge.open(source)
 
+  # prepare master
   font.familyname = family
   font.version = version
   font.copyright = copyright
-
+  font.os2_vendor = os2_vendor
   font.appendSFNTName('English (US)', 'Manufacturer', foundry)
   font.appendSFNTName('English (US)', 'Designer', designer)
   font.appendSFNTName('English (US)', 'Vendor URL', foundry_url)
@@ -222,8 +220,10 @@ def buildSFD(source,family):
     if source.endswith('-master.sfd'):
       font.appendSFNTName('English (US)', 'Preferred Styles', subfamily)
       font.appendSFNTName('English (US)', 'SubFamily', 'Regular')
+      font.os2_stylemap = 64 # 0x0040
       if subfamily == 'Bold':
         font.appendSFNTName('English (US)', 'SubFamily', 'Bold')
+        font.os2_stylemap = 32 # 0x0020
 
     # Customize preferred subfamily & styles
     if source.endswith('-master-oblique.sfd'):
@@ -231,20 +231,19 @@ def buildSFD(source,family):
       font.fullname += ' Italic'
       font.italicangle = -9.0
       font.appendSFNTName('English (US)', 'Preferred Styles', subfamily + ' Italic')
+      font.os2_stylemap = 1 # 0x0001
 
       if subfamily == 'Regular':
         font.fontname = font.fontname.replace('Regular','')
         font.fullname = font.fullname.replace(' Regular','')
         font.appendSFNTName('English (US)', 'Preferred Styles', 'Italic')
-
       if subfamily == 'Bold':
         font.appendSFNTName('English (US)', 'SubFamily', 'Bold Italic')
-
+        font.os2_stylemap = 33 # 0x0021
       else:
         font.appendSFNTName('English (US)', 'SubFamily', 'Italic')
 
     # generate otf
-    #otf = fontPath('otf',font.fontname)
     if font.os2_weight == 400:
       genname = font.fullname.replace(' ','-')
     else:
