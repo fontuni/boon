@@ -17,40 +17,31 @@ import time
 import datetime
 
 # Predifined vars
-family = 'Boon'
-version = '3.0'
-sources = ['sources/boon-master.sfd', 'sources/boon-master-oblique.sfd']
-layers = ['300','400','500','600','700']
-features = ['boon-roman', 'boon-oblique']
-feature_dir = 'sources/'
+import fontvars
+from fontvars import * 
 
-copyright =  'Copyright 2013-2017, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).'
-os2_vendor = 'FUni'
-foundry = 'FontUni'
-foundry_url = 'https://fontuni.com/'
-designer = 'Sungsit Sawaiwan'
-designer_url = 'https://sungsit.com/'
-license_url = 'http://scripts.sil.org/OFL'
-
-build_dir = 'fonts/'
-if os.path.exists(build_dir):
-  shutil.rmtree(build_dir)
-
-sfd_dir = 'sfd/'
-if os.path.exists(sfd_dir):
-  shutil.rmtree(sfd_dir)
-
-unhinted_dir = build_dir + 'unhinted/'
-if not os.path.exists(unhinted_dir):
-  os.makedirs(unhinted_dir)
-
-def fontPath(ext,name):
-  path = build_dir + ext
+# Helpers
+def fontPath(path,ext,name):
+  path = build_dir + path
   if not os.path.exists(path):
     os.makedirs(path)
   fontfile = path + '/' + name + '.' + ext
   return fontfile
 
+def printFontInfo(fontfile):
+  font = fontforge.open(fontfile)
+  print('\nFont File: ' + fontfile)
+  print('Family Name: ' + font.familyname)
+  print('Font Name: ' + font.fontname)
+  print('Full Name: ' + font.fullname)
+  print('Font Weight: ' + font.weight)
+  print('OS2 Weight: ' + str(font.os2_weight))
+  print('Italic Angle: ' + str(font.italicangle))
+  print('Font Version: ' + font.version)
+  print('Font Copyright: ' + font.copyright)
+  font.close()
+
+# Helpers
 def weights2Strings(weight):
   switcher = {
     100: "Thin",
@@ -108,46 +99,6 @@ def msStyleItalicName(weight):
   }
   return switcher.get(weight)
 
-def BlueValues(weight):
-  switcher = {
-    300: (-17, 0, 600, 617, 780, 797, 810, 827),
-    400: (-18, 0, 600, 618, 780, 798, 810, 828),
-    500: (-19, 0, 600, 619, 780, 799, 810, 829),
-    600: (-20, 0, 600, 620, 780, 800, 810, 830),
-    700: (-21, 0, 600, 621, 780, 801, 810, 831)
-  }
-  return switcher.get(weight)
-
-def OtherBlues(weight):
-  switcher = {
-    300: (-222, -210),
-    400: (-223, -210),
-    500: (-224, -210),
-    600: (-225, -210),
-    700: (-226, -210)
-  }
-  return switcher.get(weight)
-
-def StdHW(weight):
-  switcher = {
-    300: (52,),
-    400: (64,),
-    500: (79,),
-    600: (98,),
-    700: (110,)
-  }
-  return switcher.get(weight)
-
-def StdVW(weight):
-  switcher = {
-    300: (67,),
-    400: (85,),
-    500: (113,),
-    600: (137,),
-    700: (160,)
-  }
-  return switcher.get(weight)
-
 def otf2Sfd(otf,sfd_dir):
 
   font = fontforge.open(otf)
@@ -180,7 +131,6 @@ def otf2Sfd(otf,sfd_dir):
 
 def buildSFD(source,family):
 
-
   font = fontforge.open(source)
 
   # prepare master
@@ -197,7 +147,7 @@ def buildSFD(source,family):
 
   font.save()
 
-  if source.endswith('oblique.sfd'):
+  if source == sources[1]:
     font.mergeFeature(feature_dir + features[1] + '.fea')
   else:
     font.mergeFeature(feature_dir + features[0] + '.fea')
@@ -211,33 +161,34 @@ def buildSFD(source,family):
 
     # Customize preferred subfamily & styles
     subfamily = weights2Strings(font.os2_weight)
-    font.fontname = family.replace(' ','-') + '-' + layername
+    font.fontname = family.replace(' ','') + '-' + subfamily
     font.fullname = family + ' ' + subfamily
     font.italicangle = 0.0
     font.familyname = msFamilyName(font.os2_weight)
 
     # Normal style
-    if source.endswith('-master.sfd'):
+    if source == sources[0]:
       font.appendSFNTName('English (US)', 'Preferred Styles', subfamily)
-      font.appendSFNTName('English (US)', 'SubFamily', 'Regular')
-      font.os2_stylemap = 64 # 0x0040
-      if subfamily == 'Bold':
-        font.appendSFNTName('English (US)', 'SubFamily', 'Bold')
+      if font.os2_weight == 700:
+        font.appendSFNTName('English (US)', 'SubFamily', '')
         font.os2_stylemap = 32 # 0x0020
+      else:
+        font.appendSFNTName('English (US)', 'SubFamily', 'Regular')
+        font.os2_stylemap = 64 # 0x0040
 
-    # Customize preferred subfamily & styles
-    if source.endswith('-master-oblique.sfd'):
-      font.fontname += 'i'
+    # Italic style
+    if source == sources[1]:
+      font.fontname += 'Italic'
       font.fullname += ' Italic'
       font.italicangle = -9.0
       font.appendSFNTName('English (US)', 'Preferred Styles', subfamily + ' Italic')
       font.os2_stylemap = 1 # 0x0001
 
-      if subfamily == 'Regular':
+      if font.os2_weight == 400:
         font.fontname = font.fontname.replace('Regular','')
         font.fullname = font.fullname.replace(' Regular','')
         font.appendSFNTName('English (US)', 'Preferred Styles', 'Italic')
-      if subfamily == 'Bold':
+      if font.os2_weight == 700:
         font.appendSFNTName('English (US)', 'SubFamily', 'Bold Italic')
         font.os2_stylemap = 33 # 0x0021
       else:
@@ -249,7 +200,7 @@ def buildSFD(source,family):
     else:
       genname = font.fullname.replace(' ','-').replace('-Italic','Italic')
 
-    otf = fontPath('otf',genname)
+    otf = fontPath('otf','otf',genname)
 
     otfgenflags  = ('opentype', 'PfEd-lookups')
     font.generate(otf, flags=otfgenflags, layer = layername)
@@ -259,6 +210,7 @@ def buildSFD(source,family):
     otf2Sfd(otf,sfd_dir)
 
   font.close()
+  shutil.rmtree(build_dir)
 
 for source in sources:
   buildSFD(source,family)

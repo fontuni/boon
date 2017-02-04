@@ -17,41 +17,13 @@ import time
 import datetime
 import glob
 
-# Boon customization
+# SFD building process
 import buildsfd
-
-family = 'Boon'
-version = '3.0'
-foundry = 'FontUni'
-sfd_dir = 'sfd/'
-
-build_dir = 'fonts/'
-if os.path.exists(build_dir):
-  shutil.rmtree(build_dir)
+from buildsfd import *
 
 unhinted_dir = build_dir + 'unhinted/'
 if not os.path.exists(unhinted_dir):
   os.makedirs(unhinted_dir)
-
-def fontPath(path,ext,name):
-  path = build_dir + path
-  if not os.path.exists(path):
-    os.makedirs(path)
-  fontfile = path + '/' + name + '.' + ext
-  return fontfile
-
-def printFontInfo(fontfile):
-  font = fontforge.open(fontfile)
-  print('\nFont File: ' + fontfile)
-  print('Family Name: ' + font.familyname)
-  print('Font Name: ' + font.fontname)
-  print('Full Name: ' + font.fullname)
-  print('Font Weight: ' + font.weight)
-  print('OS2 Weight: ' + str(font.os2_weight))
-  print('Italic Angle: ' + str(font.italicangle))
-  print('Font Version: ' + font.version)
-  print('Font Copyright: ' + font.copyright)
-  font.close()
 
 def otfHint(unhinted,hinted):
   subprocess.call([
@@ -119,11 +91,11 @@ def buildFont(sfd):
   uniqueid = foundry + ' : ' + font.fullname + ' ' + font.version + ' : ' + ts
   font.appendSFNTName('English (US)', 'UniqueID', uniqueid)
 
-  #genname = font.fullname.replace(' ','-').replace('-Italic','Italic')
+  # Correct Italic name
   if font.os2_weight == 400:
-    genname = font.fullname.replace(' ','-')
+    genname = font.fontname
   else:
-    genname = font.fullname.replace(' ','-').replace('-Italic','Italic')
+    genname = font.fontname.replace('-Italic','Italic')
 
   otf = fontPath('otf','otf',genname)
   ttf = fontPath('ttf','ttf',genname)
@@ -187,11 +159,8 @@ def fontZip(family,version,pkg):
   shutil.copy2('OFL.txt', path)
   os.chdir(build_dir)
   subprocess.call(['zip', '-r', package, pkg])
-  #os.remove(pkg + '/OFL.txt')
   os.chdir('..')
   print(package, 'created.')
-
-#pkgs = ['otf', 'ttf', 'woff-otf', 'woff-ttf', 'woff2-otf', 'woff2-ttf', 'eot-otf', 'eot-ttf', 'svg']
 
 pkgs = ['otf', 'ttf', 'woff-otf', 'woff-ttf', 'woff2-otf', 'woff2-ttf']
 
